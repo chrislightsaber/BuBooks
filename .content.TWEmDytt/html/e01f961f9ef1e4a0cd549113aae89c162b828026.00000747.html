@@ -1,0 +1,1442 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rating for Zachary Wingerd</title>
+  <style type="text/css">
+
+  <!--
+        h2
+        {
+                text-align: center;
+                color: #476A8E;
+                font-family: Verdana;
+        } 
+        p
+        {
+                color: #111111;
+                font-family: Verdana;
+                font-size: 10pt;
+        } 
+        .a
+        {
+                font-family: "Times New Roman", Times, serif;
+                font-size:17px;
+                color: #000000;
+        }
+        form
+        {
+                margin-top: 0px;
+                margin-bottom: 0px;
+        }
+        .text
+        {
+                font-family: Verdana;
+                font-size: 10pt;
+                color: #263B4E;
+        }
+        .search
+        {
+                font-family: Verdana;
+                font-size: 12pt;
+                font-weight: bold;
+                color: #263B4E;
+        }
+        .title 
+        {
+                font-family: Verdana;
+                font-variant: small-caps;
+                text-transform: lowercase;
+                font-weight: bold;
+                color: #FFFFFF;
+                font-size: 16pt;
+                padding-left: 10pt;
+        }
+        .title2
+        {
+                font-family: Verdana;
+                font-variant: small-caps;
+                text-transform: lowercase;
+                font-weight: bold;
+                color: #FFFF00;
+                font-size: 16pt;        
+        }
+  -->
+  </style>
+</head>
+<body bgcolor="#FFFFFF" vlink="#0066FF" leftmargin="0" rightmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+  <table border="1" rules="all" cellpadding="3" cellspacing="0" bordercolor="#476A8E" bgcolor="#476A8E" width="100%" align="center">
+    <tr>
+      <td width="100%" height="85" bgcolor="#476A8E" colspan="5">
+        <table border="0" cellpadding="0" cellspacing="0" bgcolor="#476A8E" width="100%">
+          <tr>
+            <td align="left" rowspan="2" width="70%">
+              <a href="index.php"><img src="logo.gif" width="261" height="64" border="0"></a>
+            </td>
+            <td align="right">
+              <table align="right" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td>
+                    <a href="clicksLog1.php?redirect=http://bubooks.com/advertising.php&adID=3" target='_new'><img src="ads/bubooks.gif" border="0">
+                    <table>
+                      <tr>
+                        <td align="center"><font face="verdana" size="1" color="#FFFFFF">Advertisement - Click for coupon or website</font></td>
+                      </tr>
+                    </table></a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" width="20%" bgcolor="#FFFFFF" height="23" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+              <a href="login.php" style='text-decoration:none;'><font face="Arial, Verdana" size="3" color="#000000"><b>Login</b></font></a>
+            </td>
+            <td align="center" width="20%" bgcolor="#FFFFFF" height="23" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+              <a href="books.php" style='text-decoration:none;'><font face="Arial, Verdana" size="3" color="#000000"><b>Textbooks</b></font></a>
+            </td>
+            <td align="center" width="20%" bgcolor="#FFFFFF" height="23" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+              <a href="profrate.php" style='text-decoration:none;'><font face="Arial, Verdana" size="3" color="#000000"><b>Professor Ratings</b></font></a>
+            </td>
+            <td align="center" width="20%" bgcolor="#FFFFFF" height="23" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+              <a href="classified.php" style='text-decoration:none;'><font face="Arial, Verdana" size="3" color="#000000"><b>Classified Ads</b></font></a>
+            </td>
+            <td align="center" width="20%" bgcolor="#FFFFFF" height="23" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');"><font face="Arial, Verdana" size="3" color="#000000"><b>Apartment Guide</b></font></td>
+          </tr>
+          <tr>
+            <td colspan="5" background="bckground.gif" bgcolor="#FFFFFF">
+              <script language="javascript" type="text/javascript">
+              //Change the image without refreshing the page...
+              function setTempImage(f, name, c) 
+              {
+                var color = c;
+                var hit = document.getElementById("color_" + name).value;
+
+                //if star is already red and they clicked on a star
+                //we need to change that star to yellow
+                if(c != 2) 
+                {
+                        if(hit == "hit")
+                        {
+                                c = 2;
+                                //if user did not click on a star, keep star same color
+                        }
+                        else 
+                        {
+                                c = 1;
+                        }
+                }
+
+                eval("document.getElementById('" + name + "').src='stars_" + c + "_" + f + ".gif';");
+
+                //sets the hidden field the value of the rating to keep for future reference
+                eval("document.getElementById('input_" + name + "').value=" + f);
+              }
+
+              function rateF(f, num, id, name, c) 
+              {
+                var nn4 = (document.layers) ? true : false
+                var ie = (document.all) ? true : false
+                var dom = (document.getElementById && !document.all) ? true : false
+
+                if(nn4)
+                {
+                        path = document.layers["userName" + num].value;
+                }
+                else if(ie)
+                {
+                        path = document.all["userName" + num].value;
+                } 
+                else 
+                {
+                        path = document.getElementById("userName" + num).value;
+                }
+                
+                window.open("rate.php?rateid=" + num + "&user=" + path + "&rate=" + f + "&profid=" + id, "newwindow", config="height=1, width=1, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, directories=no, status=no");
+                window.focus();
+
+                //Change the image without refreshing the page...
+                document.getElementById("color_" + name).value = "hit";
+
+                setTempImage(f, name, c);
+              }
+              </script> 
+              <script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+            </td>
+          </tr>
+          <tr>
+            <td bgcolor="#476A8E" align="left" colspan="5"><span class="title">Professor Overview -</span> <span class="title2">Zachary Wingerd</span></td>
+          </tr>
+          <tr>
+            <td bgcolor="#FFFFFF" colspan="5" background="images/bckground.gif">
+              <table width="100%" cellspacing="0" cellpadding="2" border="1" bordercolor="#476A8E" rules="none">
+                <tr bgcolor="#CCCCCC" align="center">
+                  <td>
+                    <h4><u>Overall Score</u></h4>
+                  </td>
+                  <td>
+                    <h4><u>Ratings</u></h4>
+                  </td>
+                  <td>
+                    <h4><u>Teaching Ability</u></h4>
+                  </td>
+                  <td>
+                    <h4><u>Availability</u></h4>
+                  </td>
+                  <td>
+                    <h4><u>Helpfulness</u></h4>
+                  </td>
+                  <td>
+                    <h4><u>Workload</u><font color="#FF0000">*</font></h4>
+                  </td>
+                </tr>
+                <tr bgcolor="#FFFFFF" align="center">
+                  <td><font size="4" color="#FF0000"><font size="5" color="#33CC00"><b>73</b></font> <b></b></font></td>
+                  <td><font size="4" color="#FF0000">30</font></td>
+                  <td><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                  <td><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                  <td><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                  <td><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                </tr>
+                <tr bgcolor="#FFFFFF">
+                  <td colspan="6">
+                    <p align="center"><font color="#FF0000">*A 5 star workload is an easy workload; a 3 star is average; whereas a 1 star workload is extremely hard.</font></p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td bgcolor="#476A8E" align="left" colspan="5"><span class="title">Search / Options</span></td>
+          </tr>
+          <tr>
+            <td bgcolor="#FFFFFF" colspan="5" background="images/bckground.gif">
+              <form id="search" method="get" action="profdisplay.php" name="search">
+                <table width="100%" cellspacing="0" cellpadding="2" border="1" bordercolor="#476A8E" rules="none">
+                  <tr>
+                    <td align="center" colspan="5"><span class="search"><br>
+                    Showing professor &nbsp;&nbsp; <select id="profid" name="profid">
+                      <option value="">
+                        -- SELECT --
+                      </option>
+                      <option style="font:courier" value="2808">
+                        Barish, Daniel (89)
+                      </option>
+                      <option style="font:courier" value="375">
+                        Barr, Beth (82)
+                      </option>
+                      <option style="font:courier" value="2776">
+                        Coffman, Elesha (85)
+                      </option>
+                      <option style="font:courier" value="111">
+                        DeGraffenried, Julie (78)
+                      </option>
+                      <option style="font:courier" value="2939">
+                        Elder, Robert (90)
+                      </option>
+                      <option style="font:courier" value="458">
+                        George, Gawrych (65)
+                      </option>
+                      <option style="font:courier" value="3055">
+                        Gutacker, Paul (90)
+                      </option>
+                      <option style="font:courier" value="665">
+                        Hankins, Barry (78)
+                      </option>
+                      <option style="font:courier" value="139">
+                        Hendon, David (64)
+                      </option>
+                      <option style="font:courier" value="2217">
+                        Hill, Bracy (80)
+                      </option>
+                      <option style="font:courier" value="2701">
+                        Johnson, Adina (86)
+                      </option>
+                      <option style="font:courier" value="2950">
+                        Jugg, Stephen (88)
+                      </option>
+                      <option style="font:courier" value="3031">
+                        Kelley, Adina (78)
+                      </option>
+                      <option style="font:courier" value="215">
+                        Kidd, Thomas (77)
+                      </option>
+                      <option style="font:courier" value="2599">
+                        Lacy, Lisa (73)
+                      </option>
+                      <option style="font:courier" value="2955">
+                        Marvel, Elizabeth (93)
+                      </option>
+                      <option style="font:courier" value="1579">
+                        Morera, Luis (70)
+                      </option>
+                      <option style="font:courier" value="2347">
+                        Mougoue, (62)
+                      </option>
+                      <option style="font:courier" value="643">
+                        Parrish, Michael (85)
+                      </option>
+                      <option style="font:courier" value="2825">
+                        Payne, Brendan (90)
+                      </option>
+                      <option style="font:courier" value="2373">
+                        Poor, Lauren (85)
+                      </option>
+                      <option style="font:courier" value="49">
+                        Rust, Eric (76)
+                      </option>
+                      <option style="font:courier" value="1300">
+                        Sloan, Stephen (89)
+                      </option>
+                      <option style="font:courier" value="177">
+                        Smith, David (87)
+                      </option>
+                      <option style="font:courier" value="313">
+                        Sorelle, Jim (68)
+                      </option>
+                      <option style="font:courier" value="2144">
+                        Stubenrauch, Joseph (84)
+                      </option>
+                      <option style="font:courier" value="1342">
+                        Supplee, Joan (63)
+                      </option>
+                      <option style="font:courier" value="347">
+                        Sweet, Julie (85)
+                      </option>
+                      <option style="font:courier" value="2113">
+                        Turpin, Andrea (86)
+                      </option>
+                      <option style="font:courier" value="2786">
+                        Watkins, Daniel (91)
+                      </option>
+                      <option style="font:courier" value="2259" selected>
+                        Wingerd, Zachary (73)
+                      </option>
+                      <option style="background-color: LightGrey;" value="oldprofs">
+                        -- OLD PROFESSOR RATINGS --
+                      </option>
+                      <option style="background-color: LightGrey;" value="258">
+                        Armistead, (49)
+                      </option>
+                      <option style="background-color: LightGrey;" value="635">
+                        Charlton, Tom (53)
+                      </option>
+                      <option style="background-color: LightGrey;" value="734">
+                        Francis, Keith (54)
+                      </option>
+                      <option style="background-color: LightGrey;" value="274">
+                        Greene, Dr. (75)
+                      </option>
+                      <option style="background-color: LightGrey;" value="9">
+                        Hamilton, Jeff (81)
+                      </option>
+                      <option style="background-color: LightGrey;" value="254">
+                        Hull, Gary (49)
+                      </option>
+                      <option style="background-color: LightGrey;" value="2597">
+                        Jarvis, Katie (60)
+                      </option>
+                      <option style="background-color: LightGrey;" value="1474">
+                        Jewett, Clayton (78)
+                      </option>
+                      <option style="background-color: LightGrey;" value="341">
+                        Kellison, Kimberley (77)
+                      </option>
+                      <option style="background-color: LightGrey;" value="359">
+                        Longfellow, David (58)
+                      </option>
+                      <option style="background-color: LightGrey;" value="219">
+                        Mungello, (57)
+                      </option>
+                      <option style="background-color: LightGrey;" value="282">
+                        Parnell, (58)
+                      </option>
+                      <option style="background-color: LightGrey;" value="1168">
+                        Riley, Thomas (91)
+                      </option>
+                      <option style="background-color: LightGrey;" value="1293">
+                        Sutherland, Gabrielle (73)
+                      </option>
+                      <option style="background-color: LightGrey;" value="1463">
+                        Tijani, Hakeem (78)
+                      </option>
+                      <option style="background-color: LightGrey;" value="459">
+                        Wallace, Patricia (59)
+                      </option>
+                    </select> &nbsp;&nbsp;in the &nbsp;&nbsp; <select id="dept" name="dept" style="cursor:pointer; font-size : 10pt">
+                      <option value="select">
+                        --SELECT--
+                      </option>
+                      <option value="Show All">
+                        Show All
+                      </option>
+                      <option value="Accounting">
+                        Accounting
+                      </option>
+                      <option value="Aerospace Studies">
+                        Aerospace studies
+                      </option>
+                      <option value="African Studies">
+                        African studies
+                      </option>
+                      <option value="Air Pilot">
+                        Air pilot
+                      </option>
+                      <option value="Anthropology">
+                        Anthropology
+                      </option>
+                      <option value="Arabic">
+                        Arabic
+                      </option>
+                      <option value="Art">
+                        Art
+                      </option>
+                      <option value="Asian Studies">
+                        Asian studies
+                      </option>
+                      <option value="Aviation Sciences">
+                        Aviation sciences
+                      </option>
+                      <option value="Baylor Interdisciplinary Core">
+                        Baylor interdisciplinary core
+                      </option>
+                      <option value="Biology">
+                        Biology
+                      </option>
+                      <option value="Business">
+                        Business
+                      </option>
+                      <option value="Business Law">
+                        Business law
+                      </option>
+                      <option value="Chapel">
+                        Chapel
+                      </option>
+                      <option value="Chemistry">
+                        Chemistry
+                      </option>
+                      <option value="Chinese">
+                        Chinese
+                      </option>
+                      <option value="Christian Religious Education">
+                        Christian religious education
+                      </option>
+                      <option value="Church-state studies">
+                        Church-state studies
+                      </option>
+                      <option value="Civic Education & Community Service">
+                        Civic education & community service
+                      </option>
+                      <option value="Classics">
+                        Classics
+                      </option>
+                      <option value="Communication Sciences & Disorders">
+                        Communication sciences & disorders
+                      </option>
+                      <option value="Communication Studies">
+                        Communication studies
+                      </option>
+                      <option value="Computer Science">
+                        Computer science
+                      </option>
+                      <option value="Curriculum and Instruction">
+                        Curriculum and instruction
+                      </option>
+                      <option value="Economics">
+                        Economics
+                      </option>
+                      <option value="Education">
+                        Education
+                      </option>
+                      <option value="Educational Psychology">
+                        Educational psychology
+                      </option>
+                      <option value="Engineering">
+                        Engineering
+                      </option>
+                      <option value="English">
+                        English
+                      </option>
+                      <option value="Entrepreneurship">
+                        Entrepreneurship
+                      </option>
+                      <option value="Environmental Studies">
+                        Environmental studies
+                      </option>
+                      <option value="Family and Consumer Sciences">
+                        Family and consumer sciences
+                      </option>
+                      <option value="Film and Digital Media">
+                        Film and digital media
+                      </option>
+                      <option value="Finance">
+                        Finance
+                      </option>
+                      <option value="First Year Seminars">
+                        First year seminars
+                      </option>
+                      <option value="Forensic Science">
+                        Forensic science
+                      </option>
+                      <option value="French">
+                        French
+                      </option>
+                      <option value="Geography">
+                        Geography
+                      </option>
+                      <option value="Geology">
+                        Geology
+                      </option>
+                      <option value="German">
+                        German
+                      </option>
+                      <option value="Gerontology">
+                        Gerontology
+                      </option>
+                      <option value="Great Texts">
+                        Great texts
+                      </option>
+                      <option value="Greek">
+                        Greek
+                      </option>
+                      <option value="Health Education">
+                        Health education
+                      </option>
+                      <option value="History" selected>
+                        History
+                      </option>
+                      <option value="Honors">
+                        Honors
+                      </option>
+                      <option value="Human Performance">
+                        Human performance
+                      </option>
+                      <option value="Information Systems">
+                        Information systems
+                      </option>
+                      <option value="International">
+                        International
+                      </option>
+                      <option value="International Business">
+                        International business
+                      </option>
+                      <option value="Italian">
+                        Italian
+                      </option>
+                      <option value="Japanese">
+                        Japanese
+                      </option>
+                      <option value="Journalism">
+                        Journalism
+                      </option>
+                      <option value="Korean">
+                        Korean
+                      </option>
+                      <option value="Latin">
+                        Latin
+                      </option>
+                      <option value="Law">
+                        Law
+                      </option>
+                      <option value="Leadership Development">
+                        Leadership development
+                      </option>
+                      <option value="Leadership/Administration">
+                        Leadership/administration
+                      </option>
+                      <option value="Management">
+                        Management
+                      </option>
+                      <option value="Marketing">
+                        Marketing
+                      </option>
+                      <option value="Mathematics">
+                        Mathematics
+                      </option>
+                      <option value="Medical Humanities">
+                        Medical humanities
+                      </option>
+                      <option value="Modern Foreign Languages">
+                        Modern foreign languages
+                      </option>
+                      <option value="Music">
+                        Music
+                      </option>
+                      <option value="Neuroscience">
+                        Neuroscience
+                      </option>
+                      <option value="none">
+                        None
+                      </option>
+                      <option value="Nursing">
+                        Nursing
+                      </option>
+                      <option value="OTHER">
+                        Other
+                      </option>
+                      <option value="Philosophy">
+                        Philosophy
+                      </option>
+                      <option value="Physics">
+                        Physics
+                      </option>
+                      <option value="Political Science">
+                        Political science
+                      </option>
+                      <option value="Portuguese">
+                        Portuguese
+                      </option>
+                      <option value="Pre-Health Professions">
+                        Pre-health professions
+                      </option>
+                      <option value="Psychology">
+                        Psychology
+                      </option>
+                      <option value="Quantitative Business Analysis">
+                        Quantitative business analysis
+                      </option>
+                      <option value="Real Estate">
+                        Real estate
+                      </option>
+                      <option value="Recreation & Leisure Services">
+                        Recreation & leisure services
+                      </option>
+                      <option value="Religion">
+                        Religion
+                      </option>
+                      <option value="Risk Management and Insurance">
+                        Risk management and insurance
+                      </option>
+                      <option value="Russian">
+                        Russian
+                      </option>
+                      <option value="Social Work">
+                        Social work
+                      </option>
+                      <option value="Sociology">
+                        Sociology
+                      </option>
+                      <option value="Spanish">
+                        Spanish
+                      </option>
+                      <option value="Statistics">
+                        Statistics
+                      </option>
+                      <option value="Swahili">
+                        Swahili
+                      </option>
+                      <option value="Teacher Education">
+                        Teacher education
+                      </option>
+                      <option value="Telecommunications">
+                        Telecommunications
+                      </option>
+                      <option value="Theater Arts">
+                        Theater arts
+                      </option>
+                    </select> &nbsp;&nbsp; department</span></td>
+                  </tr>
+                  <tr>
+                    <td align="center" colspan="6">
+                      <hr width="75%" color="#476A8E">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center" valign="center">
+                      <a href="addrating.php?profid=2259" onmouseover="document.addrating.src='images/addmouseover.jpg'" onmouseout="document.addrating.src='images/adddefault.jpg'"><img src="images/adddefault.jpg" name="addrating" id="addrating"></a>&nbsp;&nbsp;&nbsp;
+                    </td>
+                  </tr>
+                  <tr align="center">
+                    <td bgcolor="#FFFFFF" colspan="5" background="images/bckground.gif">
+                      <br>
+                      <a href="clicksLog.php?redirect=http://bubooks.com/advertising.php&adID=5" target='_new'><img src="ads/bubooks.gif" border="0"></a>
+                    </td>
+                  </tr>
+                </table>
+                <script type="text/javascript">
+                function submit_form(frm) 
+                {
+                frm.submit();
+                }
+
+                function getElmById(aID)
+                { 
+                return (document.getElementById) ? document.getElementById(aID)
+                                  : document.all[aID];
+                } 
+
+                function validate_search()
+                {
+                var myDropDown = getElmById("dept");
+                var errors = 0;
+
+                if(errors>0) 
+                {
+                return false;
+                }
+                }
+
+                function onChangeHandler(e)
+                {
+                var myevent = (e) ? e : window.event;
+
+                submit_form(getElmById("search"));
+                }
+
+                function onChangeHandler_dept(e)
+                {
+                var myevent = (e) ? e : window.event;
+                var prof = getElmById("profid");
+
+                prof.selectedIndex = 0;
+
+                submit_form(getElmById("search"));
+                }
+
+                var myDropDown = getElmById("profid");
+
+                if(typeof(myDropDown) == "object")
+                {
+                myDropDown.onchange = onChangeHandler;
+                }
+
+                var myDropDown_dept = getElmById("dept");
+
+                if(typeof(myDropDown_dept) == "object")
+                {
+                myDropDown_dept.onchange = onChangeHandler_dept;
+                }
+
+                var mySearchForm = getElmById("search");
+
+                mySearchForm.onsubmit = validate_search;
+                </script>
+                <table>
+                  <tr>
+                    <td bgcolor="#476A8E" align="left" colspan="5"><span class="title">Individual User Ratings</span></td>
+                  </tr>
+                  <tr>
+                    <td bgcolor="#FFFFFF" colspan="5">
+                      <a name="30592" id="30592"></a><a name="29818" id="29818"></a><a name="29804" id="29804"></a><a name="29747" id="29747"></a><a name="29611" id="29611"></a><a name="29610" id="29610"></a><a name="29505" id="29505"></a><a name="29257" id="29257"></a><a name="29114" id="29114"></a><a name="27558" id="27558"></a><a name="27290" id="27290"></a><a name="26992" id="26992"></a><a name="26659" id="26659"></a><a name="26462" id="26462"></a><a name="24717" id="24717"></a><a name="24517" id="24517"></a><a name="23853" id="23853"></a><a name="23050" id="23050"></a><a name="22479" id="22479"></a><a name="20282" id="20282"></a><a name="20270" id="20270"></a><a name="20195" id="20195"></a><a name="20108" id="20108"></a><a name="20040" id="20040"></a><a name="19901" id="19901"></a><a name="19899" id="19899"></a><a name="19854" id="19854"></a><a name="19801" id="19801"></a><a name="19587" id="19587"></a><a name="19346" id="19346"></a>
+                      <table align="left" cellspacing="0" cellpadding="3" width="100%" border="1" bordercolor="#476A8E" rules="none" bgcolor="#FFFFCC">
+                        <tr align="center">
+                          <td width="25%">
+                            <h4><u></u></h4>
+                            <div class="text">
+                              <h4>Teaching Ability</h4>
+                            </div>
+                          </td>
+                          <td width="25%">
+                            <h4><u></u></h4>
+                            <div class="text">
+                              <h4>Availability</h4>
+                            </div>
+                          </td>
+                          <td width="25%">
+                            <h4><u></u></h4>
+                            <div class="text">
+                              <h4>Helpfulness</h4>
+                            </div>
+                          </td>
+                          <td width="25%">
+                            <h4><u></u></h4>
+                            <div class="text">
+                              <h4>Workload*</h4>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:1300 - He is such a great professor - I don't even like history but his enthusiasm and knowledge made it so interesting. His exams are easy to prepare for - follow the study guide and you will easily get a 90%. If you are willing to put in the work of reading and engaging in class, getting an a will be easy!<b>&nbsp; - Grade In Class:</b>A</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2020-02-12</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="30592"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:HIS 2305 - My class was online and it mostly involved independent study. You do have to teach yourself a lot but Dr. Wingerd makes himself very available if you need any help or guidance. He always encouraged students to contact him with questions and provided good feedback on your work. While I would have preferred an in-person class, I thought Dr. WIngerd was very organized and helpful. I would recommend taking his class.<b>&nbsp; - Grade In Class:</b>A</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2019-08-23</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="29818"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:HIS 2305 - I took his online class. He did not make himself very available for his students. He is not responsive to our emails at all. We were basically teaching ourselves. I also find his policies for homework quite strange.<b>&nbsp; - Grade In Class:</b>B+</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2019-08-06</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="29804"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:2365 OL1 - *This is only for the online class I took, cannot speak for his normal semester class* Dr. Wingerd starts off the class with a small workload for an online class, only a discussion page and a 500 word essay due every Wednesday. This is not that big of a workload, the problem is that his instructions are vague to non-existent. He will mark points off of your grade for things that you are not told about in the instructions (I.e. taking off points for not inserting enough dates when the instructions dont specify an amount of dates to put into your essay). So I would not recommend the class unless you are ready to deal with sifting through instructions that dont tell you what the teacher wants you to do.<b>&nbsp; - Grade In Class:</b>B</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2019-06-25</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="29747"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:1307 - Dr. Wingerd's class is maybe a little harder than some for a survey class, but he is always willing to help and answer extra questions! He is really objective when talking about history and you can tell he is interested in what he is teaching, so that's really nice. As long as you actually keep up on the readings (as there are pop quizzes about once a week) and participate in class, you will be fine!!<b>&nbsp; - Grade In Class:</b>A</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2019-05-16</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="29611"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:2395 - Take Dr. Wingerd!! Historiography is a demanding class no matter who teaches it, but Dr. Wingerd is 100% willing to help you if you come to him and ask questions. If you ask questions outside of class and show that you're really trying he will help you as best he can and be lenient on grading.<b>&nbsp; - Grade In Class:</b>A</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2019-05-16</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="29610"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:2395 - I had heard bad things about this class, but it's a required course so I had to take it, and Dr. Wingerd was the only professor teaching it this semester. DO NOT TAKE HIM, unless you aspire to spend all of your nights reading extremely long passages, boring required books, and tough essays. I very much enjoy history, but this class has made it hard for me to want to continue in my major. The homework consists of large passages of reading assigned basically every class, there are several pop quizzes over the homework readings (a couple are dropped though), a heavily weighted midterm and final, and three essays, with a 2500-3000 word historiographical research paper due the same day as the final. The in class discussions are what carry the class, with some discussion from Dr. Wingerd about the readings, but no classic lectures. Be wary of historiography in general- it is not the easiest class, but Dr. Wingerd makes is so much harder than it needs to be.<b>&nbsp; - Grade In Class:</b>B</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2019-05-11</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="29505"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr bgcolor="#476A8E" align="center">
+                          <td colspan="4">
+                            <a href="clicksLog.php?redirect=http://bubooks.com/advertising.php&adID=6" target='_new'><img src="ads/bubooks.gif" border="0"></a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:1307 - Dr. Wingerd is a great professor, I definitely recommend taking him! Yes, you do have readings before every class, and he does give out pop quizzes but it's nothing undoable as long as you do the short readings. You do have to participate in class by discussing the readings every now and then, and as long as you talk at least once your participation grade should be fine. You do have to put work in for the grade, but as long as you read and study for the test (quizlet is your friend), then you should at least get a B. He is always a great help for the test reviews as well, so definitely utilize his office hours for the review, as well as the papers (ESPECIALLY the papers). There is an essay due before each of his exams, but as long as you don't BS it and do the work, you should get an A.<b>&nbsp; - Grade In Class:</b>A</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2019-04-17</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="29257"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:2395 - I would be careful of this teacher. Only join his class if you are ready for a stupid amount of workload, long boring lectures, and if you dont have any choice. I thought the class would be somewhat decent. And I was VERY VERY wrong. In all honesty this class is making me reconsider history at baylor; just because of how awful it is. Save yourself and if he is your only option Godspeed<b>&nbsp; - Grade In Class:</b>C</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2019-04-11</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="29114"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:HIS 1307 - (Fall 2017) This class was great! Wingerd is amazing. In the beginning, this class seemed like it was going to be rough and Wingerd was a little scary, but this class ended up being my favorite class of the semester. There are specific expectations you have to meet with reading, quizzes, and papers but Dr. Wingerd lays out exactly what you need to do to do well. He was always available for paper revising/test prep and he really wants his students to do well and enjoy the material. I am by no means a History fanatic, but I was actually interested in what I was learning. Don't get me wrong, you DO have to work in this class. But somehow this class made the work not as horrible as other classes.. His study sheets for the midterm and final contain everything you need to know, so if you know the information you will get an A. Take him if you want a good history class.<b>&nbsp; - Grade In Class:</b>A</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2018-05-07</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="27558"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:HIS 2366 - TAKE PROFESSOR WINGERD. He is helpful and wants his students to succeed. You do have to work in this class. But he is very straightforward with his expectations and if you follow his expectations you will be fine in his class. He brought his kids to our final exam and is willing to help you do the best you can. I also love history so I did not mind putting in all the hard work but if you follow Dr. Wingerd's expectations and put in the work, you will be fine!<b>&nbsp; - Grade In Class:</b>A</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2018-04-19</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="27290"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:1307 - I seriously loved this class. I took it last fall (Fall 2017) and have since switched to a history major because of this class. Wingerd definitely expects you to know your stuff but if you do the reading (the readings are MAX 7 pages) you will seriously be fine. His lectures are power point based so I understand for some people it is easy to doze off but Wingerd makes history super easy and interesting!!!<b>&nbsp; - Grade In Class:</b>A</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2018-02-13</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="26992"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:HIS 1307 - If you're willing to participate in class like once a week (which isn't too hard) take Wingerd, otherwise don't because your participation grade will get wrecked. His classes aren't as chill because you have to do readings for EVERY class. However, as long as you talk you should be fine. His essays are somewhat hard, make sure you visit his office for those and you should get high grades on those. Wingerd's exams are a lot of work to study for, but if you know absolutely everything on his study guide you will make a high grade on the exam. He puts all the topics on the exam on the study guide. I was able to make 100 on the final just because I knew absolutely everything on the study guide alone.<b>&nbsp; - Grade In Class:</b>A</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2017-12-14</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="26659"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:1307 - Let me start off by saying that I have never written a review and never thought I would. However here I am. I am here to tell you that you should NOT take Wingerd. I have always made the dean's list and never received below a B+, until this class. I was on the waitlist and added the class after 4 class meetings, clearly things weren't off to a great start. Long story short, I felt Wingerd had a personal issue with me for adding late. My paper grades were lower than what they deserved, according to me and class mates; I feel he graded me especially harshly on my tests and in participation (50% for the year, never missed a class and had a 75% on my quizzes). Also he only teaches by powerpoint so the class is dull and boring. He dresses in the most bland way, mostly browns. Also he does two tests all year (50% of your grade). So poor grading system. Overall poor class and bad professor. I would recommend others that are far better (and may I mention easier, especially since it's history. If you don't enjoy it this class will be far worse.)<b>&nbsp; - Grade In Class:</b>D</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2018-03-23</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="26462"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:HIS 1307 - As someone who enjoys classes built around Powerpoints and lectures, I really enjoyed this course! He posted every reading on Canvas, which was about two short chapters each night. This was AWESOME because I didn't have to buy a textbook for the class. We also had "surprise" pop quizzes on most days of class. These consisted of answering a question about the reading in a paragraph or so. The three main assignments for the class were one-page papers that were supposed to answer a certain prompt. The prompts were posted on the first day of class, so you could easily write all three papers in the beginning. (I'm sure most people wrote them the day before each one was due, like I did) The Final was a little scary to prepare for, because the review given had a lot of information that was only briefly touched on in class or not at all. Dr. Wingerd was a great professor and a kind person too. He would make it a point to learn everyone's name in the class, and ask for class participation during his lectures. (This was a part of your grade) I also really appreciated his style; He wore a lot of paisley.<b>&nbsp; - Grade In Class:</b>A</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2016-12-10</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="24717"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr bgcolor="#476A8E" align="center">
+                          <td colspan="4">
+                            <a href="clicksLog.php?redirect=http://bubooks.com/advertising.php&adID=7" target='_new'><img src="ads/bubooks.gif" border="0"></a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:HIS1307 - TAKE WINGERD FOR 1307. I will not lie, the first week slightly intimidated me due to the expected amount of reading. But considering each class requires you to read one or two chapters, each approx. seven pages each , I became confident very quickly. He is a nice guy that truly does have a heart. On the first exam (which consisted of 15 terms, 5 short answers, one essay, and a map) I spent too much time on short answers and didn't even get to finish the essay. I was distraught. But I still ended up not losing too many points because I had already underlined the terms and he told me that he "understood that you had the ideas going in the right direction because I know you knew the material. I'm not out to get anyone's GPA." The tests might be a lot to fit in a class slot, but they are very doable if you just keep up with the readings. As long as you speak up at least once per class, you should have a good participation grade (10%) that mixes with the quiz grade. The essays might be vaguer than I would like, but as long as you are competent at writing you should do okay. As the class average on the first two essays were 89 and 90 respectively. While you do have to understand what is going on in the class and keep up with the material, I would not suggest anyone else over Wingerd (the guy that gave me a 91 on a test I could have clearly bombed due to the essay portion). Even though I have heard he has gotten slightly harder in his paper grading since I have taken him, I would not call and 86 class average bad at all. Especially considering each paper is only 10% of your grade. I recommend Wingerd. -MITCHEL<b>&nbsp; - Grade In Class:</b>A</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2017-11-03</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="24517"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:HIS 1307 - Dr. Wingerd was always really nice, he has a strict no phone policy in class, but because of how interesting he made the class I found myself never actually wanting to look at my phone. As long as you read the chapters (which are usually not that long) and answer one or two questions a class, you should DEFINITELY get an A in this class. The analysis papers are really easy so long as you just get the point of your topic right away. I loved this class!<b>&nbsp; - Grade In Class:</b>A</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2016-05-03</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="23853"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:2366 - Dr. Wingerd is by far my favorite professor at Baylor! His tests are exactly like the review, and if you study them for a few hours, you should be able to make an A no problem. He is super passionate about what he is teaching and even if you don't like history, you probably won't sleep through it. Do the reading, he has quizzes every now and again. Make sure to speak up in class and have one or two points prepared to talk about every class. That way, you won't have to worry about your participation/quiz grade. He teaches from a PowerPoint, but he is not boring at all. I would take another one of his classes if I needed another credit. Take him!<b>&nbsp; - Grade In Class:</b>A</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2015-11-30</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="23050"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:HIS 2366 - Dr. Wingerd is an awesome professor, HIS 2366 is the best class I have taken so far at Baylor. If you like history, you will learn a lot. He teaches from a PowerPoint that he doesn't put online so make sure to take plenty of notes. The homework is just reading from the text, usually around 25-35 pages. He gives three tests and papers, single page, single-spaced. He gives you a study guide for each of the tests which look exactly like the test so you know exactly what will be on it. Make sure you know definitions, a few dates, and some names. Like anything, if you take the time to fill out the review for the tests and read the book, you will do just fine.<b>&nbsp; - Grade In Class:</b>A</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2016-05-04</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="22479"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:2365 - Dr. Wingerd was such a great professor, I cant recommend him enough. If you just do the work he assigns, which is about one 20 minute reading between classes, you'll get full participation for making a comment or two during discussions and easily be able to do his pop quizzes, we had about 5 total. Take thorough notes during lecture, thats exactly what the exam material is over. If you prepare well and are a decent student you really shouldnt have a problem with his class. His tests are all open ended so you need to be very familiar with people, places, events, and legislation... He doesnt emphasize particular dates which is awesome. Overall, one of my favorite professors at Baylor so far.<b>&nbsp; - Grade In Class:</b>A</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2013-11-11</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="20282"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:2365 - Dr. Wingerd is an amazing professor! He is very passionate about what he is teaching, and makes the lectures very interesting. We have assigned reading before every class, and he has about 11 quizzes based on the reading. He asks a broad question from the reading and as long as you bring up points from the reading, you will get full credit. The first test was hard, but he gives a study guide and for the second test you will know how to study. Very enjoyable class- and I don't like history!<b>&nbsp; - Grade In Class:</b>B+</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2013-11-06</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="20270"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:1307 - Dr. Wingerd is awesome. As long as you go into the class knowing you'll have to put in a considerable amount of work, you will get an A. The readings aren't bad, quizzes are a gimme, if you put thought into the papers you will be rewarded with A+'s, and as long as you buckle down and study for the tests you will do just fine. For a real deal history class, if you put in the time you should..this is an easy A.<b>&nbsp; - Grade In Class:</b>A</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2013-08-27</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="20195"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:1307 - This class is not as bad as it is led on to be. You do have to read every night, BUT it really isn't that much reading and the documents are very interesting, if you are interested in history. *If there is a reading out of the text book, I'd suggest you outline it and define the vocab words, it will definitely help you for the tests! I didn't do this and spent A LOT of time trying to do this last minute. He puts the the review for the tests on Blackboard fairly early, just start studying early, you will do fine. Honestly, I crammed for every test and got low B's on them. The papers are not bad at all and are very thought provoking. Spend an hour thinking and an hour writing and you are good. *He talks pretty fast and does not post his powerpoints on BB which is lame, so I would definitely suggest recording every class. *Honestly, all of these suggestion are things I thought of after the fact. I just needed to get this class over with and graduate. I got low B's on both my tests and papers. What dragged me down to a C was the 40% I got in class participation. I never talked at all in class and I missed a lot of classes because I was preparing for grad school and got mono at the end of the semester. Overall, if you are willing to go to class, participate, and put in the work, I think it would be feasible to get a great grade in the class.<b>&nbsp; - Grade In Class:</b>C</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2013-06-15</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="20108"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:2365 - Dr. Wingerd is an amazing professor. He knows the subject pretty well and he is very enthusiastic about his teaching. His lectures really engage you to the subject. If you hate history, I don't think you should consider the idea to take a class with him. His class is not "easy" if you like to use that word, his class requires a good amount of reading. If you really really want to learn the subject because it's something you like, take him. Otherwise, it will cause you to type down all your frustrations on this website at the end of the semester. Cheers!<b>&nbsp; - Grade In Class:</b>C</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2013-05-26</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="20040"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:1307 - I considered dropping the course after the first week, but was persuaded not to. Dr. Wingerd is a wonderful man and a good teacher, however, I feel as if I were in an honors course. Yes, I knew that on the syllabus, it said there would be a large workload.. but I had no idea how big it would be. In my opinion, if you don't mind large amounts of reading from 3 textbooks, then take the class. There are a fair amount of pop quizzes, there are 3 papers (granted they are 1 page single space, but the topics are pretty challenging and he will dock you for ANY type of fluff), and his tests are a tad on the outrageous side. There are 10 direct questions, 15 terms out of 5 chapters worth of terms (250 terms), a map to fill in, and 4 one-page essays. I wasn't prepared for the class and did not do well.<b>&nbsp; - Grade In Class:</b>C+</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2013-05-13</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="19901"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:1307 - where to begin... first of all, his exams are absolutely impossible. he's asking for 1-3 word answers on 10 direct questions. what the eff is a direct question? like you would think that they're super easy to answer but he asks the most detailed 'direct' questions. then out of like 5-6 chapters he gives you 15 terms/names and you have to write out three unique facts for at least 10 of them. mind you, if you can only come up with like 2 facts he counts the whole thing wrong, so he obviously doesn't believe in partial credit. as if that weren't bad enough, he gives you four essay prompts to prepare ahead of time with at least three names and a date for each essay and picks three essay prompts the day of the exam. on the bright side, he gives you an easy 10% with a map you label. Wingerd is a pretty cool dude, but I'm so over his cynicism. He assigns extensive readings every night and makes you read stupid documents that don't make any sense to anyone. On occasion he gives essay quizzes over the readings and grades pretty hard. If you're really interested in the subject and love reading, by all means, take this guy. if not, I really don't recommend this.<b>&nbsp; - Grade In Class:</b>B+</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2013-05-12</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="19899"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:1307 - Dr. Wingerd was very nice. He was very accessible after class, sometimes more than what his office hours stated. His expectations are clear on his syllabus. His quizzes were easy IF you did your reading. Although they were pop, so they weren't cosistent.His tests were doable. YOu had to study a lot of potential vocab words, but you only wrte definitions for ten of then. He gives you 4 essays ahead of time to write on, and he chooses 3 of them for you to write on the test the day of. And then you also had a map that you filled out ahead of time, memorize and then refill out on the test. His tests were clear on what to study for obviously, but were quite time consuming to study for. His powerpoints were snoozers. Although it was fun listening to him talk He is obvioulsy very passionate about history. The way he formats them are confsing at times. He does a lot of jumping around. Instead of teaching through the years, he takes different parts of the world and teaches them seperately. Over all, I definitley recommend him if you are willing to work. <b>&nbsp; - Grade In Class:</b>B</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2013-05-10</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="19854"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:WH2 - The instructor was effective because he taught somewhat chronologically, graded fairly, and great use of the books students had purchased. To be more effective, the instructor could be more exciting. Sitting through power points is to dull for a an hour and 15 minute class. Anything would be better than power points…… If he wants to do power points as the main method to teach the class he should really put them on BB so people would pay attention to him instead of simply coping power points. Also, talking about the paper after it is written does not help anybody-what about before?<b>&nbsp; - Grade In Class:</b>B</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2013-05-07</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="19801"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:HIS 1307 - Dr. Wingerd's class is pretty average. He really tries to keep students engaged with class discussions about the topics. He also encourages questions. Prior to taking his class, I had read that he was condescending, however I have not experienced this in class. He keeps my attention during class, which is hard to do in a history class. There is reading every night, even over breaks, but it's not nearly as much as it could be. He loves class discussions about the readings, because he really wants to hear what we thought and how we interpreted the material. The tests are time consuming, 3 essays, 15 vocab, and 10 short answer (1-2 words), but he gives you the essay prompts before hand, and the rest should be pretty simple if you paid attention and took thorough notes in class. The only con to his class is that he doesn't post his power points on Blackboard, which makes a computer absolutely necessary for taking notes. Overall, I really like him and his class. You should take him.<b>&nbsp; - Grade In Class:</b>A</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2013-04-08</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="19587"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:2366 - Dr. Wingerd is an excellent professor. If you participate in the class discussions, you will do well. He is very passionate about the material, and this dude is a genius. He will harass the whole entire class until everyone gives their input, but this is done with good intent. He has pop quizzes that I probably averaged a 50 in but because I participated so much, he disregarded it and gave me a hundred. The workload is horrible, so much reading and the tests are very thorough but given that he also has an one page essay due before each test that count as a test grade (he usually gives A's on those), getting 70's on the tests still allowed me to score an A. At first, he really annoyed me because he wasn't really transparent about his grading and never utilized blackboard but in my experience, teachers like this always end up bumping your grade to your advantage at the end. The good thing though is that his test reviews are in the EXACT same format as the the actual test and it tells you exactly what is going to be on the test and what essay prompt to prepare for. I highly recommend him, but I feel like there are easier history classes out there. He teaches the introductory history class as well so I would take that before taking 2366. <b>&nbsp; - Grade In Class:</b>A</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2012-12-26</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="19346"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center" colspan="5" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#B2B6C8', EndColorStr='#476A8E');"><font size="4"><a href="login.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>LOGIN</b></font></a> &nbsp; &nbsp; <a href="home.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>HOME</b></font></a> &nbsp; &nbsp; <a href="about.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>ABOUT US</b></font></a> &nbsp; &nbsp; <a href="faq.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>FAQ</b></font></a> &nbsp; &nbsp; <a href="privacy.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>PRIVACY</b></font></a> &nbsp; &nbsp; <a href="terms.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>TERMS OF USE</b></font></a> &nbsp; &nbsp; <a href="advertising.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>ADVERTISING</b></font></a> &nbsp; &nbsp; <a href="contact.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>CONTACT US</b></font></a> &nbsp; &nbsp;</font></td>
+                  </tr>
+                </table><br>
+                <div align="center">
+                  <font size="-1">&copy;2003-2020 Bubooks.com - All rights reserved</font>
+                </div>
+                <script type="text/javascript">
+
+                try {
+                var pageTracker = _gat._getTracker("UA-98854-1");
+                pageTracker._trackPageview();
+                } catch(err) {}
+                </script>
+              </form>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

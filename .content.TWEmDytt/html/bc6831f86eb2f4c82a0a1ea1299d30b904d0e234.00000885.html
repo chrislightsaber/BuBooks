@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>BUBooks.com - Baylor University Professor Ratings</title>
+  <style type="text/css">
+  /*<![CDATA[*/
+  <!--
+
+  #nav-menu ul
+  {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+  }
+
+  #box-table-a
+  {
+        font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+        font-size: 12px;
+        width: 50%;
+        text-align: center;
+        border-collapse: collapse;
+        border-top: 2px solid #9baff1;
+        border-bottom: 2px solid #9baff1;
+        border-left: 2px solid #9baff1;
+        border-right: 2px solid #9baff1;
+  }
+
+  #nav-menu li a
+  {
+        padding: 3px;
+        background: #e8edff; 
+        border-bottom: 1px solid #fff;
+        color: #039;
+        border-top: 1px solid transparent;
+        height: 2em;
+        line-height: 2em;
+        float: left;
+        width: 15em;
+        display: block;
+        text-decoration: none;
+        text-align: center;
+  }
+
+  #nav-menu li a:hover
+  {
+        height: 2em;
+        line-height: 2em;
+        float: left;
+        width: 15em;
+        display: block;
+        border: 0.1em solid #dcdce9;
+        background: #d0dafd;
+        color: #039;
+        text-decoration: underline;
+        text-align: center;
+  }
+
+  /* Hide from IE5-Mac \*/
+  #nav-menu li a:hover
+  {
+        float: none
+  }
+  /* End hide */
+
+  /* Hide from IE5-Mac \*/
+  #nav-menu li a
+  {
+        float: none
+  }
+  /* End hide */
+  #nav-menu
+  {
+        width:15em
+  } 
+  -->
+  /*]]>*/
+  </style>
+</head>
+<body bgcolor="#FFFFFF" vlink="#0066FF" leftmargin="0" rightmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+  <table border="1" rules="all" cellpadding="3" cellspacing="0" bordercolor="#476A8E" bgcolor="#476A8E" width="100%" align="center">
+    <tr>
+      <td width="100%" height="85" bgcolor="#476A8E" colspan="5">
+        <table border="0" cellpadding="0" cellspacing="0" bgcolor="#476A8E" width="100%">
+          <tr>
+            <td align="left" rowspan="2" width="70%">
+              <a href="index.php"><img src="logo.gif" width="261" height="64" border="0"></a>
+            </td>
+            <td align="right">
+              <table align="right" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td>
+                    <a href="clicksLog1.php?redirect=https://www.americancampus.com/student-apartments/tx/waco/u-pointe-on-speight&adID=3" target='_new'><img src="ads/711%20AF19%20468x60%2010.16.18.jpg" border="0">
+                    <table>
+                      <tr>
+                        <td align="center"><font face="verdana" size="1" color="#FFFFFF">Advertisement - Click for coupon or website</font></td>
+                      </tr>
+                    </table></a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" width="20%" bgcolor="#FFFFFF" height="23" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+              <a href="login.php" style='text-decoration:none;'><font face="Arial, Verdana" size="3" color="#000000"><b>Login</b></font></a>
+            </td>
+            <td align="center" width="20%" bgcolor="#FFFFFF" height="23" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+              <a href="books.php" style='text-decoration:none;'><font face="Arial, Verdana" size="3" color="#000000"><b>Textbooks</b></font></a>
+            </td>
+            <td align="center" width="20%" bgcolor="#FFFFFF" height="23" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+              <a href="profrate.php" style='text-decoration:none;'><font face="Arial, Verdana" size="3" color="#000000"><b>Professor Ratings</b></font></a>
+            </td>
+            <td align="center" width="20%" bgcolor="#FFFFFF" height="23" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+              <a href="classified.php" style='text-decoration:none;'><font face="Arial, Verdana" size="3" color="#000000"><b>Classified Ads</b></font></a>
+            </td>
+            <td align="center" width="20%" bgcolor="#FFFFFF" height="23" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');"><font face="Arial, Verdana" size="3" color="#000000"><b>Apartment Guide</b></font></td>
+          </tr>
+          <tr>
+            <td colspan="5" background="bckground.gif" bgcolor="#FFFFFF">
+              <br>
+              <table id="box-table-a" rules="none" align="center" bgcolor="white">
+                <tr>
+                  <th rowspan="5" width="10%">
+                    <div id="nav-menu">
+                      <ul>
+                        <li>
+                          <a href="profcreate.php">+ Add an <u>Unlisted Prof</u></a>
+                        </li>
+                        <li>
+                          <a href="highestRatings.php">Highest Scored Profs</a>
+                        </li>
+                        <li>
+                          <a href="lowestRatings.php">Lowest Scored Profs</a>
+                        </li>
+                        <li>
+                          <a href="mostRatings.php">Most Rated Profs</a>
+                        </li>
+                        <li>
+                          <a href="funnyRatings.php">Funny Reviews</a>
+                        </li>
+                        <li>
+                          <a href="last25Ratings.php">Recent Ratings</a>
+                        </li>
+                        <li>
+                          <a href="terms.php">Terms of Use</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </th>
+                  <td align="center"><img src="images/profrate.gif" border="0"></td>
+                </tr>
+                <tr>
+                  <td align="center">Narrow below by department:</td>
+                </tr>
+                <tr>
+                  <td align="center">
+                    <form id="refresh" method="get" action="profrate.php" name="refresh">
+                      <select id="pattern" name="pattern">
+                        <option value="">
+                          --NONE--
+                        </option>
+                        <option value="Show All">
+                          Show All
+                        </option>
+                        <option value="Accounting">
+                          Accounting
+                        </option>
+                        <option value="Aerospace Studies">
+                          Aerospace Studies
+                        </option>
+                        <option value="Anthropology">
+                          Anthropology
+                        </option>
+                        <option value="Arabic">
+                          Arabic
+                        </option>
+                        <option value="Art">
+                          Art
+                        </option>
+                        <option value="Aviation Sciences">
+                          Aviation Sciences
+                        </option>
+                        <option value="Baylor Interdisciplinary Core">
+                          Baylor Interdisciplinary Core
+                        </option>
+                        <option value="Biology">
+                          Biology
+                        </option>
+                        <option value="Business">
+                          Business
+                        </option>
+                        <option value="Business Law">
+                          Business Law
+                        </option>
+                        <option value="Chapel">
+                          Chapel
+                        </option>
+                        <option value="Chemistry">
+                          Chemistry
+                        </option>
+                        <option value="Chinese">
+                          Chinese
+                        </option>
+                        <option value="Church-state studies">
+                          Church-state studies
+                        </option>
+                        <option value="Classics">
+                          Classics
+                        </option>
+                        <option value="Communication Sciences & Disorders">
+                          Communication Sciences & Disorders
+                        </option>
+                        <option value="Communication Studies">
+                          Communication Studies
+                        </option>
+                        <option value="Computer Science">
+                          Computer Science
+                        </option>
+                        <option value="Economics">
+                          Economics
+                        </option>
+                        <option value="Education">
+                          Education
+                        </option>
+                        <option value="Engineering">
+                          Engineering
+                        </option>
+                        <option value="English">
+                          English
+                        </option>
+                        <option value="Entrepreneurship">
+                          Entrepreneurship
+                        </option>
+                        <option value="Environmental Studies">
+                          Environmental Studies
+                        </option>
+                        <option value="Family and Consumer Sciences">
+                          Family and Consumer Sciences
+                        </option>
+                        <option value="Family And Consumer Sciences">
+                          Family And Consumer Sciences
+                        </option>
+                        <option value="Film and Digital Media">
+                          Film and Digital Media
+                        </option>
+                        <option value="Finance">
+                          Finance
+                        </option>
+                        <option value="Forensic Science">
+                          Forensic Science
+                        </option>
+                        <option value="French">
+                          French
+                        </option>
+                        <option value="Geography">
+                          Geography
+                        </option>
+                        <option value="Geology">
+                          Geology
+                        </option>
+                        <option value="German">
+                          German
+                        </option>
+                        <option value="Great Texts">
+                          Great Texts
+                        </option>
+                        <option value="Greek">
+                          Greek
+                        </option>
+                        <option value="Health Education">
+                          Health Education
+                        </option>
+                        <option value="History">
+                          History
+                        </option>
+                        <option value="Honors">
+                          Honors
+                        </option>
+                        <option value="Human Performance">
+                          Human Performance
+                        </option>
+                        <option value="Information Systems">
+                          Information Systems
+                        </option>
+                        <option value="International Business">
+                          International Business
+                        </option>
+                        <option value="Italian">
+                          Italian
+                        </option>
+                        <option value="Japanese">
+                          Japanese
+                        </option>
+                        <option value="Journalism">
+                          Journalism
+                        </option>
+                        <option value="Korean">
+                          Korean
+                        </option>
+                        <option value="Latin">
+                          Latin
+                        </option>
+                        <option value="Leadership Development">
+                          Leadership Development
+                        </option>
+                        <option value="Leadership/Administration">
+                          Leadership/Administration
+                        </option>
+                        <option value="Management">
+                          Management
+                        </option>
+                        <option value="Marketing">
+                          Marketing
+                        </option>
+                        <option value="Mathematics">
+                          Mathematics
+                        </option>
+                        <option value="Medical Humanities">
+                          Medical Humanities
+                        </option>
+                        <option value="Music">
+                          Music
+                        </option>
+                        <option value="Neuroscience">
+                          Neuroscience
+                        </option>
+                        <option value="none">
+                          none
+                        </option>
+                        <option value="Nursing" selected="selected">
+                          Nursing
+                        </option>
+                        <option value="OTHER">
+                          OTHER
+                        </option>
+                        <option value="Philosophy">
+                          Philosophy
+                        </option>
+                        <option value="Physics">
+                          Physics
+                        </option>
+                        <option value="Political Science">
+                          Political Science
+                        </option>
+                        <option value="Portuguese">
+                          Portuguese
+                        </option>
+                        <option value="Pre-Health Professions">
+                          Pre-Health Professions
+                        </option>
+                        <option value="Psychology">
+                          Psychology
+                        </option>
+                        <option value="Quantitative Business Analysis">
+                          Quantitative Business Analysis
+                        </option>
+                        <option value="Real Estate">
+                          Real Estate
+                        </option>
+                        <option value="Religion">
+                          Religion
+                        </option>
+                        <option value="Russian">
+                          Russian
+                        </option>
+                        <option value="Social Work">
+                          Social Work
+                        </option>
+                        <option value="Sociology">
+                          Sociology
+                        </option>
+                        <option value="Spanish">
+                          Spanish
+                        </option>
+                        <option value="Statistics">
+                          Statistics
+                        </option>
+                        <option value="Swahili">
+                          Swahili
+                        </option>
+                        <option value="Teacher Education">
+                          Teacher Education
+                        </option>
+                        <option value="Theater Arts">
+                          Theater Arts
+                        </option>
+                      </select> <input type="hidden" name="index" id="index">
+                    </form>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center">Select from political science professors: (72)</td>
+                </tr>
+                <tr>
+                  <td align="center">
+                    <form id="search" method="get" action="profdisplay.php" name="search">
+                      <select id="profid" name="profid">
+                        <option value="select">
+                          -- SELECT --
+                        </option>
+                        <option value="2805">
+                          Alexander, Rachel (83)
+                        </option>
+                        <option value="45">
+                          Allman, Dwight (73)
+                        </option>
+                        <option value="1420">
+                          Block, Steve (81)
+                        </option>
+                        <option value="3001">
+                          Boros, Jacob (98)
+                        </option>
+                        <option value="1637">
+                          Bridge, Dave (72)
+                        </option>
+                        <option value="510">
+                          Brown, Joseph (62)
+                        </option>
+                        <option value="2589">
+                          Campbell, Peter (91)
+                        </option>
+                        <option value="2638">
+                          Clayton, Andrew (68)
+                        </option>
+                        <option value="231">
+                          Corey, David (82)
+                        </option>
+                        <option value="290">
+                          Corey (female), (82)
+                        </option>
+                        <option value="13">
+                          Curry, James (73)
+                        </option>
+                        <option value="2416">
+                          Flavin, Rebecca (83)
+                        </option>
+                        <option value="1628">
+                          Flavin, Pat (86)
+                        </option>
+                        <option value="2987">
+                          Goyette, Elizabeth (58)
+                        </option>
+                        <option value="891">
+                          Hamerly, Ivy (75)
+                        </option>
+                        <option value="2958">
+                          Harris, Corrie (100)
+                        </option>
+                        <option value="2100">
+                          Hogue, Andy (88)
+                        </option>
+                        <option value="2756">
+                          Jordan, Richard (78)
+                        </option>
+                        <option value="2279">
+                          Kudelia, Sergiy (72)
+                        </option>
+                        <option value="2452">
+                          Little, David (60)
+                        </option>
+                        <option value="2783">
+                          Mackenzie, Charles Alfred (71)
+                        </option>
+                        <option value="788">
+                          Nichols, David (76)
+                        </option>
+                        <option value="1552">
+                          Nichols, Curt (88)
+                        </option>
+                        <option value="2733">
+                          Ramon, Andria (64)
+                        </option>
+                        <option value="2959">
+                          Simmons, Cole (86)
+                        </option>
+                        <option value="3002">
+                          Slomski, Ben (90)
+                        </option>
+                        <option style="background-color: LightGrey;" value="oldprofs">
+                          -- OLD PROFESSOR RATINGS --
+                        </option>
+                        <option style="background-color: LightGrey;" value="345">
+                          Adams, Linda (75)
+                        </option>
+                        <option style="background-color: LightGrey;" value="1603">
+                          Amato, Elizabeth (88)
+                        </option>
+                        <option style="background-color: LightGrey;" value="350">
+                          Avant, (55)
+                        </option>
+                        <option style="background-color: LightGrey;" value="2351">
+                          Basil, Christine (87)
+                        </option>
+                        <option style="background-color: LightGrey;" value="1224">
+                          Brogdon, Matt (73)
+                        </option>
+                        <option style="background-color: LightGrey;" value="2630">
+                          Burns, Kevin (78)
+                        </option>
+                        <option style="background-color: LightGrey;" value="1516">
+                          Cain, (80)
+                        </option>
+                        <option style="background-color: LightGrey;" value="71">
+                          Canipe, (88)
+                        </option>
+                        <option style="background-color: LightGrey;" value="1496">
+                          Capper, David (73)
+                        </option>
+                        <option style="background-color: LightGrey;" value="2556">
+                          Carroll, Olivia (78)
+                        </option>
+                        <option style="background-color: LightGrey;" value="1128">
+                          Clinton, David (76)
+                        </option>
+                        <option style="background-color: LightGrey;" value="457">
+                          Ellis, A (65)
+                        </option>
+                        <option style="background-color: LightGrey;" value="248">
+                          Engel, (89)
+                        </option>
+                        <option style="background-color: LightGrey;" value="1426">
+                          Ferguson, John (83)
+                        </option>
+                        <option style="background-color: LightGrey;" value="2216">
+                          Fleury, Eric (90)
+                        </option>
+                        <option style="background-color: LightGrey;" value="1521">
+                          Foss, Jerome (75)
+                        </option>
+                        <option style="background-color: LightGrey;" value="2242">
+                          Gallagher, Brenna (30)
+                        </option>
+                        <option style="background-color: LightGrey;" value="809">
+                          Gautier, David (93)
+                        </option>
+                        <option style="background-color: LightGrey;" value="308">
+                          Greco, (65)
+                        </option>
+                        <option style="background-color: LightGrey;" value="1232">
+                          He, Lichao (50)
+                        </option>
+                        <option style="background-color: LightGrey;" value="1124">
+                          Hinojosa, (75)
+                        </option>
+                        <option style="background-color: LightGrey;" value="620">
+                          Hogue, Tiffany (81)
+                        </option>
+                        <option style="background-color: LightGrey;" value="1560">
+                          Johnson, W. (78)
+                        </option>
+                        <option style="background-color: LightGrey;" value="393">
+                          Johnston, Marshall (95)
+                        </option>
+                        <option style="background-color: LightGrey;" value="2569">
+                          King, Joshua (61)
+                        </option>
+                        <option style="background-color: LightGrey;" value="218">
+                          Mansfield, (62)
+                        </option>
+                        <option style="background-color: LightGrey;" value="1555">
+                          Mathie, Mary (58)
+                        </option>
+                        <option style="background-color: LightGrey;" value="1610">
+                          McCumbers-Flavin, Rebecca (81)
+                        </option>
+                        <option style="background-color: LightGrey;" value="1430">
+                          Meadors, David (55)
+                        </option>
+                        <option style="background-color: LightGrey;" value="195">
+                          Myers, Thomas (63)
+                        </option>
+                        <option style="background-color: LightGrey;" value="2451">
+                          Norton, Brenda (71)
+                        </option>
+                        <option style="background-color: LightGrey;" value="1087">
+                          Nutt, Tami (89)
+                        </option>
+                        <option style="background-color: LightGrey;" value="168">
+                          Olson, Tiffany (98)
+                        </option>
+                        <option style="background-color: LightGrey;" value="1352">
+                          Pope, Thomas (83)
+                        </option>
+                        <option style="background-color: LightGrey;" value="1400">
+                          Ramsey, David (55)
+                        </option>
+                        <option style="background-color: LightGrey;" value="1184">
+                          Redman, Lauren (96)
+                        </option>
+                        <option style="background-color: LightGrey;" value="8">
+                          Riley, Richard (64)
+                        </option>
+                        <option style="background-color: LightGrey;" value="850">
+                          Ryan, John Francis (39)
+                        </option>
+                        <option style="background-color: LightGrey;" value="2654">
+                          Sims, Stephen (53)
+                        </option>
+                        <option style="background-color: LightGrey;" value="466">
+                          Thomas, Lance (76)
+                        </option>
+                        <option style="background-color: LightGrey;" value="1343">
+                          Tonoyan, Art (69)
+                        </option>
+                        <option style="background-color: LightGrey;" value="700">
+                          Tyler, Aaron (86)
+                        </option>
+                        <option style="background-color: LightGrey;" value="652">
+                          Waltman, Jerold (91)
+                        </option>
+                        <option style="background-color: LightGrey;" value="2366">
+                          Warf, Nathan (95)
+                        </option>
+                        <option style="background-color: LightGrey;" value="1146">
+                          Wu, (75)
+                        </option>
+                        <option style="background-color: LightGrey;" value="820">
+                          Zachary, Yost (75)
+                        </option>
+                      </select>
+                    </form>
+                  </td>
+                </tr>
+              </table><br>
+              <script type="text/javascript">
+
+              //<![CDATA[
+              function submit_form(frm) 
+              {  
+              frm.submit();  
+              }
+
+              function getElmById(aID)
+              { 
+              return (document.getElementById) ? document.getElementById(aID) : document.all[aID];
+              } 
+
+              function validate_search() 
+              {  
+              return true;
+              }
+
+              function onChangeHandler(e) 
+              {
+              var myevent = (e) ? e : window.event;
+              // Get value of selected option in dept list
+              var pattern = getElmById("pattern");
+              var selIndex = pattern.selectedIndex;
+              // Set value for passing in get
+              var index = getElmById("index");
+              index.value = selIndex;
+
+              submit_form(getElmById("refresh"));
+              }
+
+              function onChangeHandler2(e) 
+              {
+              var myevent = (e) ? e : window.event;
+
+              if (myDropDown2.value != "select" && myDropDown2.value != "oldprofs")
+              submit_form(getElmById("search"));
+              }
+
+              var myDropDown = getElmById("pattern");
+              if(typeof(myDropDown) == "object") 
+              {
+              myDropDown.onchange = onChangeHandler;
+              }
+
+              var myDropDown2 = getElmById("profid");
+              if(typeof(myDropDown2) == "object") 
+              {
+              myDropDown2.onchange = onChangeHandler2;
+              }
+
+              var mySearchForm2 = getElmById("search");
+              mySearchForm2.onsubmit = validate_search2;
+
+              var mySearchForm = getElmById("refresh");
+              mySearchForm.onsubmit = validate_search;
+              //]]>
+              </script>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" colspan="5" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#B2B6C8', EndColorStr='#476A8E');"><font size="4"><a href="login.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>LOGIN</b></font></a> &nbsp; &nbsp; <a href="home.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>HOME</b></font></a> &nbsp; &nbsp; <a href="about.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>ABOUT US</b></font></a> &nbsp; &nbsp; <a href="faq.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>FAQ</b></font></a> &nbsp; &nbsp; <a href="privacy.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>PRIVACY</b></font></a> &nbsp; &nbsp; <a href="terms.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>TERMS OF USE</b></font></a> &nbsp; &nbsp; <a href="advertising.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>ADVERTISING</b></font></a> &nbsp; &nbsp; <a href="contact.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>CONTACT US</b></font></a> &nbsp; &nbsp;</font></td>
+          </tr>
+        </table><br>
+        <div align="center">
+          <font size="-1">&copy;2003-2019 Bubooks.com - All rights reserved</font>
+        </div>
+        <script type="text/javascript">
+        //<![CDATA[
+
+        try {
+        var pageTracker = _gat._getTracker("UA-98854-1");
+        pageTracker._trackPageview();
+        } catch(err) {}
+        //]]>
+        </script>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

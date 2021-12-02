@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rating for Susan Etheredge</title>
+  <style type="text/css">
+
+  <!--
+        h2
+        {
+                text-align: center;
+                color: #476A8E;
+                font-family: Verdana;
+        } 
+        p
+        {
+                color: #111111;
+                font-family: Verdana;
+                font-size: 10pt;
+        } 
+        .a
+        {
+                font-family: "Times New Roman", Times, serif;
+                font-size:17px;
+                color: #000000;
+        }
+        form
+        {
+                margin-top: 0px;
+                margin-bottom: 0px;
+        }
+        .text
+        {
+                font-family: Verdana;
+                font-size: 10pt;
+                color: #263B4E;
+        }
+        .search
+        {
+                font-family: Verdana;
+                font-size: 12pt;
+                font-weight: bold;
+                color: #263B4E;
+        }
+        .title 
+        {
+                font-family: Verdana;
+                font-variant: small-caps;
+                text-transform: lowercase;
+                font-weight: bold;
+                color: #FFFFFF;
+                font-size: 16pt;
+                padding-left: 10pt;
+        }
+        .title2
+        {
+                font-family: Verdana;
+                font-variant: small-caps;
+                text-transform: lowercase;
+                font-weight: bold;
+                color: #FFFF00;
+                font-size: 16pt;        
+        }
+  -->
+  </style>
+</head>
+<body bgcolor="#FFFFFF" vlink="#0066FF" leftmargin="0" rightmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+  <table border="1" rules="all" cellpadding="3" cellspacing="0" bordercolor="#476A8E" bgcolor="#476A8E" width="100%" align="center">
+    <tr>
+      <td width="100%" height="85" bgcolor="#476A8E" colspan="5">
+        <table border="0" cellpadding="0" cellspacing="0" bgcolor="#476A8E" width="100%">
+          <tr>
+            <td align="left" rowspan="2" width="70%">
+              <a href="index.php"><img src="logo.gif" width="261" height="64" border="0"></a>
+            </td>
+            <td align="right">
+              <table align="right" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td>
+                    <a href="clicksLog1.php?redirect=https://www.americancampus.com/student-apartments/tx/waco/u-pointe-on-speight&adID=6" target='_new'><img src="ads/711%20468x60%20RALA%206.6.17.png" border="0">
+                    <table>
+                      <tr>
+                        <td align="center"><font face="verdana" size="1" color="#FFFFFF">Advertisement - Click for coupon or website</font></td>
+                      </tr>
+                    </table></a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" width="20%" bgcolor="#FFFFFF" height="23" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+              <a href="login.php" style='text-decoration:none;'><font face="Arial, Verdana" size="3" color="#000000"><b>Login</b></font></a>
+            </td>
+            <td align="center" width="20%" bgcolor="#FFFFFF" height="23" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+              <a href="books.php" style='text-decoration:none;'><font face="Arial, Verdana" size="3" color="#000000"><b>Textbooks</b></font></a>
+            </td>
+            <td align="center" width="20%" bgcolor="#FFFFFF" height="23" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+              <a href="profrate.php" style='text-decoration:none;'><font face="Arial, Verdana" size="3" color="#000000"><b>Professor Ratings</b></font></a>
+            </td>
+            <td align="center" width="20%" bgcolor="#FFFFFF" height="23" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+              <a href="classified.php" style='text-decoration:none;'><font face="Arial, Verdana" size="3" color="#000000"><b>Classified Ads</b></font></a>
+            </td>
+            <td align="center" width="20%" bgcolor="#FFFFFF" height="23" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');"><font face="Arial, Verdana" size="3" color="#000000"><b>Apartment Guide</b></font></td>
+          </tr>
+          <tr>
+            <td colspan="5" background="bckground.gif" bgcolor="#FFFFFF">
+              <script language="javascript" type="text/javascript">
+              //Change the image without refreshing the page...
+              function setTempImage(f, name, c) 
+              {
+                var color = c;
+                var hit = document.getElementById("color_" + name).value;
+
+                //if star is already red and they clicked on a star
+                //we need to change that star to yellow
+                if(c != 2) 
+                {
+                        if(hit == "hit")
+                        {
+                                c = 2;
+                                //if user did not click on a star, keep star same color
+                        }
+                        else 
+                        {
+                                c = 1;
+                        }
+                }
+
+                eval("document.getElementById('" + name + "').src='stars_" + c + "_" + f + ".gif';");
+
+                //sets the hidden field the value of the rating to keep for future reference
+                eval("document.getElementById('input_" + name + "').value=" + f);
+              }
+
+              function rateF(f, num, id, name, c) 
+              {
+                var nn4 = (document.layers) ? true : false
+                var ie = (document.all) ? true : false
+                var dom = (document.getElementById && !document.all) ? true : false
+
+                if(nn4)
+                {
+                        path = document.layers["userName" + num].value;
+                }
+                else if(ie)
+                {
+                        path = document.all["userName" + num].value;
+                } 
+                else 
+                {
+                        path = document.getElementById("userName" + num).value;
+                }
+                
+                window.open("rate.php?rateid=" + num + "&user=" + path + "&rate=" + f + "&profid=" + id, "newwindow", config="height=1, width=1, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, directories=no, status=no");
+                window.focus();
+
+                //Change the image without refreshing the page...
+                document.getElementById("color_" + name).value = "hit";
+
+                setTempImage(f, name, c);
+              }
+              </script> 
+              <script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+            </td>
+          </tr>
+          <tr>
+            <td bgcolor="#476A8E" align="left" colspan="5"><span class="title">Professor Overview -</span> <span class="title2">Susan Etheredge</span></td>
+          </tr>
+          <tr>
+            <td bgcolor="#FFFFFF" colspan="5" background="images/bckground.gif">
+              <table width="100%" cellspacing="0" cellpadding="2" border="1" bordercolor="#476A8E" rules="none">
+                <tr bgcolor="#CCCCCC" align="center">
+                  <td>
+                    <h4><u>Overall Score</u></h4>
+                  </td>
+                  <td>
+                    <h4><u>Ratings</u></h4>
+                  </td>
+                  <td>
+                    <h4><u>Teaching Ability</u></h4>
+                  </td>
+                  <td>
+                    <h4><u>Availability</u></h4>
+                  </td>
+                  <td>
+                    <h4><u>Helpfulness</u></h4>
+                  </td>
+                  <td>
+                    <h4><u>Workload</u><font color="#FF0000">*</font></h4>
+                  </td>
+                </tr>
+                <tr bgcolor="#FFFFFF" align="center">
+                  <td><font size="4" color="#FF0000"><font size="5" color="#33CC00"><b>85</b></font> <b></b></font></td>
+                  <td><font size="4" color="#FF0000">14</font></td>
+                  <td><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                  <td><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                  <td><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                  <td><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                </tr>
+                <tr bgcolor="#FFFFFF">
+                  <td colspan="6">
+                    <p align="center"><font color="#FF0000">*A 5 star workload is an easy workload; a 3 star is average; whereas a 1 star workload is extremely hard.</font></p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td bgcolor="#476A8E" align="left" colspan="5"><span class="title">Search / Options</span></td>
+          </tr>
+          <tr>
+            <td bgcolor="#FFFFFF" colspan="5" background="images/bckground.gif">
+              <form id="search" method="get" action="profdisplay.php" name="search">
+                <table width="100%" cellspacing="0" cellpadding="2" border="1" bordercolor="#476A8E" rules="none">
+                  <tr>
+                    <td align="center" colspan="5"><span class="search"><br>
+                    Showing professor &nbsp;&nbsp; <select id="profid" name="profid">
+                      <option value="">
+                        -- SELECT --
+                      </option>
+                      <option style="font:courier" value="2174">
+                        Ancira, Erica (76)
+                      </option>
+                      <option style="font:courier" value="2479">
+                        Bruce, Brian (35)
+                      </option>
+                      <option style="font:courier" value="1089">
+                        Byoun, Soku (40)
+                      </option>
+                      <option style="font:courier" value="153">
+                        Coldwell, Colene (56)
+                      </option>
+                      <option style="font:courier" value="2612">
+                        Cunningham, Donald (78)
+                      </option>
+                      <option style="font:courier" value="724" selected>
+                        Etheredge, Susan (85)
+                      </option>
+                      <option style="font:courier" value="781">
+                        Fletcher, Ernest (FIN) (63)
+                      </option>
+                      <option style="font:courier" value="687">
+                        Garven, Jim (76)
+                      </option>
+                      <option style="font:courier" value="2523">
+                        Macias, Antonio (64)
+                      </option>
+                      <option style="font:courier" value="2049">
+                        Moorman, Ted (51)
+                      </option>
+                      <option style="font:courier" value="581">
+                        Potts, Franklin (56)
+                      </option>
+                      <option style="font:courier" value="2385">
+                        Potts, Tom (48)
+                      </option>
+                      <option style="font:courier" value="854">
+                        Reichenstein, Bill (84)
+                      </option>
+                      <option style="font:courier" value="904">
+                        Rich, Steven (73)
+                      </option>
+                      <option style="font:courier" value="1568">
+                        Stegemoller, Michael (86)
+                      </option>
+                      <option style="font:courier" value="2478">
+                        Troegle, Brandon (70)
+                      </option>
+                      <option style="font:courier" value="2740">
+                        Underwood, Shane (90)
+                      </option>
+                      <option style="font:courier" value="2399">
+                        Vellenga, Dan (50)
+                      </option>
+                      <option style="font:courier" value="2760">
+                        Zurita, Vergilio (71)
+                      </option>
+                      <option style="background-color: LightGrey;" value="oldprofs">
+                        -- OLD PROFESSOR RATINGS --
+                      </option>
+                      <option style="background-color: LightGrey;" value="2209">
+                        Ann-Cira, Erica (65)
+                      </option>
+                      <option style="background-color: LightGrey;" value="790">
+                        Fletcher, Ernest (FSP) (56)
+                      </option>
+                      <option style="background-color: LightGrey;" value="1567">
+                        Haines, Thomas (72)
+                      </option>
+                      <option style="background-color: LightGrey;" value="2045">
+                        Montellano, Stephen (87)
+                      </option>
+                      <option style="background-color: LightGrey;" value="641">
+                        Rose, Jt (65)
+                      </option>
+                      <option style="background-color: LightGrey;" value="1551">
+                        Smith, Matthew (80)
+                      </option>
+                      <option style="background-color: LightGrey;" value="1002">
+                        Tipton, Jim (63)
+                      </option>
+                    </select> &nbsp;&nbsp;in the &nbsp;&nbsp; <select id="dept" name="dept" style="cursor:pointer; font-size : 10pt">
+                      <option value="select">
+                        --SELECT--
+                      </option>
+                      <option value="Show All">
+                        Show All
+                      </option>
+                      <option value="Accounting">
+                        Accounting
+                      </option>
+                      <option value="Aerospace Studies">
+                        Aerospace studies
+                      </option>
+                      <option value="African Studies">
+                        African studies
+                      </option>
+                      <option value="Air Pilot">
+                        Air pilot
+                      </option>
+                      <option value="Anthropology">
+                        Anthropology
+                      </option>
+                      <option value="Arabic">
+                        Arabic
+                      </option>
+                      <option value="Art">
+                        Art
+                      </option>
+                      <option value="Asian Studies">
+                        Asian studies
+                      </option>
+                      <option value="Aviation Sciences">
+                        Aviation sciences
+                      </option>
+                      <option value="Baylor Interdisciplinary Core">
+                        Baylor interdisciplinary core
+                      </option>
+                      <option value="Biology">
+                        Biology
+                      </option>
+                      <option value="Business">
+                        Business
+                      </option>
+                      <option value="Business Law">
+                        Business law
+                      </option>
+                      <option value="Chapel">
+                        Chapel
+                      </option>
+                      <option value="Chemistry">
+                        Chemistry
+                      </option>
+                      <option value="Chinese">
+                        Chinese
+                      </option>
+                      <option value="Christian Religious Education">
+                        Christian religious education
+                      </option>
+                      <option value="Church-state studies">
+                        Church-state studies
+                      </option>
+                      <option value="Civic Education & Community Service">
+                        Civic education & community service
+                      </option>
+                      <option value="Classics">
+                        Classics
+                      </option>
+                      <option value="Communication Sciences & Disorders">
+                        Communication sciences & disorders
+                      </option>
+                      <option value="Communication Studies">
+                        Communication studies
+                      </option>
+                      <option value="Computer Science">
+                        Computer science
+                      </option>
+                      <option value="Curriculum and Instruction">
+                        Curriculum and instruction
+                      </option>
+                      <option value="Economics">
+                        Economics
+                      </option>
+                      <option value="Education">
+                        Education
+                      </option>
+                      <option value="Educational Psychology">
+                        Educational psychology
+                      </option>
+                      <option value="Engineering">
+                        Engineering
+                      </option>
+                      <option value="English">
+                        English
+                      </option>
+                      <option value="Entrepreneurship">
+                        Entrepreneurship
+                      </option>
+                      <option value="Environmental Studies">
+                        Environmental studies
+                      </option>
+                      <option value="Family and Consumer Sciences">
+                        Family and consumer sciences
+                      </option>
+                      <option value="Film and Digital Media">
+                        Film and digital media
+                      </option>
+                      <option value="Finance" selected>
+                        Finance
+                      </option>
+                      <option value="First Year Seminars">
+                        First year seminars
+                      </option>
+                      <option value="Forensic Science">
+                        Forensic science
+                      </option>
+                      <option value="French">
+                        French
+                      </option>
+                      <option value="Geography">
+                        Geography
+                      </option>
+                      <option value="Geology">
+                        Geology
+                      </option>
+                      <option value="German">
+                        German
+                      </option>
+                      <option value="Gerontology">
+                        Gerontology
+                      </option>
+                      <option value="Great Texts">
+                        Great texts
+                      </option>
+                      <option value="Greek">
+                        Greek
+                      </option>
+                      <option value="Health Education">
+                        Health education
+                      </option>
+                      <option value="History">
+                        History
+                      </option>
+                      <option value="Honors">
+                        Honors
+                      </option>
+                      <option value="Human Performance">
+                        Human performance
+                      </option>
+                      <option value="Information Systems">
+                        Information systems
+                      </option>
+                      <option value="International">
+                        International
+                      </option>
+                      <option value="Italian">
+                        Italian
+                      </option>
+                      <option value="Japanese">
+                        Japanese
+                      </option>
+                      <option value="Journalism">
+                        Journalism
+                      </option>
+                      <option value="Korean">
+                        Korean
+                      </option>
+                      <option value="Latin">
+                        Latin
+                      </option>
+                      <option value="Law">
+                        Law
+                      </option>
+                      <option value="Leadership Development">
+                        Leadership development
+                      </option>
+                      <option value="Management">
+                        Management
+                      </option>
+                      <option value="Marketing">
+                        Marketing
+                      </option>
+                      <option value="Mathematics">
+                        Mathematics
+                      </option>
+                      <option value="Medical Humanities">
+                        Medical humanities
+                      </option>
+                      <option value="Modern Foreign Languages">
+                        Modern foreign languages
+                      </option>
+                      <option value="Music">
+                        Music
+                      </option>
+                      <option value="Neuroscience">
+                        Neuroscience
+                      </option>
+                      <option value="Nursing">
+                        Nursing
+                      </option>
+                      <option value="OTHER">
+                        Other
+                      </option>
+                      <option value="Philosophy">
+                        Philosophy
+                      </option>
+                      <option value="Physics">
+                        Physics
+                      </option>
+                      <option value="Political Science">
+                        Political science
+                      </option>
+                      <option value="Portuguese">
+                        Portuguese
+                      </option>
+                      <option value="Pre-Health Professions">
+                        Pre-health professions
+                      </option>
+                      <option value="Psychology">
+                        Psychology
+                      </option>
+                      <option value="Quantitative Business Analysis">
+                        Quantitative business analysis
+                      </option>
+                      <option value="Real Estate">
+                        Real estate
+                      </option>
+                      <option value="Recreation & Leisure Services">
+                        Recreation & leisure services
+                      </option>
+                      <option value="Religion">
+                        Religion
+                      </option>
+                      <option value="Risk Management and Insurance">
+                        Risk management and insurance
+                      </option>
+                      <option value="Russian">
+                        Russian
+                      </option>
+                      <option value="Slavic Eastern European Studies">
+                        Slavic eastern european studies
+                      </option>
+                      <option value="Social Work">
+                        Social work
+                      </option>
+                      <option value="Sociology">
+                        Sociology
+                      </option>
+                      <option value="Spanish">
+                        Spanish
+                      </option>
+                      <option value="Statistics">
+                        Statistics
+                      </option>
+                      <option value="Swahili">
+                        Swahili
+                      </option>
+                      <option value="Teacher Education">
+                        Teacher education
+                      </option>
+                      <option value="Telecommunications">
+                        Telecommunications
+                      </option>
+                      <option value="Theater Arts">
+                        Theater arts
+                      </option>
+                    </select> &nbsp;&nbsp; department</span></td>
+                  </tr>
+                  <tr>
+                    <td align="center" colspan="6">
+                      <hr width="75%" color="#476A8E">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center" valign="center">
+                      <a href="addrating.php?profid=724" onmouseover="document.addrating.src='images/addmouseover.jpg'" onmouseout="document.addrating.src='images/adddefault.jpg'"><img src="images/adddefault.jpg" name="addrating" id="addrating"></a>&nbsp;&nbsp;&nbsp;
+                    </td>
+                  </tr>
+                  <tr align="center">
+                    <td bgcolor="#FFFFFF" colspan="5" background="images/bckground.gif">
+                      <br>
+                      <a href="clicksLog.php?redirect=http://www.brothersmanagement.com&adID=4" target='_new'><img src="ads/brothers.gif" border="0"></a>
+                    </td>
+                  </tr>
+                </table>
+                <script type="text/javascript">
+                function submit_form(frm) 
+                {
+                frm.submit();
+                }
+
+                function getElmById(aID)
+                { 
+                return (document.getElementById) ? document.getElementById(aID)
+                                  : document.all[aID];
+                } 
+
+                function validate_search()
+                {
+                var myDropDown = getElmById("dept");
+                var errors = 0;
+
+                if(errors>0) 
+                {
+                return false;
+                }
+                }
+
+                function onChangeHandler(e)
+                {
+                var myevent = (e) ? e : window.event;
+
+                submit_form(getElmById("search"));
+                }
+
+                function onChangeHandler_dept(e)
+                {
+                var myevent = (e) ? e : window.event;
+                var prof = getElmById("profid");
+
+                prof.selectedIndex = 0;
+
+                submit_form(getElmById("search"));
+                }
+
+                var myDropDown = getElmById("profid");
+
+                if(typeof(myDropDown) == "object")
+                {
+                myDropDown.onchange = onChangeHandler;
+                }
+
+                var myDropDown_dept = getElmById("dept");
+
+                if(typeof(myDropDown_dept) == "object")
+                {
+                myDropDown_dept.onchange = onChangeHandler_dept;
+                }
+
+                var mySearchForm = getElmById("search");
+
+                mySearchForm.onsubmit = validate_search;
+                </script>
+                <table>
+                  <tr>
+                    <td bgcolor="#476A8E" align="left" colspan="5"><span class="title">Individual User Ratings</span></td>
+                  </tr>
+                  <tr>
+                    <td bgcolor="#FFFFFF" colspan="5">
+                      <a name="22788" id="22788"></a><a name="22757" id="22757"></a><a name="17932" id="17932"></a><a name="17274" id="17274"></a><a name="17008" id="17008"></a><a name="16904" id="16904"></a><a name="15007" id="15007"></a><a name="13143" id="13143"></a><a name="9992" id="9992"></a><a name="9672" id="9672"></a><a name="7771" id="7771"></a><a name="6812" id="6812"></a><a name="4077" id="4077"></a><a name="4038" id="4038"></a>
+                      <table align="left" cellspacing="0" cellpadding="3" width="100%" border="1" bordercolor="#476A8E" rules="none" bgcolor="#FFFFCC">
+                        <tr align="center">
+                          <td width="25%">
+                            <h4><u></u></h4>
+                            <div class="text">
+                              <h4>Teaching Ability</h4>
+                            </div>
+                          </td>
+                          <td width="25%">
+                            <h4><u></u></h4>
+                            <div class="text">
+                              <h4>Availability</h4>
+                            </div>
+                          </td>
+                          <td width="25%">
+                            <h4><u></u></h4>
+                            <div class="text">
+                              <h4>Helpfulness</h4>
+                            </div>
+                          </td>
+                          <td width="25%">
+                            <h4><u></u></h4>
+                            <div class="text">
+                              <h4>Workload*</h4>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:FIN 4366 - Etheridge is an extremely frustrating teacher. The class concept is fairly simple, yet her grading methods make it much harder than it should be. There are several writing assignments, in which she takes off 5 points if you have a run on, sentence fragment, etc. It is almost like she has a goal to keep the class average at an 85, and will do anything to get it there. With that being said, it is a pretty easy class. Homework isn't too hard and tests/quizzes come straight out of the book. She will throw in some impossible assignments here and there.. but I am sure that is to drop the class average whenever it starts to get high. Her teaching method is frustrating. She reads directly off PowerPoints that she posts for you anyway. Class seems like a waste, but she takes attendance every day and counts off if you're not there. Decent teacher, but I wouldn't go out of my way to take her if you don't have to.<b>&nbsp; - Grade In Class:</b>B+</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2015-10-21</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="22788"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:4331 - International Business Finance Professor Etheredge is a great professor for this class. The class consists of weekly currency reports, article readings, homework, quizzes, tests, and a project. If you read the book before each class this will help you fully understand the material because she will go over it in detail during each class meeting. The quizzes and tests are hard, but if you read the book and study a few days in advance then they should be no problem. There was a lot of homework, sometimes more than I though should be assigned, but doing it is helpful to prepare for the exam. She's a very good professor and I learned a lot in this class. If you want to deal with currency and interest rates then definitely take this class.<b>&nbsp; - Grade In Class:</b>A</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2015-10-06</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="22757"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:4361 - She explains everything very clearly, and goes out of her way to make sure that students succeed. Her tests are not difficult, but do require some preparation to complete in time.<b>&nbsp; - Grade In Class:</b>A</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2012-01-18</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="17932"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:Short Term - She is one of the sweetest professors at Baylor. She will help you with your homework, and help you study. She goes out of her way to help students. On top of that, she is an excellent teacher. She always explained things thoroughly in class. If you are a finance major, take this class.<b>&nbsp; - Grade In Class:</b>B+</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2011-11-28</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="17274"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:3310 - loved her!!! by far best finance teacher at baylor. you will have homework but she sometimes goes over it in class and is very helpful no matter what your situation is. TAKE HER!!!!!<b>&nbsp; - Grade In Class:</b>B</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2011-08-14</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="17008"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:FIN 3310 - She is very dry & pretty nerdy. She use to work at a bank, so that should tell you something about her personality. She calls on people all during class to answer questions. If you say you don't know the answer, she will make you say something. You have homework almost every night; some nights you have enough homework to take over 2 hours to do. The tests are pretty easy as long as you do the homework. There are a few quizes that are easy too as long as you have read the chapter. She tells you when the quizes are. I'd suggest taking her since she seems to be easier than the other finance teachers, but just know her class is super boring, but then again it is finance.<b>&nbsp; - Grade In Class:</b>B</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2011-07-07</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="16904"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:FIN 5362 - Excellent teacher. She knows what she's talking about and focuses on the strategy of short term management as well as the important concepts. I enjoyed hearing about her personal experiences in the field because it helped to bring the ideas into a practical focus. You do have to work in her class, but if you stay on top of the reading and assignments, there are no surprises or "trick" questions on the exams. She covers each topic well and is very willing to help you after class if that is what you need. She wants you to understand and get something out of the course.<b>&nbsp; - Grade In Class:</b>A</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2010-08-09</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="15007"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr bgcolor="#476A8E" align="center">
+                          <td colspan="4">
+                            <a href="clicksLog.php?redirect=https://www.americancampus.com/student-apartments/tx/waco/u-pointe-on-speight&adID=5" target='_new'><img src="ads/711%20728x90%20RALA%206.6.17.png" border="0"></a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:FIN 4361- Short Term FIN - Ms. Ethridge was a horrible teacher for me. She didn't know what she was talking about half the time, just used the slides given to her by other people. She only has one experience with treasury management and her division was foreign exchange which is not covered in this class. She teaches all of the calculations using simple interest even though every single other finance teacher teaches time value of money. The examples she chooses to use are either unrealistic or inaccurate. The class was taught at a high school level and pace. So if you want an easy A here is your class. There is a lot of busy work (just like high school) so if you don't have time to write a BS paper every couple of weeks, just pass. You're not missing anything. <b>&nbsp; - Grade In Class:</b>A</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2009-05-27</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="13143"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:FIN 3310 - I spell awesome S-U-S-A-N. What a super course, Miss Etheredge might be one of the best professor's I've had a Baylor. 4 tests (which aren't hard if you've done the hw and the practice tests), a project (which is semi-tough and she grades hard on), and the final (which was really hard). She is a fantastic explainer of tough concepts and does lots of practice problems in her lecture to help out. She has AMAZING powerpoints with blanks to fill in as she goes along. With Susan, you get great teaching ability and lots of outfits with shoulder-pads. She's a winner! Fight to get her at all costs!<b>&nbsp; - Grade In Class:</b>A</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2007-12-26</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="9992"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:FIN 3310 - Probably one of the best professors I've ever had at Baylor. GREAT teaching ability. She gave us powerpoint slides with little blanks to fill, study guides, practice problems, and held a review session before each test. The group project was really interesting (but a lot of work), but if you're bad at test taking (like I am), it might just be your saving grace.<b>&nbsp; - Grade In Class:</b>C</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2007-07-03</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="9672"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:FIN 3310 - what an amazing teacher. loves finance as well as helping students. try to get her at all costs.<b>&nbsp; - Grade In Class:</b>B+</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2006-10-16</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="7771"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:FIN 3310 - Mrs. Etheredge is the best Finance professor ever! She makes a hard subject bearable. She was always available to help me, and she often helped me for an hour at a time with my questions about the homework. She's very understanding and cares about her students. There's homework everyday, and she takes it up occasionally. If you do the hw every day, you should be ok when test time comes. Her tests are pretty fair for Finance tests. The class is not easy at all, but I really think she's the best professor to take. <b>&nbsp; - Grade In Class:</b>B+</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2006-01-26</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="6812"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:FIN 3310 - I really lucked out getting Mrs. Etheredge. She is an extremely helpful and nice lady who obviously loves Finance and loves teaching. She just recently started teaching so she doesn't have much experience on how to present the material, but she did a fine enough job. There is almost no workload other than preparing for the 4 tests, the finance project that everyone does, and the comprehensive final. She assigns optional homework problems, but it will really benefit you on the test to do them. I usually just did them a night or 2 before the test and did fine. You don't have to turn them in. She also offers extra credit. If you want to take finance, have a good teacher, have hardly any mandatory work, and learn the material - take this class!<b>&nbsp; - Grade In Class:</b>B</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2004-12-02</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="4077"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:3310 - Susan is so tight. There are four tests and the final and one project. That is all. There is no graded homework, but she does take attendance. Pay attention and you will do fine. All finance classes are tough, but I think she makes it the easiest.<b>&nbsp; - Grade In Class:</b>B+</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2004-11-26</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="4038"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center" colspan="5" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#B2B6C8', EndColorStr='#476A8E');"><font size="4"><a href="login.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>LOGIN</b></font></a> &nbsp; &nbsp; <a href="home.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>HOME</b></font></a> &nbsp; &nbsp; <a href="about.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>ABOUT US</b></font></a> &nbsp; &nbsp; <a href="faq.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>FAQ</b></font></a> &nbsp; &nbsp; <a href="privacy.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>PRIVACY</b></font></a> &nbsp; &nbsp; <a href="terms.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>TERMS OF USE</b></font></a> &nbsp; &nbsp; <a href="advertising.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>ADVERTISING</b></font></a> &nbsp; &nbsp; <a href="contact.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>CONTACT US</b></font></a> &nbsp; &nbsp;</font></td>
+                  </tr>
+                </table><br>
+                <div align="center">
+                  <font size="-1">&copy;2003-2017 Bubooks.com - All rights reserved</font>
+                </div>
+                <script type="text/javascript">
+
+                try {
+                var pageTracker = _gat._getTracker("UA-98854-1");
+                pageTracker._trackPageview();
+                } catch(err) {}
+                </script>
+              </form>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rating for Adam Flores</title>
+  <style type="text/css">
+
+  <!--
+        h2
+        {
+                text-align: center;
+                color: #476A8E;
+                font-family: Verdana;
+        } 
+        p
+        {
+                color: #111111;
+                font-family: Verdana;
+                font-size: 10pt;
+        } 
+        .a
+        {
+                font-family: "Times New Roman", Times, serif;
+                font-size:17px;
+                color: #000000;
+        }
+        form
+        {
+                margin-top: 0px;
+                margin-bottom: 0px;
+        }
+        .text
+        {
+                font-family: Verdana;
+                font-size: 10pt;
+                color: #263B4E;
+        }
+        .search
+        {
+                font-family: Verdana;
+                font-size: 12pt;
+                font-weight: bold;
+                color: #263B4E;
+        }
+        .title 
+        {
+                font-family: Verdana;
+                font-variant: small-caps;
+                text-transform: lowercase;
+                font-weight: bold;
+                color: #FFFFFF;
+                font-size: 16pt;
+                padding-left: 10pt;
+        }
+        .title2
+        {
+                font-family: Verdana;
+                font-variant: small-caps;
+                text-transform: lowercase;
+                font-weight: bold;
+                color: #FFFF00;
+                font-size: 16pt;        
+        }
+  -->
+  </style>
+</head>
+<body bgcolor="#FFFFFF" vlink="#0066FF" leftmargin="0" rightmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+  <table border="1" rules="all" cellpadding="3" cellspacing="0" bordercolor="#476A8E" bgcolor="#476A8E" width="100%" align="center">
+    <tr>
+      <td width="100%" height="85" bgcolor="#476A8E" colspan="5">
+        <table border="0" cellpadding="0" cellspacing="0" bgcolor="#476A8E" width="100%">
+          <tr>
+            <td align="left" rowspan="2" width="70%">
+              <a href="index.php"><img src="logo.gif" width="261" height="64" border="0"></a>
+            </td>
+            <td align="right">
+              <table align="right" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td>
+                    <a href="clicksLog1.php?redirect=http://www.brothersmanagement.com&adID=5" target='_new'><img src="ads/brothers_468.gif" border="0">
+                    <table>
+                      <tr>
+                        <td align="center"><font face="verdana" size="1" color="#FFFFFF">Advertisement - Click for coupon or website</font></td>
+                      </tr>
+                    </table></a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" width="20%" bgcolor="#FFFFFF" height="23" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+              <a href="login.php" style='text-decoration:none;'><font face="Arial, Verdana" size="3" color="#000000"><b>Login</b></font></a>
+            </td>
+            <td align="center" width="20%" bgcolor="#FFFFFF" height="23" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+              <a href="books.php" style='text-decoration:none;'><font face="Arial, Verdana" size="3" color="#000000"><b>Textbooks</b></font></a>
+            </td>
+            <td align="center" width="20%" bgcolor="#FFFFFF" height="23" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+              <a href="profrate.php" style='text-decoration:none;'><font face="Arial, Verdana" size="3" color="#000000"><b>Professor Ratings</b></font></a>
+            </td>
+            <td align="center" width="20%" bgcolor="#FFFFFF" height="23" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+              <a href="classified.php" style='text-decoration:none;'><font face="Arial, Verdana" size="3" color="#000000"><b>Classified Ads</b></font></a>
+            </td>
+            <td align="center" width="20%" bgcolor="#FFFFFF" height="23" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');"><font face="Arial, Verdana" size="3" color="#000000"><b>Apartment Guide</b></font></td>
+          </tr>
+          <tr>
+            <td colspan="5" background="bckground.gif" bgcolor="#FFFFFF">
+              <script language="javascript" type="text/javascript">
+              //Change the image without refreshing the page...
+              function setTempImage(f, name, c) 
+              {
+                var color = c;
+                var hit = document.getElementById("color_" + name).value;
+
+                //if star is already red and they clicked on a star
+                //we need to change that star to yellow
+                if(c != 2) 
+                {
+                        if(hit == "hit")
+                        {
+                                c = 2;
+                                //if user did not click on a star, keep star same color
+                        }
+                        else 
+                        {
+                                c = 1;
+                        }
+                }
+
+                eval("document.getElementById('" + name + "').src='stars_" + c + "_" + f + ".gif';");
+
+                //sets the hidden field the value of the rating to keep for future reference
+                eval("document.getElementById('input_" + name + "').value=" + f);
+              }
+
+              function rateF(f, num, id, name, c) 
+              {
+                var nn4 = (document.layers) ? true : false
+                var ie = (document.all) ? true : false
+                var dom = (document.getElementById && !document.all) ? true : false
+
+                if(nn4)
+                {
+                        path = document.layers["userName" + num].value;
+                }
+                else if(ie)
+                {
+                        path = document.all["userName" + num].value;
+                } 
+                else 
+                {
+                        path = document.getElementById("userName" + num).value;
+                }
+                
+                window.open("rate.php?rateid=" + num + "&user=" + path + "&rate=" + f + "&profid=" + id, "newwindow", config="height=1, width=1, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, directories=no, status=no");
+                window.focus();
+
+                //Change the image without refreshing the page...
+                document.getElementById("color_" + name).value = "hit";
+
+                setTempImage(f, name, c);
+              }
+              </script> 
+              <script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+            </td>
+          </tr>
+          <tr>
+            <td bgcolor="#476A8E" align="left" colspan="5"><span class="title">Professor Overview -</span> <span class="title2">Adam Flores</span></td>
+          </tr>
+          <tr>
+            <td bgcolor="#FFFFFF" colspan="5" background="images/bckground.gif">
+              <table width="100%" cellspacing="0" cellpadding="2" border="1" bordercolor="#476A8E" rules="none">
+                <tr bgcolor="#CCCCCC" align="center">
+                  <td>
+                    <h4><u>Overall Score</u></h4>
+                  </td>
+                  <td>
+                    <h4><u>Ratings</u></h4>
+                  </td>
+                  <td>
+                    <h4><u>Teaching Ability</u></h4>
+                  </td>
+                  <td>
+                    <h4><u>Availability</u></h4>
+                  </td>
+                  <td>
+                    <h4><u>Helpfulness</u></h4>
+                  </td>
+                  <td>
+                    <h4><u>Workload</u><font color="#FF0000">*</font></h4>
+                  </td>
+                </tr>
+                <tr bgcolor="#FFFFFF" align="center">
+                  <td><font size="4" color="#FF0000"><font size="5" color="#33CC00"><b>97</b></font> <b></b></font></td>
+                  <td><font size="4" color="#FF0000">10</font></td>
+                  <td><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                  <td><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                  <td><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                  <td><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                </tr>
+                <tr bgcolor="#FFFFFF">
+                  <td colspan="6">
+                    <p align="center"><font color="#FF0000">*A 5 star workload is an easy workload; a 3 star is average; whereas a 1 star workload is extremely hard.</font></p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td bgcolor="#476A8E" align="left" colspan="5"><span class="title">Search / Options</span></td>
+          </tr>
+          <tr>
+            <td bgcolor="#FFFFFF" colspan="5" background="images/bckground.gif">
+              <form id="search" method="get" action="profdisplay.php" name="search">
+                <table width="100%" cellspacing="0" cellpadding="2" border="1" bordercolor="#476A8E" rules="none">
+                  <tr>
+                    <td align="center" colspan="5"><span class="search"><br>
+                    Showing professor &nbsp;&nbsp; <select id="profid" name="profid">
+                      <option value="">
+                        -- SELECT --
+                      </option>
+                      <option style="font:courier" value="2549">
+                        Breeden, Heidi (76)
+                      </option>
+                      <option style="font:courier" value="2768">
+                        Brown, Aaron (100)
+                      </option>
+                      <option style="font:courier" value="2324" selected>
+                        Flores, Adam (97)
+                      </option>
+                      <option style="font:courier" value="2172">
+                        Henderson, Sam (94)
+                      </option>
+                      <option style="font:courier" value="2747">
+                        Horowitz, Joshua (95)
+                      </option>
+                      <option style="font:courier" value="2397">
+                        Murphy, Cason (95)
+                      </option>
+                      <option style="font:courier" value="2781">
+                        Sacco, Garrett (60)
+                      </option>
+                      <option style="font:courier" value="2804">
+                        Sivara, Cooper (100)
+                      </option>
+                      <option style="font:courier" value="834">
+                        Toten beard, Deanna (86)
+                      </option>
+                      <option style="font:courier" value="2380">
+                        Yoho, Rob (78)
+                      </option>
+                      <option style="background-color: LightGrey;" value="oldprofs">
+                        -- OLD PROFESSOR RATINGS --
+                      </option>
+                      <option style="background-color: LightGrey;" value="2047">
+                        Askins, Sally (100)
+                      </option>
+                      <option style="background-color: LightGrey;" value="1331">
+                        Baker, Beki (93)
+                      </option>
+                      <option style="background-color: LightGrey;" value="408">
+                        Cook, Bill (60)
+                      </option>
+                      <option style="background-color: LightGrey;" value="1532">
+                        Cornett, Sherrae (95)
+                      </option>
+                      <option style="background-color: LightGrey;" value="574">
+                        Day, Chris (54)
+                      </option>
+                      <option style="background-color: LightGrey;" value="677">
+                        Day, Stephen (45)
+                      </option>
+                      <option style="background-color: LightGrey;" value="2211">
+                        Hampton, Jessi (88)
+                      </option>
+                      <option style="background-color: LightGrey;" value="789">
+                        Holden, Martin (78)
+                      </option>
+                      <option style="background-color: LightGrey;" value="738">
+                        Inouye, Daniel (71)
+                      </option>
+                      <option style="background-color: LightGrey;" value="1464">
+                        Jackson, Amber (93)
+                      </option>
+                      <option style="background-color: LightGrey;" value="1381">
+                        Johnson, Becca (90)
+                      </option>
+                      <option style="background-color: LightGrey;" value="311">
+                        Johnson, Melissa (67)
+                      </option>
+                      <option style="background-color: LightGrey;" value="149">
+                        Lahaie, (80)
+                      </option>
+                      <option style="background-color: LightGrey;" value="1393">
+                        Ledford, Traci (70)
+                      </option>
+                      <option style="background-color: LightGrey;" value="1084">
+                        Northrup, Graham (65)
+                      </option>
+                      <option style="background-color: LightGrey;" value="2068">
+                        Peck, Chris (92)
+                      </option>
+                      <option style="background-color: LightGrey;" value="1348">
+                        Pounders, Stephen (75)
+                      </option>
+                      <option style="background-color: LightGrey;" value="869">
+                        Records, (83)
+                      </option>
+                      <option style="background-color: LightGrey;" value="1598">
+                        Reed, David (72)
+                      </option>
+                      <option style="background-color: LightGrey;" value="1268">
+                        Roark, (90)
+                      </option>
+                      <option style="background-color: LightGrey;" value="586">
+                        Russell, Kelly (93)
+                      </option>
+                      <option style="background-color: LightGrey;" value="2208">
+                        Sefel, John Michael (100)
+                      </option>
+                      <option style="background-color: LightGrey;" value="1607">
+                        Wallace, Josiah (89)
+                      </option>
+                      <option style="background-color: LightGrey;" value="2003">
+                        Ward, Sherry (85)
+                      </option>
+                      <option style="background-color: LightGrey;" value="628">
+                        Zeeman, Terence (100)
+                      </option>
+                    </select> &nbsp;&nbsp;in the &nbsp;&nbsp; <select id="dept" name="dept" style="cursor:pointer; font-size : 10pt">
+                      <option value="select">
+                        --SELECT--
+                      </option>
+                      <option value="Show All">
+                        Show All
+                      </option>
+                      <option value="Accounting">
+                        Accounting
+                      </option>
+                      <option value="Aerospace Studies">
+                        Aerospace studies
+                      </option>
+                      <option value="African Studies">
+                        African studies
+                      </option>
+                      <option value="Air Pilot">
+                        Air pilot
+                      </option>
+                      <option value="Anthropology">
+                        Anthropology
+                      </option>
+                      <option value="Arabic">
+                        Arabic
+                      </option>
+                      <option value="Art">
+                        Art
+                      </option>
+                      <option value="Asian Studies">
+                        Asian studies
+                      </option>
+                      <option value="Aviation Sciences">
+                        Aviation sciences
+                      </option>
+                      <option value="Baylor Interdisciplinary Core">
+                        Baylor interdisciplinary core
+                      </option>
+                      <option value="Biology">
+                        Biology
+                      </option>
+                      <option value="Business">
+                        Business
+                      </option>
+                      <option value="Business Law">
+                        Business law
+                      </option>
+                      <option value="Chapel">
+                        Chapel
+                      </option>
+                      <option value="Chemistry">
+                        Chemistry
+                      </option>
+                      <option value="Chinese">
+                        Chinese
+                      </option>
+                      <option value="Christian Religious Education">
+                        Christian religious education
+                      </option>
+                      <option value="Church-state studies">
+                        Church-state studies
+                      </option>
+                      <option value="Civic Education & Community Service">
+                        Civic education & community service
+                      </option>
+                      <option value="Classics">
+                        Classics
+                      </option>
+                      <option value="Communication Sciences & Disorders">
+                        Communication sciences & disorders
+                      </option>
+                      <option value="Communication Studies">
+                        Communication studies
+                      </option>
+                      <option value="Computer Science">
+                        Computer science
+                      </option>
+                      <option value="Curriculum and Instruction">
+                        Curriculum and instruction
+                      </option>
+                      <option value="Economics">
+                        Economics
+                      </option>
+                      <option value="Education">
+                        Education
+                      </option>
+                      <option value="Educational Psychology">
+                        Educational psychology
+                      </option>
+                      <option value="Engineering">
+                        Engineering
+                      </option>
+                      <option value="English">
+                        English
+                      </option>
+                      <option value="Entrepreneurship">
+                        Entrepreneurship
+                      </option>
+                      <option value="Environmental Studies">
+                        Environmental studies
+                      </option>
+                      <option value="Family and Consumer Sciences">
+                        Family and consumer sciences
+                      </option>
+                      <option value="Film and Digital Media">
+                        Film and digital media
+                      </option>
+                      <option value="Finance">
+                        Finance
+                      </option>
+                      <option value="First Year Seminars">
+                        First year seminars
+                      </option>
+                      <option value="Forensic Science">
+                        Forensic science
+                      </option>
+                      <option value="French">
+                        French
+                      </option>
+                      <option value="Geography">
+                        Geography
+                      </option>
+                      <option value="Geology">
+                        Geology
+                      </option>
+                      <option value="German">
+                        German
+                      </option>
+                      <option value="Gerontology">
+                        Gerontology
+                      </option>
+                      <option value="Great Texts">
+                        Great texts
+                      </option>
+                      <option value="Greek">
+                        Greek
+                      </option>
+                      <option value="Health Education">
+                        Health education
+                      </option>
+                      <option value="History">
+                        History
+                      </option>
+                      <option value="Honors">
+                        Honors
+                      </option>
+                      <option value="Human Performance">
+                        Human performance
+                      </option>
+                      <option value="Information Systems">
+                        Information systems
+                      </option>
+                      <option value="International">
+                        International
+                      </option>
+                      <option value="International Business">
+                        International business
+                      </option>
+                      <option value="Italian">
+                        Italian
+                      </option>
+                      <option value="Japanese">
+                        Japanese
+                      </option>
+                      <option value="Journalism">
+                        Journalism
+                      </option>
+                      <option value="Korean">
+                        Korean
+                      </option>
+                      <option value="Latin">
+                        Latin
+                      </option>
+                      <option value="Law">
+                        Law
+                      </option>
+                      <option value="Leadership Development">
+                        Leadership development
+                      </option>
+                      <option value="Leadership/Administration">
+                        Leadership/administration
+                      </option>
+                      <option value="Management">
+                        Management
+                      </option>
+                      <option value="Marketing">
+                        Marketing
+                      </option>
+                      <option value="Mathematics">
+                        Mathematics
+                      </option>
+                      <option value="Medical Humanities">
+                        Medical humanities
+                      </option>
+                      <option value="Modern Foreign Languages">
+                        Modern foreign languages
+                      </option>
+                      <option value="Music">
+                        Music
+                      </option>
+                      <option value="Neuroscience">
+                        Neuroscience
+                      </option>
+                      <option value="none">
+                        None
+                      </option>
+                      <option value="Nursing">
+                        Nursing
+                      </option>
+                      <option value="OTHER">
+                        Other
+                      </option>
+                      <option value="Philosophy">
+                        Philosophy
+                      </option>
+                      <option value="Physics">
+                        Physics
+                      </option>
+                      <option value="Political Science">
+                        Political science
+                      </option>
+                      <option value="Portuguese">
+                        Portuguese
+                      </option>
+                      <option value="Pre-Health Professions">
+                        Pre-health professions
+                      </option>
+                      <option value="Psychology">
+                        Psychology
+                      </option>
+                      <option value="Quantitative Business Analysis">
+                        Quantitative business analysis
+                      </option>
+                      <option value="Real Estate">
+                        Real estate
+                      </option>
+                      <option value="Recreation & Leisure Services">
+                        Recreation & leisure services
+                      </option>
+                      <option value="Religion">
+                        Religion
+                      </option>
+                      <option value="Risk Management and Insurance">
+                        Risk management and insurance
+                      </option>
+                      <option value="Russian">
+                        Russian
+                      </option>
+                      <option value="Slavic Eastern European Studies">
+                        Slavic eastern european studies
+                      </option>
+                      <option value="Social Work">
+                        Social work
+                      </option>
+                      <option value="Sociology">
+                        Sociology
+                      </option>
+                      <option value="Spanish">
+                        Spanish
+                      </option>
+                      <option value="Statistics">
+                        Statistics
+                      </option>
+                      <option value="Swahili">
+                        Swahili
+                      </option>
+                      <option value="Teacher Education">
+                        Teacher education
+                      </option>
+                      <option value="Telecommunications">
+                        Telecommunications
+                      </option>
+                      <option value="Theater Arts" selected>
+                        Theater arts
+                      </option>
+                    </select> &nbsp;&nbsp; department</span></td>
+                  </tr>
+                  <tr>
+                    <td align="center" colspan="6">
+                      <hr width="75%" color="#476A8E">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center" valign="center">
+                      <a href="addrating.php?profid=2324" onmouseover="document.addrating.src='images/addmouseover.jpg'" onmouseout="document.addrating.src='images/adddefault.jpg'"><img src="images/adddefault.jpg" name="addrating" id="addrating"></a>&nbsp;&nbsp;&nbsp;
+                    </td>
+                  </tr>
+                  <tr align="center">
+                    <td bgcolor="#FFFFFF" colspan="5" background="images/bckground.gif">
+                      <br>
+                      <a href="clicksLog.php?redirect=http://www.brothersmanagement.com&adID=1" target='_new'><img src="ads/brothers.gif" border="0"></a>
+                    </td>
+                  </tr>
+                </table>
+                <script type="text/javascript">
+                function submit_form(frm) 
+                {
+                frm.submit();
+                }
+
+                function getElmById(aID)
+                { 
+                return (document.getElementById) ? document.getElementById(aID)
+                                  : document.all[aID];
+                } 
+
+                function validate_search()
+                {
+                var myDropDown = getElmById("dept");
+                var errors = 0;
+
+                if(errors>0) 
+                {
+                return false;
+                }
+                }
+
+                function onChangeHandler(e)
+                {
+                var myevent = (e) ? e : window.event;
+
+                submit_form(getElmById("search"));
+                }
+
+                function onChangeHandler_dept(e)
+                {
+                var myevent = (e) ? e : window.event;
+                var prof = getElmById("profid");
+
+                prof.selectedIndex = 0;
+
+                submit_form(getElmById("search"));
+                }
+
+                var myDropDown = getElmById("profid");
+
+                if(typeof(myDropDown) == "object")
+                {
+                myDropDown.onchange = onChangeHandler;
+                }
+
+                var myDropDown_dept = getElmById("dept");
+
+                if(typeof(myDropDown_dept) == "object")
+                {
+                myDropDown_dept.onchange = onChangeHandler_dept;
+                }
+
+                var mySearchForm = getElmById("search");
+
+                mySearchForm.onsubmit = validate_search;
+                </script>
+                <table>
+                  <tr>
+                    <td bgcolor="#476A8E" align="left" colspan="5"><span class="title">Individual User Ratings</span></td>
+                  </tr>
+                  <tr>
+                    <td bgcolor="#FFFFFF" colspan="5">
+                      <a name="25465" id="25465"></a><a name="21945" id="21945"></a><a name="21567" id="21567"></a><a name="21324" id="21324"></a><a name="21275" id="21275"></a><a name="21189" id="21189"></a><a name="21148" id="21148"></a><a name="20903" id="20903"></a><a name="20765" id="20765"></a><a name="20614" id="20614"></a>
+                      <table align="left" cellspacing="0" cellpadding="3" width="100%" border="1" bordercolor="#476A8E" rules="none" bgcolor="#FFFFCC">
+                        <tr align="center">
+                          <td width="25%">
+                            <h4><u></u></h4>
+                            <div class="text">
+                              <h4>Teaching Ability</h4>
+                            </div>
+                          </td>
+                          <td width="25%">
+                            <h4><u></u></h4>
+                            <div class="text">
+                              <h4>Availability</h4>
+                            </div>
+                          </td>
+                          <td width="25%">
+                            <h4><u></u></h4>
+                            <div class="text">
+                              <h4>Helpfulness</h4>
+                            </div>
+                          </td>
+                          <td width="25%">
+                            <h4><u></u></h4>
+                            <div class="text">
+                              <h4>Workload*</h4>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:1206 - I had no idea I could enjoy theatre appreciation so much. He is engaging with students and easy to listen to. Every class is basically copying a powerpoint slide, but he is very interactive so it's not boring. He gives 9 chapter quizzes online that are straight from the book, so those are easy 100s. He gives one midterm and a final, both are easy if you simply pay attention in class. Also he loves Beyonce, so that's basically all you would need to know.<b>&nbsp; - Grade In Class:</b>A</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2017-04-21</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="25465"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:1206 - Take Flores! For his class, he requires you to have a clicker for class to answer questions (your opinion, so you can never be wrong and get points off), take notes, and take a reading tests every week (only 20 questions, not difficult). The midterm and final are pretty easy. Don't let my grade fool you. I missed the max classes you can miss which made me lose a number of points. Just attend class and participate and I can almost guarantee you will earn an A. Adding to that, ladies, Flores is so fine! Like I said, take him!<b>&nbsp; - Grade In Class:</b>B+</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2015-01-04</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="21945"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:Theatre App - Flores is my favorite professor of the semester. He is absolutely hilarious and there is almost no work required to get an A. You are required once a week to do reading tests, but they aren't timed and are online so you can literally have your book in your lap and look of the answers. They're also take no time at all. Other than the quizzes, the only grades are attendance (graded via a clicker) and the tests. The tests were multiple choice and very, very easy. You are required to go see 2 plays over the semester, which aren't too bad. The tickets are free, so no worries there. In class is all lecture style, but he shows many videos and keeps you very entertained. DEFINITELY take Flores.<b>&nbsp; - Grade In Class:</b>A</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2014-11-18</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="21567"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:Theatre Appr. - This was the most fun I have had at Baylor in a class. He is super awesome and he gives great examples and tells the history of theatre in funny stories. And, his beard is pretty awesome. Take him and have fun!!<b>&nbsp; - Grade In Class:</b>A</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2014-08-02</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="21324"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:1301 - best professor ive ever had hands down. he is funny, smart, and has a great personality. I ACTUALLY DID LEARN ABOUT THEATRE. all you have to do is take the online quizzes.<b>&nbsp; - Grade In Class:</b>A</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2014-07-01</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="21275"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:THEA 1206 - You'll learn something, get an A, love class, and do little studying. So take it.<b>&nbsp; - Grade In Class:</b>A</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2014-05-21</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="21189"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:1206 - Flores is such an awesome guy. He loves goofing around with students and tries to make theatre as interesting as possible. Having to go see three plays was a drag but it was easy.<b>&nbsp; - Grade In Class:</b>A</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2014-05-15</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="21148"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr bgcolor="#476A8E" align="center">
+                          <td colspan="4">
+                            <a href="clicksLog.php?redirect=https://www.americancampus.com/student-apartments/tx/waco/u-pointe-on-speight&adID=2" target='_new'><img src="ads/711%20Rates%20Increasing%20728x90%2011.29.17.jpg" border="0"></a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:Art Appreciation - Just go see the plays (don't leave during intermission), show up for class on-time, and do the reading tests (answers on Google). He always makes his students laugh and watch YouTube, but we learn way more than we think. He's great<b>&nbsp; - Grade In Class:</b>A</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2014-04-08</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="20903"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:1206 - Best theatre professor(or grad student) ever! It's just the kind of class you want for theatre. It was easy and hardly any work, but you still learn about theatre. I actually feel like I really do appreciate theatre more after having him! The only homework we had was to study for tests. And that takes like 10min to study. The class is super entertaining! I wish all professors were like him.<b>&nbsp; - Grade In Class:</b>A</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2014-01-14</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="20765"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:1206 - One of the most entertaining professors I've ever had! He's a graduate student in the directing program at Baylor, so he can definitely relate to students and is accommodating and helpful when students have problems. He is very passionate about theatre and is very good at spreading this enthusiasm to his students. I never missed class because Mr. Flores would always find a way to incorporate YouTube clips and class participation into our units, and we actually did learn about theatre!<b>&nbsp; - Grade In Class:</b>A</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2013-12-19</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="20614"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center" colspan="5" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#B2B6C8', EndColorStr='#476A8E');"><font size="4"><a href="login.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>LOGIN</b></font></a> &nbsp; &nbsp; <a href="home.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>HOME</b></font></a> &nbsp; &nbsp; <a href="about.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>ABOUT US</b></font></a> &nbsp; &nbsp; <a href="faq.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>FAQ</b></font></a> &nbsp; &nbsp; <a href="privacy.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>PRIVACY</b></font></a> &nbsp; &nbsp; <a href="terms.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>TERMS OF USE</b></font></a> &nbsp; &nbsp; <a href="advertising.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>ADVERTISING</b></font></a> &nbsp; &nbsp; <a href="contact.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>CONTACT US</b></font></a> &nbsp; &nbsp;</font></td>
+                  </tr>
+                </table><br>
+                <div align="center">
+                  <font size="-1">&copy;2003-2017 Bubooks.com - All rights reserved</font>
+                </div>
+                <script type="text/javascript">
+
+                try {
+                var pageTracker = _gat._getTracker("UA-98854-1");
+                pageTracker._trackPageview();
+                } catch(err) {}
+                </script>
+              </form>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

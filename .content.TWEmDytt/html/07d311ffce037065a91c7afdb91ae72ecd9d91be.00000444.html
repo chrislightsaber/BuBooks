@@ -1,0 +1,308 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+  <title>BUBooks.com - Classified Ads</title>
+  <script language="JavaScript">
+
+  <!--
+
+
+
+  function VerifyForm() 
+
+  {
+
+        if (document.getElementById("title").value=="")
+
+        {
+
+        alert('Please enter the Title!');
+
+        return false;
+
+        }
+
+        else if (document.getElementById("category").value=="")
+
+        {
+
+                alert('Please select the Category!');
+
+                return false;
+
+        }
+
+        else if (document.getElementById("price").value=="")
+
+        {
+
+                alert('Please list the Price!');
+
+                return false;
+
+        }
+
+        else if (document.getElementById("description").value=="")
+
+        {
+
+                alert('Please write Description/Notes!');
+
+                return false;
+
+        }
+
+        else 
+
+                return true;
+
+  }
+
+
+
+  //-->
+
+  </script>
+  <style type="text/css">
+
+                        <!--    
+
+                        
+
+
+
+                        H2
+
+                        {
+
+                        text-align: center;
+
+                        color: #263B4E;
+
+                        font-family: Verdana;
+
+                        
+
+                        }     
+
+                          
+
+                        div.text
+
+                        {
+
+                        text-align: left;
+
+                        color: #111111;
+
+                        font-family: Verdana; 
+
+                        font-size: 10pt;
+
+
+
+                        } 
+
+                        
+
+                        div.text2
+
+                        {
+
+                        text-align: left;
+
+                        color: #476A8E;
+
+                        font-family: Verdana; 
+
+                        font-size: 10pt;
+
+
+
+                        } 
+
+                        
+
+                        div.title 
+
+                        {
+
+                        font-variant: small-caps;
+
+                        text-transform: lowercase;
+
+                        color: #FFFFFF;
+
+                        font-size: 15pt;
+
+                        
+
+                        }
+
+      
+
+                        -->
+
+  </style>
+</head>
+<body bgcolor="#FFFFFF" vlink="#0066FF" leftmargin="0" rightmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+  <table border="1" rules="all" cellpadding="3" cellspacing="0" bordercolor="#476A8E" bgcolor="#476A8E" width="100%" align="center">
+    <tr>
+      <td width="100%" height="85" bgcolor="#476A8E" colspan="5">
+        <table border="0" cellpadding="0" cellspacing="0" bgcolor="#476A8E" width="100%">
+          <tr>
+            <td align="left" rowspan="2" width="70%"><a href="index.php"><img src="logo.gif" width="261" height="64" border="0"></a></td>
+            <td align="right">
+              <table align="right" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td><a href="clicksLog1.php?redirect=http://www.brothersmanagement.com&adID=5" target='_new'><img src="ads/brothers_468.gif" border="0"></a></td>
+                </tr>
+                <tr>
+                  <td align="center"><font face="verdana" size="1" color="#FFFFFF">Advertisement - Click for coupon or website</font></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" width="20%" bgcolor="#FFFFFF" height="23" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');"><a href="login.php" style='text-decoration:none;'><font face="Arial, Verdana" size="3" color="#000000"><b>Login</b></font></a></td>
+      <td align="center" width="20%" bgcolor="#FFFFFF" height="23" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');"><a href="books.php" style='text-decoration:none;'><font face="Arial, Verdana" size="3" color="#000000"><b>Textbooks</b></font></a></td>
+      <td align="center" width="20%" bgcolor="#FFFFFF" height="23" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');"><a href="profrate.php" style='text-decoration:none;'><font face="Arial, Verdana" size="3" color="#000000"><b>Professor Ratings</b></font></a></td>
+      <td align="center" width="20%" bgcolor="#FFFFFF" height="23" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');"><a href="classified.php" style='text-decoration:none;'><font face="Arial, Verdana" size="3" color="#000000"><b>Classified Ads</b></font></a></td>
+      <td align="center" width="20%" bgcolor="#FFFFFF" height="23" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');"><font face="Arial, Verdana" size="3" color="#000000"><b>Apartment Guide</b></font></td>
+    </tr>
+    <tr>
+      <td colspan="5" background="bckground.gif" bgcolor="#FFFFFF">
+        <table border="0" width="100%" rules="none">
+          <tr valign="top">
+            <td align="center">
+              <form method="get" action="narrowclass.php">
+                <table align="center" cellspacing="0" cellpadding="3" border="0" rules="none">
+                  <tr>
+                    <td align="center" colspan="3"><font size="4" color="#476A8E" face="arial">Narrow By Category</font></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div align="center">
+                        <select name="category">
+                          <option value="ALL">
+                            All
+                          </option>
+                          <option value="autos">
+                            Auto
+                          </option>
+                          <option value="clothing">
+                            Clothing
+                          </option>
+                          <option value="computers">
+                            Computers
+                          </option>
+                          <option value="electronics">
+                            Electronics
+                          </option>
+                          <option value="free">
+                            Free!
+                          </option>
+                          <option value="general">
+                            General Items
+                          </option>
+                          <option value="household">
+                            Furniture & Appliance
+                          </option>
+                          <option value="realestate">
+                            Real Estate
+                          </option>
+                          <option value="services">
+                            Services/Tutoring
+                          </option>
+                        </select>
+                      </div>
+                    </td>
+                    <td colspan="2" align="right"><input type="submit" value="Narrow"></td>
+                  </tr>
+                </table>
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td align="center"><a href="clicksLog.php?redirect=http://www.brothersmanagement.com&adID=1" target='_new'><img src="ads/brothers.gif" border="0"></a></td>
+          </tr>
+          <tr>
+            <td align="center"><a href="login.php?redirect=addclsfd.php">Login</a> to <font face="Verdana" size="2" color="#FF0000">Add a Classified ad</font></td>
+          </tr>
+          <tr>
+            <td bgcolor="#FFFFFF" background="bckground.gif" rowspan="2">
+              <table align="center" cellspacing="0" cellpadding="5" bgcolor="#FFFFFF" bordercolor="#274A6E" rules="none" valign="top" border="1" width="80%">
+                <tr>
+                  <td align="center" valign="top" rowspan="8"><img src="temp.gif" border="1" bordercolor="black"></td>
+                  <td valign="top">
+                    <div class="text2">
+                      Title:
+                    </div>
+                  </td>
+                  <td align="left" valign="top">
+                    <div class="text">
+                      High Quality Mattress Pad from BedBath&Beyond - <b>$0</b>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td valign="top">
+                    <div class="text2">
+                      Date:
+                    </div>
+                  </td>
+                  <td align="left" valign="top">
+                    <div class="text">
+                      Sep 6, 2015
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" valign="top">
+                    <div class="text2">
+                      Contact:
+                    </div>
+                  </td>
+                  <td align="left" valign="top">
+                    <div class="text">
+                      <a href="login.php?redirect=displayclsfd.php?ad_id=2330">Login to view</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td valign="top">
+                    <div class="text2">
+                      Description:
+                    </div>
+                  </td>
+                  <td align="left" valign="top">
+                    <div class="text">
+                      I have a 6 inch thick white single/twin mattress pad that was purchased from BedBath&Beyond. This is a top of the line mattress pad from BedBath&Beyond, and the most expensive model they sell. It even has a washable cover, this is a very high quality mattress pad, you will not be disappointed. Please contact me for price.
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table><br>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" colspan="5" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#B2B6C8', EndColorStr='#476A8E');"><font size="4"><a href="login.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>LOGIN</b></font></a> &nbsp; &nbsp; <a href="home.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>HOME</b></font></a> &nbsp; &nbsp; <a href="about.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>ABOUT US</b></font></a> &nbsp; &nbsp; <a href="faq.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>FAQ</b></font></a> &nbsp; &nbsp; <a href="privacy.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>PRIVACY</b></font></a> &nbsp; &nbsp; <a href="terms.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>TERMS OF USE</b></font></a> &nbsp; &nbsp; <a href="advertising.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>ADVERTISING</b></font></a> &nbsp; &nbsp; <a href="contact.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>CONTACT US</b></font></a> &nbsp; &nbsp;</font></td>
+    </tr>
+  </table><br>
+  <div align="center">
+    <font size="-1">&copy;2003-2015 Bubooks.com - All rights reserved</font>
+  </div>
+  <script type="text/javascript">
+
+  try {
+  var pageTracker = _gat._getTracker("UA-98854-1");
+  pageTracker._trackPageview();
+  } catch(err) {}
+  </script>
+</body>
+</html>

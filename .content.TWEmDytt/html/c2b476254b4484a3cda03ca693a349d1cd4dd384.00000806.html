@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rating for Zach Ward</title>
+  <style type="text/css">
+
+  <!--
+        h2
+        {
+                text-align: center;
+                color: #476A8E;
+                font-family: Verdana;
+        } 
+        p
+        {
+                color: #111111;
+                font-family: Verdana;
+                font-size: 10pt;
+        } 
+        .a
+        {
+                font-family: "Times New Roman", Times, serif;
+                font-size:17px;
+                color: #000000;
+        }
+        form
+        {
+                margin-top: 0px;
+                margin-bottom: 0px;
+        }
+        .text
+        {
+                font-family: Verdana;
+                font-size: 10pt;
+                color: #263B4E;
+        }
+        .search
+        {
+                font-family: Verdana;
+                font-size: 12pt;
+                font-weight: bold;
+                color: #263B4E;
+        }
+        .title 
+        {
+                font-family: Verdana;
+                font-variant: small-caps;
+                text-transform: lowercase;
+                font-weight: bold;
+                color: #FFFFFF;
+                font-size: 16pt;
+                padding-left: 10pt;
+        }
+        .title2
+        {
+                font-family: Verdana;
+                font-variant: small-caps;
+                text-transform: lowercase;
+                font-weight: bold;
+                color: #FFFF00;
+                font-size: 16pt;        
+        }
+  -->
+  </style>
+</head>
+<body bgcolor="#FFFFFF" vlink="#0066FF" leftmargin="0" rightmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+  <table border="1" rules="all" cellpadding="3" cellspacing="0" bordercolor="#476A8E" bgcolor="#476A8E" width="100%" align="center">
+    <tr>
+      <td width="100%" height="85" bgcolor="#476A8E" colspan="5">
+        <table border="0" cellpadding="0" cellspacing="0" bgcolor="#476A8E" width="100%">
+          <tr>
+            <td align="left" rowspan="2" width="70%">
+              <a href="index.php"><img src="logo.gif" width="261" height="64" border="0"></a>
+            </td>
+            <td align="right">
+              <table align="right" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td>
+                    <a href="clicksLog1.php?redirect=http://bubooks.com/advertising.php&adID=5" target='_new'><img src="ads/bubooks.gif" border="0">
+                    <table>
+                      <tr>
+                        <td align="center"><font face="verdana" size="1" color="#FFFFFF">Advertisement - Click for coupon or website</font></td>
+                      </tr>
+                    </table></a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" width="20%" bgcolor="#FFFFFF" height="23" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+              <a href="login.php" style='text-decoration:none;'><font face="Arial, Verdana" size="3" color="#000000"><b>Login</b></font></a>
+            </td>
+            <td align="center" width="20%" bgcolor="#FFFFFF" height="23" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+              <a href="books.php" style='text-decoration:none;'><font face="Arial, Verdana" size="3" color="#000000"><b>Textbooks</b></font></a>
+            </td>
+            <td align="center" width="20%" bgcolor="#FFFFFF" height="23" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+              <a href="profrate.php" style='text-decoration:none;'><font face="Arial, Verdana" size="3" color="#000000"><b>Professor Ratings</b></font></a>
+            </td>
+            <td align="center" width="20%" bgcolor="#FFFFFF" height="23" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+              <a href="classified.php" style='text-decoration:none;'><font face="Arial, Verdana" size="3" color="#000000"><b>Classified Ads</b></font></a>
+            </td>
+            <td align="center" width="20%" bgcolor="#FFFFFF" height="23" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');"><font face="Arial, Verdana" size="3" color="#000000"><b>Apartment Guide</b></font></td>
+          </tr>
+          <tr>
+            <td colspan="5" background="bckground.gif" bgcolor="#FFFFFF">
+              <script language="javascript" type="text/javascript">
+              //Change the image without refreshing the page...
+              function setTempImage(f, name, c) 
+              {
+                var color = c;
+                var hit = document.getElementById("color_" + name).value;
+
+                //if star is already red and they clicked on a star
+                //we need to change that star to yellow
+                if(c != 2) 
+                {
+                        if(hit == "hit")
+                        {
+                                c = 2;
+                                //if user did not click on a star, keep star same color
+                        }
+                        else 
+                        {
+                                c = 1;
+                        }
+                }
+
+                eval("document.getElementById('" + name + "').src='stars_" + c + "_" + f + ".gif';");
+
+                //sets the hidden field the value of the rating to keep for future reference
+                eval("document.getElementById('input_" + name + "').value=" + f);
+              }
+
+              function rateF(f, num, id, name, c) 
+              {
+                var nn4 = (document.layers) ? true : false
+                var ie = (document.all) ? true : false
+                var dom = (document.getElementById && !document.all) ? true : false
+
+                if(nn4)
+                {
+                        path = document.layers["userName" + num].value;
+                }
+                else if(ie)
+                {
+                        path = document.all["userName" + num].value;
+                } 
+                else 
+                {
+                        path = document.getElementById("userName" + num).value;
+                }
+                
+                window.open("rate.php?rateid=" + num + "&user=" + path + "&rate=" + f + "&profid=" + id, "newwindow", config="height=1, width=1, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, directories=no, status=no");
+                window.focus();
+
+                //Change the image without refreshing the page...
+                document.getElementById("color_" + name).value = "hit";
+
+                setTempImage(f, name, c);
+              }
+              </script> 
+              <script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+            </td>
+          </tr>
+          <tr>
+            <td bgcolor="#476A8E" align="left" colspan="5"><span class="title">Professor Overview -</span> <span class="title2">Zach Ward</span></td>
+          </tr>
+          <tr>
+            <td bgcolor="#FFFFFF" colspan="5" background="images/bckground.gif">
+              <table width="100%" cellspacing="0" cellpadding="2" border="1" bordercolor="#476A8E" rules="none">
+                <tr bgcolor="#CCCCCC" align="center">
+                  <td>
+                    <h4><u>Overall Score</u></h4>
+                  </td>
+                  <td>
+                    <h4><u>Ratings</u></h4>
+                  </td>
+                  <td>
+                    <h4><u>Teaching Ability</u></h4>
+                  </td>
+                  <td>
+                    <h4><u>Availability</u></h4>
+                  </td>
+                  <td>
+                    <h4><u>Helpfulness</u></h4>
+                  </td>
+                  <td>
+                    <h4><u>Workload</u><font color="#FF0000">*</font></h4>
+                  </td>
+                </tr>
+                <tr bgcolor="#FFFFFF" align="center">
+                  <td><font size="4" color="#FF0000"><font size="5" color="#33CC00"><b>93</b></font> <b></b></font></td>
+                  <td><font size="4" color="#FF0000">2</font></td>
+                  <td><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                  <td><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                  <td><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                  <td><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                </tr>
+                <tr bgcolor="#FFFFFF">
+                  <td colspan="6">
+                    <p align="center"><font color="#FF0000">*A 5 star workload is an easy workload; a 3 star is average; whereas a 1 star workload is extremely hard.</font></p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td bgcolor="#476A8E" align="left" colspan="5"><span class="title">Search / Options</span></td>
+          </tr>
+          <tr>
+            <td bgcolor="#FFFFFF" colspan="5" background="images/bckground.gif">
+              <form id="search" method="get" action="profdisplay.php" name="search">
+                <table width="100%" cellspacing="0" cellpadding="2" border="1" bordercolor="#476A8E" rules="none">
+                  <tr>
+                    <td align="center" colspan="5"><span class="search"><br>
+                    Showing professor &nbsp;&nbsp; <select id="profid" name="profid">
+                      <option value="">
+                        -- SELECT --
+                      </option>
+                      <option style="font:courier" value="2301">
+                        Aimone, Jason (67)
+                      </option>
+                      <option style="font:courier" value="2831">
+                        Bolbocean, Corneliu (75)
+                      </option>
+                      <option style="font:courier" value="2759">
+                        Buckles, Brian (84)
+                      </option>
+                      <option style="font:courier" value="2635">
+                        Chin, Yoo-Mi (68)
+                      </option>
+                      <option style="font:courier" value="1237">
+                        Cunningham, (75)
+                      </option>
+                      <option style="font:courier" value="2431">
+                        Edwards , Finley (66)
+                      </option>
+                      <option style="font:courier" value="30">
+                        Emerson, Tisha (56)
+                      </option>
+                      <option style="font:courier" value="2372">
+                        English, Linda (69)
+                      </option>
+                      <option style="font:courier" value="1035">
+                        Gardner, Steve (76)
+                      </option>
+                      <option style="font:courier" value="1434">
+                        Grinols, Earl (78)
+                      </option>
+                      <option style="font:courier" value="897">
+                        Henderson, James (65)
+                      </option>
+                      <option style="font:courier" value="2738">
+                        Hollingsworth, Eric (71)
+                      </option>
+                      <option style="font:courier" value="488">
+                        Johnson, Karen (79)
+                      </option>
+                      <option style="font:courier" value="2788">
+                        Kelly, Mark (83)
+                      </option>
+                      <option style="font:courier" value="2674">
+                        Klein , Sandra (70)
+                      </option>
+                      <option style="font:courier" value="2841">
+                        Law, Wilson (85)
+                      </option>
+                      <option style="font:courier" value="223">
+                        Mencken, Kim (81)
+                      </option>
+                      <option style="font:courier" value="303">
+                        North, Charles (87)
+                      </option>
+                      <option style="font:courier" value="1116">
+                        Pham, Van (77)
+                      </option>
+                      <option style="font:courier" value="2053">
+                        Ssozi, John (68)
+                      </option>
+                      <option style="font:courier" value="525">
+                        Vanhoose, David (61)
+                      </option>
+                      <option style="font:courier" value="3015" selected>
+                        Ward, Zach (93)
+                      </option>
+                      <option style="font:courier" value="2117">
+                        West, Jim (92)
+                      </option>
+                      <option style="background-color: LightGrey;" value="oldprofs">
+                        -- OLD PROFESSOR RATINGS --
+                      </option>
+                      <option style="background-color: LightGrey;" value="1197">
+                        Bartlett, Chris (75)
+                      </option>
+                      <option style="background-color: LightGrey;" value="614">
+                        Bowman, Judy (87)
+                      </option>
+                      <option style="background-color: LightGrey;" value="1446">
+                        Carter, Linda (62)
+                      </option>
+                      <option style="background-color: LightGrey;" value="357">
+                        Fifield, (69)
+                      </option>
+                      <option style="background-color: LightGrey;" value="330">
+                        Gage, (70)
+                      </option>
+                      <option style="background-color: LightGrey;" value="89">
+                        Garner, Scott (78)
+                      </option>
+                      <option style="background-color: LightGrey;" value="102">
+                        Gilbreath, Kent (77)
+                      </option>
+                      <option style="background-color: LightGrey;" value="1118">
+                        Green, Steve (83)
+                      </option>
+                      <option style="background-color: LightGrey;" value="2215">
+                        Hedlund, Aaron (58)
+                      </option>
+                      <option style="background-color: LightGrey;" value="2233">
+                        Kacaribu, Febrio (56)
+                      </option>
+                      <option style="background-color: LightGrey;" value="2532">
+                        Kelly, John (60)
+                      </option>
+                      <option style="background-color: LightGrey;" value="923">
+                        Kelly, Tom (66)
+                      </option>
+                      <option style="background-color: LightGrey;" value="354">
+                        Martynova, (75)
+                      </option>
+                      <option style="background-color: LightGrey;" value="922">
+                        Mckinney, Joe (88)
+                      </option>
+                      <option style="background-color: LightGrey;" value="170">
+                        Odegaard, Tom (71)
+                      </option>
+                      <option style="background-color: LightGrey;" value="2574">
+                        Paz, Lourenco (67)
+                      </option>
+                      <option style="background-color: LightGrey;" value="79">
+                        Pisciotta, John (69)
+                      </option>
+                      <option style="background-color: LightGrey;" value="605">
+                        Pittman, Scott (76)
+                      </option>
+                    </select> &nbsp;&nbsp;in the &nbsp;&nbsp; <select id="dept" name="dept" style="cursor:pointer; font-size : 10pt">
+                      <option value="select">
+                        --SELECT--
+                      </option>
+                      <option value="Show All">
+                        Show All
+                      </option>
+                      <option value="Accounting">
+                        Accounting
+                      </option>
+                      <option value="Aerospace Studies">
+                        Aerospace studies
+                      </option>
+                      <option value="African Studies">
+                        African studies
+                      </option>
+                      <option value="Air Pilot">
+                        Air pilot
+                      </option>
+                      <option value="Anthropology">
+                        Anthropology
+                      </option>
+                      <option value="Arabic">
+                        Arabic
+                      </option>
+                      <option value="Art">
+                        Art
+                      </option>
+                      <option value="Asian Studies">
+                        Asian studies
+                      </option>
+                      <option value="Aviation Sciences">
+                        Aviation sciences
+                      </option>
+                      <option value="Baylor Interdisciplinary Core">
+                        Baylor interdisciplinary core
+                      </option>
+                      <option value="Biology">
+                        Biology
+                      </option>
+                      <option value="Business">
+                        Business
+                      </option>
+                      <option value="Business Law">
+                        Business law
+                      </option>
+                      <option value="Chapel">
+                        Chapel
+                      </option>
+                      <option value="Chemistry">
+                        Chemistry
+                      </option>
+                      <option value="Chinese">
+                        Chinese
+                      </option>
+                      <option value="Christian Religious Education">
+                        Christian religious education
+                      </option>
+                      <option value="Church-state studies">
+                        Church-state studies
+                      </option>
+                      <option value="Civic Education & Community Service">
+                        Civic education & community service
+                      </option>
+                      <option value="Classics">
+                        Classics
+                      </option>
+                      <option value="Communication Sciences & Disorders">
+                        Communication sciences & disorders
+                      </option>
+                      <option value="Communication Studies">
+                        Communication studies
+                      </option>
+                      <option value="Computer Science">
+                        Computer science
+                      </option>
+                      <option value="Curriculum and Instruction">
+                        Curriculum and instruction
+                      </option>
+                      <option value="Economics" selected>
+                        Economics
+                      </option>
+                      <option value="Education">
+                        Education
+                      </option>
+                      <option value="Educational Psychology">
+                        Educational psychology
+                      </option>
+                      <option value="Engineering">
+                        Engineering
+                      </option>
+                      <option value="English">
+                        English
+                      </option>
+                      <option value="Entrepreneurship">
+                        Entrepreneurship
+                      </option>
+                      <option value="Environmental Studies">
+                        Environmental studies
+                      </option>
+                      <option value="Family and Consumer Sciences">
+                        Family and consumer sciences
+                      </option>
+                      <option value="Film and Digital Media">
+                        Film and digital media
+                      </option>
+                      <option value="Finance">
+                        Finance
+                      </option>
+                      <option value="First Year Seminars">
+                        First year seminars
+                      </option>
+                      <option value="Forensic Science">
+                        Forensic science
+                      </option>
+                      <option value="French">
+                        French
+                      </option>
+                      <option value="Geography">
+                        Geography
+                      </option>
+                      <option value="Geology">
+                        Geology
+                      </option>
+                      <option value="German">
+                        German
+                      </option>
+                      <option value="Gerontology">
+                        Gerontology
+                      </option>
+                      <option value="Great Texts">
+                        Great texts
+                      </option>
+                      <option value="Greek">
+                        Greek
+                      </option>
+                      <option value="Health Education">
+                        Health education
+                      </option>
+                      <option value="History">
+                        History
+                      </option>
+                      <option value="Honors">
+                        Honors
+                      </option>
+                      <option value="Human Performance">
+                        Human performance
+                      </option>
+                      <option value="Information Systems">
+                        Information systems
+                      </option>
+                      <option value="International">
+                        International
+                      </option>
+                      <option value="International Business">
+                        International business
+                      </option>
+                      <option value="Italian">
+                        Italian
+                      </option>
+                      <option value="Japanese">
+                        Japanese
+                      </option>
+                      <option value="Journalism">
+                        Journalism
+                      </option>
+                      <option value="Korean">
+                        Korean
+                      </option>
+                      <option value="Latin">
+                        Latin
+                      </option>
+                      <option value="Law">
+                        Law
+                      </option>
+                      <option value="Leadership Development">
+                        Leadership development
+                      </option>
+                      <option value="Leadership/Administration">
+                        Leadership/administration
+                      </option>
+                      <option value="Management">
+                        Management
+                      </option>
+                      <option value="Marketing">
+                        Marketing
+                      </option>
+                      <option value="Mathematics">
+                        Mathematics
+                      </option>
+                      <option value="Medical Humanities">
+                        Medical humanities
+                      </option>
+                      <option value="Modern Foreign Languages">
+                        Modern foreign languages
+                      </option>
+                      <option value="Music">
+                        Music
+                      </option>
+                      <option value="Neuroscience">
+                        Neuroscience
+                      </option>
+                      <option value="none">
+                        None
+                      </option>
+                      <option value="Nursing">
+                        Nursing
+                      </option>
+                      <option value="OTHER">
+                        Other
+                      </option>
+                      <option value="Philosophy">
+                        Philosophy
+                      </option>
+                      <option value="Physics">
+                        Physics
+                      </option>
+                      <option value="Political Science">
+                        Political science
+                      </option>
+                      <option value="Portuguese">
+                        Portuguese
+                      </option>
+                      <option value="Pre-Health Professions">
+                        Pre-health professions
+                      </option>
+                      <option value="Psychology">
+                        Psychology
+                      </option>
+                      <option value="Quantitative Business Analysis">
+                        Quantitative business analysis
+                      </option>
+                      <option value="Real Estate">
+                        Real estate
+                      </option>
+                      <option value="Recreation & Leisure Services">
+                        Recreation & leisure services
+                      </option>
+                      <option value="Religion">
+                        Religion
+                      </option>
+                      <option value="Risk Management and Insurance">
+                        Risk management and insurance
+                      </option>
+                      <option value="Russian">
+                        Russian
+                      </option>
+                      <option value="Social Work">
+                        Social work
+                      </option>
+                      <option value="Sociology">
+                        Sociology
+                      </option>
+                      <option value="Spanish">
+                        Spanish
+                      </option>
+                      <option value="Statistics">
+                        Statistics
+                      </option>
+                      <option value="Swahili">
+                        Swahili
+                      </option>
+                      <option value="Teacher Education">
+                        Teacher education
+                      </option>
+                      <option value="Telecommunications">
+                        Telecommunications
+                      </option>
+                      <option value="Theater Arts">
+                        Theater arts
+                      </option>
+                    </select> &nbsp;&nbsp; department</span></td>
+                  </tr>
+                  <tr>
+                    <td align="center" colspan="6">
+                      <hr width="75%" color="#476A8E">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center" valign="center">
+                      <a href="addrating.php?profid=3015" onmouseover="document.addrating.src='images/addmouseover.jpg'" onmouseout="document.addrating.src='images/adddefault.jpg'"><img src="images/adddefault.jpg" name="addrating" id="addrating"></a>&nbsp;&nbsp;&nbsp;
+                    </td>
+                  </tr>
+                  <tr align="center">
+                    <td bgcolor="#FFFFFF" colspan="5" background="images/bckground.gif">
+                      <br>
+                      <a href="clicksLog.php?redirect=http://bubooks.com/advertising.php&adID=8" target='_new'><img src="ads/bubooks.gif" border="0"></a>
+                    </td>
+                  </tr>
+                </table>
+                <script type="text/javascript">
+                function submit_form(frm) 
+                {
+                frm.submit();
+                }
+
+                function getElmById(aID)
+                { 
+                return (document.getElementById) ? document.getElementById(aID)
+                                  : document.all[aID];
+                } 
+
+                function validate_search()
+                {
+                var myDropDown = getElmById("dept");
+                var errors = 0;
+
+                if(errors>0) 
+                {
+                return false;
+                }
+                }
+
+                function onChangeHandler(e)
+                {
+                var myevent = (e) ? e : window.event;
+
+                submit_form(getElmById("search"));
+                }
+
+                function onChangeHandler_dept(e)
+                {
+                var myevent = (e) ? e : window.event;
+                var prof = getElmById("profid");
+
+                prof.selectedIndex = 0;
+
+                submit_form(getElmById("search"));
+                }
+
+                var myDropDown = getElmById("profid");
+
+                if(typeof(myDropDown) == "object")
+                {
+                myDropDown.onchange = onChangeHandler;
+                }
+
+                var myDropDown_dept = getElmById("dept");
+
+                if(typeof(myDropDown_dept) == "object")
+                {
+                myDropDown_dept.onchange = onChangeHandler_dept;
+                }
+
+                var mySearchForm = getElmById("search");
+
+                mySearchForm.onsubmit = validate_search;
+                </script>
+                <table>
+                  <tr>
+                    <td bgcolor="#476A8E" align="left" colspan="5"><span class="title">Individual User Ratings</span></td>
+                  </tr>
+                  <tr>
+                    <td bgcolor="#FFFFFF" colspan="5">
+                      <a name="29959" id="29959"></a><a name="29521" id="29521"></a>
+                      <table align="left" cellspacing="0" cellpadding="3" width="100%" border="1" bordercolor="#476A8E" rules="none" bgcolor="#FFFFCC">
+                        <tr align="center">
+                          <td width="25%">
+                            <h4><u></u></h4>
+                            <div class="text">
+                              <h4>Teaching Ability</h4>
+                            </div>
+                          </td>
+                          <td width="25%">
+                            <h4><u></u></h4>
+                            <div class="text">
+                              <h4>Availability</h4>
+                            </div>
+                          </td>
+                          <td width="25%">
+                            <h4><u></u></h4>
+                            <div class="text">
+                              <h4>Helpfulness</h4>
+                            </div>
+                          </td>
+                          <td width="25%">
+                            <h4><u></u></h4>
+                            <div class="text">
+                              <h4>Workload*</h4>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:2306 - His tests aren't easy, but there are easy 100 quiz grades that keep you afloat and comfortable. He's funny during the lectures and it's easy to stay focused. ZERO homework, just study for quizzes and tests. He also doesn't really require a textbook, so that's nice.<b>&nbsp; - Grade In Class:</b>B</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2019-11-17</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="29959"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">
+                            <form method="post" action="filecomplaint.php"></form>
+                            <table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+                              <tr bgcolor="#FFFFFF" align="center">
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                                <td width="25%"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                              </tr>
+                              <tr bgcolor="#FFFFFF" align="left">
+                                <td colspan="4">
+                                  <p><b>Comments</b>:Econometrics - Dr. Ward is a great professor for Econometrics! He explains things well, gives 6 homework sets ("problem sets") throughout the semester, and will make time to meet with you outside of office hours if you need. He is a very nice man and has sound effects (like dot dot dot dot dot when dotting his lines) when drawing on the board which can be quite entertaining. He is very passionate about Econometrics as well. I really enjoyed how he always shared the results of recent studies in the news. Also, there is one project in this class which is doing "research" and writing a paper (10 pages long), but it is split out across the semester so it is not that bad. The project also is really interesting because you get to choose your topic. He previously taught in Australia for a few years, which is so cool! Most people, who stuck it out in this class (i.e. didn't drop) and worked hard, got at least a B. Highly recommend Dr. Ward for Econometrics! <b>&nbsp; - Grade In Class:</b>A</p>
+                                </td>
+                              </tr>
+                              <tr height="1" bgcolor="#C1CFDD">
+                                <td align="left"><font size="1" face="verdana"><b>Date:</b> 2019-05-12</font></td>
+                                <td colspan="4" align="right"><input type="hidden" name="rate_id" value="29521"> <input type="submit" value="File Complaint"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center" colspan="5" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#B2B6C8', EndColorStr='#476A8E');"><font size="4"><a href="login.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>LOGIN</b></font></a> &nbsp; &nbsp; <a href="home.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>HOME</b></font></a> &nbsp; &nbsp; <a href="about.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>ABOUT US</b></font></a> &nbsp; &nbsp; <a href="faq.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>FAQ</b></font></a> &nbsp; &nbsp; <a href="privacy.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>PRIVACY</b></font></a> &nbsp; &nbsp; <a href="terms.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>TERMS OF USE</b></font></a> &nbsp; &nbsp; <a href="advertising.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>ADVERTISING</b></font></a> &nbsp; &nbsp; <a href="contact.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>CONTACT US</b></font></a> &nbsp; &nbsp;</font></td>
+                  </tr>
+                </table><br>
+                <div align="center">
+                  <font size="-1">&copy;2003-2019 Bubooks.com - All rights reserved</font>
+                </div>
+                <script type="text/javascript">
+
+                try {
+                var pageTracker = _gat._getTracker("UA-98854-1");
+                pageTracker._trackPageview();
+                } catch(err) {}
+                </script>
+              </form>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

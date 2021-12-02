@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>BUBooks.com - Recent Ratings</title>
+  <style type="text/css">
+  /*<![CDATA[*/
+
+
+  <!--
+
+
+
+  .a
+
+        {
+
+        font-family: "Times New Roman", Times, serif;
+
+        font-size:17px;
+
+        color: #000000;
+
+        }
+
+        
+
+  form
+
+        {
+
+        margin-top: 0px;
+
+        margin-bottom: 0px;
+
+        }
+
+
+
+  .text
+
+        {
+
+        font-family: Verdana;
+
+        font-size: 10pt;
+
+        color: #263B4E;
+
+        }
+
+
+
+  .title 
+
+        {
+
+        font-family: Verdana;
+
+        font-variant: small-caps;
+
+        text-transform: lowercase;
+
+        font-weight: bold;
+
+        color: #FFFFFF;
+
+        font-size: 16pt;
+
+        padding-left: 10pt;
+        
+
+        }       
+        
+        a:link {color: #ffff00; text-decoration: underline; }
+        a:active {color: #ffff00; text-decoration: underline; }
+        a:visited {color: #ffff00; text-decoration: underline; }
+        a:hover {color: #ff0000; text-decoration: none; }
+
+  .title2 
+
+        {
+
+        font-family: Verdana;
+
+        font-variant: small-caps;
+
+        text-transform: lowercase;
+
+        font-weight: bold;
+
+        font-size: 16pt;
+
+        padding-left: 10pt;
+
+        
+
+        }       
+        
+
+  -->
+
+  /*]]>*/
+  </style>
+</head>
+<body bgcolor="#FFFFFF" vlink="#0066FF" leftmargin="0" rightmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+  <table border="1" rules="all" cellpadding="3" cellspacing="0" bordercolor="#476A8E" bgcolor="#476A8E" width="100%" align="center">
+    <tr>
+      <td width="100%" height="85" bgcolor="#476A8E" colspan="5">
+        <form method="post" action="last25Ratings.php" name="formLast25Ratings" id="formLast25Ratings"></form><input type="hidden" name="numRatings" id="numRatings" value="25"><input type="hidden" name="page" id="page" value="2">
+        <table border="0" cellpadding="0" cellspacing="0" bgcolor="#476A8E" width="100%">
+          <tr>
+            <td align="left" rowspan="2" width="70%">
+              <a href="index.php"><img src="logo.gif" width="261" height="64" border="0"></a>
+            </td>
+            <td align="right">
+              <table align="right" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td>
+                    <a href="clicksLog1.php?redirect=http://bubooks.com/advertising.php&adID=3" target='_new'><img src="ads/bubooks.gif" border="0">
+                    <table>
+                      <tr>
+                        <td align="center"><font face="verdana" size="1" color="#FFFFFF">Advertisement - Click for coupon or website</font></td>
+                      </tr>
+                    </table></a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" width="20%" bgcolor="#FFFFFF" height="23" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+              <a href="login.php" style='text-decoration:none;'><font face="Arial, Verdana" size="3" color="#000000"><b>Login</b></font></a>
+            </td>
+            <td align="center" width="20%" bgcolor="#FFFFFF" height="23" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+              <a href="books.php" style='text-decoration:none;'><font face="Arial, Verdana" size="3" color="#000000"><b>Textbooks</b></font></a>
+            </td>
+            <td align="center" width="20%" bgcolor="#FFFFFF" height="23" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+              <a href="profrate.php" style='text-decoration:none;'><font face="Arial, Verdana" size="3" color="#000000"><b>Professor Ratings</b></font></a>
+            </td>
+            <td align="center" width="20%" bgcolor="#FFFFFF" height="23" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+              <a href="classified.php" style='text-decoration:none;'><font face="Arial, Verdana" size="3" color="#000000"><b>Classified Ads</b></font></a>
+            </td>
+            <td align="center" width="20%" bgcolor="#FFFFFF" height="23" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');"><font face="Arial, Verdana" size="3" color="#000000"><b>Apartment Guide</b></font></td>
+          </tr>
+          <tr>
+            <td colspan="5" background="bckground.gif" bgcolor="#FFFFFF">
+              <script type="text/javascript">
+              //<![CDATA[
+
+
+
+              <!--
+
+
+
+              function submitForm() 
+
+              {
+
+              document.formLast25Ratings.submit();
+
+
+
+              }
+
+
+
+              // -->
+
+              //]]>
+              </script>
+            </td>
+          </tr>
+          <tr>
+            <td bgcolor="white" align="center" colspan="5"><span class="title2">Recent Ratings</span></td>
+          </tr>
+          <tr>
+            <td bgcolor="#476A8E" align="left" colspan="5"><span class="title">1. Rating on <a href="/profdisplay.php?profid=2926">Stephanie Kunst</a> in the Management department</span></td>
+          </tr>
+          <tr>
+            <td bgcolor="#FFFFFF" colspan="5" align="center" background="bckground.gif">
+              <table width="100%" cellspacing="0" cellpadding="2" border="1" bordercolor="#476A8E" rules="none">
+                <thead bgcolor="#CCCCCC" align="center">
+                  <tr>
+                    <th>
+                      <h4><u>Teaching Ability</u></h4>
+                    </th>
+                    <th>
+                      <h4><u>Availability</u></h4>
+                    </th>
+                    <th>
+                      <h4><u>Helpfulness</u></h4>
+                    </th>
+                    <th>
+                      <h4><u>Workload*</u></h4>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody bgcolor="#FFFFFF" align="center">
+                  <tr>
+                    <td><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                    <td><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                    <td><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                    <td><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                  </tr>
+                  <tr align="left">
+                    <td colspan="4"><b>Opinion:</b> MGT3305 - Basically a sociology class for business majors. The entire class is pretty much just a bunch of group activities and group assignments that get done outside of class (hybrid class). Everything is open note and probably only an hour a week is needed to finish all requirements for the class. There is a test almost every week, but they're pretty straight forward, and usually a guaranteed A if you're literate. - <b>Grade In Class:</b>A</td>
+                  </tr>
+                  <tr align="left">
+                    <td colspan="4"><b>Date Listed:</b> 2021-04-18</td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td bgcolor="#476A8E" align="left" colspan="5"><span class="title">2. Rating on <a href="/profdisplay.php?profid=771">Blaine McCormick</a> in the Management department</span></td>
+          </tr>
+          <tr>
+            <td bgcolor="#FFFFFF" colspan="5" align="center" background="bckground.gif">
+              <table width="100%" cellspacing="0" cellpadding="2" border="1" bordercolor="#476A8E" rules="none">
+                <thead bgcolor="#CCCCCC" align="center">
+                  <tr>
+                    <th>
+                      <h4><u>Teaching Ability</u></h4>
+                    </th>
+                    <th>
+                      <h4><u>Availability</u></h4>
+                    </th>
+                    <th>
+                      <h4><u>Helpfulness</u></h4>
+                    </th>
+                    <th>
+                      <h4><u>Workload*</u></h4>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody bgcolor="#FFFFFF" align="center">
+                  <tr>
+                    <td><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                    <td><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"></td>
+                    <td><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                    <td><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                  </tr>
+                  <tr align="left">
+                    <td colspan="4"><b>Opinion:</b> MGT 3325 - This was an online course, so overall wasn't very engaging. Everything in the class was based off of long articles that you had to read and the only lectures that took place were reviews of those articles. Not at all saying that this was a bad class, the assignments were all pretty straight forward and he gave a lot of feedback. Tests were all very similar and if you finish all of the assignments throughout the modules, you should do well in this class. - <b>Grade In Class:</b>A</td>
+                  </tr>
+                  <tr align="left">
+                    <td colspan="4"><b>Date Listed:</b> 2021-04-18</td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td bgcolor="#476A8E" align="left" colspan="5"><span class="title">3. Rating on <a href="/profdisplay.php?profid=3057">David Scheaf</a> in the Entrepreneurship department</span></td>
+          </tr>
+          <tr>
+            <td bgcolor="#FFFFFF" colspan="5" align="center" background="bckground.gif">
+              <table width="100%" cellspacing="0" cellpadding="2" border="1" bordercolor="#476A8E" rules="none">
+                <thead bgcolor="#CCCCCC" align="center">
+                  <tr>
+                    <th>
+                      <h4><u>Teaching Ability</u></h4>
+                    </th>
+                    <th>
+                      <h4><u>Availability</u></h4>
+                    </th>
+                    <th>
+                      <h4><u>Helpfulness</u></h4>
+                    </th>
+                    <th>
+                      <h4><u>Workload*</u></h4>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody bgcolor="#FFFFFF" align="center">
+                  <tr>
+                    <td><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                    <td><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                    <td><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                    <td><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                  </tr>
+                  <tr align="left">
+                    <td colspan="4"><b>Opinion:</b> ENT 3320 - This dude was great tbh. The class did require quite a bit of attention because you're pretty much knee deep in a semester long project the entire class. Professor Scheaf is a really young professor, so he's really relatable, super easy to talk to and he really does try his best to make his class as enjoyable as possible. - <b>Grade In Class:</b>A</td>
+                  </tr>
+                  <tr align="left">
+                    <td colspan="4"><b>Date Listed:</b> 2021-04-18</td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td bgcolor="#476A8E" align="left" colspan="5"><span class="title">4. Rating on <a href="/profdisplay.php?profid=2745">Carolyn Turner</a> in the Quantitative Business Analysis department</span></td>
+          </tr>
+          <tr>
+            <td bgcolor="#FFFFFF" colspan="5" align="center" background="bckground.gif">
+              <table width="100%" cellspacing="0" cellpadding="2" border="1" bordercolor="#476A8E" rules="none">
+                <thead bgcolor="#CCCCCC" align="center">
+                  <tr>
+                    <th>
+                      <h4><u>Teaching Ability</u></h4>
+                    </th>
+                    <th>
+                      <h4><u>Availability</u></h4>
+                    </th>
+                    <th>
+                      <h4><u>Helpfulness</u></h4>
+                    </th>
+                    <th>
+                      <h4><u>Workload*</u></h4>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody bgcolor="#FFFFFF" align="center">
+                  <tr>
+                    <td><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                    <td><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                    <td><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                    <td><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                  </tr>
+                  <tr align="left">
+                    <td colspan="4"><b>Opinion:</b> QBA 3305 - For a math class, there is hardly any math involved, but it can get hard to pay attention for an entire class sometimes, but that's to be expected in a stats class. She's really good at walking the class through the modules and has a bunch of projects to do that are very close to the questions on the tests. The only downside is that there are so few grades. Tests are worth about 85% of your grade, and there's only 3 of them. Do good on the tests, do good in the class. - <b>Grade In Class:</b>A</td>
+                  </tr>
+                  <tr align="left">
+                    <td colspan="4"><b>Date Listed:</b> 2021-04-18</td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td bgcolor="#476A8E" align="left" colspan="5"><span class="title">5. Rating on <a href="/profdisplay.php?profid=2990">Jeff Stubbs</a> in the Business department</span></td>
+          </tr>
+          <tr>
+            <td bgcolor="#FFFFFF" colspan="5" align="center" background="bckground.gif">
+              <table width="100%" cellspacing="0" cellpadding="2" border="1" bordercolor="#476A8E" rules="none">
+                <thead bgcolor="#CCCCCC" align="center">
+                  <tr>
+                    <th>
+                      <h4><u>Teaching Ability</u></h4>
+                    </th>
+                    <th>
+                      <h4><u>Availability</u></h4>
+                    </th>
+                    <th>
+                      <h4><u>Helpfulness</u></h4>
+                    </th>
+                    <th>
+                      <h4><u>Workload*</u></h4>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody bgcolor="#FFFFFF" align="center">
+                  <tr>
+                    <td><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                    <td><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                    <td><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                    <td><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                  </tr>
+                  <tr align="left">
+                    <td colspan="4"><b>Opinion:</b> BUS 3101 - LOL. If you're reading this review, then you've already taken BUS 1101 and 2101, so you get the point. If you can breathe you'll get a 100+. - <b>Grade In Class:</b>A</td>
+                  </tr>
+                  <tr align="left">
+                    <td colspan="4"><b>Date Listed:</b> 2021-04-18</td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td bgcolor="#476A8E" align="left" colspan="5"><span class="title">6. Rating on <a href="/profdisplay.php?profid=231">David Corey</a> in the Political Science department</span></td>
+          </tr>
+          <tr>
+            <td bgcolor="#FFFFFF" colspan="5" align="center" background="bckground.gif">
+              <table width="100%" cellspacing="0" cellpadding="2" border="1" bordercolor="#476A8E" rules="none">
+                <thead bgcolor="#CCCCCC" align="center">
+                  <tr>
+                    <th>
+                      <h4><u>Teaching Ability</u></h4>
+                    </th>
+                    <th>
+                      <h4><u>Availability</u></h4>
+                    </th>
+                    <th>
+                      <h4><u>Helpfulness</u></h4>
+                    </th>
+                    <th>
+                      <h4><u>Workload*</u></h4>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody bgcolor="#FFFFFF" align="center">
+                  <tr>
+                    <td><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                    <td><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                    <td><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                    <td><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                  </tr>
+                  <tr align="left">
+                    <td colspan="4"><b>Opinion:</b> 2301 H - So, I took the Honors section of Great Texts with Dr. Corey,,, and I loved it. Yes, it was a very intensive course (lots of reading and he had quizzes almost every class) but he knows his stuff. Dr. Corey knows these books like the back of his own hand, and he makes sure you walk out of the classroom with a better understanding of your purpose and your life. Yes, he is a pretty strict grader, but I benefitted a lot from having someone actually try to improve my writing and give me really specific advice and fixes. I think he comes off as a little intimidating, but the man truly cares for all of his students and genuinely wants to build a relationship with you. - <b>Grade In Class:</b>A</td>
+                  </tr>
+                  <tr align="left">
+                    <td colspan="4"><b>Date Listed:</b> 2021-04-18</td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td bgcolor="#476A8E" align="left" colspan="5"><span class="title">7. Rating on <a href="/profdisplay.php?profid=2029">Jason Whitt</a> in the Great Texts department</span></td>
+          </tr>
+          <tr>
+            <td bgcolor="#FFFFFF" colspan="5" align="center" background="bckground.gif">
+              <table width="100%" cellspacing="0" cellpadding="2" border="1" bordercolor="#476A8E" rules="none">
+                <thead bgcolor="#CCCCCC" align="center">
+                  <tr>
+                    <th>
+                      <h4><u>Teaching Ability</u></h4>
+                    </th>
+                    <th>
+                      <h4><u>Availability</u></h4>
+                    </th>
+                    <th>
+                      <h4><u>Helpfulness</u></h4>
+                    </th>
+                    <th>
+                      <h4><u>Workload*</u></h4>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody bgcolor="#FFFFFF" align="center">
+                  <tr>
+                    <td><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                    <td><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                    <td><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                    <td><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                  </tr>
+                  <tr align="left">
+                    <td colspan="4"><b>Opinion:</b> REL 1350 H - Dr. Whitt is AWESOME! He's very passionate about what he teaches, and the tests are always from the PowerPoint. He prepares us well, and I think he truly is trying to show us how Christianity ended up so diverse. He is a pretty objective professor and tries to remain as unbiased as possible when teaching even though he is strongly Baptist. I would recommend taking this course, especially if you're looking for an Honors credit to knock out. It's pretty manageable. - <b>Grade In Class:</b>A</td>
+                  </tr>
+                  <tr align="left">
+                    <td colspan="4"><b>Date Listed:</b> 2021-04-18</td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td bgcolor="#476A8E" align="left" colspan="5"><span class="title">8. Rating on <a href="/profdisplay.php?profid=2799">Jason Pitts</a> in the Biology department</span></td>
+          </tr>
+          <tr>
+            <td bgcolor="#FFFFFF" colspan="5" align="center" background="bckground.gif">
+              <table width="100%" cellspacing="0" cellpadding="2" border="1" bordercolor="#476A8E" rules="none">
+                <thead bgcolor="#CCCCCC" align="center">
+                  <tr>
+                    <th>
+                      <h4><u>Teaching Ability</u></h4>
+                    </th>
+                    <th>
+                      <h4><u>Availability</u></h4>
+                    </th>
+                    <th>
+                      <h4><u>Helpfulness</u></h4>
+                    </th>
+                    <th>
+                      <h4><u>Workload*</u></h4>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody bgcolor="#FFFFFF" align="center">
+                  <tr>
+                    <td><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                    <td><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                    <td><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                    <td><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                  </tr>
+                  <tr align="left">
+                    <td colspan="4"><b>Opinion:</b> 1305 H - This class was very difficult. I would go to his office hours and he would not be very helpful. The tests were very difficult, and he was always very harsh when grading writing assignments. - <b>Grade In Class:</b>C</td>
+                  </tr>
+                  <tr align="left">
+                    <td colspan="4"><b>Date Listed:</b> 2021-04-18</td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td bgcolor="#476A8E" align="left" colspan="5"><span class="title">9. Rating on <a href="/profdisplay.php?profid=2354">Shawn Latendresse</a> in the Psychology department</span></td>
+          </tr>
+          <tr>
+            <td bgcolor="#FFFFFF" colspan="5" align="center" background="bckground.gif">
+              <table width="100%" cellspacing="0" cellpadding="2" border="1" bordercolor="#476A8E" rules="none">
+                <thead bgcolor="#CCCCCC" align="center">
+                  <tr>
+                    <th>
+                      <h4><u>Teaching Ability</u></h4>
+                    </th>
+                    <th>
+                      <h4><u>Availability</u></h4>
+                    </th>
+                    <th>
+                      <h4><u>Helpfulness</u></h4>
+                    </th>
+                    <th>
+                      <h4><u>Workload*</u></h4>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody bgcolor="#FFFFFF" align="center">
+                  <tr>
+                    <td><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                    <td><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                    <td><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                    <td><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star2.gif"><img src="images/star2.gif"></td>
+                  </tr>
+                  <tr align="left">
+                    <td colspan="4"><b>Opinion:</b> 2405 - Horrible professor, probably worst in the psych department. Don't know what the point of his teaching even is considering that his lectures make no sense. He is not a good public speaker so getting lectures is hard. Nobody ever went to class except for on test day. The final paper and research isn't bad if you go to lab and follow the instructions. The reason he is a horrible professor is because he literally accused and reported half of. y class for plagiarism. We didn't even plagiarize he just chose not to read our papers and relied on turnitin which makes mistakes all the time. Pretty much everyone had to argue to the honor council and ended up winning because they saw how dumb his accusation was. He docked so many people's grade. Unfortunately he's the only prof for this class and its required for psych. Honestly read the book listen to your TA and avoid him at all cost. - <b>Grade In Class:</b>C+</td>
+                  </tr>
+                  <tr align="left">
+                    <td colspan="4"><b>Date Listed:</b> 2021-04-18</td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td bgcolor="#476A8E" align="left" colspan="5"><span class="title">10. Rating on <a href="/profdisplay.php?profid=2716">Hank DeHay</a> in the Communication Studies department</span></td>
+          </tr>
+          <tr>
+            <td bgcolor="#FFFFFF" colspan="5" align="center" background="bckground.gif">
+              <table width="100%" cellspacing="0" cellpadding="2" border="1" bordercolor="#476A8E" rules="none">
+                <thead bgcolor="#CCCCCC" align="center">
+                  <tr>
+                    <th>
+                      <h4><u>Teaching Ability</u></h4>
+                    </th>
+                    <th>
+                      <h4><u>Availability</u></h4>
+                    </th>
+                    <th>
+                      <h4><u>Helpfulness</u></h4>
+                    </th>
+                    <th>
+                      <h4><u>Workload*</u></h4>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody bgcolor="#FFFFFF" align="center">
+                  <tr>
+                    <td><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                    <td><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                    <td><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                    <td><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"><img src="images/star1.gif"></td>
+                  </tr>
+                  <tr align="left">
+                    <td colspan="4"><b>Opinion:</b> CSS 1302 - I love Mr. DeHay. He was a great professor and only made you show up on lecture days and the day that your speaking group had to present their speeches. There are 5 speeches throughout the semester and a Final Exam, so there aren't many assignments. He makes the class very enjoyable and doable, so there is almost no work aside from writing your speech and presenting it. You should definitely take DeHay, he's an amazing professor and really cares about his students. He is also willing to work things out with you if something comes up in life. - <b>Grade In Class:</b>A</td>
+                  </tr>
+                  <tr align="left">
+                    <td colspan="4"><b>Date Listed:</b> 2021-04-17</td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td bgcolor="#FFFFFF" align="center" colspan="5">
+              <a href="#" onclick="submitForm();">MORE RATINGS (11 - 20)</a>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" colspan="5" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#B2B6C8', EndColorStr='#476A8E');"><font size="4"><a href="login.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>LOGIN</b></font></a> &nbsp; &nbsp; <a href="home.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>HOME</b></font></a> &nbsp; &nbsp; <a href="about.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>ABOUT US</b></font></a> &nbsp; &nbsp; <a href="faq.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>FAQ</b></font></a> &nbsp; &nbsp; <a href="privacy.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>PRIVACY</b></font></a> &nbsp; &nbsp; <a href="terms.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>TERMS OF USE</b></font></a> &nbsp; &nbsp; <a href="advertising.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>ADVERTISING</b></font></a> &nbsp; &nbsp; <a href="contact.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>CONTACT US</b></font></a> &nbsp; &nbsp;</font></td>
+          </tr>
+        </table><br>
+        <div align="center">
+          <font size="-1">&copy;2003-2021 Bubooks.com - All rights reserved</font>
+        </div>
+        <script type="text/javascript">
+        //<![CDATA[
+
+        try {
+        var pageTracker = _gat._getTracker("UA-98854-1");
+        pageTracker._trackPageview();
+        } catch(err) {}
+        //]]>
+        </script>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

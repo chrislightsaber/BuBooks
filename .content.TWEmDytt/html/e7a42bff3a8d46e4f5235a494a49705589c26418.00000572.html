@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bubooks.com - Sign up</title>
+  <script language="JavaScript">
+
+  <!-- Begin
+  function checkEmail(myForm) {
+  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.email.value)){
+  return (true)
+  }
+  alert("Invalid email address!  Please re-enter.")
+  return (false)
+  }
+  //  End -->
+  </script>
+  <script language="JavaScript">
+  <!--
+  var email_name_notice = 0;
+  function email_name(){
+        if (window.document.post.email_name_notice.value == 0){
+                alert("IMPORTANT! We require a valid EMAIL ADDRESS in order to send you your username and password.\n");
+                window.document.post.email_name_notice.value = 1;
+        }
+  }
+
+  //-->
+  </script>
+  <style type="text/css">
+        <!--    
+        H3
+        {
+        text-align: center;
+        color: #263B4E;
+        font-family: Verdana
+        } 
+
+        H1
+        {
+        text-align: center;
+        color: #476A8E;
+        font-family: Verdana
+        }     
+          
+        *#text 
+        {
+        color: #476A8E;
+        font-family: Verdana;
+        font-size: 8pt; 
+        text-align: left
+        }
+
+        
+         -->
+  </style>
+</head>
+<body bgcolor="#FFFFFF" vlink="#0066FF" leftmargin="0" rightmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+  <div id="fb-root"></div>
+  <script type="text/javascript">
+  window.fbAsyncInit = function() {
+    FB.init({appId: '', status: true, cookie: true, xfbml: true});
+  };
+  (function() {
+    var e = document.createElement('script');
+    e.type = 'text/javascript';
+    e.src = document.location.protocol +
+        '//connect.facebook.net/en_US/all.js';
+    e.async = true;
+    document.getElementById('fb-root').appendChild(e);
+  }());
+
+  window.fbAsyncInit = function() {
+        FB.init({appId: '', status: true, cookie: true, xfbml: true});
+        FB.Event.subscribe('auth.login', function(response) 
+    {
+                window.location.href = "facebookLogin.php";
+    });
+        FB.getLoginStatus(function(response)
+        {
+                if (response.session)
+                {
+                        window.location.href = "facebookLogin.php";
+                }
+        });
+  };
+  </script>
+  <table border="1" rules="all" cellpadding="3" cellspacing="0" bordercolor="#476A8E" bgcolor="#476A8E" width="100%" align="center">
+    <tr>
+      <td width="100%" height="85" bgcolor="#476A8E" colspan="5">
+        <table border="0" cellpadding="0" cellspacing="0" bgcolor="#476A8E" width="100%">
+          <tr>
+            <td align="left" rowspan="2" width="70%">
+              <a href="index.php"><img src="images/logo.gif" width="261" height="64" border="0"></a>
+            </td>
+            <td align="right">
+              <table align="right" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td>
+                    <a href="clicksLog1.php?redirect=http://bubooks.com/advertising.php&adID=4" target='_new'><img src="ads/bubooks.gif" border="0">
+                    <table>
+                      <tr>
+                        <td align="center"><font face="verdana" size="1" color="#FFFFFF">Advertisement - Click for coupon or website</font></td>
+                      </tr>
+                    </table></a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" width="20%" bgcolor="#FFFFFF" height="23" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+              <a href="login.php" style='text-decoration:none;'><font face="Arial, Verdana" size="3" color="#000000"><b>Login</b></font></a>
+            </td>
+            <td align="center" width="20%" bgcolor="#FFFFFF" height="23" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+              <a href="books.php" style='text-decoration:none;'><font face="Arial, Verdana" size="3" color="#000000"><b>Textbooks</b></font></a>
+            </td>
+            <td align="center" width="20%" bgcolor="#FFFFFF" height="23" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+              <a href="profrate.php" style='text-decoration:none;'><font face="Arial, Verdana" size="3" color="#000000"><b>Professor Ratings</b></font></a>
+            </td>
+            <td align="center" width="20%" bgcolor="#FFFFFF" height="23" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+              <a href="classified.php" style='text-decoration:none;'><font face="Arial, Verdana" size="3" color="#000000"><b>Classified Ads</b></font></a>
+            </td>
+            <td align="center" width="20%" bgcolor="#FFFFFF" height="23" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');"><font face="Arial, Verdana" size="3" color="#000000"><b>Apartment Guide</b></font></td>
+          </tr>
+          <tr>
+            <td colspan="5" background="images/bckground.gif" bgcolor="#FFFFFF">
+              <h1>Student Registration</h1>
+              <table align="center" bordercolor="#476A8E" border="1" rules="ALL">
+                <tr>
+                  <td>
+                    <form method="post" action="adduser.php" name="post" onsubmit="return checkform()" id="post"></form>
+                    <table cellspacing="10" cellpadding="0" bgcolor="#FFFFFF" align="center">
+                      <tr>
+                        <td id="text">First Name:</td>
+                        <td align="left"><input type="text" name="firstname" size="20" maxlength="20"></td>
+                        <td id="text" colspan="2">School: <b><font face="Verdana" color="#476A8E" size="2">Baylor University</font></b><font face="Verdana" color="#476A8E" size="2"></font></td>
+                      </tr>
+                      <tr>
+                        <td id="text">Last Name:</td>
+                        <td align="left"><input type="text" name="lastname" size="20" maxlength="20"></td>
+                      </tr>
+                      <tr>
+                        <td id="text">User Name:</td>
+                        <td align="left"><input type="text" name="username" size="20" maxlength="20"></td>
+                      </tr>
+                      <tr>
+                        <td id="text">Phone: (optional)</td>
+                        <td align="left"><input type="text" name="phone" size="20" maxlength="20"></td>
+                      </tr>
+                      <tr>
+                        <td id="text">Email Address:*</td>
+                        <td align="left"><input type="text" name="email" onfocus="JavaScript:email_name();" size="20" maxlength="50"><input type="hidden" name="email_name_notice" value=""></td>
+                        <td id="text" colspan="2">
+                          *See our <a href="privacy.php" target="new">privacy statement</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td id="text">Password:</td>
+                        <td align="left"><input type="password" name="passwd" size="20" maxlength="20"></td>
+                      </tr>
+                      <tr>
+                        <td id="text">Confirm Password:</td>
+                        <td align="left"><input type="password" name="passwd2" size="20" maxlength="20"></td>
+                      </tr>
+                      <tr>
+                        <td id="text">Authentication:</td>
+                        <td align="left">Please type the <b>3</b> black symbols that you see</td>
+                      </tr>
+                      <tr>
+                        <td id="text"></td>
+                        <td align="left">
+                          <table>
+                            <tr>
+                              <td><img src="captcha.php" alt="captcha image"></td>
+                              <td><input type="text" name="captcha" size="3" maxlength="3"></td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td id="text" colspan="3">
+                          By registering with Bubooks you agree to all <a href="terms.php" target="new">Terms of use</a>
+                        </td>
+                        <td align="right"><input type="submit" name="create" value="Create Account"></td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table><br>
+              Caught Exception: ('Facebook needs the CURL PHP extension.') exception 'Exception' with message 'Facebook needs the CURL PHP extension.' in /var/www/dustin/facebook.php:4 Stack trace: #0 /var/www/dustin/footer.inc(7): require_once() #1 /var/www/dustin/signup.php(130): include('/var/www/dustin...') #2 {main}
+            </td>
+          </tr>
+          <tr>
+            <td align="center" colspan="5" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#B2B6C8', EndColorStr='#476A8E');"><font size="4"><a href="login.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>LOGIN</b></font></a> &nbsp; &nbsp; <a href="home.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>HOME</b></font></a> &nbsp; &nbsp; <a href="about.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>ABOUT US</b></font></a> &nbsp; &nbsp; <a href="faq.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>FAQ</b></font></a> &nbsp; &nbsp; <a href="privacy.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>PRIVACY</b></font></a> &nbsp; &nbsp; <a href="terms.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>TERMS OF USE</b></font></a> &nbsp; &nbsp; <a href="advertising.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>ADVERTISING</b></font></a> &nbsp; &nbsp; <a href="contact.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF"><b>CONTACT US</b></font></a> &nbsp; &nbsp;</font></td>
+          </tr>
+        </table><br>
+        <div align="center">
+          <font size="-1">&copy;2003-2020 BUbooks.net - All rights reserved</font>
+        </div>
+        <script type="text/javascript">
+
+        var pageTracker = _gat._getTracker("UA-98854-2");
+        pageTracker._trackPageview();
+        </script>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
