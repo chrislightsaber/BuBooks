@@ -1,0 +1,331 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN"><html><head><title>Bubooks.com</title></head>
+<!------Include Header-------->
+<body bgcolor="#ffffff" vlink="#0066ff" leftmargin="0" rightmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+
+<table border="1" rules = "all" cellpadding = "3" cellspacing = "0" bordercolor="#476A8E" bgcolor = "#476A8E" width="100%" align="center">
+
+
+
+  <tr>
+
+    <td width="100%" height="85" bgcolor="#476A8E" colspan = "5">
+
+		<table border ="0" cellpadding = "0" cellspacing = "0" bgcolor = "#476A8E" width = "100%" >
+		<tr><td align = "left" rowspan="2">
+			<img src="logo.gif" width="261" height="64">
+		</td>
+		<td align = "right">
+			<table align="right" border ="0" cellpadding="0" cellspacing="0">
+			<tr><td>
+						<a href = "clicksLog.php?redirect=tshirt.php&adID=8" target='_new'>
+								
+					<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+					codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"
+					WIDTH="468" HEIGHT="60" id="8">
+					<PARAM NAME=movie VALUE="ads/tshirt.swf"> 
+					<PARAM NAME=quality VALUE=high>
+					<PARAM NAME=bgcolor VALUE=#FFFFFF>
+					
+					<EMBED src="ads/tshirt.swf" quality=high bgcolor=#FFFFFF WIDTH="468" HEIGHT="60" 
+					NAME="myMovieName" ALIGN="" TYPE="application/x-shockwave-flash" 
+					PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer">
+					</EMBED>
+					
+					</OBJECT></a>
+				
+						<tr><td align="center"><font face ="verdana" size="1" color ="#ffffff">Advertisement - Click for coupon or website</font></td></tr>
+		</tr></td></table>
+		</td>
+		</tr>
+		
+		
+		
+		</table>
+    
+    </td>  
+
+  </tr>
+
+
+<!--- NavBar ---->
+	<tr>
+
+  
+    
+    
+    	<td align ="center" width="20%" bgcolor="#FFFFff" height="23" 
+	
+		style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+	
+			<a href="login.php" style='text-decoration:none;'>
+		
+			<font face="Arial, Verdana" size="3" color="#000000">
+		
+			<b>Login</b> </font></a>
+			
+		</td>
+	
+		
+	
+
+		<td align ="center" width="20%" bgcolor="#FFFFff" height="23" 
+	
+		style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+	
+			<a href="books.php" style='text-decoration:none;'>
+		
+			<font face="Arial, Verdana" size="3" color="#000000">
+		
+			<b>Textbooks</b></font></a>
+			
+		</td>
+	
+			
+	
+		<td align="center" width="20%" bgcolor="#FFFFff" height="23"
+	
+		style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+	
+			<a href="profrate.php" style='text-decoration:none;'>
+		
+			<font face="Arial, Verdana" size="3" color="#000000">
+		
+			<b>Professor Ratings</b></font></a>
+	
+		</td> 
+	
+	
+	
+		<td align="center" width="20%" bgcolor="#FFFFff" height="23"
+	
+		style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');"> 
+	
+			<a href="classified.php" style='text-decoration:none;'>
+	
+		<font face="Arial, Verdana" size="3" color="#000000">
+	
+		<b>Classified Ads</b></font></a></td>
+	
+	
+	
+	
+	
+		<td align="center" width="20%" bgcolor="#FFFFff" height="23"
+	
+		style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');"> 
+	
+			<a href="http://www.bearcribs.com" style='text-decoration:none;' target='new'>
+		
+			<font face="Arial, Verdana" size="3" color="#000000">
+		
+			<b>Apartment Guide</b></font></a>
+		</td>
+	
+	
+
+  </tr>
+  
+  <tr>
+ <td colspan = "5" background = "bckground.gif" bgcolor = "#FFFFFF">	
+	<table rules="none" border="0" width="100%">
+	<tr>
+		<td width="20%" valign="top">
+			<form method="get" action="narrowclass.php">
+			<table align="center"  cellspacing="0" cellpadding="3" bordercolor= "#476A8E" bgcolor="#FFFFFF" border="1" rules ="none">
+				<tr bgcolor="#476A8E">
+					<td align="center" colspan="2">
+						<font size="4" color="#FFFFFF" face="arial">Narrow By Category</font>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div align="center">
+						<select name="category">
+						<OPTION VALUE = "ALL">All
+						<OPTION VALUE = "autos">Auto
+							<OPTION VALUE = "computers">Computers
+							<OPTION VALUE = "clothing">Clothing
+							<OPTION VALUE = "electronics">Electronics
+							<OPTION VALUE = "employment">Employment
+							<OPTION VALUE = "household">Household Items
+							<OPTION VALUE = "general">General Items
+							<OPTION VALUE = "realestate">Real Estate
+						</select></td></tr>
+						<tr><td colspan="2" align="right"><input type="submit" value="Narrow"></td></tr>
+						</div>
+					</td>
+				</tr>
+			 </form>
+			</table>
+			
+		<UL>
+		<LI><a href = "addclsfd.php"><font face="Verdana" size="2" color="#FF0000"><B>Place an ad</b></font></a>
+		<LI><a href = "classfaq.php"><font face="Verdana" size="2" color="#263B4E">Classified FAQ</font></a>
+		<LI><a href = "signup.php"><font face="Verdana" size="2" color="#263B4E">Become a member</font></a>
+		</UL>
+		
+		</td>
+	
+		<td bgcolor="#FFFFFF" background="bckground.gif" rowspan = "2">
+			
+	
+				<table width="100%" cellpadding="5" cellspacing="0" frame="0" border="1" bgcolor="#ffffff" bordercolor="#274A6E" rules="ALL">
+			<thead>
+			<tr bgcolor="#ffffff"><td><H3><font color="#476A8E">You search in category 'household' returned 15 results in 0.003 seconds. </font></H3></td></tr>
+			</thead>
+			<tbody>
+			<tr><td><table width="100%" rules="all" bordercolor="#FFFFFF">
+			<tr align="center" bgcolor="#476A8E">
+			
+			<td><h3><u><font color="#ffffff">Title</font></u></h3></td>
+			<td><h3><u><font color="#ffffff">Category</font></u></h3></td>
+			<td><h3><u><font color="#ffffff">Price</font></u></h3></td>
+			</tr>
+							<tr align="center" bgcolor="#CCFF99"><td><a href="displayclsfd.php?ad_id=417">
+				<font face="verdana" size="2"><b>custom cabinets, bookshelves, and all woodworking</a></b></font></td>
+				<td><font face="verdana" size="2">household</font></td>
+				<td><font face="verdana" size="2">$72.5</td></font></tr>
+							<tr align="center" bgcolor="#CCFF99"><td><a href="displayclsfd.php?ad_id=404">
+				<font face="verdana" size="2"><b>Rolling desk chair & clear plastic chair mat</a></b></font></td>
+				<td><font face="verdana" size="2">household</font></td>
+				<td><font face="verdana" size="2">$20</td></font></tr>
+							<tr align="center" bgcolor="#CCFF99"><td><a href="displayclsfd.php?ad_id=403">
+				<font face="verdana" size="2"><b>2 bar stools with cushions</a></b></font></td>
+				<td><font face="verdana" size="2">household</font></td>
+				<td><font face="verdana" size="2">$50</td></font></tr>
+							<tr align="center" bgcolor="#CCFF99"><td><a href="displayclsfd.php?ad_id=402">
+				<font face="verdana" size="2"><b>Table and 4 chairs</a></b></font></td>
+				<td><font face="verdana" size="2">household</font></td>
+				<td><font face="verdana" size="2">$150</td></font></tr>
+							<tr align="center" bgcolor="#CCFF99"><td><a href="displayclsfd.php?ad_id=401">
+				<font face="verdana" size="2"><b>Full mattress, box spring, and frame</a></b></font></td>
+				<td><font face="verdana" size="2">household</font></td>
+				<td><font face="verdana" size="2">$100</td></font></tr>
+							<tr align="center" bgcolor="#CCFF99"><td><a href="displayclsfd.php?ad_id=400">
+				<font face="verdana" size="2"><b>3-shelf bookcase</a></b></font></td>
+				<td><font face="verdana" size="2">household</font></td>
+				<td><font face="verdana" size="2">$10</td></font></tr>
+							<tr align="center" bgcolor="#CCFF99"><td><a href="displayclsfd.php?ad_id=399">
+				<font face="verdana" size="2"><b>2-shelf bookcase</a></b></font></td>
+				<td><font face="verdana" size="2">household</font></td>
+				<td><font face="verdana" size="2">$30</td></font></tr>
+							<tr align="center" bgcolor="#CCFF99"><td><a href="displayclsfd.php?ad_id=398">
+				<font face="verdana" size="2"><b>5-Drawer Chest</a></b></font></td>
+				<td><font face="verdana" size="2">household</font></td>
+				<td><font face="verdana" size="2">$80</td></font></tr>
+							<tr align="center" bgcolor="#CCFF99"><td><a href="displayclsfd.php?ad_id=397">
+				<font face="verdana" size="2"><b>Computer desk and hutch for sale</a></b></font></td>
+				<td><font face="verdana" size="2">household</font></td>
+				<td><font face="verdana" size="2">$100</td></font></tr>
+							<tr align="center" bgcolor="#CCFF99"><td><a href="displayclsfd.php?ad_id=396">
+				<font face="verdana" size="2"><b>Mission Collection Furniture For Sale!</a></b></font></td>
+				<td><font face="verdana" size="2">household</font></td>
+				<td><font face="verdana" size="2">$40</td></font></tr>
+							<tr align="center" bgcolor="#CCFF99"><td><a href="displayclsfd.php?ad_id=353">
+				<font face="verdana" size="2"><b>Refrigerator</a></b></font></td>
+				<td><font face="verdana" size="2">household</font></td>
+				<td><font face="verdana" size="2">$50</td></font></tr>
+							<tr align="center" bgcolor="#CCFF99"><td><a href="displayclsfd.php?ad_id=349">
+				<font face="verdana" size="2"><b>Refrigerator</a></b></font></td>
+				<td><font face="verdana" size="2">household</font></td>
+				<td><font face="verdana" size="2">$40</td></font></tr>
+							<tr align="center" bgcolor="#CCFF99"><td><a href="displayclsfd.php?ad_id=272">
+				<font face="verdana" size="2"><b>5 wall shelves w/ brackets</a></b></font></td>
+				<td><font face="verdana" size="2">household</font></td>
+				<td><font face="verdana" size="2">$35</td></font></tr>
+							<tr align="center" bgcolor="#CCFF99"><td><a href="displayclsfd.php?ad_id=122">
+				<font face="verdana" size="2"><b>Loft Bed</a></b></font></td>
+				<td><font face="verdana" size="2">household</font></td>
+				<td><font face="verdana" size="2">$80</td></font></tr>
+							<tr align="center" bgcolor="#CCFF99"><td><a href="displayclsfd.php?ad_id=117">
+				<font face="verdana" size="2"><b>CARPET!!!</a></b></font></td>
+				<td><font face="verdana" size="2">household</font></td>
+				<td><font face="verdana" size="2">$25</td></font></tr>
+						</table>
+			</td></tr>
+			</tbody>
+			</table>
+				</td>
+	</tr>
+	
+	</table>
+</td>
+</tr>
+	<!--- Footer --->
+
+
+  <tr>
+
+ 	<td align="center" colspan="5" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#B2B6C8', EndColorStr='#476A8E');"><font size="4">
+
+
+
+		<a href="login.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>LOGIN</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="home.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>HOME</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="about.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>ABOUT US</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="faq.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>FAQ</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="privacy.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>PRIVACY</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="terms.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>TERMS OF USE</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="advertising.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>ADVERTISING</b></font></a> &nbsp; &nbsp; 
+
+	
+
+		<a href="contact.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>CONTACT US</b></font></a> &nbsp; &nbsp; 
+
+	
+
+		<a href="logout.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>LOGOUT</b></font></a>
+
+	</td>
+
+  
+
+</table>
+
+<br>
+
+<div align="center"><font size="-1">&copy;2003-2006 BUBooks.com - All rights reserved</font></div>
+
+
+
+</body>
+
+</html>

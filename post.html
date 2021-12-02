@@ -1,0 +1,361 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<Html>
+<HEAD>
+<TITLE>Boston Used Books - Post</TITLE>
+
+<script language="Javascript">
+
+if (document.images)  {
+
+bluedot1_on = new Image(12,12);
+bluedot1_on.src = "images/bluedot_on.gif";
+bluedot1_off = new Image(12,12);
+bluedot1_off.src = "images/bluedot.gif";
+
+bluedot2_on = new Image(12,12);
+bluedot2_on.src = "images/bluedot_on.gif";
+bluedot2_off = new Image(12,12);
+bluedot2_off.src = "images/bluedot.gif";
+
+bluedot3_on = new Image(12,12);
+bluedot3_on.src = "images/bluedot_on.gif";
+bluedot3_off = new Image(12,12);
+bluedot3_off.src = "images/bluedot.gif";
+
+bluedot4_on = new Image(12,12);
+bluedot4_on.src = "images/bluedot_on.gif";
+bluedot4_off = new Image(12,12);
+bluedot4_off.src = "images/bluedot.gif";
+
+cdsign_on = new Image(60,20);
+cdsign_on.src = "images/cdsign_on.gif";
+cdsign_off = new Image(60,20);
+cdsign_off.src = "images/cdsign.gif";
+
+
+}
+function imgOn(imgName) {
+  if (document.images) {
+    document[imgName].src = eval(imgName + "_on.src");
+  }
+}
+
+function imgOff(imgName) {
+  if (document.images)  {
+    document[imgName].src = eval(imgName + "_off.src");
+  }
+}
+
+</script>
+</head>
+
+<BODY Background = "images/bg.gif" TEXT="#000000" LINK="#008800" VLINK="#008800" alink="#99CC99">
+
+<table width="640" border="0" cellpadding="0" cellspacing="0">
+
+	<tr>
+		<td width="620" valign="bottom" colspan="2" background="images/design.gif">
+		<img src="images/transpic.gif" width="100" height="1">
+		<img src="images/divider_front.gif" width="60" height="25"><img src="images/booksign_on.gif" width="60" height="20"><img src="images/divider_left.gif" width="60" height="25"><a 	href="cd/index.html" onMouseOver="imgOn('cdsign'); return true" onMouseOut="imgOff('cdsign')"><img src="images/cdsign.gif" name="cdsign" border="0" width="60" height="20"></a><img src="images/divider_end.gif" width="60" height="25"></center>
+		</td>
+	</tr>
+
+  <!-- ******************* TOC **************** -->
+
+<tr>
+  <td valign="top">
+<table width="105" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td background="images/bg_nav.gif" height="120" valign="top"><a href="index.html"><img src="images/bg_small.gif" width="95" height="100" border="0"></a><br><img src="images/bar_tan.gif" height="2" width="95"></td>
+  </tr>
+
+  <tr>
+    <td background="images/bg_nav.gif" valign="top" align="left"><font face="arial" size="2"><img src="images/contents.gif" width="64" height="21">
+ 	</td>
+  </tr>
+
+  <tr>
+    <td background="images/bg_nav.gif" height="150" width="100" valign="top">
+
+	<a href="index.html" onmouseover="imgOn('bluedot4'); return true" onmouseout="imgOff('bluedot4')"><font size="2"           face="arial"><img src="images/bluedot.gif" border="0" width="12" height="12" name="bluedot4"><img src="images/home.gif" border="0" width="58" height="22" name="home" border="0"></font></a><p>
+
+	<a href="search.html" onMouseOver="imgOn('bluedot1'); return true" onMouseOut="imgOff('bluedot1')">
+	<img src="images/bluedot.gif" border="0" width="12" height="12" name="bluedot1"><img src="images/search_off.gif" border="0" name="search" width="71" height="22" border="0"></a>
+	<p>
+
+    <a href="post.html" onMouseOver="imgOn('bluedot2'); return true" onMouseOut="imgOff('bluedot2')">
+	<img src="images/bluedot.gif" border="0" width="12" height="12" name="bluedot2"><img src="images/post_off.gif" border="0" name="post" width="43" height="20" border="0"></a>
+    <p>
+
+    <a href="browse.html" onMouseOver="imgOn('bluedot3'); return true" onMouseOut="imgOff('bluedot3')">
+	<img src="images/bluedot.gif" border="0" width="12" height="12" name="bluedot3"><img src="images/browse_off.gif" border="0" name="browse" width="71" height="22" border="0"></a>
+<br>
+	</td>
+  </tr>
+
+	<tr>
+		<td height="460" background="images/bg_nav.gif" valign="top" align="center">&nbsp;
+		</td>
+	</tr>
+
+
+  </table>
+
+	</td>
+  <!-- ******************* End TOC **************** -->
+
+	<td width="510" valign="top">
+	<center>
+		<img src="images/logo.gif" border="0" width="460" height="100" alt="Boston Used Books">
+	</center>
+
+	<table width="510" cellpadding="0" cellspacing="0" border="0">
+
+	<tr>
+		<td valign="top"><center><font face="Arial"><font size="5">
+		Post a Book for Sale at BUbooks<font size="3"></center><p>
+
+		<form method="POST" action="http://www.bubooks.org/post.cgi">
+
+		<table width="510" border="0" cellpadding="0" cellspacing="0">
+		<tr>
+		  <td width="250" valign="top" align="right"><font face="arial">*Title:</td>
+		  <td width="20" valign="top">&nbsp;</td>
+		  <td width="280" valign="top"><font face="arial"><input TYPE=TEXT NAME="title" size="20" maxlength="64">
+</td>
+		</tr>
+
+		<tr>
+			<td width="510" colspan="3">&nbsp;</td>
+		</tr>
+
+		<tr>
+  			<td width="250" valign="top" align="right"><font face="arial">*Author's Last Name:</td>
+     		<td width="20" valign="top">&nbsp;</td>
+			<td width="280" valign="top"><font face="arial"><input TYPE=TEXT NAME="author" size="12" maxlength="32"></td>
+		</tr>
+
+		<tr>
+			<td width="510" colspan="3">&nbsp;</td>
+		</tr>
+
+
+		<tr>
+			<td width="250" valign="top" align="right"><font face="arial">*Year Published or Edition:</td>
+			<td width="20" valign="top">&nbsp;</td>
+			<td width="280" valign="top"><font face="arial"><input TYPE=TEXT NAME="year" size="4" maxlength="4"></td>
+		</tr>
+
+		<tr>
+			<td width="510" colspan="3">&nbsp;</td>
+		</tr>
+
+		<tr>
+			<td width="250" valign="top" align="right"><font face="arial">*Subject (yes, they're broad):</td>
+			<td width="20" valign="top">&nbsp;</td>
+			<td width="280" valign="top"><font face="arial">
+			<select name="subject">
+				<option value="Other">--Please Select--</option>
+            	<option>Business/Economics</option>
+            	<option>Literature/Philosophy</option>
+            	<option>Social Science/Law</option>
+            	<option>Science/Engineering</option>
+            	<option>Math/Computer Science</option>
+            	<option>Art/Music/Design</option>
+            	<option>Foreign Language</option>
+            	<option>Other</option>
+			</select></td>
+		</tr>
+		<tr>
+			<td width="510" colspan="3">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="250" valign="top" align="right"><font face="arial">Your School:</td>
+			<td width="20" valign="top">&nbsp;</td>
+			<td width="280" valign="top"><font face="arial"><input TYPE=TEXT NAME="school" size="12" maxlength="32">
+			</td>
+		</tr>
+<!--
+		<tr>
+			<td width="510" colspan="3">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="250" valign="top" align="right"><font face="arial">Your University:</td>
+			<td width="20" valign="top">&nbsp;</td>
+			<td width="280" valign="top"><font face="arial">
+						<select name="university">
+			            	<option>Boston University</option>
+			            	<option>Boston College</option>
+			            	<option>MIT</option>
+			            	<option>Other</option>
+			</select></td>
+		</tr>
+		<tr>
+			<td width="510" colspan="3">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="250" valign="top" align="right"><font face="arial">Your School:</td>
+			<td width="20" valign="top">&nbsp;</td>
+			<td width="280" valign="top"><font face="arial">
+						<select name="school">
+							<option value="">--Please Select--</option>
+			            	<option>Arts and Science</option>
+			            	<option>Communications</option>
+							<option>Hospitality</option>
+							<option>General Education</option>
+			            	<option>Other</option>
+			</select></td>
+		</tr>
+-->
+
+		<tr>
+			<td width="510" colspan="3">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="250" valign="middle" align="right"><font face="arial">Department:</td>
+			<td width="20" valign="top">&nbsp;</td>
+			<td width="280" valign="top"><font face="arial"><input TYPE=TEXT NAME="dept" size="3" maxlength="3"> Course #:<input TYPE=TEXT NAME="course" size="4" maxlength="4"></td>
+		</tr>
+
+
+		<tr>
+			<td width="510" colspan="3">&nbsp;</td>
+		</tr>
+
+		<tr>
+			<td width="510" colspan="3">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="250" valign="top" align="right"><font face="arial">Comments:</td>
+			<td width="20" valign="top">&nbsp;</td>
+			<td width="280" valign="top"><font face="arial"><input TYPE=TEXT NAME="comments" size="25" maxlength="64"></textarea></td>
+		</tr>
+
+		<tr>
+			<td width="510" colspan="3">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="250" valign="top" align="right"><font face="arial">*Price:</td>
+			<td width="20" valign="top">&nbsp;</td>
+			<td width="280" valign="top"><font face="arial"><input TYPE=TEXT NAME="price" size="6" maxlength="7" value="$">&nbsp;
+			<select name="offer">
+			   	<option>or Best Offer</option>
+			   	<option>Firm</option>
+			</select>
+			</td>
+		</tr>
+
+		<tr>
+			<td width="510" colspan="3">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="250" valign="top" align="right"><font face="arial">*Your First Name:</td>
+			<td width="20" valign="top">&nbsp;</td>
+			<td width="280" valign="top"><font face="arial"><input TYPE=TEXT NAME="name" size="15" maxlength="16"></td>
+		</tr>
+
+		<tr>
+			<td width="510" colspan="3">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="250" valign="top" align="right"><font face="arial">*Your Email:</td>
+			<td width="20" valign="top">&nbsp;</td>
+			<td width="280" valign="top"><font face="arial"><input TYPE=TEXT NAME="email" size="25" maxlength="32"></td>
+		</tr>
+
+		<tr>
+			<td width="510" colspan="3">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="250" valign="top" align="right"><font face="arial">Your Phone #:</td>
+			<td width="20" valign="top">&nbsp;</td>
+			<td width="280" valign="top"><font face="arial">( <input name="areacode" size="3" maxlength="3"> ) <input name="tele" size="3" maxlength="3"> - <input name="phone" size="4" maxlength="4"></td>
+		</tr>
+
+		<tr>
+			<td width="510" colspan="3">&nbsp;</td>
+		</tr>
+
+		<tr>
+			<td width="250" valign="top" align="right"><font face="arial">*Choose a Password:</td>
+			<td width="20" valign="top">&nbsp;</td>
+			<td width="280" valign="top"><font face="arial"><input TYPE=PASSWORD NAME="password" size="25" maxlength="16"></td>
+		</tr>
+
+		<tr>
+			<td width="510" colspan="3">&nbsp;</td>
+		</tr>
+
+		<tr>
+			<td width="250" valign="top" align="right"><font face="arial">How did you Heard about BUBooks:</td>
+			<td width="20" valign="top">&nbsp;</td>
+			<td width="280" valign="top"><font face="arial">
+			<select name="research">
+            	<option value="">--Please Select--</option>
+						<option>E-mail</option>
+						<option>Newspaper</option>
+						<option>Handed Flier</option>
+						<option>Word of Mouth</option>
+						<option>Bulletin Board</option>
+						<option>Other</option>
+			</select></td>
+		</tr>
+
+		<tr>
+			<td width="510" colspan="3">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="250" valign="top" align="right"><font face="arial">* = required</td>
+			<td width="20" valign="top">&nbsp;</td>
+			<td width="280" valign="top"><font face="arial">&nbsp;</td>
+		</tr>
+
+		<tr>
+			<td width="510" colspan="3">&nbsp;</td>
+		</tr>
+
+		<tr>
+			<td width="510" colspan="3"><center><input type="submit" action="" value="Post">&nbsp;<input type="reset" value="Clear Fields"></center></td>
+		</tr>
+
+
+		</table>
+		</form>
+
+		</td>
+
+	</tr>
+
+	<tr>
+		<td width="510">&nbsp;</td>
+	</tr>
+
+
+<!--  *************** Footer **************** -->
+
+	<tr>
+		<td valign="top"><font face="Arial" size="3"><center>
+		<p><a href="praise.html">Scorn and Praise</a> &nbsp;
+		<a href="about.html">FAQ</a> &nbsp;
+		<a href="feedback.html">Feedback</a> &nbsp;
+		<a href="sponsor.html">Keep us Afloat</a> &nbsp; <a href="pub.html">Spread the Word</a><br><a href="contest.html">Contest</a>
+		<p>
+		<!--#exec cmd="ad.cgi" -->
+		<p><a href="index.html"><b>Bring it on back to BUbooks</b></a>
+		<p>
+		<font face="arial" size="1">
+		Boston Used Books &#169; 1998<br>
+		<a href="disclaimer.html">Please read our disclaimer</a>
+		</center>
+		</td>
+	</tr>
+
+</table>
+
+	</td>
+</tr>
+</table>
+
+</BODY>
+
+</HTML>

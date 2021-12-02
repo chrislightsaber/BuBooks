@@ -1,0 +1,166 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<Html>
+<HEAD>
+<TITLE>Boston Used Books</TITLE>
+
+<script language="Javascript">
+
+if (document.images)  {
+
+bluedot1_on = new Image(12,12);
+bluedot1_on.src = "../images/bluedot_on.gif";
+bluedot1_off = new Image(12,12);
+bluedot1_off.src = "../images/bluedot.gif";
+
+bluedot2_on = new Image(12,12);
+bluedot2_on.src = "../images/bluedot_on.gif";
+bluedot2_off = new Image(12,12);
+bluedot2_off.src = "../images/bluedot.gif";
+
+bluedot3_on = new Image(12,12);
+bluedot3_on.src = "../images/bluedot_on.gif";
+bluedot3_off = new Image(12,12);
+bluedot3_off.src = "../images/bluedot.gif";
+
+bluedot4_on = new Image(12,12);
+bluedot4_on.src = "../images/bluedot_on.gif";
+bluedot4_off = new Image(12,12);
+bluedot4_off.src = "../images/bluedot.gif";
+
+booksign_on = new Image(60,20);
+booksign_on.src = "../images/booksign_ong.gif";
+booksign_off = new Image(60,20);
+booksign_off.src = "../images/booksigng.gif";
+
+}
+function imgOn(imgName) {
+  if (document.images) {
+    document[imgName].src = eval(imgName + "_on.src");
+  }
+}
+
+function imgOff(imgName) {
+  if (document.images)  {
+    document[imgName].src = eval(imgName + "_off.src");
+  }
+}
+
+</script>
+</head>
+
+<BODY Background = "../images/bg_cd.gif" TEXT="#000000" LINK="#008800" VLINK="#008800" alink="#99CC99">
+
+<table width="640" border="0" cellpadding="0" cellspacing="0">
+
+
+	<tr>
+		<td width="620" valign="bottom" colspan="2" background="../images/designg.gif">
+		<img src="../images/transpic.gif" width="100" height="1">
+		<img src="../images/divider_frontg.gif" width="60" height="25"><a 	href="../index.html" onMouseOver="imgOn('booksign'); return true" onMouseOut="imgOff('booksign')"><img src="../images/booksigng.gif" name="booksign" width="60" height="20" border="0"></a><img src="../images/divider_right.gif" width="60" height="25"><img src="../images/cdsign_ong.gif" name="cdsign" border="0" width="60" height="20"><img src="../images/divider_endg.gif" width="60" height="25"></center>
+		</td>
+	</tr>
+
+  <!-- ******************* TOC **************** -->
+
+<tr>
+  <td valign="top">
+
+  <table width="105" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td background="../images/bg_nav_cd.gif" height="120" valign="top"><a href="index.html"><img src="../images/bg_small_cd.gif" width="95" height="100" border="0"></a><br><img src="../images/bar_green.gif" height="2" width="95"></td>
+  </tr>
+
+  <tr>
+    <td background="../images/bg_nav_cd.gif" valign="top" align="left"><font face="arial" size="2"><img src="../images/contents_cd.gif" width="64" height="21">
+ 	</td>
+  </tr>
+
+  <tr>
+    <td background="../images/bg_nav_cd.gif" height="150" width="100" valign="top">
+
+	<a href="index.html" onMouseOver="imgOn('bluedot4'); return true" onMouseOut="imgOff('bluedot4')"><img src="../images/bluedot.gif" border="0" width="12" height="12" name="bluedot4"><img src="../images/home.gif" border="0" name="home" width="58" height="22" border="0"></a>
+	<p>
+
+	<a href="search.html" onMouseOver="imgOn('bluedot1'); return true" onMouseOut="imgOff('bluedot1')">
+	<img src="../images/bluedot.gif" border="0" width="12" height="12" name="bluedot1"><img src="../images/search_off.gif" border="0" name="search" width="71" height="22" border="0"></a>
+	<p>
+
+    <a href="post.html" onMouseOver="imgOn('bluedot2'); return true" onMouseOut="imgOff('bluedot2')">
+	<img src="../images/bluedot.gif" border="0" width="12" height="12" name="bluedot2"><img src="../images/post_off.gif" border="0" name="post" width="43" height="20" border="0"></a>
+    <p>
+
+    <a href="browse.html" onMouseOver="imgOn('bluedot3'); return true" onMouseOut="imgOff('bluedot3')">
+	<img src="../images/bluedot.gif" border="0" width="12" height="12" name="bluedot3"><img src="../images/browse_off.gif" border="0" name="browse" width="71" height="22" border="0"></a>
+<br>
+	</td>
+  </tr>
+
+	<tr>
+		<td height="460" background="../images/bg_nav_cd.gif" valign="top" align="center">&nbsp;
+		</td>
+	</tr>
+
+
+  </table>
+
+	</td>
+  <!-- ******************* End TOC **************** -->
+
+	<td width="510" valign="top">
+	<center>
+	<a href="index.html">	<img src="../images/logo.gif" border="0" width="460" height="100" alt="Boston Used Books"></a>
+	</center>
+
+	<table width="510" cellpadding="0" cellspacing="0" border="0">
+
+	<tr>
+		<td valign="top"><center><font face="Arial"><font size="5">
+		BUbook results<font size="2"></center><p>
+			<table width="510" border="0" cellpadding="4" cellspacing="0">
+	
+			<tr>
+				<td width="510" valign="top" align="center"><font face="arial">Click on title to contact seller</td>
+			</tr>
+	
+			<tr>
+				<td width="510">&nbsp;</td>
+			</tr>
+	
+			<tr>
+			<td width="510" valign="top" align="LEFT"><font face="arial">Jump to: <B>
+<a href="http://www.bubooks.com/cd/browse.cgi?group=true&letter=A">A</a>&nbsp;<a href="http://www.bubooks.com/cd/browse.cgi?group=true&letter=B">B</a>&nbsp;<a href="http://www.bubooks.com/cd/browse.cgi?group=true&letter=C">C</a>&nbsp;<a href="http://www.bubooks.com/cd/browse.cgi?group=true&letter=D">D</a>&nbsp;<a href="http://www.bubooks.com/cd/browse.cgi?group=true&letter=E">E</a>&nbsp;<a href="http://www.bubooks.com/cd/browse.cgi?group=true&letter=F">F</a>&nbsp;<a href="http://www.bubooks.com/cd/browse.cgi?group=true&letter=G">G</a>&nbsp;<a href="http://www.bubooks.com/cd/browse.cgi?group=true&letter=H">H</a>&nbsp;<a href="http://www.bubooks.com/cd/browse.cgi?group=true&letter=I">I</a>&nbsp;<a href="http://www.bubooks.com/cd/browse.cgi?group=true&letter=J">J</a>&nbsp;<a href="http://www.bubooks.com/cd/browse.cgi?group=true&letter=K">K</a>&nbsp;<a href="http://www.bubooks.com/cd/browse.cgi?group=true&letter=L">L</a>&nbsp;<a href="http://www.bubooks.com/cd/browse.cgi?group=true&letter=M">M</a>&nbsp;<a href="http://www.bubooks.com/cd/browse.cgi?group=true&letter=N">N</a>&nbsp;<a href="http://www.bubooks.com/cd/browse.cgi?group=true&letter=O">O</a>&nbsp;<a href="http://www.bubooks.com/cd/browse.cgi?group=true&letter=P">P</a>&nbsp;<a href="http://www.bubooks.com/cd/browse.cgi?group=true&letter=Q">Q</a>&nbsp;<a href="http://www.bubooks.com/cd/browse.cgi?group=true&letter=R">R</a>&nbsp;<a href="http://www.bubooks.com/cd/browse.cgi?group=true&letter=S">S</a>&nbsp;<a href="http://www.bubooks.com/cd/browse.cgi?group=true&letter=T">T</a>&nbsp;<a href="http://www.bubooks.com/cd/browse.cgi?group=true&letter=U">U</a>&nbsp;<a href="http://www.bubooks.com/cd/browse.cgi?group=true&letter=V">V</a>&nbsp;<a href="http://www.bubooks.com/cd/browse.cgi?group=true&letter=W">W</a>&nbsp;<a href="http://www.bubooks.com/cd/browse.cgi?group=true&letter=X">X</a>&nbsp;<a href="http://www.bubooks.com/cd/browse.cgi?group=true&letter=Y">Y</a>&nbsp;<a href="http://www.bubooks.com/cd/browse.cgi?group=true&letter=Z">Z</a>&nbsp;</B><BR><UL><LI><a href="http://www.bubooks.com/cd/contact.cgi?BookID=cd48"><B>Surfacing</B></a> - by <B>Sarah McLachlan</b> for $12
+<LI><a href="http://www.bubooks.com/cd/contact.cgi?BookID=cd62"><B>Wither Blister Burn and Peel</B></a> - by <B>Stabbing Westward</b> for $10
+<LI><a href="http://www.bubooks.com/cd/contact.cgi?BookID=cd84"><B>dysfunction</B></a> - by <B>Staind</b> for $8.00
+<LI><a href="http://www.bubooks.com/cd/contact.cgi?BookID=cd50"><B>Anthology 1</B></a> - by <B>The Beatles</b> for $21
+<LI><a href="http://www.bubooks.com/cd/contact.cgi?BookID=cd47"><B>Various songs</B></a> - by <B>the Doors</b> for $12
+<LI><a href="http://www.bubooks.com/cd/contact.cgi?BookID=cd49"><B>Little Earthquakes</B></a> - by <B>Tori Amos</b> for $12
+<LI><a href="http://www.bubooks.com/cd/contact.cgi?BookID=cd9"><B>House of Groove</B></a> - by <B>Various</b> for $8.00
+<LI><a href="http://www.bubooks.com/cd/contact.cgi?BookID=cd1"><B>chocolate and cheese</B></a> - by <B>Ween</b> for 7
+</UL><br><a href="http://www.bubooks.com/cd/browse.cgi?group=true&num=14"><code>&lt;--</code> Previous 20 CDs</a></td></tr></table><BR><BR><!--  *************** Footer **************** -->
+
+	<tr>
+		<td valign="top"><font face="Arial" size="3"><center>
+		<p><a href="praise.html">Scorn and Praise</a> &nbsp;
+		<a href="about.html">FAQ</a> &nbsp;
+		<a href="feedback.html">Feedback</a> &nbsp;
+		<a href="sponsor.html">Keep us Afloat</a> &nbsp; <a href="pub.html">Spread the Word</a><br><a href="contest.html">Contest</a> &nbsp; <a href="help.html">Help Wanted</a> &nbsp; <a href="../index.html">Back to Books</a>
+		<p>
+		<img src="" width="460" height="100" alt="advertisement" border="1"><p><a href="index.html"><b>Bring it on back to BUbooks</b></a>
+		<p>
+		<font face="arial" size="1">
+		Boston Used Books &#169; 1998<br>
+		<a href="disclaimer.html">Please read our disclaimer</a>
+		</center>
+		</td>
+	</tr>
+
+
+</table>
+
+	</td>
+</tr>
+</table>
+
+</BODY>
+
+</HTML>

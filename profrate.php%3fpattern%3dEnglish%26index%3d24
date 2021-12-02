@@ -1,0 +1,459 @@
+<body bgcolor="#ffffff" vlink="#0066ff" leftmargin="0" rightmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+
+<table border="1" rules = "all" cellpadding = "3" cellspacing = "0" bordercolor="#476A8E" bgcolor = "#476A8E" width="100%" align="center">
+
+
+
+  <tr>
+
+    <td width="100%" height="85" bgcolor="#476A8E" colspan = "5">
+
+		<table border ="0" cellpadding = "0" cellspacing = "0" bgcolor = "#476A8E" width = "100%" >
+		<tr><td align = "left" rowspan="2" width="70%">
+			<a href="index.php"><img src="logo.gif" width="261" height="64" border="0"></a>
+		</td>
+		<td align = "right">
+			<table align="right" border ="0" cellpadding="0" cellspacing="0">
+			<tr><td>
+						<a href = "clicksLog1.php?redirect=http://www.brothersmanagement.com&adID=5" target='_new'>
+							<img src = "ads/brothers_468.gif" border="0">
+						<tr><td align="center"><font face ="verdana" size="1" color ="#ffffff">Advertisement - Click for coupon or website</font></td></tr>
+		</tr></td></table>
+		</td>
+		</tr>
+		
+		
+		
+		</table>
+    
+    </td>  
+
+  </tr>
+
+
+<!--- NavBar ---->
+	<tr>
+
+  
+    
+    
+    	<td align ="center" width="20%" bgcolor="#FFFFff" height="23" 
+	
+		style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+	
+			<a href="login.php" style='text-decoration:none;'>
+		
+			<font face="Arial, Verdana" size="3" color="#000000">
+		
+			<b>Login</b> </font></a>
+			
+		</td>
+	
+		
+	
+
+		<td align ="center" width="20%" bgcolor="#FFFFff" height="23" 
+	
+		style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+	
+			<a href="books.php" style='text-decoration:none;'>
+		
+			<font face="Arial, Verdana" size="3" color="#000000">
+		
+			<b>Textbooks</b></font></a>
+			
+		</td>
+	
+			
+	
+		<td align="center" width="20%" bgcolor="#FFFFff" height="23"
+	
+		style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+	
+			<a href="profrate.php" style='text-decoration:none;'>
+		
+			<font face="Arial, Verdana" size="3" color="#000000">
+		
+			<b>Professor Ratings</b></font></a>
+	
+		</td> 
+	
+	
+	
+		<td align="center" width="20%" bgcolor="#FFFFff" height="23"
+	
+		style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');"> 
+	
+			<a href="classified.php" style='text-decoration:none;'>
+	
+		<font face="Arial, Verdana" size="3" color="#000000">
+	
+		<b>Classified Ads</b></font></a></td>
+	
+	
+	
+	
+	
+		<td align="center" width="20%" bgcolor="#FFFFff" height="23"
+	
+		style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');"> 
+	
+			<a href="http://www.bearcribs.com" style='text-decoration:none;' target='new'>
+		
+			<font face="Arial, Verdana" size="3" color="#000000">
+		
+			<b>Apartment Guide</b></font></a>
+		</td>
+	
+	
+
+  </tr>
+  
+  <tr>
+ <td colspan = "5" background = "bckground.gif" bgcolor = "#FFFFFF">
+	
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>BUBooks.com - Baylor University Professor Ratings</title>
+
+<STYLE TYPE="text/css">
+<!--
+
+#nav-menu ul
+{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#box-table-a
+{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	width: 50%;
+	text-align: center;
+	border-collapse: collapse;
+	border-top: 2px solid #9baff1;
+	border-bottom: 2px solid #9baff1;
+	border-left: 2px solid #9baff1;
+	border-right: 2px solid #9baff1;
+}
+
+#nav-menu li a
+{
+	padding: 3px;
+	background: #e8edff; 
+	border-bottom: 1px solid #fff;
+	color: #039;
+	border-top: 1px solid transparent;
+	height: 2em;
+	line-height: 2em;
+	float: left;
+	width: 15em;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+}
+
+#nav-menu li a:hover
+{
+	height: 2em;
+	line-height: 2em;
+	float: left;
+	width: 15em;
+	display: block;
+	border: 0.1em solid #dcdce9;
+	background: #d0dafd;
+	color: #039;
+	text-decoration: underline;
+	text-align: center;
+}
+
+/* Hide from IE5-Mac \*/
+#nav-menu li a:hover
+{
+	float: none
+}
+/* End hide */
+
+/* Hide from IE5-Mac \*/
+#nav-menu li a
+{
+	float: none
+}
+/* End hide */
+#nav-menu
+{
+	width:15em
+} 
+-->
+</STYLE>
+
+</head>
+
+<br>
+
+<table id="box-table-a"  rules="none" align="center" bgcolor="white">
+	<tr>
+    <th rowspan="5" width="10%">
+    <div id="nav-menu">
+        <ul>
+        <li><a href="profcreate.php">+ Add an <u>Unlisted Prof</u></a></li>
+        <li><a href="highestRatings.php">Highest Scored Profs</a></li>
+        <li><a href="lowestRatings.php">Lowest Scored Profs</a></li>
+        <li><a href="mostRatings.php">Most Rated Profs</a></li>
+        <li><a href="funnyRatings.php">Funny Reviews</a></li>
+        <li><a href="last25Ratings.php">Recent Ratings</a></li>
+       	<li><a href="terms.php">Terms of Use</a></li>
+        </ul>
+    </div> 
+    </th>
+    <td align="center"><img src="images/profrate.gif" border="0"></td>
+    </tr>
+
+<tr><td align="center">Narrow below by department:</td></tr>
+
+	<tr><td align="center">
+      	<form id="refresh" method="get" action="profrate.php">
+		<select id="pattern" name="pattern">
+<option value="">--NONE--</option>
+<option value="Show All">Show All</option>
+<option value="Accounting">Accounting</option>
+<option value="Anthropology">Anthropology</option>
+<option value="Arabic">Arabic</option>
+<option value="Art">Art</option>
+<option value="Aviation Sciences">Aviation Sciences</option>
+<option value="Baylor Interdisciplinary Core">Baylor Interdisciplinary Core</option>
+<option value="Biology">Biology</option>
+<option value="Business">Business</option>
+<option value="Business Law">Business Law</option>
+<option value="Chapel">Chapel</option>
+<option value="Chemistry">Chemistry</option>
+<option value="Chinese">Chinese</option>
+<option value="Church-State Studies">Church-State Studies</option>
+<option value="Civic Education & Community Service">Civic Education & Community Service</option>
+<option value="Classics">Classics</option>
+<option value="Comm. Sciences and Disorders">Comm. Sciences and Disorders</option>
+<option value="Comm. Sciences And Disorders">Comm. Sciences And Disorders</option>
+<option value="Communication Sciences & Disorders">Communication Sciences & Disorders</option>
+<option value="Communication Studies">Communication Studies</option>
+<option value="Computer Science">Computer Science</option>
+<option value="Economics">Economics</option>
+<option value="Education">Education</option>
+<option value="Engineering" SELECTED>Engineering</option>
+<option value="English">English</option>
+<option value="Entrepreneurship">Entrepreneurship</option>
+<option value="Environmental Studies">Environmental Studies</option>
+<option value="Family And Consumer Sciences">Family And Consumer Sciences</option>
+<option value="Family and Consumer Sciences">Family and Consumer Sciences</option>
+<option value="Film and Digital Media">Film and Digital Media</option>
+<option value="Film And Digital Media">Film And Digital Media</option>
+<option value="Finance">Finance</option>
+<option value="Forensic Science">Forensic Science</option>
+<option value="French">French</option>
+<option value="Geography">Geography</option>
+<option value="Geology">Geology</option>
+<option value="German">German</option>
+<option value="Great Texts">Great Texts</option>
+<option value="Greek">Greek</option>
+<option value="Health Education">Health Education</option>
+<option value="History">History</option>
+<option value="Human Performance">Human Performance</option>
+<option value="Information Systems">Information Systems</option>
+<option value="Italian">Italian</option>
+<option value="Japanese">Japanese</option>
+<option value="Journalism">Journalism</option>
+<option value="Korean">Korean</option>
+<option value="Latin">Latin</option>
+<option value="Leadership Development">Leadership Development</option>
+<option value="LEADERSHIP DEVELOPMENT">LEADERSHIP DEVELOPMENT</option>
+<option value="Management">Management</option>
+<option value="Marketing">Marketing</option>
+<option value="Mathematics">Mathematics</option>
+<option value="Medical Humanities">Medical Humanities</option>
+<option value="Music">Music</option>
+<option value="Neuroscience">Neuroscience</option>
+<option value="none">none</option>
+<option value="Other">Other</option>
+<option value="Philosophy">Philosophy</option>
+<option value="Physics">Physics</option>
+<option value="Political Science">Political Science</option>
+<option value="Pre-Health Professions">Pre-Health Professions</option>
+<option value="Psychology">Psychology</option>
+<option value="Quantitative Business Analysis">Quantitative Business Analysis</option>
+<option value="Real Estate">Real Estate</option>
+<option value="Religion">Religion</option>
+<option value="Risk Management And Insurance">Risk Management And Insurance</option>
+<option value="Russian">Russian</option>
+<option value="Slavic Eastern European Studies">Slavic Eastern European Studies</option>
+<option value="Social Work">Social Work</option>
+<option value="Sociology">Sociology</option>
+<option value="Spanish">Spanish</option>
+<option value="Speech Communication">Speech Communication</option>
+<option value="Statistics">Statistics</option>
+<option value="Swahali">Swahali</option>
+<option value="Teacher Education">Teacher Education</option>
+<option value="Theater Arts">Theater Arts</option>
+		</select> 
+		<input type="hidden" name="index" id="index">
+		</form>
+
+	</td></tr>
+
+
+    <tr><td align="center"> Select from english professors: (219)</td></tr>
+
+    <tr><td align="center"><form id="search" method="get" action="profdisplay.php">
+		<select id="profid" name="profid">
+            <option value="select">-- SELECT --</option>		
+
+<option value="366">Airaudi, Jesse (52)</option><option value="1274">Alexander, Kara Poe (68)</option><option value="1611">Assink, Jessica (73)</option><option value="6">Barcus, James (54)</option><option value="2120">Barta, DeAnn (76)</option><option value="2441">Benyousky, Daniel (73)</option><option value="2203">Blackwell, Catherine (59)</option><option value="2205">Boyd, Joshua T. (100)</option><option value="2077">Boyles, Christina (51)</option><option value="2588">Brower, Emily (100)</option><option value="1201">Butler, Clay (89)</option><option value="526">Callan, Jerrie (78)</option><option value="261">Choucair, Mona (78)</option><option value="2150">Clark, Sarah (83)</option><option value="1473">Clark, David (61)</option><option value="1379">Clark, Laura (59)</option><option value="2557">Cochran, James (78)</option><option value="1384">Crews, Michael (77)</option><option value="1115">Dammon, Hope (89)</option><option value="2504">Daniel, Julia (95)</option><option value="1383">Davies, Noelle (82)</option><option value="2546">Davies, Sierra (52)</option><option value="1323">Davis, Bill (44)</option><option value="2306">De Smith, Rachel (92)</option><option value="2119">DeAnn, Barta (0)</option><option value="2552">Dejong, Timothy (53)</option><option value="1404">Dell, Elizabeth (76)</option><option value="2521">Dye, Sara (75)</option><option value="2513">Engebretson, Alex (88)</option><option value="2343">Fenton, Lindsay  (75)</option><option value="2566">Foley, Tara (65)</option><option value="2344">Fredericks , Elizabeth (80)</option><option value="409">Gardner, Kevin (83)</option><option value="294">Garrett, Greg (85)</option><option value="1318">Hanchey, Ginger (92)</option><option value="140">Hanks, Tom (88)</option><option value="2561">Harrison, Perry (90)</option><option value="2294">Hemenway, Arna (89)</option><option value="1096">Hill, Dr. Roy (48)</option><option value="496">Hinojosa, Lynne (83)</option><option value="421">Hoffman, Tracy (78)</option><option value="1528">Illuzada,  (84)</option><option value="2531">Johnson, Lois (75)</option><option value="1303">Jortner, Maura (84)</option><option value="2440">Kelm, Sara (88)</option><option value="1476">Kilpatrick, Nathan (92)</option><option value="2285">King, Joshua (83)</option><option value="17">Klingman, Mary Lynn (56)</option><option value="2311">Kloosterman, John (82)</option><option value="2321">Kunkel, Courtney (91)</option><option value="2497">Land, Jeremy  (68)</option><option value="2489">Long, Mark R (41)</option><option value="325">Losey, Jay (65)</option><option value="1014">Makowsky, Reid (80)</option><option value="2256">Marshall, Adam (90)</option><option value="2524">Martin, Taylor (95)</option><option value="2241">McBride, Laura (91)</option><option value="2519">McCune, Adam (45)</option><option value="46">Mcdonald, William (70)</option><option value="1032">Medhurst, Laurel (64)</option><option value="2292">Moore, Leigh (57)</option><option value="1599">Moore, John  (78)</option><option value="853">Murphy, Lane (87)</option><option value="1403">Noble, Alan (72)</option><option value="1475">Ooms, Julie (61)</option><option value="2140">Parker, Courtney (95)</option><option value="2186">Pattison, Kalani (72)</option><option value="2072">Pond, Kristin (92)</option><option value="2210">Powell, Louise (84)</option><option value="2191">Ptomey,  (80)</option><option value="2313">Rasmussen, Andy (64)</option><option value="2198">Rawl, Michael (67)</option><option value="2498">Reid, Eleni (67)</option><option value="2288">Rentz, Nan (62)</option><option value="2578">Roberts, Rachel M (95)</option><option value="2493">Rude, Sarah (100)</option><option value="2591">Sarna, Mackenzie (75)</option><option value="1362">Saunders-Jones,  (75)</option><option value="2141">Setina, Emily (79)</option><option value="2328">Smart, Marie (80)</option><option value="2445">Smith, David (41)</option><option value="2315">Smith, Bethany (51)</option><option value="2526">Snyder, Travis (95)</option><option value="2542">T Hayat, Syeda (70)</option><option value="2436">Taylor, Luke (90)</option><option value="2548">Thiltges, Amy (25)</option><option value="373">Thomas, Ron (69)</option><option value="2187">Walden, Dan (83)</option><option value="2073">Walden, Sarah (92)</option><option value="2466">Warf, Loren (90)</option><option value="2307">Warren, Martha (94)</option><option value="2065">Wilhite, George (68)</option><option value="1443">Williams, Danielle M. (89)</option><option value="2170">Womack, Ryan (82)</option><option style="background-color: LightGrey;" value="oldprofs">-- OLD PROFESSOR RATINGS --</option><option style="background-color: LightGrey;" value="201">Allman, Wendy (74)</option><option style="background-color: LightGrey;" value="38">Anderson,  (49)</option><option style="background-color: LightGrey;" value="376">Armond,  (80)</option><option style="background-color: LightGrey;" value="1349">Barker, Alisha (100)</option><option style="background-color: LightGrey;" value="1254">Bear, Bethany (84)</option><option style="background-color: LightGrey;" value="1367">Beck, Zachary (50)</option><option style="background-color: LightGrey;" value="1415">Bedwell, Laura (67)</option><option style="background-color: LightGrey;" value="1439">Bilbro, Jeffery (87)</option><option style="background-color: LightGrey;" value="1039">Blalock, Glenn B. (88)</option><option style="background-color: LightGrey;" value="508">Bradley, Brenda (69)</option><option style="background-color: LightGrey;" value="516">Buechsel, Mark P. (60)</option><option style="background-color: LightGrey;" value="222">Burchenal,  (61)</option><option style="background-color: LightGrey;" value="713">Calloway,  (85)</option><option style="background-color: LightGrey;" value="696">Carly-Miles, Claire (85)</option><option style="background-color: LightGrey;" value="306">Chinn,  (78)</option><option style="background-color: LightGrey;" value="711">Condict, Ellen (88)</option><option style="background-color: LightGrey;" value="693">Cooper, Lydia R. (85)</option><option style="background-color: LightGrey;" value="584">Craig, Layne (85)</option><option style="background-color: LightGrey;" value="2167">Crain, Joshua (57)</option><option style="background-color: LightGrey;" value="1229">Crawford, Rachel (74)</option><option style="background-color: LightGrey;" value="2182">Crews, Denise (60)</option><option style="background-color: LightGrey;" value="660">Crouse, Jamie (50)</option><option style="background-color: LightGrey;" value="74">Darden, Robert (73)</option><option style="background-color: LightGrey;" value="1387">Davis, Lanta (84)</option><option style="background-color: LightGrey;" value="1156">Davis, Jason (44)</option><option style="background-color: LightGrey;" value="411">Davis, Carol (82)</option><option style="background-color: LightGrey;" value="1176">Davis,  (42)</option><option style="background-color: LightGrey;" value="2036">DePalma, Michael-John (85)</option><option style="background-color: LightGrey;" value="2151">Eckroth, Stehpanie (90)</option><option style="background-color: LightGrey;" value="293">Elz,  (75)</option><option style="background-color: LightGrey;" value="1301">Epps, Peter G (75)</option><option style="background-color: LightGrey;" value="1072">Ferretter, Luke (92)</option><option style="background-color: LightGrey;" value="40">Ford, Sarah (77)</option><option style="background-color: LightGrey;" value="75">Foster, James (58)</option><option style="background-color: LightGrey;" value="431">Fulton, Joe (85)</option><option style="background-color: LightGrey;" value="1542">Galloway, Denise (51)</option><option style="background-color: LightGrey;" value="919">Geoffrey, Reiter (79)</option><option style="background-color: LightGrey;" value="589">Getz, Evan (66)</option><option style="background-color: LightGrey;" value="1007">Getz, Bethany (70)</option><option style="background-color: LightGrey;" value="1258">Gibson, Jordan (90)</option><option style="background-color: LightGrey;" value="14">Gitlin,  (76)</option><option style="background-color: LightGrey;" value="518">Glover, Amy (80)</option><option style="background-color: LightGrey;" value="1138">Grebenyova,  (88)</option><option style="background-color: LightGrey;" value="1327">Guenat, Esther (80)</option><option style="background-color: LightGrey;" value="1308">Hamilton, Robert (86)</option><option style="background-color: LightGrey;" value="725">Henry, Peaches (70)</option><option style="background-color: LightGrey;" value="521">Higginbotham, Donna (82)</option><option style="background-color: LightGrey;" value="104">Hillson,  (87)</option><option style="background-color: LightGrey;" value="288">Holman,  (85)</option><option style="background-color: LightGrey;" value="1391">Honeycutt,  (92)</option><option style="background-color: LightGrey;" value="220">Hughes, Jennifer (75)</option><option style="background-color: LightGrey;" value="256">Hunt, Maurice (81)</option><option style="background-color: LightGrey;" value="1483">Jarrell, Virginia (84)</option><option style="background-color: LightGrey;" value="1597">Jessica, Assink (45)</option><option style="background-color: LightGrey;" value="656">Jeyaraj,  (86)</option><option style="background-color: LightGrey;" value="520">Johnston, Neil (88)</option><option style="background-color: LightGrey;" value="2269">Johnston, Hope (60)</option><option style="background-color: LightGrey;" value="716">Jones, Sarah B. (90)</option><option style="background-color: LightGrey;" value="208">Jordan-Lake,  (65)</option><option style="background-color: LightGrey;" value="172">Kearney,  (74)</option><option style="background-color: LightGrey;" value="120">Klaras, Vicki (66)</option><option style="background-color: LightGrey;" value="1601">Kostelich, Callie (65)</option><option style="background-color: LightGrey;" value="284">Kozar-Carew,  (72)</option><option style="background-color: LightGrey;" value="894">Krasienko, Lori (84)</option><option style="background-color: LightGrey;" value="1205">Lam, Bethany (65)</option><option style="background-color: LightGrey;" value="691">Langford, Ginger (79)</option><option style="background-color: LightGrey;" value="167">Lemaster,  (71)</option><option style="background-color: LightGrey;" value="2270">Marsh, Jeannette (90)</option><option style="background-color: LightGrey;" value="1082">Martin, Hether (83)</option><option style="background-color: LightGrey;" value="268">Massirer,  (70)</option><option style="background-color: LightGrey;" value="1458">Mendoza, Elijah (65)</option><option style="background-color: LightGrey;" value="371">Merrill,  (48)</option><option style="background-color: LightGrey;" value="1159">Miller, Kathleen (93)</option><option style="background-color: LightGrey;" value="985">Mills, Jennifer (72)</option><option style="background-color: LightGrey;" value="1355">Moore, Leigh (74)</option><option style="background-color: LightGrey;" value="114">Moore, Rachel (64)</option><option style="background-color: LightGrey;" value="1325">Moore, Mollie (85)</option><option style="background-color: LightGrey;" value="524">Munro, Rebecca (55)</option><option style="background-color: LightGrey;" value="460">Newton, Jennifer (42)</option><option style="background-color: LightGrey;" value="726">Nobles, Heidi (90)</option><option style="background-color: LightGrey;" value="351">Payne, Rachel (71)</option><option style="background-color: LightGrey;" value="1436">Petersheim, Steve (89)</option><option style="background-color: LightGrey;" value="2147">Pietka, Rachel (83)</option><option style="background-color: LightGrey;" value="515">Pittman, C.m. (80)</option><option style="background-color: LightGrey;" value="889">Pocock, Stephanie (73)</option><option style="background-color: LightGrey;" value="532">Rasnic, Scott (84)</option><option style="background-color: LightGrey;" value="1050">Ray, Robert (61)</option><option style="background-color: LightGrey;" value="2243">Rees, Gary (90)</option><option style="background-color: LightGrey;" value="128">Reynolds, Meredith (81)</option><option style="background-color: LightGrey;" value="481">Reynolds, Rebecca (86)</option><option style="background-color: LightGrey;" value="2002">Rice, Kate (93)</option><option style="background-color: LightGrey;" value="861">Rouland, Roger (57)</option><option style="background-color: LightGrey;" value="381">Russell, Richard R (82)</option><option style="background-color: LightGrey;" value="845">Schaefer,  (77)</option><option style="background-color: LightGrey;" value="539">Schuler, Stephen (70)</option><option style="background-color: LightGrey;" value="1553">Seelke, Heidi (80)</option><option style="background-color: LightGrey;" value="1233">Shaver, Lisa (82)</option><option style="background-color: LightGrey;" value="630">Shipley, Don (85)</option><option style="background-color: LightGrey;" value="209">Sobey,  (75)</option><option style="background-color: LightGrey;" value="1143">Stelle, Ginger (86)</option><option style="background-color: LightGrey;" value="803">Strathman, Christopher A. (70)</option><option style="background-color: LightGrey;" value="238">Strickline,  (90)</option><option style="background-color: LightGrey;" value="362">Thibodeau,  (85)</option><option style="background-color: LightGrey;" value="1481">Thiltges, Amy (79)</option><option style="background-color: LightGrey;" value="1376">Thomas, Margy (83)</option><option style="background-color: LightGrey;" value="490">Tillman, Kacy (69)</option><option style="background-color: LightGrey;" value="1537">Train, Daniel (61)</option><option style="background-color: LightGrey;" value="541">Trumble, Allison (78)</option><option style="background-color: LightGrey;" value="391">Urbanczyk,  (58)</option><option style="background-color: LightGrey;" value="369">Vitanza, Dianna (52)</option><option style="background-color: LightGrey;" value="414">Walker-Kennedy, Linda (65)</option><option style="background-color: LightGrey;" value="1217">Walker-Nixon, Donna (87)</option><option style="background-color: LightGrey;" value="446">Waller, Randy (79)</option><option style="background-color: LightGrey;" value="2001">Watson, James (86)</option><option style="background-color: LightGrey;" value="1337">Webster, Rachel (81)</option><option style="background-color: LightGrey;" value="844">Welch, Brenda (73)</option><option style="background-color: LightGrey;" value="480">Werner, Karen (41)</option><option style="background-color: LightGrey;" value="1508">Wheeler, Jared (95)</option><option style="background-color: LightGrey;" value="1529">White, Holland (85)</option><option style="background-color: LightGrey;" value="722">Wilson, Bethany (83)</option><option style="background-color: LightGrey;" value="1137">Wolfe, Elisabeth (38)</option><option style="background-color: LightGrey;" value="1636">Womack, Elizabeth (80)</option><option style="background-color: LightGrey;" value="434">Woods, Paula (53)</option><option style="background-color: LightGrey;" value="1533">Wright, Seth (83)</option><option style="background-color: LightGrey;" value="1312">Ziehe, Mary (76)</option>		</select></form>
+	</td></tr>
+        
+	
+</table>
+
+<br>
+
+<script type="text/javascript">
+function submit_form(frm) 
+{  
+  frm.submit();  
+}
+
+function getElmById(aID)
+{ 
+  return (document.getElementById) ? document.getElementById(aID) : document.all[aID];
+} 
+
+function validate_search() 
+{  
+  return true;
+}
+
+function onChangeHandler(e) 
+{
+  var myevent = (e) ? e : window.event;
+  // Get value of selected option in dept list
+  var pattern = getElmById("pattern");
+  var selIndex = pattern.selectedIndex;
+  // Set value for passing in get
+  var index = getElmById("index");
+  index.value = selIndex;
+  
+  submit_form(getElmById("refresh"));
+}
+
+function onChangeHandler2(e) 
+{
+  var myevent = (e) ? e : window.event;
+
+  if (myDropDown2.value != "select" && myDropDown2.value != "oldprofs")
+  	submit_form(getElmById("search"));
+}
+
+var myDropDown = getElmById("pattern");
+if(typeof(myDropDown) == "object") 
+{
+  myDropDown.onchange = onChangeHandler;
+}
+
+var myDropDown2 = getElmById("profid");
+if(typeof(myDropDown2) == "object") 
+{
+	myDropDown2.onchange = onChangeHandler2;
+}
+
+var mySearchForm2 = getElmById("search");
+mySearchForm2.onsubmit = validate_search2;
+
+var mySearchForm = getElmById("refresh");
+mySearchForm.onsubmit = validate_search;
+</script>    
+
+<!--- Footer --->
+
+
+  <tr>
+
+ 	<td align="center" colspan="5" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#B2B6C8', EndColorStr='#476A8E');"><font size="4">
+
+      
+		<a href="login.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+		<b>LOGIN</b></font></a> &nbsp; &nbsp;
+	
+
+		<a href="home.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>HOME</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="about.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>ABOUT US</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="faq.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>FAQ</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="privacy.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>PRIVACY</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="terms.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>TERMS OF USE</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="advertising.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>ADVERTISING</b></font></a> &nbsp; &nbsp; 
+
+	
+
+		<a href="contact.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>CONTACT US</b></font></a> &nbsp; &nbsp; 
+
+		 
+	</td>
+
+  
+
+</table>
+
+<br>
+
+<div align="center"><font size="-1">&copy;2003-2015 Bubooks.com - All rights reserved</font></div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-98854-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+
+</html>

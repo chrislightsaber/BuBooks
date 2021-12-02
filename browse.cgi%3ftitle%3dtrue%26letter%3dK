@@ -1,0 +1,177 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<Html>
+<HEAD>
+<TITLE>Boston Used Books</TITLE>
+
+<script language="Javascript">
+
+if (document.images)  {
+
+bluedot1_on = new Image(12,12);
+bluedot1_on.src = "images/bluedot_on.gif";
+bluedot1_off = new Image(12,12);
+bluedot1_off.src = "images/bluedot.gif";
+
+bluedot2_on = new Image(12,12);
+bluedot2_on.src = "images/bluedot_on.gif";
+bluedot2_off = new Image(12,12);
+bluedot2_off.src = "images/bluedot.gif";
+
+bluedot3_on = new Image(12,12);
+bluedot3_on.src = "images/bluedot_on.gif";
+bluedot3_off = new Image(12,12);
+bluedot3_off.src = "images/bluedot.gif";
+
+bluedot4_on = new Image(12,12);
+bluedot4_on.src = "images/bluedot_on.gif";
+bluedot4_off = new Image(12,12);
+bluedot4_off.src = "images/bluedot.gif";
+
+cdsign_on = new Image(60,20);
+cdsign_on.src = "images/cdsign_on.gif";
+cdsign_off = new Image(60,20);
+cdsign_off.src = "images/cdsign.gif";
+
+}
+function imgOn(imgName) {
+  if (document.images) {
+    document[imgName].src = eval(imgName + "_on.src");
+  }
+}
+
+function imgOff(imgName) {
+  if (document.images)  {
+    document[imgName].src = eval(imgName + "_off.src");
+  }
+}
+
+</script>
+</head>
+
+<BODY Background = "images/bg.gif" TEXT="#000000" LINK="#008800" VLINK="#008800" alink="#99CC99">
+
+<table width="640" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td width="620" valign="bottom" colspan="2" background="images/design.gif">
+		<img src="images/transpic.gif" width="100" height="1">
+		<img src="images/divider_front.gif" width="60" height="25"><img src="images/booksign_on.gif" width="60" height="20"><img src="images/divider_left.gif" width="60" height="25"><a 	href="cd/index.html" onMouseOver="imgOn('cdsign'); return true" onMouseOut="imgOff('cdsign')"><img src="images/cdsign.gif" name="cdsign" border="0" width="60" height="20"></a><img src="images/divider_end.gif" width="60" height="25"></center>
+		</td>
+	</tr>
+
+
+  <!-- ******************* TOC **************** -->
+
+<tr>
+  <td valign="top">
+
+  <table width="105" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td background="images/bg_nav.gif" height="120" valign="top"><a href="index.html"><img src="images/bg_small.gif" width="95" height="100" border="0"></a><br><img src="images/bar_tan.gif" height="2" width="95"></td>
+  </tr>
+
+  <tr>
+    <td background="images/bg_nav.gif" valign="top" align="left"><font face="arial" size="2"><img src="images/contents.gif" width="64" height="21">
+ 	</td>
+  </tr>
+
+  <tr>
+    <td background="images/bg_nav.gif" height="150" width="100" valign="top">
+
+	<a href="index.html" onMouseOver="imgOn('bluedot4'); return true" onMouseOut="imgOff('bluedot4')"><img src="images/bluedot.gif" border="0" width="12" height="12" name="bluedot4"><img src="images/home.gif" border="0" name="home" width="58" height="22" border="0"></a>
+	<p>
+
+	<a href="search.html" onMouseOver="imgOn('bluedot1'); return true" onMouseOut="imgOff('bluedot1')">
+	<img src="images/bluedot.gif" border="0" width="12" height="12" name="bluedot1"><img src="images/search_off.gif" border="0" name="search" width="71" height="22" border="0"></a>
+	<p>
+
+    <a href="post.html" onMouseOver="imgOn('bluedot2'); return true" onMouseOut="imgOff('bluedot2')">
+	<img src="images/bluedot.gif" border="0" width="12" height="12" name="bluedot2"><img src="images/post_off.gif" border="0" name="post" width="43" height="20" border="0"></a>
+    <p>
+
+    <a href="browse.html" onMouseOver="imgOn('bluedot3'); return true" onMouseOut="imgOff('bluedot3')">
+	<img src="images/bluedot.gif" border="0" width="12" height="12" name="bluedot3"><img src="images/browse_off.gif" border="0" name="browse" width="71" height="22" border="0"></a>
+<br>
+	</td>
+  </tr>
+
+	<tr>
+		<td height="460" background="images/bg_nav.gif" valign="top" align="center">&nbsp;
+		</td>
+	</tr>
+
+
+  </table>
+
+	</td>
+  <!-- ******************* End TOC **************** -->
+
+	<td width="510" valign="top">
+	<center>
+	<a href="index.html">	<img src="images/logo.gif" border="0" width="460" height="100" alt="Boston Used Books"></a>
+	</center>
+
+	<table width="510" cellpadding="0" cellspacing="0" border="0">
+
+	<tr>
+		<td valign="top"><center><font face="Arial"><font size="5">
+		BUbook results<font size="2"></center><p>
+			<table width="510" border="0" cellpadding="4" cellspacing="0">
+	
+			<tr>
+				<td width="510" valign="top" align="center"><font face="arial">Click on title to contact seller</td>
+			</tr>
+	
+			<tr>
+				<td width="510">&nbsp;</td>
+			</tr>
+	
+			<tr>
+			<td width="510" valign="top" align="LEFT"><font face="arial">Jump to: <B>
+<a href="http://www.bubooks.com/browse.cgi?title=true&letter=A">A</a>&nbsp;<a href="http://www.bubooks.com/browse.cgi?title=true&letter=B">B</a>&nbsp;<a href="http://www.bubooks.com/browse.cgi?title=true&letter=C">C</a>&nbsp;<a href="http://www.bubooks.com/browse.cgi?title=true&letter=D">D</a>&nbsp;<a href="http://www.bubooks.com/browse.cgi?title=true&letter=E">E</a>&nbsp;<a href="http://www.bubooks.com/browse.cgi?title=true&letter=F">F</a>&nbsp;<a href="http://www.bubooks.com/browse.cgi?title=true&letter=G">G</a>&nbsp;<a href="http://www.bubooks.com/browse.cgi?title=true&letter=H">H</a>&nbsp;<a href="http://www.bubooks.com/browse.cgi?title=true&letter=I">I</a>&nbsp;<a href="http://www.bubooks.com/browse.cgi?title=true&letter=J">J</a>&nbsp;<a href="http://www.bubooks.com/browse.cgi?title=true&letter=K">K</a>&nbsp;<a href="http://www.bubooks.com/browse.cgi?title=true&letter=L">L</a>&nbsp;<a href="http://www.bubooks.com/browse.cgi?title=true&letter=M">M</a>&nbsp;<a href="http://www.bubooks.com/browse.cgi?title=true&letter=N">N</a>&nbsp;<a href="http://www.bubooks.com/browse.cgi?title=true&letter=O">O</a>&nbsp;<a href="http://www.bubooks.com/browse.cgi?title=true&letter=P">P</a>&nbsp;<a href="http://www.bubooks.com/browse.cgi?title=true&letter=Q">Q</a>&nbsp;<a href="http://www.bubooks.com/browse.cgi?title=true&letter=R">R</a>&nbsp;<a href="http://www.bubooks.com/browse.cgi?title=true&letter=S">S</a>&nbsp;<a href="http://www.bubooks.com/browse.cgi?title=true&letter=T">T</a>&nbsp;<a href="http://www.bubooks.com/browse.cgi?title=true&letter=U">U</a>&nbsp;<a href="http://www.bubooks.com/browse.cgi?title=true&letter=V">V</a>&nbsp;<a href="http://www.bubooks.com/browse.cgi?title=true&letter=W">W</a>&nbsp;<a href="http://www.bubooks.com/browse.cgi?title=true&letter=X">X</a>&nbsp;<a href="http://www.bubooks.com/browse.cgi?title=true&letter=Y">Y</a>&nbsp;<a href="http://www.bubooks.com/browse.cgi?title=true&letter=Z">Z</a>&nbsp;</B><BR><UL><LI><a href="http://www.bubooks.com/contact.cgi?BookID=1329"><B>Kaleidoscope</B></a> - by <B>Ryan/Cooper</b> for $22
+<LI><a href="http://www.bubooks.com/contact.cgi?BookID=199"><B>King Lear</B></a> - by <B>Shakespeare</b> for $4
+<LI><a href="http://www.bubooks.com/contact.cgi?BookID=964"><B>King Lear</B></a> - by <B>Shckespeare</b> for $4
+<LI><a href="http://www.bubooks.com/contact.cgi?BookID=71"><B>Kontakte</B></a> - by <B>Terrell</b> for $25
+<LI><a href="http://www.bubooks.com/contact.cgi?BookID=914"><B>kontakte german 1-2</B></a> - by <B>Terrell</b> for $30
+<LI><a href="http://www.bubooks.com/contact.cgi?BookID=1550"><B>L'Essentiel de la Grammaire Francaise</B></a> - by <B>Hoffmann</b> for $ 35
+<LI><a href="http://www.bubooks.com/contact.cgi?BookID=1400"><B>L'essentiel de la grammaire Francaise</B></a> - by <B>Hoffmann</b> for $30.00
+<LI><a href="http://www.bubooks.com/contact.cgi?BookID=1264"><B>La Casa de Bernaba Alba</B></a> - by <B>Lorca</b> for $8
+<LI><a href="http://www.bubooks.com/contact.cgi?BookID=1265"><B>La Casa de Bernaba Alba</B></a> - by <B>Lorca</b> for $8
+<LI><a href="http://www.bubooks.com/contact.cgi?BookID=1611"><B>La Casa de Bernarda Alba</B></a> - by <B>Lorca</b> for $15
+<LI><a href="http://www.bubooks.com/contact.cgi?BookID=714"><B>La Casa de Bernarda Alba</B></a> - by <B>Lorca</b> for $7
+<LI><a href="http://www.bubooks.com/contact.cgi?BookID=372"><B>La Casa de Bernarda Alba</B></a> - by <B>Garcia Lorca</b> for $8
+<LI><a href="http://www.bubooks.com/contact.cgi?BookID=1032"><B>La Casa de Bernarda.</B></a> - by <B>Lorca</b> for $5.00
+<LI><a href="http://www.bubooks.com/contact.cgi?BookID=1036"><B>La escala de los map</B></a> - by <B>Gopegui</b> for $20.00
+<LI><a href="http://www.bubooks.com/contact.cgi?BookID=900"><B>Lab Manual - Chem</B></a> - by <B>McMurray</b> for $15.00
+<LI><a href="http://www.bubooks.com/contact.cgi?BookID=123"><B>Lab Manual - Puntos de Partida</B></a> - by <B>Sablo-Yates</b> for $11
+<LI><a href="http://www.bubooks.com/contact.cgi?BookID=899"><B>Lab Manual BI 107</B></a> - by <B>Godrick</b> for $10
+<LI><a href="http://www.bubooks.com/contact.cgi?BookID=1310"><B>Le Nouveau sans Frontiers #1</B></a> - by <B>Dominique</b> for $30
+<LI><a href="http://www.bubooks.com/contact.cgi?BookID=1548"><B>Le Silence de la Mer</B></a> - by <B>Vercos</b> for $ 6
+<LI><a href="http://www.bubooks.com/contact.cgi?BookID=1398"><B>Le Silence de la mer</B></a> - by <B>Vercors</b> for $5.00
+</UL><br><a href="http://www.bubooks.com/browse.cgi?title=true&num=558"><code>&lt;--</code> Previous 20 Books</a>&nbsp;&nbsp;--&nbsp;&nbsp;<a href="http://www.bubooks.com/browse.cgi?title=true&num=598">Next 20 Books <code>--&gt;</code></a></td></tr></table><BR><BR><!--  *************** Footer **************** -->
+
+	<tr>
+		<td valign="top"><font face="Arial" size="3"><center>
+		<p><a href="praise.html">Scorn and Praise</a> &nbsp;
+		<a href="about.html">FAQ</a> &nbsp;
+		<a href="feedback.html">Feedback</a> &nbsp;
+		<a href="sponsor.html">Keep us Afloat</a> &nbsp; <a href="pub.html">Spread the Word</a><br><a href="contest.html">Contest</a> &nbsp; <a href="help.html">Help Wanted</a> &nbsp; <a href="cd/index.html">CD Exchange!</a>
+		<p>
+		<!--#exec cmd="ad.cgi" -->
+		<p>
+		<font face="arial" size="1">
+		Boston Used Books &#169; 1998<br>
+		<a href="disclaimer.html">Please read our disclaimer</a>
+		</center>
+		</td>
+	</tr>
+
+
+</table>
+
+	</td>
+</tr>
+</table>
+
+</BODY>
+
+</HTML>

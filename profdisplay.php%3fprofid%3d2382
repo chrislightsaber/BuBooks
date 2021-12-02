@@ -1,0 +1,2327 @@
+<body bgcolor="#ffffff" vlink="#0066ff" leftmargin="0" rightmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+
+<table border="1" rules = "all" cellpadding = "3" cellspacing = "0" bordercolor="#476A8E" bgcolor = "#476A8E" width="100%" align="center">
+
+
+
+  <tr>
+
+    <td width="100%" height="85" bgcolor="#476A8E" colspan = "5">
+
+		<table border ="0" cellpadding = "0" cellspacing = "0" bgcolor = "#476A8E" width = "100%" >
+		<tr><td align = "left" rowspan="2" width="70%">
+			<a href="index.php"><img src="logo.gif" width="261" height="64" border="0"></a>
+		</td>
+		<td align = "right">
+			<table align="right" border ="0" cellpadding="0" cellspacing="0">
+			<tr><td>
+						<a href = "clicksLog1.php?redirect=http://www.bubooks.com/advertising.php&adID=2" target='_new'>
+							<img src = "ads/bubooks.gif" border="0">
+						<tr><td align="center"><font face ="verdana" size="1" color ="#ffffff">Advertisement - Click for coupon or website</font></td></tr>
+		</tr></td></table>
+		</td>
+		</tr>
+		
+		
+		
+		</table>
+    
+    </td>  
+
+  </tr>
+
+
+<!--- NavBar ---->
+	<tr>
+
+  
+    
+    
+    	<td align ="center" width="20%" bgcolor="#FFFFff" height="23" 
+	
+		style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+	
+			<a href="login.php" style='text-decoration:none;'>
+		
+			<font face="Arial, Verdana" size="3" color="#000000">
+		
+			<b>Login</b> </font></a>
+			
+		</td>
+	
+		
+	
+
+		<td align ="center" width="20%" bgcolor="#FFFFff" height="23" 
+	
+		style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+	
+			<a href="books.php" style='text-decoration:none;'>
+		
+			<font face="Arial, Verdana" size="3" color="#000000">
+		
+			<b>Textbooks</b></font></a>
+			
+		</td>
+	
+			
+	
+		<td align="center" width="20%" bgcolor="#FFFFff" height="23"
+	
+		style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+	
+			<a href="profrate.php" style='text-decoration:none;'>
+		
+			<font face="Arial, Verdana" size="3" color="#000000">
+		
+			<b>Professor Ratings</b></font></a>
+	
+		</td> 
+	
+	
+	
+		<td align="center" width="20%" bgcolor="#FFFFff" height="23"
+	
+		style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');"> 
+	
+			<a href="classified.php" style='text-decoration:none;'>
+	
+		<font face="Arial, Verdana" size="3" color="#000000">
+	
+		<b>Classified Ads</b></font></a></td>
+	
+	
+	
+	
+	
+		<td align="center" width="20%" bgcolor="#FFFFff" height="23"
+	
+		style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');"> 
+	
+			<a href="http://www.bearcribs.com" style='text-decoration:none;' target='new'>
+		
+			<font face="Arial, Verdana" size="3" color="#000000">
+		
+			<b>Apartment Guide</b></font></a>
+		</td>
+	
+	
+
+  </tr>
+  
+  <tr>
+ <td colspan = "5" background = "bckground.gif" bgcolor = "#FFFFFF">
+	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+	<html><head><title>Rating for Paul Zinke
+	</title>
+
+	<script language="javascript" type="text/javascript">
+	//Change the image without refreshing the page...
+	function setTempImage(f, name, c) 
+	{
+		var color = c;
+		var hit = document.getElementById("color_" + name).value;
+
+		//if star is already red and they clicked on a star
+		//we need to change that star to yellow
+		if(c != 2) 
+		{
+			if(hit == "hit")
+			{
+				c = 2;
+				//if user did not click on a star, keep star same color
+			}
+			else 
+			{
+				c = 1;
+			}
+		}
+
+		eval("document.getElementById('" + name + "').src='stars_" + c + "_" + f + ".gif';");
+
+		//sets the hidden field the value of the rating to keep for future reference
+		eval("document.getElementById('input_" + name + "').value=" + f);
+	}
+	
+	function rateF(f, num, id, name, c) 
+	{
+	   	var nn4 = (document.layers) ? true : false
+	   	var ie = (document.all) ? true : false
+	   	var dom = (document.getElementById && !document.all) ? true : false
+
+		if(nn4)
+		{
+	  		path = document.layers["userName" + num].value;
+	  	}
+	  	else if(ie)
+	  	{
+	  		path = document.all["userName" + num].value;
+	  	} 
+	  	else 
+	  	{
+	  		path = document.getElementById("userName" + num).value;
+	  	}
+	  	
+		window.open("rate.php?rateid=" + num + "&user=" + path + "&rate=" + f + "&profid=" + id, "newwindow", config="height=1, width=1, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, directories=no, status=no");
+		window.focus();
+
+		//Change the image without refreshing the page...
+		document.getElementById("color_" + name).value = "hit";
+
+		setTempImage(f, name, c);
+	}
+	</script>
+
+<STYLE TYPE="text/css">
+<!--
+	h2
+	{
+		text-align: center;
+		color: #476A8E;
+		font-family: Verdana;
+	} 
+ 	p
+	{
+		color: #111111;
+		font-family: Verdana;
+		font-size: 10pt;
+	} 
+	.a
+	{
+		font-family: "Times New Roman", Times, serif;
+		font-size:17px;
+		color: #000000;
+	}
+	form
+	{
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+	.text
+	{
+		font-family: Verdana;
+		font-size: 10pt;
+		color: #263B4E;
+	}
+	.search
+	{
+		font-family: Verdana;
+		font-size: 12pt;
+		font-weight: bold;
+		color: #263B4E;
+	}
+	.title 
+	{
+		font-family: Verdana;
+		font-variant: small-caps;
+		text-transform: lowercase;
+		font-weight: bold;
+		color: #FFFFFF;
+		font-size: 16pt;
+		padding-left: 10pt;
+	}
+	.title2
+	{
+		font-family: Verdana;
+		font-variant: small-caps;
+		text-transform: lowercase;
+		font-weight: bold;
+		color: #FFFF00;
+		font-size: 16pt;	
+	}
+-->
+</STYLE>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">
+_uacct = "UA-98854-1";
+urchinTracker();
+</script>
+
+<script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+	
+</head>
+
+<!--Professor Overview  -->
+	<tr><td bgcolor="#476A8E" align="left" colspan="5">
+		<span class="title" >Professor Overview - </span><span class="title2">
+		Paul Zinke</span></td>	
+	</td></tr>
+
+	<tr><td bgcolor="#FFFFFF" colspan="5" background = "images/bckground.gif">
+		<table width = "100%" cellspacing = "0" cellpadding = "2" border = "1" bordercolor="#476A8E" rules ="none">
+		<tr bgcolor="#CCCCCC"  align="center">
+		<td><H4><u>Overall Score</u></h4></td>
+		<td><H4><u>Ratings</u></h4></td>
+		<td><H4><u>Teaching Ability</u></h4></td>
+		<td><H4><u>Availability</u></h4></td>
+		<td><H4><u>Helpfulness</u></h4></td>
+		<td><H4><u>Workload</u><font color="#FF0000">*</font></h4></td>
+		</tr>
+
+		<tr bgcolor="#FFFFFF" align="center">
+		<td><font size="4" color="#FF0000">
+		
+		<font size="5" color="#33CC00"><b>
+73		</font></td>
+		<td><font size="4" color="#FF0000">86</font></td>
+		<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+		<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+		<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+		<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+		</tr>
+
+		<tr bgcolor="#FFFFFF"><td colspan="6"><p align="center"><font color="#FF0000">*A 5 star workload is an easy workload; a 3 star is average; whereas a 1 star workload is extremely hard.</font></p>
+		</td></tr>
+		</table>
+	</td></tr>
+
+
+	<!--Option / Search  -->
+	<tr><td bgcolor="#476A8E" align="left" colspan="5">
+		<span class="title" >Search / Options</span>
+	</td></tr>
+
+	<tr><td bgcolor="#FFFFFF" colspan="5" background = "images/bckground.gif">
+  	<form id="search" method="get" action="profdisplay.php">
+		<table width = "100%" cellspacing = "0" cellpadding = "2" border = "1" bordercolor="#476A8E" rules ="none">
+		<tr><td align="center" colspan="5"> <span class="search"><BR> Showing professor &nbsp;&nbsp;
+			<select id="profid" name="profid"> 
+      		<option value="">-- SELECT --</option>
+<option style="font:courier" value="560">Bellert, Darrin (76) </option><option style="font:courier" value="2092">Castleberry, Vanessa (83) </option><option style="font:courier" value="2704">Chu , Aurea  (79) </option><option style="font:courier" value="1461">De mesa, Maria (84) </option><option style="font:courier" value="2051">Farmer, Patrick (32) </option><option style="font:courier" value="2965">Gallagher, Elyssia (49) </option><option style="font:courier" value="2166">George, Clinton (62) </option><option style="font:courier" value="1290">Gipson, Stephen (54) </option><option style="font:courier" value="3140">Harp, Brendan (95) </option><option style="font:courier" value="214">Hassell, Alton (71) </option><option style="font:courier" value="1210">Hodson, Bruce (82) </option><option style="font:courier" value="395">Jones, Jesse (58) </option><option style="font:courier" value="731">Jonklaas, Devan (70) </option><option style="font:courier" value="489">Kane, Bob (62) </option><option style="font:courier" value="632">Klausmeyer, Kevin (72) </option><option style="font:courier" value="662">Klausmeyer, Rizalia (78) </option><option style="font:courier" value="2567">Lahousse, Mieke (75) </option><option style="font:courier" value="587">Manzanares, Carlos (63) </option><option style="font:courier" value="2335">Martin, Caleb (57) </option><option style="font:courier" value="2908">McGrath, Thomas (80) </option><option style="font:courier" value="1104">Mcgrath, Tom (82) </option><option style="font:courier" value="424">Pinney, Kevin (74) </option><option style="font:courier" value="1038">Rabbe, Dennis (76) </option><option style="font:courier" value="2929">Romo, Daniel (78) </option><option style="font:courier" value="2358">Sevcik, Amanda (81) </option><option style="font:courier" value="3094">Sevcik, Richard (43) </option><option style="font:courier" value="2196">Shaw, Bryan (73) </option><option style="font:courier" value="2202">Solouki, Touradj (47) </option><option style="font:courier" value="3148">Stover, Michele (66) </option><option style="font:courier" value="3209">Stover, Dr. Michele (80) </option><option style="font:courier" value="2377">Wood, John (83) </option><option style="font:courier" value="2382" SELECTED>Zinke, Paul (73) </option><option style="background-color: LightGrey;" value="oldprofs">-- OLD PROFESSOR RATINGS --</option><option style="background-color: LightGrey;" value="775">Busch, Kenneth Walter (68) </option><option style="background-color: LightGrey;" value="575">Busch, Marianna (60) </option><option style="background-color: LightGrey;" value="2110">Campbell, Jeffrey (63) </option><option style="background-color: LightGrey;" value="562">Chambliss, Kevin (45) </option><option style="background-color: LightGrey;" value="331">Garner, Charles (76) </option><option style="background-color: LightGrey;" value="2511">Gladen, Paul (90) </option><option style="background-color: LightGrey;" value="169">Heyns,  (55) </option><option style="background-color: LightGrey;" value="593">Humphrey, Karalyn (86) </option><option style="background-color: LightGrey;" value="1154">Jas, Gouri (63) </option><option style="background-color: LightGrey;" value="2318">Jones, Lindsay (88) </option><option style="background-color: LightGrey;" value="2048">Kim, Sung-Kun (70) </option><option style="background-color: LightGrey;" value="3">Kuhler,  (80) </option><option style="background-color: LightGrey;" value="452">Mcdaniel,  (61) </option><option style="background-color: LightGrey;" value="441">Olson, John Albert (59) </option><option style="background-color: LightGrey;" value="84">Pennington, David (72) </option><option style="background-color: LightGrey;" value="2713">Poe, C (85) </option><option style="background-color: LightGrey;" value="578">Primrose,  (66) </option><option style="background-color: LightGrey;" value="2327">Shuford, Kevin (79) </option><option style="background-color: LightGrey;" value="2417">Trakselis, Michael (85) </option><option style="background-color: LightGrey;" value="2707">Trawick, Mary (57) </option><option style="background-color: LightGrey;" value="283">Waddle,  (23) </option><option style="background-color: LightGrey;" value="55">Young, David (55) </option>		</select>                 
+
+        &nbsp;&nbsp;in the &nbsp;&nbsp;
+        
+        <select id="dept" name="dept" style="cursor:pointer; font-size : 10pt">    
+            <option value="select">--SELECT--</option>
+            <option value="Show All">Show All</option>
+ 
+<option value="Accounting">Accounting</option><option value="Aerospace Studies">Aerospace studies</option><option value="African Studies">African studies</option><option value="Air Pilot">Air pilot</option><option value="Anthropology">Anthropology</option><option value="Arabic">Arabic</option><option value="Art">Art</option><option value="Asian Studies">Asian studies</option><option value="Aviation Sciences">Aviation sciences</option><option value="Baylor Interdisciplinary Core">Baylor interdisciplinary core</option><option value="Biology">Biology</option><option value="Business">Business</option><option value="Business Law">Business law</option><option value="Chapel">Chapel</option><option value="Chemistry" SELECTED>Chemistry</option><option value="Chinese">Chinese</option><option value="Christian Religious Education">Christian religious education</option><option value="Church-state studies">Church-state studies</option><option value="Civic Education & Community Service">Civic education & community service</option><option value="Classics">Classics</option><option value="Communication Sciences & Disorders">Communication sciences & disorders</option><option value="Communication Studies">Communication studies</option><option value="Computer Science">Computer science</option><option value="Curriculum and Instruction">Curriculum and instruction</option><option value="Economics">Economics</option><option value="Education">Education</option><option value="Educational Psychology">Educational psychology</option><option value="Engineering">Engineering</option><option value="English">English</option><option value="Entrepreneurship">Entrepreneurship</option><option value="Environmental Studies">Environmental studies</option><option value="Family and Consumer Sciences">Family and consumer sciences</option><option value="Film and Digital Media">Film and digital media</option><option value="Finance">Finance</option><option value="First Year Seminars">First year seminars</option><option value="Forensic Science">Forensic science</option><option value="French">French</option><option value="Geography">Geography</option><option value="Geology">Geology</option><option value="German">German</option><option value="Gerontology">Gerontology</option><option value="Great Texts">Great texts</option><option value="Greek">Greek</option><option value="Health Education">Health education</option><option value="History">History</option><option value="Honors">Honors</option><option value="Human Performance">Human performance</option><option value="Information Systems">Information systems</option><option value="International">International</option><option value="International Business">International business</option><option value="Italian">Italian</option><option value="Japanese">Japanese</option><option value="Journalism">Journalism</option><option value="Korean">Korean</option><option value="Latin">Latin</option><option value="Law">Law</option><option value="Leadership Development">Leadership development</option><option value="Leadership/Administration">Leadership/administration</option><option value="Management">Management</option><option value="Marketing">Marketing</option><option value="Mathematics">Mathematics</option><option value="Medical Humanities">Medical humanities</option><option value="Modern Foreign Languages">Modern foreign languages</option><option value="Music">Music</option><option value="Neuroscience">Neuroscience</option><option value="none">None</option><option value="Nursing">Nursing</option><option value="OTHER">Other</option><option value="Philosophy">Philosophy</option><option value="Physics">Physics</option><option value="Political Science">Political science</option><option value="Portuguese">Portuguese</option><option value="Pre-Health Professions">Pre-health professions</option><option value="Psychology">Psychology</option><option value="Quantitative Business Analysis">Quantitative business analysis</option><option value="Real Estate">Real estate</option><option value="Recreation & Leisure Services">Recreation & leisure services</option><option value="Recreation and Leisure Services">Recreation and leisure services</option><option value="Religion">Religion</option><option value="Risk Management and Insurance">Risk management and insurance</option><option value="Russian">Russian</option><option value="Social Work">Social work</option><option value="Sociology">Sociology</option><option value="Spanish">Spanish</option><option value="Statistics">Statistics</option><option value="Swahili">Swahili</option><option value="Teacher Education">Teacher education</option><option value="Telecommunications">Telecommunications</option><option value="Theater Arts">Theater arts</option>		
+		</select>
+
+		&nbsp;&nbsp;
+		department  
+		</span>
+
+		</td></tr>
+
+		<tr><td align="center" colspan="6"><hr width="75%" color="#476A8E"></td></tr>
+			<tr><td align="center" valign="center">			
+				<a href="addrating.php?profid=2382 " onMouseOver="document.addrating.src='images/addmouseover.jpg'" onMouseOut="document.addrating.src='images/adddefault.jpg'">			
+				<img src="images/adddefault.jpg" NAME="addrating"></a>&nbsp;&nbsp;&nbsp;			
+			</td>
+	</form>
+	
+	<!-- Advertisment  -->
+	<tr align="center"><td bgcolor="#FFFFFF" colspan="5" background="images/bckground.gif">
+    <br>
+	<a href = "clicksLog.php?redirect=http://www.bubooks.com/advertising.php&adID=3" target='_new'>
+		<img src = "ads/bubooks.gif" border="0">
+		</a>
+	</td></tr>
+   	</table>
+   	<!-- End of Advertisement -->
+   	
+   	<!--Individual User ratings  -->
+		<tr><td bgcolor="#476A8E" align="left" colspan="5">
+		<span class="title" >Individual User Ratings</span>
+		</td></tr>
+
+		<tr><td bgcolor="#FFFFFF" colspan="5" >
+		<table align="left" cellspacing="0" cellpadding="3" width="100%" border = "1" bordercolor="#476A8E" rules ="none" bgcolor="#FFFFCC">
+		<tr align="center">
+		<td width="25%"><H4><u><div class="text">Teaching Ability</font></u></h4></td></div>
+		<td width="25%"><H4><u><div class="text">Availability</font></u></h4></td></div>
+		<td width="25%"><H4><u><div class="text">Helpfulness</font></u></h4></td></div>
+		<td width="25%"><H4><u><div class="text">Workload*</font></u></h4></td></div>
+		</tr>
+				<a name="32744"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3332 - I had Zinke for Ochem 1 and 2. Like others have said, Zinke is a sweet man and is very understanding. Ochem 2 is hard and you will have to put in the work if you want to do well. Reading the book is super important and do all of the practice problems. If you can do the practice problems in the book, you will be able to do the tests. It will require lots of work but it is definitely manageable to get an A.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2021-05-13</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="32744">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="32571"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:CHE 3331 - Zinke is one of the kindest professors I have ever known but he is just not the best at teaching. He cares so much for his students. Sadly, this class is a lot of teaching yourself, at least for me and just about everyone I know that took it with me. The textbook is how we learned everything, lecture was kind of a waste of time. His tests are really challenging and he does not give much direction on how best to prepare other than just pointing you towards the book, which sometimes he bases his tests and notes on specific chapters on a different textbook. I felt lost in this class literally all the time. He does have a drop test though which is super duper helpful. All that said, he is an incredible person and everyone should be his friend!!!<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2021-04-29</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="32571">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="32229"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:CHE 3331 - It bothers me that anyone would give Dr. Zinke a bad review, you can't ask for a better teacher.  OChem isn't easy, but you can't blame the teacher for a bad grade, he does everything on his part to help you do well.  I have a Y chromosome by the way, this stuff about him being sexist is nonsense.      <B>&nbsp; - Grade In Class:</b>B</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2021-01-31</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="32229">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="32202"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Chem 1 - Zinke is such an amazing man! He really loves and wants to get to know his students. When I went to his office hours he wanted to get to know me as a person not just a student. Ochem is an incredibly hard class which is not zinkes fault since he really tries to help everyone succeed. He gives us very good notes and bc covid his lectures are recorded so I recommend re watching those to make sure you understand the material. Zinke also gives extra credit the most fun is definitely the music video lol. Make sure you do the hw on time and then anything you are confused on complete with Zinke in office hours. Make sure to take notes on the book and do lots of practice problems to do well on the quizzes and tests. my best advice for ochem is PRACTICE PRACTICE PRACTICE!!!!<B>&nbsp; - Grade In Class:</b>C</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2021-01-21</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="32202">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="32160"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3331 - I had Dr. Zinke for Organic Chemistry I. His lecture was good and consisted of his own notes that is basically an outline of the book, and he goes over examples for each concept which is helpful. Overall, I thought his quizzes and exams were very fair. If you knew the material, you could do very well. He has four exams and your lowest exam is dropped and replaced by the final. The final is pretty tough because he uses ACS for his final. There is homework online throughout the semester but you'll most likely end with a high A on it, so it can only help. This semester, Dr. Zinke offered 3 extra credit opportunities which was equivalent to 15 percentage points added to a test grade!!! Overall, very great and caring professor. I am taking him again for CHE 3332, and I would definitely recommend.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2021-01-10</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="32160">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="32143"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3331 - I loved Dr. Zinke. He was amazing. You have to go in knowing that OCHEM will require work and you have to try. But Zinke helps you get through it. He has regular office hours, and he will stay after class to answer quick questions. He is very accommodating if you have any conflicts or issues with a quiz or test. There is online homework that is all due at the end of the semester. I recommend doing the homework associated with a chapter after finishing the chapter in class. I also HIGHLY recommend reading the book chapter before he goes over it in class and printing the notes off before class. There are extra credit opportunities that I recommend taking advantage of because it will help you out a lot at the end of the semester. During the final week of school he would regularly email us about the status of our grades and when he would input our letter grades. Dr. Zinke is very personable and one of the best, that is why I am taking him again for OCHEM 2.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2021-01-05</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="32143">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="31870"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3331 - Ochem 1!!!! I loved this class I love chemistry though and I took it with genetics at the same time. TBH I thought that genetics was harder than this course probably because Zinke is such an amazing teacher who offers  3(!!!) EXTRA CREDIT opportunities! I had him face-to-face and he started teaching at a reasonable pace (we had time to do the "please- try's" in the notes in class) but he got super rushed in the end and we took 2 test a quiz and a final in just about 5 weeks time at the end (oops). Zinke truly cares about his students and wants to get to know everyone. I got an A in the course because there are 4 quizzes (10%), homework (10%) and 4 tests (including a drop test  (48%) and a hard final (worth 32% of your grade) but the tests aren't impossible and the homework is an easy 100 points in the grade book. This class is not easy and requires a good amount of work but is very rewarding and Zinke is the best ochem teacher of all! Take him and this class!<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2020-12-06</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="31870">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+			   	<tr bgcolor="#476A8E" align="center">
+			    <td colspan="4">
+                <a href = "clicksLog.php?redirect=http://www.bubooks.com/advertising.php&adID=4" target='_new'>
+                    <img src = "ads/bubooks.gif" border="0">
+                 </td>
+			    </tr>
+				<a name="31660"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:OChem1 - Zinke is amazing but you have to know how to sit down and study this subject for idk like at least 5 hours a week in order to do well. Some days I would put in 10 hours I'm not joking. Zinke is absolutely helpful when you seek him out, but his lectures are short and to the point, meaning that he covers concepts in under a minute and moves on at lightning speed. I basically stopped knowing what was going on after the first test because every week I was just catching up on the readings because he was going so fast in class. That was the major downside, he moves absolutely fast and you'll know what's going on only if you're ahead in the readings because he can cover a whole chapter and a half in one lecture session. The lectures ended up being things I just showed up for. The only thing that worked for me was to read and study and learn PRIMARILY from the textbook, not from Dr. Zinke and his lectures. The combination of things that made me succeed in this class was showing up to EVERY SI session and sitting down with the book for hours to learn the material and doing all of the practice problems WHILE I read (this last part is major). I kid you not when I say that I had to prioritize ochem exclusively and would on average spend 2-4 days learning a single chapter. You cannot pass without being organized and dedicated to the course. Every other course of mine fell behind this one which I know sounds extreme but this course is just naturally so content-heavy. This class is already hard and Zinke is a sweetheart but he expects you to own your own success, meaning you can't simply depend on him without doing anything else. If you show up to lectures only then I can't imagine you will pass. If you focus on reading and stay on top of the material, and go to SIs, I really think you can do well. Zinke gives free questions on tests sometimes and is overall a really nice guy. Tests are really fair, he doesn't throw curveballs on tests or ask randomly hard questions. One lowest test and quiz are dropped. I'm taking him again for Ochem 2. In summary, a lot of your success is up to you and the effort you put in to learn this material outside of class; and if you need extra help it won't come to you, you have to seek it out and put in the effort, but it is there for you if you try. P.S. I said workload was crazy because of the textbook chapter readings. Homework was a random extra component and pretty useless for studying but is just something to boost your grade in the end really.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2020-11-20</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="31660">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="31464"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:CHEM 3331 - This man is an absolute precious human being who cares for his students BUT that does not suffice for the fact that he spends an average of about 2 minutes for each concept and then moves one when one kid in the front says he understood. This teacher and the SI, Ally Wimberly, only explain things well IF you are already familiar with college-level OCHEM. They both are brilliant but not very understanding that first year ochem students aren't ochem masters. THIS IS A WEED OUT CLASS SO DO NOT TAKE WITH HEAVY COURSE LOAD. If you take this class make sure you have time to attend all office hours, all SI sessions and have time to study/practice for 6 hours outside of that during the week. Since Zinke goes so fast, it gives students NO time for deep understanding. I suggest taking another professor unless you ALREADY know ochem at a deep level. <B>&nbsp; - Grade In Class:</b>DROP</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2020-10-13</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="31464">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="31412"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3332 - I took Zinke for both O Chem 1 and 2 and I loved the class! He is honestly one of the best professors I had at Baylor. If you want to do well in this course, go to his office hours and see what you did wrong on quizzes and tests. I would also suggest going to SI because Zinke really values students that put effort into his class and the SI will most likely have information on what might show up on your quiz next week. Overall, Zinke truly cares about his students and I would 100% recommend him.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2020-08-27</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="31412">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="31357"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3332 - I had to retake o chem 2 online over the summer because COVID happened, and Dr. Zinke is amazing. His lectures and notes are very well-organized, and he actually explained spectroscopy well. When I was taking 3332 and 3238 (o chem lab) the first time, both professors assumed the other would teach spectroscopy such as NMR, so I actually never learned how to do that the first time around. Dr. Zinke made this and the other concepts I couldn't grasp before make sense. I'm very happy with how this class is going the second time around. He also wants his students to succeed, so he was willing to work with his students' work schedules over the summer to allow us to take the quizzes and tests when we need. So kind and so friendly and so helpful. Would totally recommend.<B>&nbsp; - Grade In Class:</b>B</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2020-06-29</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="31357">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="31268"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:CHE 3331 - Before the whole COVID-19 thing: he hand writes his notes which are super helpful in my opinion because it means you only have to read the textbook for whatever he included in his notes. He also hand writes his exams which can be a bit sketch but he gives partial credit so thats a plus. Dr. Zinke's class has a total of 4 exams (each worth 16%), Sapling HW (10% of your grade), quizzes (10% of your grade), and a final (32% of your grade). He offers BACON for extra credit (14 pts total added to an exam grade) and an extra credit video that he can award up to 5 points for. He drops the lowest exam grade and the lowest quiz grade.
+
+During the whole COVID-19 thing: I learned almost nothing from the lectures he posted online to be quite honest. I felt like he could've also done better with setting up a schedule for exams and whatnot cause there were no definitive dates given until like a week or so ahead of time. He did allow another drop quiz grade so thats good but I just felt like he struggled more than others with the whole transition.
+
+Overall: Dr. Zinke is a super sweet man who will definitely help you if you don't understand something. Organic Chemistry is hard though so it takes a lot of practice, but the good thing is that Dr. Zinke is super knowledge able about it and gives pretty good explanations. He is quirky, plays music for us before class, and is a good teacher (just not too good with technology it seems).<B>&nbsp; - Grade In Class:</b>B</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2020-05-28</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="31268">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="31256"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3331/3332 - Zinke is a fantastic teacher and works very hard to make sure his students excel. He handwrites his notes which follow the textbook very closely and gives him the opportunity to teach them very effectively. His tests are open answer rather than multiple choice, and I think this makes his exams better honestly. To prepare for exams, do all of the problems at the end of each chapter and try your best to get a practice test. He cares so much about his students and wants everyone to succeed. He is very personable and open to getting to know his students. I would recommend Zinke over every other ochem prof and he is a huge reason I enjoyed and succeeded in his class.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2020-05-23</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="31256">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="30831"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3331 - AMAZING. Zinke is the best ochem prof. I took Hodson before and his teaching style just didn\'t mesh with my learning abilities. His class was incredibly difficult to me. I had to retake the class. I retook it with Zinke and I thrived. He handwrites his notes and scans them onto canvas. They are modified notes adapted from the book. He moves a little fast but if you read the book before each class, go to class with the printed notes, write down anything extra that he lectures upon, and then do practice problems after class... you will succeed without a doubt. Go to SI. No matter who your prof is, READ THE BOOK AND DO THE PRACTICE PROBLEMS. Make it your bible. You will not succeed if you do not do those things. Just being honest. 
+
+Zinke has 4 exams and a final. The Final comes from the ACS book and will replace your lowest grade if your final grade is higher than your lowest exam score. His exams are straight forward (unlike Hodson\'s). If you know the material, you will do well. My lowest exam score was an 80 and that was because of COVID and the exam format changed since it was online. We have a quiz at least once every other weekish. There is sapling homework as well. 
+
+Jones, Hodson, and Zinke are the main profs for ochem 1 right now. 
+
+DO NOT take Jones... you will learn nothing from him but you\'ll probably get an A. Hodson is alright but I didn\'t like his teaching methods. With Zinke you will learn and it is VERY possible to do well in the class. Also he gives extra credit which is really nice.
+I will be taking him for ochem 2. He is a great man and is willing to help. Ochem is not easy but he makes it doable and I grew to love OCHEM and that\'s coming from someone that failed it the first time. Start with good habits when it comes to studying for ochem, try not to fall behind too often, and you\'ll do well :)<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2020-04-25</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="30831">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="30671"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3331 - Dr. Zinke is an incredible professor. He teaches the material in a way that is actually understandable, and is always available for office hours where he will walk you through a problem or concept step by step as many times as you need him to. He is super sweet and truly cares for his students success, in this class and in the long term. O chem is hard no matter who you take, Zinke knows this and is prepared to help you in any way he can.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2020-04-14</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="30671">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+			   	<tr bgcolor="#476A8E" align="center">
+			    <td colspan="4">
+                <a href = "clicksLog.php?redirect=http://www.bubooks.com/advertising.php&adID=5" target='_new'>
+                    <img src = "ads/bubooks.gif" border="0">
+                 </td>
+			    </tr>
+				<a name="30511"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:CHE 3331 - Zinke is a cutie! HIs class is difficult, but he has a way of making it enjoyable and showing you what all you need to know for the tests. Reading the book isn't necessary, but really helps if you are confused on a topic. He handwrites his tests and scans them in so they look similar to the notes. MAKE SURE to rework all of the examples in the notes and the examples he recommends in the book because these are often on the tests. At the end of the semester he gives a lot of opportunities for extra credit, which is VERY helpful. Finally and most importantly, go to his office hours. Getting to know him is very beneficial to your success in the class and he is a great guy! Ask him questions if you are confused, he is always happy to answer and explain anything. He really cares about your success in the class and in your future!<B>&nbsp; - Grade In Class:</b>B</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2020-01-13</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="30511">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="30476"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Organic Chem 1 - Dr. Zinke is not as nice as the reviews make him out to be. I took Zinke with the mindset that he was going to be an encourager and a great educator but instead he puts in minimal effort into both his teaching and his ability to inspire students. His tests are handwritten which can be a bit weird at first glance but you easily get used to. His notes are chaotic and he goes extremely fast during lecture which can make the content difficult to follow. The textbook does a good job of explaining the material but towards the later chapters you will find that zinke tests over things not in the textbook but only briefly discussed in his notes. He does not allow for questions after class on most days which can make it difficult for more introverted students in need of help. He definitely favors the extroverted student and his teaching style is more suited for the extroverted students. He is not the worst professor I have ever had but certainly not the most helpful. Take Hodson if you can.<B>&nbsp; - Grade In Class:</b>C</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2020-01-03</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="30476">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="29821"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3332 - Bless this man!! What an absolute gem of a professor. The homework is very manageable. His class has four exams, a final, and a number of quizzes. For the exams, find someone who has already taken the class and use their exams; THIS IS SO KEY!!!! Learn how he does his exams from these old exams. You don't necessarily have to read the book, just go over his lecture notes. He has so much extra credit it is truly a lifesaver. Go in and talk to him during office hours and ask questions about the test. He will give points back if you do so. Talk about life. Seriously, take him.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2019-08-27</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="29821">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="29176"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3331 - Zinke is really just an overall great professor. You hear horror stories from people in organic chemistry that it will kill you and your GPA, but I have been nothing but pleasantly surprised by my success in the class. Not gonna lie, I was super worried because I did NOT do well in general chemistry, but organic chemistry is actually a lot easier to understand, especially if you are more of a visual learner.  The class isn't easy, but Zinke prepares you really well for exams, always has stellar SI's, and offers a ton of extra credit. He is also super understanding to personal circumstances and genuinely wants you to succeed. Zinke definitely has a bit of favor for pre-med students, but as long as you pretend to know what's going on you should be good. Utilize your resources, go to SI, do the online homework and other extra credit opportunities and it is really surprising how far you can go.<B>&nbsp; - Grade In Class:</b>B</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2019-04-15</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="29176">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="29119"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3331 - I went into this class DREADING it. I was so bad at general chemistry it was insane. Zinke actually puts so much effort into his students. He makes these extensive sets of notes that you can follow along to in the class and they basically cover everything you need to know for the exams. He does problems along with the chapters in class and he is pretty interesting. He likes to share about his old students and give applicable stories related to the content you're learning. His homework is all due at one time at the ned of the semester, so you ca do it whenever you have time and there's not a huge rush. If he thinks he made the exam too difficult or unfair he gives points back and bonus. He's willing to listen if you think he's graded your quizzes or exam incorrectly - I've gotten points back on multiple occasions. He mostly follows along with the textbook and often uses problems from the in-text and post-text questions in the book for his quizzes and exams. The exams can vary in range as far as length, but they're usually very straight forward and always short answer. The only issue is that he hand draws the exams and quizzes, so it can be difficult sometimes to make sense of the drawings, but it's not a big deal. The quizzes are randomly placed throughout the semester, but he always tells you about them ahead of time. I personally liked Zinke, but if you're a slow learner you may have issues because he can move across the content pretty quick at times, but he does have an SI and office hours, so if you really put any effort at all into the class it's really not that bad at all.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2019-04-11</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="29119">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="28971"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Organic Chemistry 1 and 2 - My god this man is going to have a lawsuit slapped on him soon because he is so sexist. If you have a Y chromosome by all means avoid this man. He's gotten so much harder every year and is by no means the "easy" ochem professor. I would argue he is actually one of the hardest ochem professors.<B>&nbsp; - Grade In Class:</b>B+</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2019-02-21</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="28971">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="28730"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3331 - Dr. Zinke is one of the nicest professors I've ever had. He can be a bit awkward, but he is always very helpful if you go in to his office hours and he cares so much about students. He'll write letters of rec for almost anyone, too. Ochem is obviously not an easy class, but if you put in the work, Dr. Zinke will help you get the grade you want. I also thought he prepared me well for the ochem on the DAT and I've heard he prepares students for the MCAT as well. Take Zinke if you can!<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2018-12-15</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="28730">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="28719"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3331 - Dr. Zinke is actually the best professor I have come across at Baylor so far. OCHEM is a hard class, but Zinke makes it fun. He never makes it dreadful and always comes in with a positive attitude. His lectures are the notes that he posts online and they are really helpful. Go to his office hours. He loves getting to know all of his students. I struggled in his class but he always told me to push through. In the end, he offers a ton of extra credit so make sure to do all of it because it can bring you up a letter grade. He also has all of the homework due at the end of the semester so DO NOT SLACK OFF, because it's a lot.<B>&nbsp; - Grade In Class:</b>C</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2018-12-15</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="28719">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="28510"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3331 & 3332 - Posting this as someone who doesn't naturally excel in the classroom, Dr. Zinke is the best!! Tests are so fair, his lectures are fine to sit through, and he is always open to talk to in his office about grades, life, med school, what you had for dinner. Offers a TON of extra credit and drops your lowest test and quiz grade so you have a lot of room to mess up, which I needed. DO yourself a favor and take him - my baylor experience would not be the same without him!<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2018-12-10</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="28510">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="28243"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:CHE 3331 - Dr. Zinke is a great professor, but organic chemistry is a tough class no matter who you take. Dr. Zinke is very personable, will tell jokes in class, and encourages you to ask questions. You have quizzes throughout the semester, for us it was 7, and he drops the lowest. You also have sapling homework for every chapter which is 20 questions/chapter. Quizzes and homework are each 10% of your grade. There are 4 class exams and the final. Each of the class exams are 16% of your grade and he drops 1. The final is 32% of your grade... yikes. He writes his own tests... literally hand writes them. You have to put a lot of hours into this class studying, and make sure you utilize his office hours as he is really helpful with homework and anything you don't understand. Make sure you study far in advance for the exams and quizzes.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2018-11-24</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="28243">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="28075"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3331 - Dr. Zinke is a really kind professor; he answers every single question happily and listens if the class has any concerns about tests/scheduling etc. He's also pretty creative and engaging during lecture which is pretty impressive for O chem. We had quizzes every week or so that you NEED to study for- but if you've been keeping up with practice problems you'll be fine. There are four tests and a cumulative final. The only way to prepare for the tests are to do all of the book's practice problems and probably the SI sheets. They're entirely free response worked problems. Do not wait until two days before the test to do them or you will drown in information. BUT if you do them all, then you will be set for the test. He doesn't try to trick you; he is very straightforward about what you need to know.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2018-11-12</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="28075">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="27920"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3331/3332 - Please for the love of God do not take this man (unless you're a woman then you'll be fine)<B>&nbsp; - Grade In Class:</b>B+</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2018-09-10</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="27920">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="27894"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:CHE 3332 - Zinke is a brilliant professor with a true passion to help his students. I took him for O-Chem 1 and his class was very tough but doable. He provides detailed notes he posts online- exactly the notes he uses for lecture. I took O-Chem 2 in the summer and not only did he have plenty of office hours, but he would hold extra test reviews for summer students since SI was not available in the summer. This man works SO hard for his students and genuinely cares especially those who are respectful and work hard in his class. DO ALL BOOK PROBLEMS- I guarantee you deliberate practice is the only way to excel in his class. Organic chemistry is tough but Zinke makes the subject both interesting and doable!!! plus he likes to play music videos before class to help his students "relax"- BEST PROF TO TAKE HANDS DOWN<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2018-08-12</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="27894">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="27803"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3331 - Absolutely terrible professor. Only thing positive about him is that he would host practice sessions.  Tests were short answer and relatively difficult to compared to the problems taught and done in class. He offers extra credit but it is only probably max 5 points out of 1000 available. 
+
+Pro: Available, Likes you if you are a female(can not be a male classified as a female)
+Con: Hard, Selfish, Male gender bias, Organic is hard in general<B>&nbsp; - Grade In Class:</b>B</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2018-06-18</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="27803">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="27638"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:CHE 3332 - Ochem 2 was very similar to ochem 1 and I actually thought it was a little easier. Dr Zinke teaches it the exact same way as ochem 1. We had 4 tests and a final (the ACS) and weekly quizzes. You will do well if you stay on top of the material. Read the textbook and do all the practice problems and review problems. Go to SI!!!! Dr. Z is really close with his SI's and they know how he will test. I honestly didn't really learn in class because he goes very fast, but used the book and SI to learn. His tests are hard. The ACS final is absolutely awful, I think he curved ours about 15 points but the average was still a 72. I think it tanks everyones grade so honestly don't stress too much about it. Dr.Z really cares about his students and wants to get to know you!<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2018-05-10</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="27638">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="27596"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:CHE 3331/3332 - Dr. Zinke is an amazing professor! He makes sure you are well prepared for all of his tests, offers tons of extra credit, and truly cares that you learn the material. He is always available for office hours and is more than willing to help. If you need to make up an exam, he is very willing to work with you. He has weekly quizzes that can sometimes be a grade-killer, but he drops one. His tests are all free response, which can be a little daunting. But he always gives partial credit as long as you write something down.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2018-05-08</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="27596">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="27576"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3331/3332 - Dr. Z made O chem a very enjoyable class! The students who did the best in his classes were the students who took him for both semesters. It will be very challenging for you if you have another teacher for O Chem 1 and then hop to Dr. Z for O Chem 2. He has a very particular teaching style and testing style so stuck with him for both semesters. His class is very organized and you will always know what expected of you. There are four tests, but only three are counted (you also get one drop quiz). He offers at least 15 points extra credit as well. He is always available to meet with students and always willing to give you points back on a test if you feel he graded too harshly. I will miss this class greatly! 
+Dr. Zinke's O Chem 2 class was one of the few o chem classes that overlapped perfectly with o chem lab material! That overlapped allowed my to also receive an A in O chem lab.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2018-05-08</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="27576">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="27203"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3332 - Fantastic! Such a kind caring person<B>&nbsp; - Grade In Class:</b>B</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2018-04-10</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="27203">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="27202"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3331 - Words cannot describe how amazing I think this man is. He is an awesome teacher and the kindest and most caring man at Baylor University<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2018-04-10</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="27202">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="26848"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3332 - Dr. Zinke really is incredibly nice, though it can be intimidating to approach him at times. His teaching style centers around explaining pre-made notes with occasional practice problems thrown in to break up the lectures a bit. It wasn't really to my liking, but I know most will appreciate the fact that a full set of notes will always be there to fall back on.
+
+Dr. Zinke's class is challenging, and though he is always willing to help out students, he will not hold your hand throughout this course. If there is one thing I can stress about this class, it's that you must go to SI or at the very least do practice problems for each chapter like Dr. Zinke suggests. I never did either of those things, but I got bopped on a couple tests as a result and only scraped an A by the skin of my teeth. He gives a boatload of bonus points throughout the semester and I highly suggest grabbing all of those as well since it may end up saving your grade.
+
+A word of caution concerning the ACS: it's pretty hard, and though Dr. Zinke's notes cover a lot, you won't do as well on the exam if you rely on these as your only resource. Use online resources and definitely take a practice ACS exam online if you can afford the $10 price tag.
+
+Overall, Dr. Zinke is a pretty cool dude and his music taste is on point. His quizzes and tests are hard but never unfair, and any student would be lucky to have him as a professor at some point during their time at Baylor.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2017-12-22</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="26848">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="26843"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3331 - Dr. Zinke is an amazing professor. He really cares about his students and their success. He is always in his office and is willing to help (even the morning before a test). He offers so much extra credit that you can come out with a good grade, even if you think you'll be able to ace o chem, do the extra credit because you never know! I highly recommend Dr. Zinke!<B>&nbsp; - Grade In Class:</b>B+</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2017-12-20</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="26843">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="26756"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3331 - It's o chem, it's not supposed to be easy. I've always struggled with chemistry, had to retake chem two, but Dr. Zinke has to be one of the best professors I've had at Baylor, let alone in chemistry. It's not going to be easy, but he really makes everything make sense. I'm so glad I got into his class, definitely recommend.<B>&nbsp; - Grade In Class:</b>C</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2017-12-16</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="26756">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="26742"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3331 - Dr.Zinke is a great professor. He really cares about all of his students! His lectures are well-organized, and he can be pretty funny. He tries to make Ochem fun. He offers soooooooo much extra credit.... do it all! You will have weekly quizzes. His tests are pretty hard... the first two are easy but don't let it fool you. It gets way harder. The book and SI are very helpful!<B>&nbsp; - Grade In Class:</b>B+</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2017-12-16</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="26742">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="26524"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3332 - This class is hard, no doubt. If I would've studied more, I probably would have gotten a higher grade. Zinke offers a lot of extra credit so take advantage of it. His tests were reasonably difficult but manageable. Ochem is terrible, but if you have to take it, take it with Zinke<B>&nbsp; - Grade In Class:</b>C</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2017-12-10</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="26524">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="25764"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3331 - Zinke is a great professor and teaches better than any of the other o-chem professors offered here at Baylor (in my opinion). His test questions always came straight from SI worksheets or the problems in the back of the chapter, or they were very similar. They weren't difficult, but it was easy to lose points on little mistakes as they were mostly free response. He is helpful albeit a little intimidating, and he truly cares about his students and will work with you to get the grade you want. His teaching style is clear and concise, but he sped through the last couple of chapters to fit everything in. He made up for that by curving the last two tests 7-10 points. An A is easily achievable if you do the SI worksheets and the book problems. Good luck!<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2017-05-11</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="25764">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="25692"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3321 - The first time I took ochem 1, I took George and got a D. Didn't understand anything, but after taking Zinke, dare I say, I feel pretty confident in my ochem abilities. He teaches very well and gives you his notes. I loved his class and his tests aren't ridiculously hard. The SI was GREAT. The final was hell but there was a huge curve. 9/10 recommend<B>&nbsp; - Grade In Class:</b>B</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2017-05-08</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="25692">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="25291"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Ochem 1 and 2 - If you are a female you will do well in this class because he is so incredibly sexist. Zinke has gotten much harder than when he first got here and really enjoys screwing your grade. I would highly recommend not taking him<B>&nbsp; - Grade In Class:</b>B</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2017-04-06</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="25291">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="25219"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:CHE 3331 & 3332 - I had him for both and he is the sweetest professor ever! the material is difficult but he does his best to make things relatable and his extra teaching sessions are very helpful for exams. if you apply yourself, you will pass. I received Cs in both semesters by a miracle so he is very generous with grading.<B>&nbsp; - Grade In Class:</b>C</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2017-03-20</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="25219">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="25029"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3331/3332 - If you fear Organic Chemistry, Dr. Zinke is a very solid choice as he is incredibly nice, intelligent, and is more than willing to work with you. That being said, you will need to do some work to get a good grade. It's far easier than some of the horror stories I heard, but it is challenging, particularly the ACS which is departmental. 
+I ended this class with over a hundred average, Zinke offers many opportunities to pick up your grade. But as easy as his sapling homework is for OChem 1, it is nothing short of frustrating for ochem 2. If you don't have chegg, like I didn't, you will find yourself incredibly annoyed with the ochem 2 sapling. Further, the pacing of this class is pretty harsh. Several days are just downright wasted, and some easy material is spent forever on, while difficult material is glossed over. I highly recommend purchasing the advised books (ochem as a secondary language) or Klein's ochem book, both of which are far more helpful than the assigned book. Also, go over recommended problems, they show up on tests. 
+    In the end, Zinke is an amazing professor that I highly recommend. Granted a lot of learning took place with his SI Cameron, but I gladly look forward to a chance to have Zinke again<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2016-12-24</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="25029">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="24833"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3331/3332 - I ABSOLUTELY love Dr.Zinke! He is such a great a teacher and really cares about his students succeeding. Make sure you stay on top of the material and go in and ask questions during office hours. It will help. Also make sure to go to SI and actually prepare for the quizzes. The test and quizzes aren't bad if you don't cram for it the night before. I wish I could have Zinke again. He'll tell jokes during class and a lot of them are actually funny. And make sure to actually go to class and pay attention<B>&nbsp; - Grade In Class:</b>B+</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2016-12-14</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="24833">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="24754"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3331/3332 - Honestly I love Dr. Zinke. I don't know why he has a rating of 69 - he is honestly one of the most amazing professors I've had at Baylor. He's extremely patient and has plenty of office hours. He always tries to relate the material to everyday which makes it easier to learn/remember. The course IS hard and you do have to put in a lot of work in to get a good grade. He has "please try" problems during class, which are extremely helpful. He also has quizzes every week or so, as well as Sapling. The quizzes are great for testing you over the material. Sapling is definitely tedious - he includes problems on there that are way harder than what he's going to test you over. But he is a very fair grader and is always willing to go over the material with you. Yes, his exams can be hard (especially the synthesis problems, which I always struggle with), but Dr. Zinke tells you what you need to know beforehand. He's really funny and kind, and really tries to get to know his students. Go to his office hours and talk to him!! Don't be afraid to ask for help. He's my favorite professor at Baylor and I'm so glad I took him.<B>&nbsp; - Grade In Class:</b>B</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2016-12-12</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="24754">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="24723"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3332 - Enjoy his generosity. There is no one else that compares. The only annoying about this class is the quizzes and Sapling. The quizzes actually help you prepare for the exam, but they're just annoying to study for. Just Chegg Sapling and you'll be fine. Make him laugh as much as you can because he's the only teacher that will laugh with you. Thank you so much Dr. Zinke, I enjoyed taking your class.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2016-12-11</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="24723">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="24266"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3331 - OCHEM isn't going to be an easy subject regardless of the professor. Dr. Zinke is one of the better ochem professors. He actually teaches you the material. He is very fair and is willing to work with is students.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2016-09-28</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="24266">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="23995"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:CHE 3331 - Zinke is generally a good professor especially if you really get to know him. He's quite approachable and available but his style of teaching is very rushed. Make sure to go to his problem sessions and get him to know you well.<B>&nbsp; - Grade In Class:</b>C</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2016-05-11</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="23995">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="23982"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:CHE 3332 - Dr. Zinke is a very nice and personable professor. I only talked to him a couple of times, but should have talked to him more- he really cares about his students. As for the course, it's OChem 2, so it's pretty difficult; however, he makes up for this by offering a massive amount of extra credit, and then still curving the course in the end. The ACS final will be terrible, and he may not curve it quite enough to get a raw A, but if he feels that the work you've put in over the semester is worthy of an A, he'll curve you, and everyone above you, up. He puts a lot of time into the course and expects a lot in return, but at least in the chemistry department, I haven't had a professor who puts more time and effort into his course and his students than Dr. Zinke.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2016-05-10</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="23982">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="23924"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:CHE 3332 - Dr. Zinke is the nicest man on this planet, and he has a way of making you feel like you're young again and your dad is telling you that you're the best and that you can achieve anything. He is extremely helpful if you go into his office--which is where he practically lives. He drops a test, and leaves a big portion of your grade to the ACS final, which even after he curves it by 40 points, is still destined to doom your grade. There are weekly quizzes over lecture material, and he gave our class a daily quiz over spectroscopy that served as bonus points for the next test. The tests are hand written and photocopied (I'm serious) and are insanely difficult. Most of your learning will come from outside of class, because Dr. Zinke just talks verbatim of his notes--which he gives you online. Doing problems in Klein's Organic Chemistry as a Second Language, from the end of chapter problems in the textbook for the class, and from any other source Dr. Zinke gives you to do problems from is where your learning will happen. Looking back, the only thing I wish I would've done was devote more time to doing practice problems, if I had given around 3 more hours of studying for each exam, maybe I would've walked away with an A.<B>&nbsp; - Grade In Class:</b>B</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2016-05-07</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="23924">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="23841"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3331 - I don't know why Zinke has such a low score. Yes, his course is hard, but he tries very hard to be there for the students. There are nights were he sleeps in his office just so he can be here for his students. He also gives you his notes, which is basically what you should be studying. He can be a little awkward to go see during office hours, but once you get past that factor, you can tell all he wants is for us to succeed. His tests are also short answer so he tries to give you as much partial credit as he can. i have yet to take the final, but I have heard it was scary and pretty hard. Overall I think Zinke is trying his best for his students to succeed. He does an extra credit video, we could pie him at Relay for Life for extra credit, and attending SI's were extra credit. He wants you to do well and I'm happy I took him.<B>&nbsp; - Grade In Class:</b>C+</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2016-05-02</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="23841">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="23514"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Ochem 1 & 2 - Zine is worst guy ever I seen in my life Zine is LECTURE and NOT PROFESSOR!!. He literally cannot teach, and lazy, he does not prepare for class and he recycle what he used past term.
+
+If you are able to, please take FULL PROFESSOR John.<B>&nbsp; - Grade In Class:</b>DROP</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2016-02-04</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="23514">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="23238"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3331 - Dr. Zinke it's the type of professor that want's to appeal to the classroom by playing modern music and making cheesy jokes. However, he will teach you a lot of things for the ACS and whatnot. His test are all write out and he will expect you to know the basics for the classroom environment. But when it comes to his exams he wants you to be like him and know Organic Chemistry inside and out. He is a very nice guy that wears extremely tight pants and you can see stuff ... Beware to anyone that sits in the front. He WON'T fail anyone, unless you actually try and not just BS everything. His test are really hard, but you can get through it.<B>&nbsp; - Grade In Class:</b>B</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2015-12-15</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="23238">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="22683"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3331 - Zinke is definitely is a great teacher. I learned so much and absolutely fell in love with the material. However, he does pick favorites (and will even joke about how people say he picks favorites. Perhaps as a way to make it seem like he doesn't?). We had 8 quizzes, which can be difficult and the tests were fair (all free response). He drops the lowest one. He is usually available, however he does sometimes seem to be rush or annoyed. Overall, good teacher and great class.<B>&nbsp; - Grade In Class:</b>B</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2015-07-23</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="22683">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="22651"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3331 - Zinke is a great teacher! He holds practice sessions and reviews sessions. He is one hard teacher because his tests are all free response, but you will learn ALOT of Organic Chemistry, plus he is a down to earth guy so you should definitely take him<B>&nbsp; - Grade In Class:</b>B+</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2015-07-04</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="22651">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="22563"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:OCHEM1 - After transferring to Baylor I found all my science professors to be arrogant and unavailable or unwilling to help. But, everyday when I walked into Zinke\\\'s class I felt very laid back and at ease due to his teaching style. Even if you can not understand the way he teaches or even pay attention in his class, all you need is his notes and the study guide in order to do well in his class. But, if you really want to excel you should make it a point to go to his office hours and introduce yourself, he is such a nice professor that you\\\'ll just want to stop by and see him all the time. Another thing you should do is study the material before class that way when you sit and listen in class all you have to do is really just review. Again, this class will be a breeze if you just put a little effort in. I enjoyed the class greatly and felt like Zinke really cares about his students unlike many other professors at Baylor.<B>&nbsp; - Grade In Class:</b>B</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2015-05-19</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="22563">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="22537"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3332 - This class was horrible to say the least. I always tried to go to his office hours, in which I was always hurried out because he was "busy". He rushed through his problems sessions, which are only beneficial to you if you're in his 3331 class. If you're in 3332, he'll give a few problems but will practically ignore you the entire time. I struggled in his class and constantly made the effort to ask for his help, only to be given the excuse that he didn't have time. The last few weeks of this class are super rushed--he gives the last two tests in the last three weeks, not including the final. He is super disorganized with grades, and you most likely won't get your last two tests scores back until the end of the semester. He talks about how much he cares about his students way more than he shows. He's really a horrible professor.<B>&nbsp; - Grade In Class:</b>C</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2015-05-16</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="22537">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="22529"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3332 - Dr. Zinke really caters his class towards his students. He is literally always in his office from when the BSB opens til 5 or 6 pm most days. Just go to office hours and do the work out of the book that he suggests at home. Take Dr. Zinke 100%<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2015-05-16</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="22529">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="22516"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3331/3332 - Dr Zinke is the BEST prof that I've ever had at Baylor, and I don't say that lightly.  I've never had a professor who cares so much about his students.  This is o chem, so it is a challenging course no matter who you take.  He gives 4 tests and a final (dropping the lowest test) and counts quizzes and homework as 20% of the class grade.  Zinke is very available during his extensive office hours and will do everything he can to help his students succeed.  AWESOME prof!  Take him if you can!<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2015-05-13</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="22516">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="22474"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3331 - I got a B in the class, and I still gave him 5 star ratings on everything. He truly deserves it. Zinke has the nicest notes provided to you prior to class that make it easy to go along with the lectures. He is the most caring professor I have EVER had, and he still really cares about you even if you don't go to his office till the last month of school (like me). He puts students first and doesn't mind staying whatever time to help someone learn. His office door is always open. This class is a difficult class, so I understand the low ratings, but don't give a low rating if you're not up to put up the effort. I didn't study (literally didn't study) for the first two tests. Bombed them, but one gets dropped. Started studying and going to his office hours and SI and grade majorly improved. Just don't fall behind on the work and you'll be find. Best Organic Chemistry teacher you'll find.<B>&nbsp; - Grade In Class:</b>B</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2015-05-11</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="22474">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="22273"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Organic Chemistry I - I love Dr. Zinke! He wants each and every one of his students to do well. He offers office hours every day for at least 3 hours, and does problem solving after class three out of five days of the week. He replies to emails quickly. He goes over material pretty quickly in class, but he posts his notes online before lecture. He assigns Sapling problems that are due after the exam, so you don\'t have to study for the test and worry about the homework on the same night. His exams are just like his reviews and the problems he goes over.Going to his office hours motivate you to do better, and he is helpful in office hours and emails. He makes an effort to know you by name, if not by face. He's willing to do anything for his students-- he even is coming in during dead days to review with us. Hands down one of the best professors I\'ve had at Baylor. Take him.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2015-04-29</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="22273">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="22254"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:O-chem 2 - Zinke and Superman once fought each other on a bet. The loser had to start wearing his underwear on the outside of his pants. Zinke has a wild tiger carpet at his house, the tiger's not dead, it's just afraid to move. Zinke once cut through a hot knife with butter. Zinke once got bitten by a poisonous snake in class, after 2 hours of excruciating pain, the snake passed away. All jokes aside, he's a great man, a great professor, and he has kids of his own in college, so he understands our struggles.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2015-04-24</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="22254">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="22125"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3331 - Unlike many of these reviews claim, Dr. Zinke is not fake, mean, intent on weeding anyone out, or overly difficult. Time properly invested will yield fitting outcomes, especially if he knows that you are working as much as you should be. He is easier than people give him credit for and he wants all of his students to succeed--he proves it with the INSANE amount of time he makes available to his students (2 office hours a day and three 2-hour review/practice problem sessions each week). Poor performance in Dr. Zinke's class is one's own fault, because he makes every effort for every student to thrive (bonus points, tons of extra review sessions...). If you are taking OChem at Baylor, take Zinke. His tests are very representative of the material and he grades very generously.
+He is also a very kind man.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2015-03-31</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="22125">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="22097"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:OChem 1+2 - Dr. Zinke is an extremely nice professor. He makes a clear effort to teach his students the material and he gives plenty of help outside of class and it is up to you to go take them. He truly cares for his students and makes us his first priority. His jokes can be kind of strange but he still is a positive guy. OChem is a hard subject and regardless of who you take you're going to struggle but Zinke is super approachable which makes the course a lot easier to do well in. His tests are reasonable and the review guides and sessions he provides are a good way of knowing what to expect on the test and helping prepare for it. There is a quiz every week but he gives plenty of extra credit. The sapling homework can be tedious but the most of the questions he picks are fairly easy. All his exams are free response as he writes them up and scans its.<B>&nbsp; - Grade In Class:</b>B+</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2015-03-24</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="22097">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="22094"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3331 - Dr. Zinke has been my favorite professor at Baylor. He wants every one of his students to do well in his class. He rarely turns students away in his office (even when he has obligations like writing a quiz or a test), and he is here until 6 pm on most days. He writes test reviews and even hosts about 2 review sessions a week. Getting an A in his class is feasible, but it will probably require more effort than other classes that you may have taken. With that in mind, take all of the negative reviews on here with a grain of salt, as I doubt that the people who wrote those reviews devoted enough time to studying for organic chemistry. I recommend going to SI, buying  the book Organic Chemistry As a Second Language, and studying well in advanced (don’t try cramming!). His first test is relatively easy, but they do ramp up in difficulty by the end of the semester. He drops your lowest test and quiz grades, and he offers extra credit. Lastly, I recommend going to his office to get to know him. He is really easy to talk to (whether it is about organic chemistry or something abstract).<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2015-03-21</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="22094">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="22028"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3332 - I had Jones for Ochem1 and now I am taking Zinke for Ochem2, I took Zinke because of the good reviews I have heard from him, I was wrong. Zinke is just like Jones but a rude version. I love how he reads his ratings in class and makes fun of himself it is hilarious! Because instead making your ratings into a joke, why not learn how to improve your teaching and become a better professor?<B>&nbsp; - Grade In Class:</b>C+</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2015-02-01</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="22028">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="22006"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3331 - What a teacher!!! I had Zinke for Organic Chem 1 during fall of 2014, He goes over notes way too fast. He is often rude in his office hours, but once you get to know him more and more, he becomes a nicer guy that you can count on. Take someone else, I dropped within the first month because I had no idea what was going on in this class.<B>&nbsp; - Grade In Class:</b>DROP</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2015-01-18</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="22006">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="22001"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3331-Ochem1 - Zinke is by FAR my favorite professor here at Baylor, he is a kind sweet old man that is always willing to help you. His exams are kind of tough but they cover the strong base of Ochem. Study your life off for this class, it is apparently a weed out for premed students. Good luck if you are taking him!<B>&nbsp; - Grade In Class:</b>B</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2015-01-15</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="22001">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="21960"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:CHE 3331 - Dr. Zinke is the best professor that I have had at Baylor and I am currently entering my 4th Semester at Baylor. He is a genuinely funny person who makes jokes to keep your attention at 9 in the morning. He is ALWAYS available in his office. One time I was going to see him in his office and he was on his way out going to a meeting. He took me back to his office and helped me understand a concept for 15 mins even though it meant him being ridiculously late to his meeting. That's dedication to your students from a professor. Granted, I studied really hard for this class. I made above a 99 on every exam during this semester including the Final, and i didn't even graduate in the top 10% of my HS class. Dr. Zinke is a fantastic professor, but OChem is NOT easy, you will not be able to cram it all into your head in 1 night before a test. It takes at least a weekend of studying to be "A" level prepared for a test. My advice, do exactly what he said on the first day of class and Buy the Solutions Manual, It will increase your understanding greatly while you are working through the chapters so that you have relevant "test level of difficulty" questions to ask when you go to his office.
+
+TL;DR - Take Zinke, Buy the Solutions Manual, Study and Go to Office Hours.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2015-01-09</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="21960">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="21955"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Organic Chemistry 1 - This is my first year here at Baylor University after transferring from a community college in my hometown. I took Chemistry 1+2 and my community college and my adviser told me that I can move straight onto Organic Chemistry. I feared for my life. But Zinke is an amazing professor who was willing to hold a bunch of review sessions and office hours. He is an awesome professor especially at a University. I am taking him again in the near future, I recommend you do. Just be careful because it is a hard-as-hell course!<B>&nbsp; - Grade In Class:</b>C+</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2015-01-07</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="21955">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="21934"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:O-Chem1 - Zinke is a new addition to Baylor University in the Chemistry department. I believe he use to teach at UT Arlington, which is not a Tier 1 school like Baylor. He often talks down on his students because he does not realize Baylor is a significantly better University than UT Arlington. On the other hand, he is a difficult professor with quizzes and homework due every couple of weeks. There are 3 tests and a final which counts for 2 tests. Just study and hope you do well, he doesn't curve his tests, but he does on his quizzes.<B>&nbsp; - Grade In Class:</b>B</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2015-01-02</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="21934">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="21933"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3331 - Professor Zinke really cares about his students. He is always available in his office, even not during office hours. But his helpfulness is not so great, often just telling students to just "work harder" or "pay attention" instead giving them tips on pinpointing the main subject of Ochem. He goes a little bit fast in class but thats fine because Ochem is a broad subject. I believe this is his first year teaching.<B>&nbsp; - Grade In Class:</b>C+</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2014-12-31</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="21933">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="21916"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3331 - Paul Zinke is a tough professor indeed, but organic chemistry was not meant to be an easy subject. Paul tries his best to be funny in class but we are not at a comedy show, but at an education center trying to learn. I love the notes because they literally helped me survive the class. He is a good guy to get to know in his office. He is always readily available and a sweet man in general. The other reviews say that he has favorites, I disagree with that. He will often shoo away students who come unprepared to ask questions. But if you already studied and know would you are doing, and would like to confirm your answers with Paul, then he is willing to help you out. Other than that, I think he is an average professor, it is his first year here and I hope he learns to improve his teaching styles and generosity. He is a good person and I can see it in him, he just hasn't had enough time to get used to the Baylor customs<B>&nbsp; - Grade In Class:</b>C</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2014-12-27</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="21916">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="21915"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:CHE 3331 - He's ok... His teaching isn't bad he goes through notes during class and you just copy them down. He does post the notes online though so don't worry if you miss something. He had review sessions and question sessions during the week to try to help. His reviews had mistakes so be sure to attend the review session to get the "actual" correct answers. Other than tests, he had sapling homework and quizzes. Quizzes were kind of difficult so go over your class notes thoroughly. As for tests they were difficult, at least for me. Half the things were from his reviews but harder so know the review forward and backward. The other half was from notes and from the book so study both of those. Also he totally looks like someone from "How the Grinch Stole Christmas".<B>&nbsp; - Grade In Class:</b>B</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2014-12-27</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="21915">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="21905"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3331 - I am sure he is a good guy, but I left very frustrated with his course. The beginning was very hopeful. He encouraged every student to come to his office for help if we didn't understand a concept. However, his office would consist of his favorites. He would forget about the students who actually needed his help. It was very frustrating when I would set up an appointment time with him and he would forget, have some excuse, or allow his favorite students to step in and take my appointment time.  Don't expect much of a curve, as there barely is one. Yes, if you have a 69.9, he will not round up.<B>&nbsp; - Grade In Class:</b>D</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2014-12-26</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="21905">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="21903"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Ochem1 - I worked very hard for this class, Zinke is a new teacher at Baylor and I would say he is doing a good job. Sometimes he would go over the notes a little bit too fast. But in the end it is Ochem and you will have to do some self studying sooner or later. I suggest Khan Academy for a review<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2014-12-25</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="21903">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="21891"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3331 - Very difficult class because it is ochem. But him having his favorites does not help students who are trying to pass. Other than that, he is a very nice professor who is always willing to help out. Try to suck up to him earlier in the year. Tests range from average to difficult. You have sapling and quizzes every week. I would say other professors in the chemistry department are better.<B>&nbsp; - Grade In Class:</b>C</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2014-12-22</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="21891">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="21888"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3331 - He is a good guy. He encouraged every student to come to his office for help if we weren't understanding a concept. However, his office would consist of his favorites and would essentially shew away the average students who actually needed his help. If you don't understand a concept, I suggest sitting down with whichever SI you have until you understand the concept then fight through his prodigal students to see if he can reinforce what you learned. Your grades are what you get.  Don't expect much of a curve if any. Fight for one of his coveted spots under his wing. If you aren't the apple of his eye. Good luck.<B>&nbsp; - Grade In Class:</b>C</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2014-12-22</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="21888">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="21670"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:O-Chem I - This man is a legend. He is the epitome of Baylor values. Professors like this come along maybe a few times in a lifetime. Not only will you grow academically from his teaching, but I’ve grown as a man from his example.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2014-12-04</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="21670">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="21664"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Ochem1 - Newest teacher but also the best teacher to take Organic Chemistry from. He is help in so many ways, and you will learn a lot. His notes summarize the foundation of organic chemistry. Tests are straightforward. Kids when you are looking for an organic professor you should take Zinke<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2014-12-03</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="21664">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="21645"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:CHE 3331 - Dr. Zinke is THE BEST professor! He is incredibly helpful and really cares about how you do in his class. He likes when students go to his office hours and he really tries to help you understand the material. His lecture notes are easy to understand and he works out plenty of example problems in class. His tests are reasonable. They test what you know without being too difficult. Dr. Zinke also makes class enjoyable because he always tells jokes and stories. Definitely take his class!<B>&nbsp; - Grade In Class:</b>B</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2014-12-02</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="21645">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="21642"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:CHE 3331 - Dr. Zinke was one of the best professors I had so far at Baylor. Honestly, I don't know if I would've made it through OChem if it wasn't for him, because I wanted to give up so many times but he was reassuring and very available and open to helping. Going to his office hours were great because he wouldn't simply answer our questions and shove us off, but he'd come up with new problems for us to work through and help us every step of the way. He also hosted many review sessions prior to tests, which were very helpful.  Dr. Zinke is very understanding and will help you through problems with OChem and problems with life; he's not like most chemistry teachers I've had. He is very thorough and posts his notes on BB as well as creating reviews/study guides for us to work through, study, and go over in order to better understand the material. There's a reason that he has a long waitlist for his second semester! He's great and I'd recommend you take him if you can. That being said, OChem is a hard course regardless of the teacher, but he helped make it manageable.<B>&nbsp; - Grade In Class:</b>B</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2014-12-01</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="21642">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="21637"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3331 - Dr. Zinke is the man! He is available pretty much 24/7. He is willing to work with you to get the grade you want. He only encourages you to do better. He will personally get to know you. Takes time out of his day to hold schedule review sessions aside from SI and office hours. He understands how hard the subject is and makes it as doable as possible. Don't be afraid to go into to his office because I found group office hours so much more helpful plus he will kindly talk about more than just O-chem. I remember watch Frozen videos  during his office hours. He is a must take professor because of how hard he works for the students.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2014-12-01</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="21637">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="21621"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3331 - He is not a very good lecturer or in fact a good teacher. During class he tries to make jokes that make absolutely no sense at all and throws a fit if we do not laugh. Despite all the negativity coming from me his positives are that he is ALWAYS available in his office hours and is willing to help you one on one.<B>&nbsp; - Grade In Class:</b>B</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2014-11-24</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="21621">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="21495"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:O Chem 1&2 - Zinke is such a good professor! This is his first year teaching at Baylor (fall 2014) but he has taught at other schools before. He has hand written notes that he puts up on BB to follow and uses them to teach kinda like a powerpoint. It it much much more helpful than powerpoints as he draws and writes as we go and does lots of examples. He is quirky but funny and his lecturing really helps you understand the material, plus you dont have to take notes because he puts his notes online and they are soo much more helpful than trying to write everything down yourself. There is about 1 quiz per chapter but they arent difficult. The quizzes and tests are handwritten and the require you to like draw a structure or name a structure so nothing is multiple choice but he gives partial credit and never puts anything too difficult on it. also there is ZERO MATH!!!! He gives a test review worksheet that is identical to the test but with different numbers and also holds test review sessions outside of class you can go to that are SUPER HELPFUL!!! He is probably the best O Chem prof to get so TAKE HIM!!! I am not a chem person AT ALL and i have a hard time comprehending it all but he has made this class about as easy as O Chem can get!! Take him and you wont regret!!!! <B>&nbsp; - Grade In Class:</b>B</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2014-11-12</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="21495">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+	</table>
+	</form>
+	</td></tr>
+
+<script type="text/javascript">
+function submit_form(frm) 
+{
+  frm.submit();
+}
+
+function getElmById(aID)
+{ 
+  return (document.getElementById) ? document.getElementById(aID)
+                                  : document.all[aID];
+} 
+
+function validate_search()
+{
+  var myDropDown = getElmById("dept");
+  var errors = 0;
+
+  if(errors>0) 
+  {
+    return false;
+  }
+}
+
+function onChangeHandler(e)
+{
+  var myevent = (e) ? e : window.event;
+
+  submit_form(getElmById("search"));
+}
+
+function onChangeHandler_dept(e)
+{
+  var myevent = (e) ? e : window.event;
+  var prof = getElmById("profid");
+
+  prof.selectedIndex = 0;
+
+  submit_form(getElmById("search"));
+}
+
+var myDropDown = getElmById("profid");
+
+if(typeof(myDropDown) == "object")
+{
+  myDropDown.onchange = onChangeHandler;
+}
+
+var myDropDown_dept = getElmById("dept");
+
+if(typeof(myDropDown_dept) == "object")
+{
+  myDropDown_dept.onchange = onChangeHandler_dept;
+}
+
+var mySearchForm = getElmById("search");
+
+mySearchForm.onsubmit = validate_search;
+</script>
+
+
+<!----- Include footer -------->
+<!--- Footer --->
+
+
+  <tr>
+
+ 	<td align="center" colspan="5" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#B2B6C8', EndColorStr='#476A8E');"><font size="4">
+
+      
+		<a href="login.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+		<b>LOGIN</b></font></a> &nbsp; &nbsp;
+	
+
+		<a href="home.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>HOME</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="about.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>ABOUT US</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="faq.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>FAQ</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="privacy.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>PRIVACY</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="terms.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>TERMS OF USE</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="advertising.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>ADVERTISING</b></font></a> &nbsp; &nbsp; 
+
+	
+
+		<a href="contact.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>CONTACT US</b></font></a> &nbsp; &nbsp; 
+
+		 
+	</td>
+
+  
+
+</table>
+
+<br>
+
+<div align="center"><font size="-1">&copy;2003-2021 Bubooks.com - All rights reserved</font></div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-98854-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+
+</html>

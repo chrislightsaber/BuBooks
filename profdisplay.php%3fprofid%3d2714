@@ -1,0 +1,750 @@
+<body bgcolor="#ffffff" vlink="#0066ff" leftmargin="0" rightmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+
+<table border="1" rules = "all" cellpadding = "3" cellspacing = "0" bordercolor="#476A8E" bgcolor = "#476A8E" width="100%" align="center">
+
+
+
+  <tr>
+
+    <td width="100%" height="85" bgcolor="#476A8E" colspan = "5">
+
+		<table border ="0" cellpadding = "0" cellspacing = "0" bgcolor = "#476A8E" width = "100%" >
+		<tr><td align = "left" rowspan="2" width="70%">
+			<a href="index.php"><img src="logo.gif" width="261" height="64" border="0"></a>
+		</td>
+		<td align = "right">
+			<table align="right" border ="0" cellpadding="0" cellspacing="0">
+			<tr><td>
+						<a href = "clicksLog1.php?redirect=http://www.bubooks.com/advertising.php&adID=5" target='_new'>
+							<img src = "ads/bubooks.gif" border="0">
+						<tr><td align="center"><font face ="verdana" size="1" color ="#ffffff">Advertisement - Click for coupon or website</font></td></tr>
+		</tr></td></table>
+		</td>
+		</tr>
+		
+		
+		
+		</table>
+    
+    </td>  
+
+  </tr>
+
+
+<!--- NavBar ---->
+	<tr>
+
+  
+    
+    
+    	<td align ="center" width="20%" bgcolor="#FFFFff" height="23" 
+	
+		style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+	
+			<a href="login.php" style='text-decoration:none;'>
+		
+			<font face="Arial, Verdana" size="3" color="#000000">
+		
+			<b>Login</b> </font></a>
+			
+		</td>
+	
+		
+	
+
+		<td align ="center" width="20%" bgcolor="#FFFFff" height="23" 
+	
+		style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+	
+			<a href="books.php" style='text-decoration:none;'>
+		
+			<font face="Arial, Verdana" size="3" color="#000000">
+		
+			<b>Textbooks</b></font></a>
+			
+		</td>
+	
+			
+	
+		<td align="center" width="20%" bgcolor="#FFFFff" height="23"
+	
+		style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+	
+			<a href="profrate.php" style='text-decoration:none;'>
+		
+			<font face="Arial, Verdana" size="3" color="#000000">
+		
+			<b>Professor Ratings</b></font></a>
+	
+		</td> 
+	
+	
+	
+		<td align="center" width="20%" bgcolor="#FFFFff" height="23"
+	
+		style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');"> 
+	
+			<a href="classified.php" style='text-decoration:none;'>
+	
+		<font face="Arial, Verdana" size="3" color="#000000">
+	
+		<b>Classified Ads</b></font></a></td>
+	
+	
+	
+	
+	
+		<td align="center" width="20%" bgcolor="#FFFFff" height="23"
+	
+		style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');"> 
+	
+			<a href="http://www.bearcribs.com" style='text-decoration:none;' target='new'>
+		
+			<font face="Arial, Verdana" size="3" color="#000000">
+		
+			<b>Apartment Guide</b></font></a>
+		</td>
+	
+	
+
+  </tr>
+  
+  <tr>
+ <td colspan = "5" background = "bckground.gif" bgcolor = "#FFFFFF">
+	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+	<html><head><title>Rating for Matt Fleeman
+	</title>
+
+	<script language="javascript" type="text/javascript">
+	//Change the image without refreshing the page...
+	function setTempImage(f, name, c) 
+	{
+		var color = c;
+		var hit = document.getElementById("color_" + name).value;
+
+		//if star is already red and they clicked on a star
+		//we need to change that star to yellow
+		if(c != 2) 
+		{
+			if(hit == "hit")
+			{
+				c = 2;
+				//if user did not click on a star, keep star same color
+			}
+			else 
+			{
+				c = 1;
+			}
+		}
+
+		eval("document.getElementById('" + name + "').src='stars_" + c + "_" + f + ".gif';");
+
+		//sets the hidden field the value of the rating to keep for future reference
+		eval("document.getElementById('input_" + name + "').value=" + f);
+	}
+	
+	function rateF(f, num, id, name, c) 
+	{
+	   	var nn4 = (document.layers) ? true : false
+	   	var ie = (document.all) ? true : false
+	   	var dom = (document.getElementById && !document.all) ? true : false
+
+		if(nn4)
+		{
+	  		path = document.layers["userName" + num].value;
+	  	}
+	  	else if(ie)
+	  	{
+	  		path = document.all["userName" + num].value;
+	  	} 
+	  	else 
+	  	{
+	  		path = document.getElementById("userName" + num).value;
+	  	}
+	  	
+		window.open("rate.php?rateid=" + num + "&user=" + path + "&rate=" + f + "&profid=" + id, "newwindow", config="height=1, width=1, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, directories=no, status=no");
+		window.focus();
+
+		//Change the image without refreshing the page...
+		document.getElementById("color_" + name).value = "hit";
+
+		setTempImage(f, name, c);
+	}
+	</script>
+
+<STYLE TYPE="text/css">
+<!--
+	h2
+	{
+		text-align: center;
+		color: #476A8E;
+		font-family: Verdana;
+	} 
+ 	p
+	{
+		color: #111111;
+		font-family: Verdana;
+		font-size: 10pt;
+	} 
+	.a
+	{
+		font-family: "Times New Roman", Times, serif;
+		font-size:17px;
+		color: #000000;
+	}
+	form
+	{
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+	.text
+	{
+		font-family: Verdana;
+		font-size: 10pt;
+		color: #263B4E;
+	}
+	.search
+	{
+		font-family: Verdana;
+		font-size: 12pt;
+		font-weight: bold;
+		color: #263B4E;
+	}
+	.title 
+	{
+		font-family: Verdana;
+		font-variant: small-caps;
+		text-transform: lowercase;
+		font-weight: bold;
+		color: #FFFFFF;
+		font-size: 16pt;
+		padding-left: 10pt;
+	}
+	.title2
+	{
+		font-family: Verdana;
+		font-variant: small-caps;
+		text-transform: lowercase;
+		font-weight: bold;
+		color: #FFFF00;
+		font-size: 16pt;	
+	}
+-->
+</STYLE>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">
+_uacct = "UA-98854-1";
+urchinTracker();
+</script>
+
+<script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+	
+</head>
+
+<!--Professor Overview  -->
+	<tr><td bgcolor="#476A8E" align="left" colspan="5">
+		<span class="title" >Professor Overview - </span><span class="title2">
+		Matt Fleeman</span></td>	
+	</td></tr>
+
+	<tr><td bgcolor="#FFFFFF" colspan="5" background = "images/bckground.gif">
+		<table width = "100%" cellspacing = "0" cellpadding = "2" border = "1" bordercolor="#476A8E" rules ="none">
+		<tr bgcolor="#CCCCCC"  align="center">
+		<td><H4><u>Overall Score</u></h4></td>
+		<td><H4><u>Ratings</u></h4></td>
+		<td><H4><u>Teaching Ability</u></h4></td>
+		<td><H4><u>Availability</u></h4></td>
+		<td><H4><u>Helpfulness</u></h4></td>
+		<td><H4><u>Workload</u><font color="#FF0000">*</font></h4></td>
+		</tr>
+
+		<tr bgcolor="#FFFFFF" align="center">
+		<td><font size="4" color="#FF0000">
+		
+		<font size="5" color="red"><b>
+43		</font></td>
+		<td><font size="4" color="#FF0000">12</font></td>
+		<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+		<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+		<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+		<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+		</tr>
+
+		<tr bgcolor="#FFFFFF"><td colspan="6"><p align="center"><font color="#FF0000">*A 5 star workload is an easy workload; a 3 star is average; whereas a 1 star workload is extremely hard.</font></p>
+		</td></tr>
+		</table>
+	</td></tr>
+
+
+	<!--Option / Search  -->
+	<tr><td bgcolor="#476A8E" align="left" colspan="5">
+		<span class="title" >Search / Options</span>
+	</td></tr>
+
+	<tr><td bgcolor="#FFFFFF" colspan="5" background = "images/bckground.gif">
+  	<form id="search" method="get" action="profdisplay.php">
+		<table width = "100%" cellspacing = "0" cellpadding = "2" border = "1" bordercolor="#476A8E" rules ="none">
+		<tr><td align="center" colspan="5"> <span class="search"><BR> Showing professor &nbsp;&nbsp;
+			<select id="profid" name="profid"> 
+      		<option value="">-- SELECT --</option>
+<option style="font:courier" value="2995">Allen, Larry (65) </option><option style="font:courier" value="2641">Arvesu Carballo, Jorge (80) </option><option style="font:courier" value="1214">Bahnsen, Patricia (91) </option><option style="font:courier" value="187">Bryan, Tommy (75) </option><option style="font:courier" value="272">Cates, Steven (63) </option><option style="font:courier" value="2872">Chuah, Chian (35) </option><option style="font:courier" value="2604">Coogan, Peter (41) </option><option style="font:courier" value="2944">Covill, Elena (72) </option><option style="font:courier" value="150">Dugas, Manfred (77) </option><option style="font:courier" value="2462">Eliot, Katie (53) </option><option style="font:courier" value="2714" SELECTED>Fleeman, Matt (43) </option><option style="font:courier" value="2467">Frymark, Dale (61) </option><option style="font:courier" value="3037">Garcia-Montoya, Nina (70) </option><option style="font:courier" value="53">Goodman, Amy (81) </option><option style="font:courier" value="2690">Graber, Jameson (84) </option><option style="font:courier" value="2737">Grigsby, Ian (77) </option><option style="font:courier" value="504">Hagelstein, Paul (61) </option><option style="font:courier" value="1211">Harrison, Jon (73) </option><option style="font:courier" value="703">Henderson, Johnny (92) </option><option style="font:courier" value="2449">Herden, Daniel (90) </option><option style="font:courier" value="2815">Hess, Rachel (51) </option><option style="font:courier" value="540">Hood, Melvin (75) </option><option style="font:courier" value="2643">Hudgins, Tori (91) </option><option style="font:courier" value="723">Hunziker, Markus (85) </option><option style="font:courier" value="230">Hutchison, Kathy (72) </option><option style="font:courier" value="2708">Jaynes, Matthew (95) </option><option style="font:courier" value="145">Johns, Baxter (76) </option><option style="font:courier" value="3030">Johnson, Kev (45) </option><option style="font:courier" value="2213">Jones, Tiffany (58) </option><option style="font:courier" value="2913">Kabre, Julienne (40) </option><option style="font:courier" value="2481">Kernell, Tate (76) </option><option style="font:courier" value="561">Kirsten, Klaus (89) </option><option style="font:courier" value="2937">Lee, Jeonghun (45) </option><option style="font:courier" value="2809">Li, Yan (32) </option><option style="font:courier" value="2984">Loe, Jennifer (35) </option><option style="font:courier" value="2409">Lyles , Matthew (87) </option><option style="font:courier" value="25">Maddox, Amy (75) </option><option style="font:courier" value="2927">Martinez-Finkelstein, A. (54) </option><option style="font:courier" value="115">Mathis, Frank (77) </option><option style="font:courier" value="2214">Meddaugh, Jonathan (76) </option><option style="font:courier" value="2695">Michael, Isaac (85) </option><option style="font:courier" value="2577">Miller, John (62) </option><option style="font:courier" value="2547">Moravec, Michelle (92) </option><option style="font:courier" value="232">Morgan, Ron (68) </option><option style="font:courier" value="2902">Mullenix, Alan (86) </option><option style="font:courier" value="2162">Nam, Kyunglim  (53) </option><option style="font:courier" value="1453">Nichols, Jill (51) </option><option style="font:courier" value="2420">Osborn, John  (59) </option><option style="font:courier" value="2848">Pasi, Lexi (92) </option><option style="font:courier" value="715">Pisors, Charlotte (43) </option><option style="font:courier" value="103">Raines, Brian (80) </option><option style="font:courier" value="2912">Rebrovich, Jack (88) </option><option style="font:courier" value="3000">reynolds, mads (85) </option><option style="font:courier" value="237">Ryden, David (81) </option><option style="font:courier" value="2662">Scott, Marietta (55) </option><option style="font:courier" value="217">Sepanski, Mark (70) </option><option style="font:courier" value="870">Sheng, Qin (66) </option><option style="font:courier" value="2581">Simanek, Brian (46) </option><option style="font:courier" value="2866">Stanfill, Jonathan (93) </option><option style="font:courier" value="427">Stanke, Rj (70) </option><option style="font:courier" value="2555">Swindle, Erica (63) </option><option style="font:courier" value="690">Wilde, Scott (70) </option><option style="font:courier" value="2941">Winters, Dana (89) </option><option style="background-color: LightGrey;" value="oldprofs">-- OLD PROFESSOR RATINGS --</option><option style="background-color: LightGrey;" value="1595">Alexander, Jordan (78) </option><option style="background-color: LightGrey;" value="352">Allison,  (48) </option><option style="background-color: LightGrey;" value="802">Anderson, Kelly (88) </option><option style="background-color: LightGrey;" value="1612">Anderson, Adam (75) </option><option style="background-color: LightGrey;" value="2657">Armour, David (68) </option><option style="background-color: LightGrey;" value="10">Arnold, David (80) </option><option style="background-color: LightGrey;" value="1078">Atkinson, William (75) </option><option style="background-color: LightGrey;" value="1572">Atnip, Jason (95) </option><option style="background-color: LightGrey;" value="2155">Averbeck, Nathan (86) </option><option style="background-color: LightGrey;" value="1556">Beauregard, Matthew (74) </option><option style="background-color: LightGrey;" value="2076">Beznosova, Oleksandra (75) </option><option style="background-color: LightGrey;" value="2514">Blackburn, Dana  (75) </option><option style="background-color: LightGrey;" value="2414">Bowen, Trace (95) </option><option style="background-color: LightGrey;" value="382">Brooks, Shelly (73) </option><option style="background-color: LightGrey;" value="886">Buckner,  (60) </option><option style="background-color: LightGrey;" value="607">Cannon, Ray (65) </option><option style="background-color: LightGrey;" value="2012">Cheng, Yan (38) </option><option style="background-color: LightGrey;" value="2487">Closs, Josh (65) </option><option style="background-color: LightGrey;" value="158">Collins, Jess (68) </option><option style="background-color: LightGrey;" value="506">Conley, Kelly (51) </option><option style="background-color: LightGrey;" value="705">Coons,  (89) </option><option style="background-color: LightGrey;" value="911">Cornelius, Alexander (66) </option><option style="background-color: LightGrey;" value="2461">Courtemanche, Jordan (43) </option><option style="background-color: LightGrey;" value="166">DaCunha,  (94) </option><option style="background-color: LightGrey;" value="1000">Davis, Billy (20) </option><option style="background-color: LightGrey;" value="324">Davis, John (82) </option><option style="background-color: LightGrey;" value="2753">Dunn, Tavish (80) </option><option style="background-color: LightGrey;" value="714">Ehrke, John (91) </option><option style="background-color: LightGrey;" value="1631">Eisenbarth, Geoff (88) </option><option style="background-color: LightGrey;" value="59">Elsalloukh,  (47) </option><option style="background-color: LightGrey;" value="875">Fahmy, Lisa (67) </option><option style="background-color: LightGrey;" value="1025">Feng, Chunyao (55) </option><option style="background-color: LightGrey;" value="1527">Fouts, Kelly (62) </option><option style="background-color: LightGrey;" value="1538">Franco, Jose (55) </option><option style="background-color: LightGrey;" value="1613">Fucci, Guglielmo (69) </option><option style="background-color: LightGrey;" value="1564">Graham, Curtis (52) </option><option style="background-color: LightGrey;" value="454">Gray, Michael (84) </option><option style="background-color: LightGrey;" value="1353">Guest, Simon (81) </option><option style="background-color: LightGrey;" value="859">Hamilton, Brent (82) </option><option style="background-color: LightGrey;" value="1580">Hamilton, Brent (78) </option><option style="background-color: LightGrey;" value="1594">Hartsock, Gail (60) </option><option style="background-color: LightGrey;" value="2240">Heir, Nathan (35) </option><option style="background-color: LightGrey;" value="425">Hill, Jeanne (77) </option><option style="background-color: LightGrey;" value="2084">Illich, Gail (59) </option><option style="background-color: LightGrey;" value="763">Jackson, Billy (34) </option><option style="background-color: LightGrey;" value="564">Johnston, Dennis (69) </option><option style="background-color: LightGrey;" value="1064">Jones, Leslie (82) </option><option style="background-color: LightGrey;" value="522">Keeney, Charlotte (44) </option><option style="background-color: LightGrey;" value="2204">Kelly, James (57) </option><option style="background-color: LightGrey;" value="2173">Kirby, Rob (59) </option><option style="background-color: LightGrey;" value="908">Kunkle, Curtis (78) </option><option style="background-color: LightGrey;" value="1456">L. mihalcea (Leonardo), Constantin (95) </option><option style="background-color: LightGrey;" value="2245">Lenells, Jonatan (93) </option><option style="background-color: LightGrey;" value="833">Lewis, Jordan (100) </option><option style="background-color: LightGrey;" value="2730">Liaw, Conni (80) </option><option style="background-color: LightGrey;" value="1145">Littlejohn, Lance (91) </option><option style="background-color: LightGrey;" value="2231">Liu, Xueyan (Sherry) (68) </option><option style="background-color: LightGrey;" value="1418">Lyons, Jeff (85) </option><option style="background-color: LightGrey;" value="916">Maroun, Mariette (54) </option><option style="background-color: LightGrey;" value="1093">Maslov, Denys (68) </option><option style="background-color: LightGrey;" value="837">Mcbride, John (70) </option><option style="background-color: LightGrey;" value="389">Mitchell, Jeff (30) </option><option style="background-color: LightGrey;" value="1495">Morales, Pedro (70) </option><option style="background-color: LightGrey;" value="188">Natanegara,  (38) </option><option style="background-color: LightGrey;" value="2296">Nelms, Charles (81) </option><option style="background-color: LightGrey;" value="1478">Neugebauer,  (75) </option><option style="background-color: LightGrey;" value="2189">Nguyen, Huy (83) </option><option style="background-color: LightGrey;" value="766">Nicely, Dywayne (38) </option><option style="background-color: LightGrey;" value="1295">Noble, Brittany (80) </option><option style="background-color: LightGrey;" value="2069">Oleksandra, Beznosova (75) </option><option style="background-color: LightGrey;" value="265">Oxford, Ed (67) </option><option style="background-color: LightGrey;" value="2447">Padgett, Josh (95) </option><option style="background-color: LightGrey;" value="12">Pappacena,  (43) </option><option style="background-color: LightGrey;" value="2694">Pennington, Brian (93) </option><option style="background-color: LightGrey;" value="20">Piziak,  (84) </option><option style="background-color: LightGrey;" value="2180">Poulsen, Dylan (65) </option><option style="background-color: LightGrey;" value="2298">Precup, Martha (86) </option><option style="background-color: LightGrey;" value="1350">Pruett, William (90) </option><option style="background-color: LightGrey;" value="709">Ramos, Alice (81) </option><option style="background-color: LightGrey;" value="388">Riggs,  (85) </option><option style="background-color: LightGrey;" value="2536">Robinson, Deanna (77) </option><option style="background-color: LightGrey;" value="1581">Sherman, Casey (62) </option><option style="background-color: LightGrey;" value="278">Shoaf, Mary Margaret (83) </option><option style="background-color: LightGrey;" value="2154">Stewart, Jessica (73) </option><option style="background-color: LightGrey;" value="1090">Stock, Eileen (53) </option><option style="background-color: LightGrey;" value="1561">Streit, Brian (78) </option><option style="background-color: LightGrey;" value="2472">Sun, Chong (95) </option><option style="background-color: LightGrey;" value="1451">Sutherland, Shawn (51) </option><option style="background-color: LightGrey;" value="2107">Taylor, Gary (73) </option><option style="background-color: LightGrey;" value="11">Tidmore, Eugene (40) </option><option style="background-color: LightGrey;" value="1141">Tuncer, Davut (92) </option><option style="background-color: LightGrey;" value="432">Van brummelen, Glen (80) </option><option style="background-color: LightGrey;" value="1604">Wagner, Bradley (48) </option><option style="background-color: LightGrey;" value="2421">Weyand, Tracy (80) </option><option style="background-color: LightGrey;" value="1602">Wicks, Quinn (88) </option><option style="background-color: LightGrey;" value="2393">Wilkerson, Rachel (69) </option><option style="background-color: LightGrey;" value="1122">Williams, Brian (49) </option><option style="background-color: LightGrey;" value="1060">Wu, Yumei (67) </option><option style="background-color: LightGrey;" value="2516">Yang, Yunyun (48) </option><option style="background-color: LightGrey;" value="1330">Yuan, Daisy (Jiang) (50) </option>		</select>                 
+
+        &nbsp;&nbsp;in the &nbsp;&nbsp;
+        
+        <select id="dept" name="dept" style="cursor:pointer; font-size : 10pt">    
+            <option value="select">--SELECT--</option>
+            <option value="Show All">Show All</option>
+ 
+<option value="Accounting">Accounting</option><option value="Aerospace Studies">Aerospace studies</option><option value="African Studies">African studies</option><option value="Air Pilot">Air pilot</option><option value="Anthropology">Anthropology</option><option value="Arabic">Arabic</option><option value="Art">Art</option><option value="Asian Studies">Asian studies</option><option value="Aviation Sciences">Aviation sciences</option><option value="Baylor Interdisciplinary Core">Baylor interdisciplinary core</option><option value="Biology">Biology</option><option value="Business">Business</option><option value="Business Law">Business law</option><option value="Chapel">Chapel</option><option value="Chemistry">Chemistry</option><option value="Chinese">Chinese</option><option value="Christian Religious Education">Christian religious education</option><option value="Church-state studies">Church-state studies</option><option value="Civic Education & Community Service">Civic education & community service</option><option value="Classics">Classics</option><option value="Communication Sciences & Disorders">Communication sciences & disorders</option><option value="Communication Studies">Communication studies</option><option value="Computer Science">Computer science</option><option value="Curriculum and Instruction">Curriculum and instruction</option><option value="Economics">Economics</option><option value="Education">Education</option><option value="Educational Psychology">Educational psychology</option><option value="Engineering">Engineering</option><option value="English">English</option><option value="Entrepreneurship">Entrepreneurship</option><option value="Environmental Studies">Environmental studies</option><option value="Family and Consumer Sciences">Family and consumer sciences</option><option value="Film and Digital Media">Film and digital media</option><option value="Finance">Finance</option><option value="First Year Seminars">First year seminars</option><option value="Forensic Science">Forensic science</option><option value="French">French</option><option value="Geography">Geography</option><option value="Geology">Geology</option><option value="German">German</option><option value="Gerontology">Gerontology</option><option value="Great Texts">Great texts</option><option value="Greek">Greek</option><option value="Health Education">Health education</option><option value="History">History</option><option value="Honors">Honors</option><option value="Human Performance">Human performance</option><option value="Information Systems">Information systems</option><option value="International">International</option><option value="International Business">International business</option><option value="Italian">Italian</option><option value="Japanese">Japanese</option><option value="Journalism">Journalism</option><option value="Korean">Korean</option><option value="Latin">Latin</option><option value="Law">Law</option><option value="Leadership Development">Leadership development</option><option value="Leadership/Administration">Leadership/administration</option><option value="Management">Management</option><option value="Marketing">Marketing</option><option value="Mathematics" SELECTED>Mathematics</option><option value="Medical Humanities">Medical humanities</option><option value="Modern Foreign Languages">Modern foreign languages</option><option value="Music">Music</option><option value="Neuroscience">Neuroscience</option><option value="none">None</option><option value="Nursing">Nursing</option><option value="OTHER">Other</option><option value="Philosophy">Philosophy</option><option value="Physics">Physics</option><option value="Political Science">Political science</option><option value="Portuguese">Portuguese</option><option value="Pre-Health Professions">Pre-health professions</option><option value="Psychology">Psychology</option><option value="Quantitative Business Analysis">Quantitative business analysis</option><option value="Real Estate">Real estate</option><option value="Recreation & Leisure Services">Recreation & leisure services</option><option value="Religion">Religion</option><option value="Risk Management and Insurance">Risk management and insurance</option><option value="Russian">Russian</option><option value="Social Work">Social work</option><option value="Sociology">Sociology</option><option value="Spanish">Spanish</option><option value="Statistics">Statistics</option><option value="Swahili">Swahili</option><option value="Teacher Education">Teacher education</option><option value="Telecommunications">Telecommunications</option><option value="Theater Arts">Theater arts</option>		
+		</select>
+
+		&nbsp;&nbsp;
+		department  
+		</span>
+
+		</td></tr>
+
+		<tr><td align="center" colspan="6"><hr width="75%" color="#476A8E"></td></tr>
+			<tr><td align="center" valign="center">			
+				<a href="addrating.php?profid=2714 " onMouseOver="document.addrating.src='images/addmouseover.jpg'" onMouseOut="document.addrating.src='images/adddefault.jpg'">			
+				<img src="images/adddefault.jpg" NAME="addrating"></a>&nbsp;&nbsp;&nbsp;			
+			</td>
+	</form>
+	
+	<!-- Advertisment  -->
+	<tr align="center"><td bgcolor="#FFFFFF" colspan="5" background="images/bckground.gif">
+    <br>
+	<a href = "clicksLog.php?redirect=http://www.bubooks.com/advertising.php&adID=7" target='_new'>
+		<img src = "ads/bubooks.gif" border="0">
+		</a>
+	</td></tr>
+   	</table>
+   	<!-- End of Advertisement -->
+   	
+   	<!--Individual User ratings  -->
+		<tr><td bgcolor="#476A8E" align="left" colspan="5">
+		<span class="title" >Individual User Ratings</span>
+		</td></tr>
+
+		<tr><td bgcolor="#FFFFFF" colspan="5" >
+		<table align="left" cellspacing="0" cellpadding="3" width="100%" border = "1" bordercolor="#476A8E" rules ="none" bgcolor="#FFFFCC">
+		<tr align="center">
+		<td width="25%"><H4><u><div class="text">Teaching Ability</font></u></h4></td></div>
+		<td width="25%"><H4><u><div class="text">Availability</font></u></h4></td></div>
+		<td width="25%"><H4><u><div class="text">Helpfulness</font></u></h4></td></div>
+		<td width="25%"><H4><u><div class="text">Workload*</font></u></h4></td></div>
+		</tr>
+				<a name="28841"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:1321 - Professor Fleeman is an extremely cool and nice guy, but his teaching style is awful. He just reads from the textbook. His tests are a lot like the reviews, but this wasn\'t helpful since no one ever understood the reviews to begin with. There\'s also quizzes everyday. Again, nice guy, but just an awful professor.<B>&nbsp; - Grade In Class:</b>B</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2019-01-03</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="28841">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="28332"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:1321 - Do not take his class. He has no idea how to teach, and expects students to teach themselves. His exams are ridiculously difficult, and EVERY DAY in class there is a quiz. Luckily homework is completely optional but quizzes more than make up for that.<B>&nbsp; - Grade In Class:</b>DROP</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2018-12-03</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="28332">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="26980"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:ODE - Professor Fleeman helps students to understand material best when he is answering questions and explaining material outside the rigid structure of the textbook. This is when he is most effective. However, this is the exception. Most of the time, Professor Fleeman is reading directly from his notes, which are seemingly taken straight from the book. What this means is that, as students are trying to learn in class, he is literally saying what the students could read on their own in the book. This very nearly renders class time useless.  // 
+
+The examples we go over in class are the exact same as the examples in the book. We go through each step exactly as the book does, and thus, we do not gain any learning additional to what is already in the textbook. I think that if Professor Fleeman explains concepts by using examples not already in the book--whether they be homework problems or problems from an outside source--that would greatly benefit the students. A student could learn what they can from class, and if they\'re still confused, they can go to the textbooks and see new examples that might help them understand the material more fully. Or, a student could look in the book, struggle with the examples, and go to class to see new problems that explain concepts and thus give the students a more full view of how a theorem is used. As it is, Fleeman adds no new material to the examples in the book, so a student who is confused when reading through the example in the book will remain confused in class. Or, a student who is confused in class cannot come to understand the material any better by referring to the textbook. What this means is that overall, the course offers so very few examples to help explain concepts, which means that students going through ten homework problems must continue referring to the same example. A 2 that shows up in the example could be a 1+1, a 2!, or simply a 2. A student can be left confused by the material reviewed in class and unable to learn it any better from the book because of the way that Professor Fleeman abides only to the textbook.  //
+
+By giving students such a small sampling size of ways to understand the material, he effectively limits the understanding of the students. This forces students to look at outside sources, such as YouTube videos and example problems online in order to actually learn the material. On a larger scale, it means that students are not learning ODE through the resources that Baylor University provides, but instead through resources outside the university that teach it better. I honestly think this lessens the value of a Baylor education. And I also think that this problem, as it relates to this course, is entirely under Professor Fleeman\'s control.  //
+
+Now, this is an additional point, which stems from my previous one. Professor Fleeman\'s justification for his teaching style is that he tells the students exactly what he expects for the tests by giving a review which is in the same format with the same types of questions as each test. Essentially, we don\'t learn the material well in class, but since we know exactly what to expect on the test, it's alright. However, this isn\'t quite accurate. The review questions are often on the spectrum of the easier homework questions, while the test questions are like the more difficult ones. As it is, I do not feel sufficiently prepared for each exam, which is meant to be the measurement of my understanding of the course material. I am often able to learn the material on my own, which is fine. I\'ve accepted that that\'s how I must learn in this class. However, I, along with many of the other students, feel like the tests cover too much material in not enough time. It seems nearly impossible for the vast majority of the students in the class to solve the problems on the test correctly in the time allotted.  //
+
+I know students who are in Johnny Henderson\'s class, and while Professor Henderson does not teach as closely to the book as Professor Fleeman does, those students have a much better understanding of the course material than I, as a student of Professor Fleeman, do. In the test on Laplace Transforms, students in that class were given a table of the important transforms for the test, so that they could focus on problem-solving and applying the transforms. In Professor Fleeman\'s class, we had to memorize the table in order to apply it. I do not know a single person who actually finished that test in Professor Fleeman\'s class, and I think that part of it is because we were not only tested on problem-solving (which is the whole purpose of the course), but also on memorization. I leave the course with a decent understanding of ODE, not because of Professor Fleeman\'s teaching, but because of all the work I had to put in outside of class in order to make up for the wasted class time.  //
+
+I recommend to other students that they take any professor for ODE other than Professor Fleeman because students of other professors come out of the class understanding the course material well while I leave the class barely understanding it at all.<B>&nbsp; - Grade In Class:</b>B</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2018-02-06</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="26980">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="26639"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:ODE - Dr. Fleeman is one of the worst teachers I have ever had. He has no teaching ability. He will read the book word for word during the class. While you may consider skipping, he gives a quiz over the homework every class. This may not sound bad but the homework is usually 95% of the problems in the book for each section you go over. This is the only C I have ever gotten in my career as a student and this is the only class I have hated with a passion. I felt like I was wasting 3 hours of my life every week by going to class and found Dr. Fleeman to be one of the most unhelpful professors I have ever had. Please avoid him.<B>&nbsp; - Grade In Class:</b>C</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2017-12-13</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="26639">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="26432"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:ODE - Fleeman is uncaring, lacks passion in his teaching, and his research fills up the entirety of his energy.  Because of this, his teaches nothing in class, and really if you want to learn, read the book.  READ THE BOOK.  Otherwise his pointless lectures will get you so confused the only thing you will remember is  that the class is supposed to be "cookie-cutter."  If you must take him, know that the book is actually a really good teacher! 
+The one good think is that his tests have a built-in curve: he grades out of 200 when there are 220 points total.  He has three tests, a final and daily quizzes.  If you have no choice, good luck, and make the textbook your best friend.<B>&nbsp; - Grade In Class:</b>B</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2017-12-06</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="26432">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="26135"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:ODE - Easiest math professor I have ever had at Baylor. Gives homework but it isn't required to do it. Gives a ton of extra credit and his practice exams are literally the exams with numbers changed. I am on my phone for 50% of the class and have over a 100% in his class after 3 exams. Definitely take Fleeman if you want a free A.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2017-11-13</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="26135">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="25864"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:MTH 2311 Linear Algebra - Dr. Fleeman is the worst professor I have ever had. He quotes the book directly and his examples are directly from the book. He often isn't able to answer questions about the example. I would not recommend him to anyone. Please do not take him!<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2017-06-28</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="25864">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+			   	<tr bgcolor="#476A8E" align="center">
+			    <td colspan="4">
+                <a href = "clicksLog.php?redirect=http://www.bubooks.com/advertising.php&adID=8" target='_new'>
+                    <img src = "ads/bubooks.gif" border="0">
+                 </td>
+			    </tr>
+				<a name="25439"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:1321 - I did  not find Dr. Fleeman's class to be too difficult, but I did score very well on the AP Calculus test. He does not grade homework. It is all up to you to do it. He gives a quiz everyday, but after about 20 quizzes, the rest become extra credit. He gives a review before each test and his test are exactly the review but with different numbers. He does not explain things very well, but he is not the worse professor. Also, his test have a curve built into it so that was pretty nice. If you are not the best at math, I would recommend doing the additional department finals in order to do well in the class.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2017-04-19</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="25439">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="25398"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:1321 - Do. Not. Take. This. Man. Possibly the worst professor I have ever had in my entire life. He is a very nice guy and is fairly avilable but that is the only good thing that I have to say. He basically reads you the textbook so the actual lecture is pointless. I went to a ton of office hours but his help was pretty much useless. The only reason I passed his tests is because they are pretty much exactly like the test reviews. We have daily quizzes that require a ton of studying the night before because you never know what you are going to get. He does not give any homework or practice problems but MAKE SURE YOU DO THE DEPARTMENTAL TEXTBOOK HOMEWORK for every unit to thoroughly understand the material. And don't get me started on the departmental final. Since you learn a whole lot of nothing in his class be prepared to get destroyed on the final, I got a 52 WITH the curve, yet passed all of his tests. Horrible experience. Unnecessary amount of studying. 11/10 would not recommend.<B>&nbsp; - Grade In Class:</b>C</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2017-04-13</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="25398">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="25313"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:2321 - Dr. Fleeman is probably the worst teacher I have ever had for anything ever. I dread every single time I go to his class. He teaches straight out of the book and instead of making it more straightforward, he makes everything convoluted. He talks down to his students and does things like keep you 15 minutes after class the class before spring break. It is apparent that he doesn't care about his students and hates being proven wrong although he frequently is. The tests were not overly hard because he gives a review that is very similar. That is the only saving grace of this class. He takes pride in trying to trick students on his daily quizzes. Please for the love of God take someone else. You will be so glad you did.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2017-04-10</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="25313">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="25221"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:3321 - Worst professor I have ever come across in my life. He is outright rude and unhelpful to his students. In our TR class he will often times keep us late and very rarely lets us out early. He has quiz questions every class that are many times there to trick you or may be over material not fully covered yet. The only saving grace in his class is that his reviews are the same as his tests with numbers changed. I would not recommend Fleeman, I hate his class and he has made me hate the subject more and more each day.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2017-03-20</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="25221">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="24854"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:MTH 1321 - This class was very challenging for me. Most people in my class had already taken Calc I in high school, but I only took Pre-Cal and then tested into Baylor Calc I. That being said, I still was above average on every test. So this class is challenging to nearly everyone. Dr.Fleeman spends much of class going over complicated theory and proofs, but often fails to dumb it down or do real examples. You do not have assigned homework, but you will need to do homework from the departmental sheet if you want to succeed. Dr.Fleeman gives you a quiz every time class meets. They are 5 points each and add up to an exam grade at the end of the semester, so do not blow them off! Not doing well on these really hurt my grade. They are usually over whatever notes you covered in the last class. You have about 4 exams and a departmental final. Dr.Fleeman does not curve any of his exams and they are very tricky. He will give you a good review before every exam that is structured exactly how test will be, down to the exact question type. However, the actual exam is usually much harder. His exams are long and you cannot go slow if you want to finish in 50 minutes. The departmental final is absolutely awful. Study as much as you can. The average this year was a 62. I think that was with a curve. They are not afraid to fail people. Go to Si and try not to fall behind. <B>&nbsp; - Grade In Class:</b>B</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2016-12-14</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="24854">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+	</table>
+	</form>
+	</td></tr>
+
+<script type="text/javascript">
+function submit_form(frm) 
+{
+  frm.submit();
+}
+
+function getElmById(aID)
+{ 
+  return (document.getElementById) ? document.getElementById(aID)
+                                  : document.all[aID];
+} 
+
+function validate_search()
+{
+  var myDropDown = getElmById("dept");
+  var errors = 0;
+
+  if(errors>0) 
+  {
+    return false;
+  }
+}
+
+function onChangeHandler(e)
+{
+  var myevent = (e) ? e : window.event;
+
+  submit_form(getElmById("search"));
+}
+
+function onChangeHandler_dept(e)
+{
+  var myevent = (e) ? e : window.event;
+  var prof = getElmById("profid");
+
+  prof.selectedIndex = 0;
+
+  submit_form(getElmById("search"));
+}
+
+var myDropDown = getElmById("profid");
+
+if(typeof(myDropDown) == "object")
+{
+  myDropDown.onchange = onChangeHandler;
+}
+
+var myDropDown_dept = getElmById("dept");
+
+if(typeof(myDropDown_dept) == "object")
+{
+  myDropDown_dept.onchange = onChangeHandler_dept;
+}
+
+var mySearchForm = getElmById("search");
+
+mySearchForm.onsubmit = validate_search;
+</script>
+
+
+<!----- Include footer -------->
+<!--- Footer --->
+
+
+  <tr>
+
+ 	<td align="center" colspan="5" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#B2B6C8', EndColorStr='#476A8E');"><font size="4">
+
+      
+		<a href="login.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+		<b>LOGIN</b></font></a> &nbsp; &nbsp;
+	
+
+		<a href="home.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>HOME</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="about.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>ABOUT US</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="faq.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>FAQ</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="privacy.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>PRIVACY</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="terms.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>TERMS OF USE</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="advertising.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>ADVERTISING</b></font></a> &nbsp; &nbsp; 
+
+	
+
+		<a href="contact.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>CONTACT US</b></font></a> &nbsp; &nbsp; 
+
+		 
+	</td>
+
+  
+
+</table>
+
+<br>
+
+<div align="center"><font size="-1">&copy;2003-2019 Bubooks.com - All rights reserved</font></div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-98854-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+
+</html>

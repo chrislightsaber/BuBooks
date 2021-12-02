@@ -1,0 +1,2106 @@
+<body bgcolor="#ffffff" vlink="#0066ff" leftmargin="0" rightmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+
+<table border="1" rules = "all" cellpadding = "3" cellspacing = "0" bordercolor="#476A8E" bgcolor = "#476A8E" width="100%" align="center">
+
+
+
+  <tr>
+
+    <td width="100%" height="85" bgcolor="#476A8E" colspan = "5">
+
+		<table border ="0" cellpadding = "0" cellspacing = "0" bgcolor = "#476A8E" width = "100%" >
+		<tr><td align = "left" rowspan="2" width="70%">
+			<a href="index.php"><img src="logo.gif" width="261" height="64" border="0"></a>
+		</td>
+		<td align = "right">
+			<table align="right" border ="0" cellpadding="0" cellspacing="0">
+			<tr><td>
+						<a href = "clicksLog1.php?redirect=http://www.upointeonspeight.com&adID=4" target='_new'>
+							<img src = "ads/Speight.jpg" border="0">
+						<tr><td align="center"><font face ="verdana" size="1" color ="#ffffff">Advertisement - Click for coupon or website</font></td></tr>
+		</tr></td></table>
+		</td>
+		</tr>
+		
+		
+		
+		</table>
+    
+    </td>  
+
+  </tr>
+
+
+<!--- NavBar ---->
+	<tr>
+
+  
+    
+    
+    	<td align ="center" width="20%" bgcolor="#FFFFff" height="23" 
+	
+		style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+	
+			<a href="login.php" style='text-decoration:none;'>
+		
+			<font face="Arial, Verdana" size="3" color="#000000">
+		
+			<b>Login</b> </font></a>
+			
+		</td>
+	
+		
+	
+
+		<td align ="center" width="20%" bgcolor="#FFFFff" height="23" 
+	
+		style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+	
+			<a href="books.php" style='text-decoration:none;'>
+		
+			<font face="Arial, Verdana" size="3" color="#000000">
+		
+			<b>Textbooks</b></font></a>
+			
+		</td>
+	
+			
+	
+		<td align="center" width="20%" bgcolor="#FFFFff" height="23"
+	
+		style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+	
+			<a href="profrate.php" style='text-decoration:none;'>
+		
+			<font face="Arial, Verdana" size="3" color="#000000">
+		
+			<b>Professor Ratings</b></font></a>
+	
+		</td> 
+	
+	
+	
+		<td align="center" width="20%" bgcolor="#FFFFff" height="23"
+	
+		style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');"> 
+	
+			<a href="classified.php" style='text-decoration:none;'>
+	
+		<font face="Arial, Verdana" size="3" color="#000000">
+	
+		<b>Classified Ads</b></font></a></td>
+	
+	
+	
+	
+	
+		<td align="center" width="20%" bgcolor="#FFFFff" height="23"
+	
+		style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');"> 
+	
+			<a href="http://www.bearcribs.com" style='text-decoration:none;' target='new'>
+		
+			<font face="Arial, Verdana" size="3" color="#000000">
+		
+			<b>Apartment Guide</b></font></a>
+		</td>
+	
+	
+
+  </tr>
+  
+  <tr>
+ <td colspan = "5" background = "bckground.gif" bgcolor = "#FFFFFF">
+	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+	<html><head><title>Rating for  Lake
+	</title>
+
+	<script language="javascript" type="text/javascript">
+	//Change the image without refreshing the page...
+	function setTempImage(f, name, c) 
+	{
+		var color = c;
+		var hit = document.getElementById("color_" + name).value;
+
+		//if star is already red and they clicked on a star
+		//we need to change that star to yellow
+		if(c != 2) 
+		{
+			if(hit == "hit")
+			{
+				c = 2;
+				//if user did not click on a star, keep star same color
+			}
+			else 
+			{
+				c = 1;
+			}
+		}
+
+		eval("document.getElementById('" + name + "').src='stars_" + c + "_" + f + ".gif';");
+
+		//sets the hidden field the value of the rating to keep for future reference
+		eval("document.getElementById('input_" + name + "').value=" + f);
+	}
+	
+	function rateF(f, num, id, name, c) 
+	{
+	   	var nn4 = (document.layers) ? true : false
+	   	var ie = (document.all) ? true : false
+	   	var dom = (document.getElementById && !document.all) ? true : false
+
+		if(nn4)
+		{
+	  		path = document.layers["userName" + num].value;
+	  	}
+	  	else if(ie)
+	  	{
+	  		path = document.all["userName" + num].value;
+	  	} 
+	  	else 
+	  	{
+	  		path = document.getElementById("userName" + num).value;
+	  	}
+	  	
+		window.open("rate.php?rateid=" + num + "&user=" + path + "&rate=" + f + "&profid=" + id, "newwindow", config="height=1, width=1, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, directories=no, status=no");
+		window.focus();
+
+		//Change the image without refreshing the page...
+		document.getElementById("color_" + name).value = "hit";
+
+		setTempImage(f, name, c);
+	}
+	</script>
+
+<STYLE TYPE="text/css">
+<!--
+	h2
+	{
+		text-align: center;
+		color: #476A8E;
+		font-family: Verdana;
+	} 
+ 	p
+	{
+		color: #111111;
+		font-family: Verdana;
+		font-size: 10pt;
+	} 
+	.a
+	{
+		font-family: "Times New Roman", Times, serif;
+		font-size:17px;
+		color: #000000;
+	}
+	form
+	{
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+	.text
+	{
+		font-family: Verdana;
+		font-size: 10pt;
+		color: #263B4E;
+	}
+	.search
+	{
+		font-family: Verdana;
+		font-size: 12pt;
+		font-weight: bold;
+		color: #263B4E;
+	}
+	.title 
+	{
+		font-family: Verdana;
+		font-variant: small-caps;
+		text-transform: lowercase;
+		font-weight: bold;
+		color: #FFFFFF;
+		font-size: 16pt;
+		padding-left: 10pt;
+	}
+	.title2
+	{
+		font-family: Verdana;
+		font-variant: small-caps;
+		text-transform: lowercase;
+		font-weight: bold;
+		color: #FFFF00;
+		font-size: 16pt;	
+	}
+-->
+</STYLE>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">
+_uacct = "UA-98854-1";
+urchinTracker();
+</script>
+
+<script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+	
+</head>
+
+<!--Professor Overview  -->
+	<tr><td bgcolor="#476A8E" align="left" colspan="5">
+		<span class="title" >Professor Overview - </span><span class="title2">
+		 Lake</span></td>	
+	</td></tr>
+
+	<tr><td bgcolor="#FFFFFF" colspan="5" background = "images/bckground.gif">
+		<table width = "100%" cellspacing = "0" cellpadding = "2" border = "1" bordercolor="#476A8E" rules ="none">
+		<tr bgcolor="#CCCCCC"  align="center">
+		<td><H4><u>Overall Score</u></h4></td>
+		<td><H4><u>Ratings</u></h4></td>
+		<td><H4><u>Teaching Ability</u></h4></td>
+		<td><H4><u>Availability</u></h4></td>
+		<td><H4><u>Helpfulness</u></h4></td>
+		<td><H4><u>Workload</u><font color="#FF0000">*</font></h4></td>
+		</tr>
+
+		<tr bgcolor="#FFFFFF" align="center">
+		<td><font size="4" color="#FF0000">
+		
+		<font size="5" color="red"><b>
+45		</font></td>
+		<td><font size="4" color="#FF0000">82</font></td>
+		<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+		<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+		<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+		<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+		</tr>
+
+		<tr bgcolor="#FFFFFF"><td colspan="6"><p align="center"><font color="#FF0000">*A 5 star workload is an easy workload; a 3 star is average; whereas a 1 star workload is extremely hard.</font></p>
+		</td></tr>
+		</table>
+	</td></tr>
+
+
+	<!--Option / Search  -->
+	<tr><td bgcolor="#476A8E" align="left" colspan="5">
+		<span class="title" >Search / Options</span>
+	</td></tr>
+
+	<tr><td bgcolor="#FFFFFF" colspan="5" background = "images/bckground.gif">
+  	<form id="search" method="get" action="profdisplay.php">
+		<table width = "100%" cellspacing = "0" cellpadding = "2" border = "1" bordercolor="#476A8E" rules ="none">
+		<tr><td align="center" colspan="5"> <span class="search"><BR> Showing professor &nbsp;&nbsp;
+			<select id="profid" name="profid"> 
+      		<option value="">-- SELECT --</option>
+<option style="font:courier" value="2615">Burleson, Burt (95) </option><option style="font:courier" value="106" SELECTED>Lake,  (45) </option><option style="font:courier" value="2606">Pennypacker, Jonathan (0) </option><option style="font:courier" value="2460">Ryan, Chapel (77) </option><option style="background-color: LightGrey;" value="oldprofs">-- OLD PROFESSOR RATINGS --</option><option style="background-color: LightGrey;" value="873">Weathersby,  (61) </option>		</select>                 
+
+        &nbsp;&nbsp;in the &nbsp;&nbsp;
+        
+        <select id="dept" name="dept" style="cursor:pointer; font-size : 10pt">    
+            <option value="select">--SELECT--</option>
+            <option value="Show All">Show All</option>
+ 
+<option value="Accounting">Accounting</option><option value="Aerospace Studies">Aerospace studies</option><option value="African Studies">African studies</option><option value="Air Pilot">Air pilot</option><option value="Anthropology">Anthropology</option><option value="Arabic">Arabic</option><option value="Art">Art</option><option value="Asian Studies">Asian studies</option><option value="Aviation Sciences">Aviation sciences</option><option value="Baylor Interdisciplinary Core">Baylor interdisciplinary core</option><option value="Biology">Biology</option><option value="Business">Business</option><option value="Business Law">Business law</option><option value="Chapel" SELECTED>Chapel</option><option value="Chemistry">Chemistry</option><option value="Chinese">Chinese</option><option value="Christian Religious Education">Christian religious education</option><option value="Church-state studies">Church-state studies</option><option value="Civic Education & Community Service">Civic education & community service</option><option value="Classics">Classics</option><option value="Communication sciences & disorders">Communication sciences & disorders</option><option value="Communication Studies">Communication studies</option><option value="Computer Science">Computer science</option><option value="Curriculum and Instruction">Curriculum and instruction</option><option value="Economics">Economics</option><option value="Education">Education</option><option value="Educational Psychology">Educational psychology</option><option value="Engineering">Engineering</option><option value="English">English</option><option value="Entrepreneurship">Entrepreneurship</option><option value="Environmental Studies">Environmental studies</option><option value="Family And Consumer Sciences">Family and consumer sciences</option><option value="Film And Digital Media">Film and digital media</option><option value="Finance">Finance</option><option value="First Year Seminars">First year seminars</option><option value="Forensic Science">Forensic science</option><option value="French">French</option><option value="Geography">Geography</option><option value="Geology">Geology</option><option value="German">German</option><option value="Gerontology">Gerontology</option><option value="Great Texts">Great texts</option><option value="Greek">Greek</option><option value="Health Education">Health education</option><option value="History">History</option><option value="Honors">Honors</option><option value="Human Performance">Human performance</option><option value="Information Systems">Information systems</option><option value="International">International</option><option value="Italian">Italian</option><option value="Japanese">Japanese</option><option value="Journalism">Journalism</option><option value="Korean">Korean</option><option value="Latin">Latin</option><option value="Law">Law</option><option value="Leadership Development">Leadership development</option><option value="Management">Management</option><option value="Marketing">Marketing</option><option value="Mathematics">Mathematics</option><option value="Medical Humanities">Medical humanities</option><option value="Modern Foreign Languages">Modern foreign languages</option><option value="Music">Music</option><option value="Neuroscience">Neuroscience</option><option value="Nursing">Nursing</option><option value="Other">Other</option><option value="Philosophy">Philosophy</option><option value="Physics">Physics</option><option value="Political Science">Political science</option><option value="Portuguese">Portuguese</option><option value="Pre-Health Professions">Pre-health professions</option><option value="Psychology">Psychology</option><option value="Quantitative Business Analysis">Quantitative business analysis</option><option value="Real Estate">Real estate</option><option value="Recreation & Leisure Services">Recreation & leisure services</option><option value="Religion">Religion</option><option value="Risk Management and Insurance">Risk management and insurance</option><option value="Russian">Russian</option><option value="Slavic Eastern European Studies">Slavic eastern european studies</option><option value="Social Work">Social work</option><option value="Sociology">Sociology</option><option value="Spanish">Spanish</option><option value="Statistics">Statistics</option><option value="Swahili">Swahili</option><option value="Teacher Education">Teacher education</option><option value="Telecommunications">Telecommunications</option><option value="Theater Arts">Theater arts</option>		
+		</select>
+
+		&nbsp;&nbsp;
+		department  
+		</span>
+
+		</td></tr>
+
+		<tr><td align="center" colspan="6"><hr width="75%" color="#476A8E"></td></tr>
+			<tr><td align="center" valign="center">			
+				<a href="addrating.php?profid=106 " onMouseOver="document.addrating.src='images/addmouseover.jpg'" onMouseOut="document.addrating.src='images/adddefault.jpg'">			
+				<img src="images/adddefault.jpg" NAME="addrating"></a>&nbsp;&nbsp;&nbsp;			
+			</td>
+	</form>
+	
+	<!-- Advertisment  -->
+	<tr align="center"><td bgcolor="#FFFFFF" colspan="5" background="images/bckground.gif">
+    <br>
+	<a href = "clicksLog.php?redirect=http://www.upointeonspeight.com&adID=8" target='_new'>
+		<img src = "ads/Speight728x90.jpg" border="0">
+		</a>
+	</td></tr>
+   	</table>
+   	<!-- End of Advertisement -->
+   	
+   	<!--Individual User ratings  -->
+		<tr><td bgcolor="#476A8E" align="left" colspan="5">
+		<span class="title" >Individual User Ratings</span>
+		</td></tr>
+
+		<tr><td bgcolor="#FFFFFF" colspan="5" >
+		<table align="left" cellspacing="0" cellpadding="3" width="100%" border = "1" bordercolor="#476A8E" rules ="none" bgcolor="#FFFFCC">
+		<tr align="center">
+		<td width="25%"><H4><u><div class="text">Teaching Ability</font></u></h4></td></div>
+		<td width="25%"><H4><u><div class="text">Availability</font></u></h4></td></div>
+		<td width="25%"><H4><u><div class="text">Helpfulness</font></u></h4></td></div>
+		<td width="25%"><H4><u><div class="text">Workload*</font></u></h4></td></div>
+		</tr>
+				<a name="22044"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Chaps. - Baylor University Chapel was an eye opening experience. It honestly changed my life and the messages will forever stay with me as time goes on. Messages like: "Get off your phone" "You don't need to do that homework" "Listen to me play these 4 chords while singing off key" and my personal favorite "I am so and so and this is what i did for people who are not as good as i am because i am rich, tell me i'm great." 
+Show up and you'll pass.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2015-02-15</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="22044">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="20515"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:CHA 1088 - Make sure you attend and save your absences until the end of the semester so that you can have extra study time for finals. Sit in the back so that you get out earliest.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2013-12-16</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="20515">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="20442"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:1089 - UGGGH HATE THIS SO MUCH!!! SUCH A WASTE OF TIME<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2013-12-10</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="20442">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="18758"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:chaple - waste of time. hate going. AND the people that ask you to leave if your on your phone act like they are getting payed on commision. its overly redictluas. i pulled out my inhaler out of my backpack one time and was asked to leave because they thought i was on my phone....<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2012-10-16</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="18758">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="18176"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Chapel - Baylor's form of hazing all the freshmen. It sucks and there's no way to get out of it. The solution: Do homework and sleep, it's a great nap time if you have 8am classes.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2012-04-12</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="18176">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="17194"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Chapel - Chapel is the most pointless requirement that Baylor has. If you want to sit and listen to hypocrites shove god down your throat then you're in the right place. All you do is sleep and keep track of time. It's such a waste of time...<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2011-11-15</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="17194">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="17109"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Chapel - if you're a christian and actually care, most of the time chapel is great. there's some good praise and worship, speakers and entertainment(in the loosest possible sense of the word) but sometimes its just impossible to not fall asleep... chapel is... chapel.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2011-11-07</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="17109">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+			   	<tr bgcolor="#476A8E" align="center">
+			    <td colspan="4">
+                <a href = "clicksLog.php?redirect=http://www.brothersmanagement.com&adID=9" target='_new'>
+                    <img src = "ads/brothers.gif" border="0">
+                 </td>
+			    </tr>
+				<a name="17054"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:chapel - There's nothing like having someone try to cram their hypocrite ideals down your throat. Chapel was pointless and awful. End of story.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2011-09-30</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="17054">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="16924"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:0000 - Chapel may be the dumbest thing I've ever attended. I have never felt more relief than the last day I walked into Waco Hall. Go to all the chapels so you can miss 7 toward the end of the semester. Such a waste of time. I wonder if the faculty knows that by doing this they're actually turning us away from religion? hmmmm<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2011-07-18</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="16924">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="14418"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:chapel - Makes you want to drop out of Baylor. Makes me sad for the state of organized religion.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2010-04-13</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="14418">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="4980"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:1088 - Chapel is nap time.  I hate having to go<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2005-04-15</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="4980">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="4646"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Chapel - This guy is a creep, he has problems with saying stupid stuff and he seems altogether fake.  Chapel sucks.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2005-01-14</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="4646">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="4441"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Chapel - Dr. Lake really came off as not really caring about what he was saying.  He seemed fake and his prayers all seemed pre-planned and sterile.  He is very bias in his beliefs and has the reputation of saying things very offending.  He KICKED A GUEST OFF STAGE AT CHAPEL!  That was definately his low point in the year.  He is gone now though.  I hope he has better luck wherever he is going than he did here.  I don't think anybody liked him.  Oh yeah, and according to him, Catholics are not Christian.  Glad to see this one go.  <B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2004-12-26</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="4441">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="4346"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:chapel - i didnt learn anythin in chapel, if that was the purpose. all you have to do is sit there and listen to some ppl talk swipe and go. it requires little brain activity. it takes u more energy to read my comment than go to chapel. i slept and occasionally listen to speakers. all in all it wasnt that bad. i am a christian so i enjoyed some speakers espically dr. tony evans. neways youll survive. use all of your absenses. i suggest goin to all of them then skipin, i mean "being sick" the last two months.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2004-12-16</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="4346">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="4256"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Chapel - Man...for a course that all freshman are required to take, this guy is the worst.  I am pretty open minded, but he just seems so fake and wants to force his beliefs.  Oh well, he isn't at Baylor anymore. No worries.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2004-12-13</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="4256">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+			   	<tr bgcolor="#476A8E" align="center">
+			    <td colspan="4">
+                <a href = "clicksLog.php?redirect=http://www.upointeonspeight.com&adID=0" target='_new'>
+                    <img src = "ads/Speight728x90.jpg" border="0">
+                 </td>
+			    </tr>
+				<a name="4214"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:1108 - Chapel was the a waste of time, it wasn't terrible to sit through but there was no reason for me to be there. Todd Lake doesn't know what he's talking about and he's a completely different person off stage. If you're going to preach, you ought to live it. <B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2004-12-12</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="4214">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="4118"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Chapel - There were a few chapels that I enjoyed because of the speakers or the musical acts. But for the most part, I hated Chapel...Megan has a great voice by the way. I was kicked out one day cuz the light on my cell phone was on...accused of "texting" ...lesson learned...absence counted...GRR! MISS AS MANY AS POSSIBLE! Great nap window...<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2004-12-06</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="4118">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="4102"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:chapel - Flanders resigned..... Hope the next guy for the job is better.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2004-12-04</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="4102">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:It's obviously a class to convert nonbelievers, can't deny that, but it's a waste of an hour required by Baylor, so might as well just go and enjoy your hour of sleep.</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="4030">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="3989"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Chapel - Okay, check this out. I do not know what everyone's problem is. Todd Lake is a human being like every single one of you. He is not here to bow down to your personal views of what a man with a doctorate in Religion should be. Bottom line, every single one of us "Christians" have crap that God doesn't like about us. The Bible says that even on our best day our righteousness is as filthy rags, so get your mouths off the man of God. The Bible also says to "touch not mine anointed." If you speak neagtively about the man of God when all he is trying to do is bring some speakers in that live their lives for Christ, something we should all want. The problem is, we use Gos as an accessory to our opinions. God is above you (period). God has chosen Todd Lake (period). Suck it up and maybe God will bless you for suffering in silence. Peace easy!<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2004-11-19</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="3989">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="3919"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:CHA - Todd Lake, I'm not gonna lie, is a deuschbag.  Chapel is boring but not horrible.  GOOOOO to chapel because if you swipe your card and it doesnt go through, your SOL.  So go and keep up with your attendance online.  But for being a requirement, not bad at all.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2004-11-17</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="3919">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="3759"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:chapel - Uhh to all you ppl out there, chapel sucks im not going to lie. But all you do is just come to chapel and then you can just sleep the entire time, you dont have to listen to nething, especially all you non-baptists, bc basically its flanders trying to convert you to baptism, so just get up and go to chapel and sleep then scan card, and well you have an A.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2004-11-05</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="3759">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="3597"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:1088 - I have one word for Todd Lake: FLANDERS! That totally sums it up in a nutshell. But why are you gonna complain for having to take chapel, you picked baylor and were aware of the requirements beforehand.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2004-08-17</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="3597">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="3524"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:1011 - okay, go after your freshmen year so you won't have the friday thing.  i didn't have to and was very happy about it. also, get there as early as possible so you can get an end seat or at least get somewhere in the back or balcony.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2004-07-08</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="3524">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="3200"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:chapel - Chapel. hmmm. I think the girl singer is hot, um the guy cant sing. anybody remember the stripping red headed lady who turned mary had a little lamb into "a guy got a gun and kill another man" fun times, oh ya remember when god talked to todd (11) good times<B>&nbsp; - Grade In Class:</b>F</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2004-05-08</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="3200">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="3199"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:1500 - I mean if we sit through things we don't want to listen to or watch,  and are forced to take it...at least give us a little credit or something. Otherwise...it totally sucks. Sometimes when one is FORCED to listen to a religious service, it pushed them away. <B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2004-05-08</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="3199">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="3096"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Chapel - This class is required. However, if you can sleep with a bit of noise in the background, it is a great nap-time!  There was once during questions with Todd Lake, my friend did not agree with him and went to talk to him, she told me that he did not answer any of her wuestions and just boasted about his kids.  How does that help anyone?<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2004-05-02</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="3096">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="3093"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:CHAPEL - Come on people!!! Chapel is just Chapel...show up, sit down, shut up, sleep if you so desire, swipe your card and repeat.  Yes, Todd Lake's prayers on stage are very repetitive (and god we pray that, and god we pray that, and god we pray that....duh), and sometimes very fake, but you don't have to listen to it if you don't want to, i found out about this invention named "earplugs" and they work wonderfully, you can try them.....As for the singing and worship, Ryan's not that bad, but when he sings with Megan he totally drowns her out, you can never hear her because he sticks the mic so close to him that we can hear every sound coming from his lungs.....someone please turn his mic off, so we can hear Megan.  
+I am so happy i got this class over with....if you're a freshman, use as many absenses as possible...you have been warned!!!!<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2004-05-02</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="3093">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="3088"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Chapel - I am done with chapel! Yay!  Todd Lake was my chapel Friday leader and I cannot stand the man.  I wish everyone could have heard him almost start a fight about some of the stuff he said concerning minorities.  He tries to please everyone all the time and is so fake.  He sulks out onto stage every morning to utter a prayer with a mouth full of spit then he tries to make it sound like chapel might be of some interest to us.  It rarely is.  He totally offended one of my Catholic friends by saying that he "used to be Catholic" and then he "Became a Christian."  Last I checked, denomination didn't play a role in salvation or faith.  All I can say is that I am glad we don't have to go everyday like my friends at another denomination school back home.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2004-04-30</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="3088">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="3008"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:chapel - Chapel...the thought behind it is good but overall it's a chore--another 2 hours a week spent in class. The musical guests are good for the most part, but most of the speakers are boring. Todd Lake is so fake! His prayers are so rehearsed, and he feigns concern for the students. As for the worship time, Ryan is good but Megan's voice is just AWFUL!! I can't stand to hear her sing because she's off key and just annoying! That should definitely be changed soon! Overall, Chapel is a nuisance...skip as much as you can!!<B>&nbsp; - Grade In Class:</b>B</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2004-04-28</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="3008">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="2842"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Duh - Todd Lake... I dont like that man. Chapel was a waste of time, and it is hardly a religious experience. Baylor does a good job at seeming religious, but actually not being religious. Todd Lake is the cover man for it all!<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2004-04-20</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="2842">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="2707"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:chapel - I was wondering the percentage of students who have actually met and personally talked to Todd Lake.  I know I haven't.  For those who have, I believe they are certainly entitled to their own opinion, but I think it is so sad and immature that most of us bash him because another person bashed him and that person heard the bashing from another group of people.  It's so close-minded, but that fits, because it's Baylor.  As for chapel...I think of it as an EASY 2 hours a week that are required...so why complain?  <B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2004-03-08</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="2707">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="2673"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Chapel - I would like to pose a conundrum, and no, I do not use that word on a regular basis.  It just seemed fitting in the light of Todd Lake's nonexistent (yet self-professed) intellect.  Anyway, to the conundrum.  Does anyone really take Todd Lake seriously?  Can anyone not see through his rehearsed prayers?  I don't think I'm the only one who laughs when he'll get caught up in one of his lines even though he's saying something incredibly simple.  Take for instance what he said last chapel:  "Two Baylor students lost their fathers this week.  Father, I ask you to be with them as they struggle during this time of... oh geez, oh geez, what's that word?  WHAT THE HELL IS THAT WORD???... ah ha!  DEATH!  Please be with them during this time of death."  What a stupid sentence.  Anyway, my reason for asking if anyone actually takes him seriously is this:  I don't get mad at him, I find him incredibly amusing.  I think it's hilarious how he deems himself to be some sort of expert on anything a confused Baylor student can throw at him.  "Todd Lake Day" was my favorite day of chapel last year because I got one of the best laughs I've had all year.  Go and be amused.
+
+Now for Ryan...  geez.  All we can hear is your breathing because you shove the mic so freaking far down your throat we can hear your lungs contracting.  You're not Scott Stapp because you whine too much and you're not Mac Powell because, well, you're not good.  Every riff you play on the piano sounds exactly the same.  MEGAN IS BETTER THAN YOU!  Her voice is amazing, and I've never heard her miss a pitch.  So pull the mic out of your mouth, untuck your "I'm a real live pop star, mommy!" shirt, and go away.  <B>&nbsp; - Grade In Class:</b>F</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2004-02-10</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="2673">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="2490"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:chapel - it's chapel... you go, you sleep, you swipe, you leave. chapel fridays were pointless. i used up all my absences as should you. not all are bad i think i didn't sleep for about 2 of them. hehe yeah that was one of the many reasons i would skip the class that followed cuz i would be so damn tired from chapel i would just go home and sleep the rest of the day. i never knew todd lake actually spoke except whenever he would say his rehearsed prayers and to introduce the people. oh and one more thing for crying out loud people if you don't know how to dance... DON'T DANCE! cuz let me tell you the people in the balcony are laughing their arses off at you. i was one of them i was tempted to throw my shoe at a couple of you people you just need to stop. <B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2004-01-05</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="2490">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="2485"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:FRIGGIN CHAPEL - Chapel is boring...and I didn't know Todd Lake spoke...I slept every day...except where the oen guy played the guitar and then his son came out rapping...the guitar was awesome...kill the kid...that was horrible....if you say its an easy class you are nuts...waking up every Monday and Wednesday morning at 10 was a lot of work for some class that was absolutely pointless.  One of the Chapel peopel tried wakign me up too...that bitch...I just gave her an evil look and went back to sleep. So go to Chapel and sleep..use your abesnses..and have friends wipe your card if you can...get the damn thing over with.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2004-01-05</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="2485">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="2457"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Chapel - Personally I think Todd looks like Gallhager, the comedian who smashes watermelons.  Now on for my real evaluation.  Ya know, Todd may have a Phd and Mba and all these degrees in religion, but he said so many unsciptural things during the semester I almost laughed.  He proves that schooling does not guarantee that you know what youre talking about.  Speaking of which, having a Nobel Peace prize doesn't mean what you say is right.  To those who walked out on Carrigan..I salute you! It's time that Baylor take a stand for the principles that the school was built upon.  If she TRULY believes that "There is more than one path to God" and therefore saying Christ is NOT the ONLY way then she is not a Christain.  I feel it also notable just for those who have been complaining that she is Catholic.  And to those who have a problem with those who rebeled agains what they didn't believe, have you forgotten that America only exits because people rebeled against something they didnt believe in???? Jefferson, Washington, Franklin? are you ashamed of them? Then don't be ashamed of the Christians in this school who will stand up for who Christ really is.  Amen.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2003-12-28</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="2457">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="2368"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:CHAPEL - I'm not even any religion, and I didn't have a problem sitting through chapel. It got old going to it, yes, and it got a little sappy from time to time, yes, but all in all it's bearable - unless you have some bizarre complex. TODD LAKE on the other hand is really close-minded and annoying. If one chapel speaker says something he disagrees with, he makes a point to say that in the next chapel. It's totally gay. He seems to be a pretty big/cocky asshole. And that guy... Ryan... the one who plays the piano and sings. DEAR GOD. Somebody needs to turn his mic down, or off. There really is no need for him to stuff it into his mouth and sing to the top of crappy lungs every day like that. The girl that sings actually sounds good, most people don't know this though, because they can't hear her over Ryan.<B>&nbsp; - Grade In Class:</b>F</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2003-12-16</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="2368">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="2290"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:111 - Chapel. I finally had to take it. This semester the video production behind the song words was great, and some of the bands really rocked even though I couldn't understand a darn word. For those of you who walked out on Corrigan, totally not cool. Why were you offended? Other speakers were OK, and even Hulme said anal-rententive on stage? That's a first for Baylor. Volume also over posted limits, somebody needs to look into  why it needs to sound like a rock concert. 2 semesters and you'll have permanent hearing damage.<B>&nbsp; - Grade In Class:</b>B</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2003-12-13</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="2290">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="2187"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Chapel - I was beyond weirded out about chapel. Being a catholic, I like to silently worship what God and Jesus has done for me. As for those that walked out on the Nobel Prize Lariate that was encredibly rude and how dare you call yourself Christian when you just stomped all over your own beliefs. Christianity is about tolerance and listening to other people's beliefs, not your own opinion.  Shame on those who walked out just because you didn't agree with her.  Finally, Todd Lake has his head stuck so far up his butt that he can see the light of day through his mouth and waddles like a duck.<B>&nbsp; - Grade In Class:</b>F</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2003-12-09</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="2187">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="2179"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Chaple - Ok so you all have to take it.  The main complaint is that Ryan's voice basically takes over the entire room for the first 10 minutes.  As a musician, I can hardly stand the level of his voice compared to the girl who sometimes sings with him.  His voice drowns her out completely.  To the people running the sound board at chapel: please have someone in the audience with a walkie-talkie so that you can adjust Ryan's voice in relationship to the piano and the girl's voice.  I don't think I can take it anymore.<B>&nbsp; - Grade In Class:</b>B</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2003-12-08</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="2179">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="2162"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Chapel -                                                                   its a me a mario<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2003-12-06</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="2162">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="2087"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:111 - I don't know what everyone is talking about. I got a nice hour of sleep every other day. and when i couldn't sleep i had to listen to some crazy man ramble away on a mic....this is what my thousands of dollars are going to? <B>&nbsp; - Grade In Class:</b>C</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2003-11-24</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="2087">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="1785"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Chapel - okay, for all those who say Todd sucks, who says you don't suck, huh? I know chapel is a waste of time, I'll give you that one. But if you were head of it, there's only so much you can do with it. You knew you had to take it when you came to Baylor! To everyone: don't hate on Todd just bc you don't like Chapel!<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2003-11-10</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="1785">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="1662"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Chapel - I was just wondering, some people posting here have a tendency of thinking Catholics as non-Christians.  Just wanted to let you know we ARE Christians; we might disagree with you, or should I say, not disagree but have a set of extra things we believe and you don't, but we are all Christians and it is very offensive to hear those comments.  
+And when it comes to Dr. Lake, well, I just have to say it is very dissappointing the way he approaches certian issues and answers certain questions.<B>&nbsp; - Grade In Class:</b>F</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2003-10-28</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="1662">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="1635"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:111 - Okay, well, I've just got to say that Todd Lake might be the AntiChrist and Blair Taylor and David Browning his spawn.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2003-10-22</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="1635">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Speaking of the awful chapel...was anyone in the 10:00 chapel (the 2003 spring semester)? If so...I ask: Do you remember on the last day of chapel (the all Ryan---all the time---all out worship extravaganza when that blonde guy got up during Ryan's piano-solo and started yelling things like-- "What are you people doing!?!?!" "Jesus died for you!!!" "You are just sitting there, and you don't even care." He went on for about a minute and then sat down. It was really freaky. I would consider myself Christian and all, but that guy kinda scared me. I just wanted to know what other people thought about that experience...Oh yeah...and Todd Lake Sucks! </p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="1373">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:ok..chapel was a funny experience to me being a catholic, especially the gay singer guy and all the fakers that stand and pretend to be moved by his breathy singing...todd lake on the other hand is an ass...he didn't believe that my grandfather passed away and called my house at least 3 times to make sure that i was still in mourning...then, to make things worse, he sent a letter of sorrow to my house talking about my grandpa, who he didn't know...he just needs to worry about his gay chapel boy and keeping up his appearances..</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="1331">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:I think todd lake is great when everyone is around, but i work at one of the eating establishments on campus and everytime he comes he talks down the employees and takes food without paying for it. He is generally rude and condescending unless he is in his Christian mode and being a Christian who came to baylor for that reason and who generally liked chapel, he makes me sick.</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="1314">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Okay, Todd Lake isn't all that bad...he is nice and i'm sure he cares about the students.  Chapel, on the other hand, SUCKS.  That guy who sings in chapel everyday needs to seriously STOP.  i can't take his voice anymore...</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="1306">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:The thing is, regardless whether or not we must take Chapel, people are still entitled to their opinions. And for those of you ignorant people who belittled and berated those who weren't Christians and disliked the rather pushy ways of Dr. Lake, you are truly the kind of Christians I despise, and a good deal of the reason that many non Christians think we are a condescending and pompus religion. I am a devout Christian, and I feel that Dr. Lake is a poor example of an open minded, easily approachable, and educated Christian. Furthermore, I feel his counseling abilities are limited, because he cares very little for those who have lost a loved one - I think the phrase he used was "it happens", with no other conciliatory remarks. Therefore, yes, we must all take the class, and yes, we do know that this is a Christian university, but to display your ignorance online is a poor display of Christianity. Chapel itself (without Dr. Lake) is not all bad, and some services were actually interesting. It is very much like a contemporary church service, and a nice relaxation time to reflect. However, if it does not appeal to you, skip the seven absences you can, sit in the back for the rest, and just get it over with. Life goes on.</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="1264">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:ok...can somebody tell me what the point of this todd lake review is? it's not like we can choose a different teacher for chapel or something. :) we all have to take it with flanders. ah well...as long as i'm here- chapel is a breeze,  just go and take a nice nap, or praise and worship in your own way if you want to. i didnt agree with everything flanders said but i think he is at least trying to set a good example for students. i dont think he knows what he's talking about sometimes though- like when he says catholic Christians are on the same wavelength as protestant Christians- um couldn't be more wrong. anyway...chapel's not that bad. just skip the todd lake days.</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="1258">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Ahh! What a typical response that last post was! Its the epitome of the Baylor mindset--If you're not like us, GET OUT! We don't want you here...unless you'd like to convert to our closed-minded views!! C'mon, it'll be great! We can sit and pat each other on the back and tell each other how great we are, and how we're such "Christian" people! Then we can look down our noses at everyone else (Except Todd Lake, cuz his head is so far up his ass, he can't see anything), and shun those who we don't see as "holy" as we are! God must be far to busy to judge everyone, so we'll help him out and do it for him!!!! SIC'EM BEARS!!</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="1092">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:For the fourth commentator, the athiest, WHAT ARE YOU DOING AT BAYLOR??? IT'S BAPTIST...WELCOME.  To you, I suggest a transfer...maybe UT...anywho, Todd lake is a nice person, but I think his position requires a certain level of approachability that I don't feel he has.  Students need their chaplain to be down on their level and not judgemental.  That's the only thingm but as a person he's fine</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="1066">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Is Todd Lake writing all those 5-star ratings of himself or is it one of his many peeons? He is the most ruthless, anticharasmatic, pompus, prick on this campus. He should go back to Harvard and be all high and mighty there. He was the most unsupportive Chaplain I have ever met; everything is about Todd Lake and his perfect family and his perfect life and all people should stop worshipping God and worship him instead. One of my friends on campus was killed and he acted like it was his fault for dying and thought better to make a joke than be supported. (I think he was even grinning during a memorial). All and all he is the worse representation of Baylor and especially as a Christian. Praise and worship God, be joyous that Jesus died on the cross for all, lament for the passing of a friend but dont talk down to us like your children and make all non-christians feel like they are the dirt on your shoes (or even the Christians on campus). I new that I would be required to take Chapel when I came to Baylor so Im not complaining about that; I'm complaining about the fact that we are worshiping Todd "Fake" and not our Lord and Savior. </p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="989">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Show up, sit down.  Listen to Contemporary worship.  Ponder the nature of human suffering.  Scan card.  Rinse, repeat.  Am I alone in my assertion that he (visually) resembles John Wilkes Booth?  </p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="956">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Well-intentioned buffoon whose stage prayer gets on one's nerves. Really a nice guy, and the speaker quality is improving, but chapel always will be a pain in the butt to attend because that's the way it is, and I  mock the freshmen who have to take 6 extra sessions. I concur on using all 7 absences and sleeping after lights-out.</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="853">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:I bring my cellphone every time to chapel to play games and read the newspaper with the little light on it. I got a high score in Snake II today! YESSS!  oh yeah, chapel sux, so does Lake. Church is good for Sundays from pastors talking the Bible and all, but MW w/ Todd makes you wonder why there are so many posts against Flanders.  I think it'd be so much more tolerable with another person in charge.</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="830">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:OMG... i went to chapel to see my friend do his dance thingie at the beginning, what i didn't take in account was today was Todd Day...  It was horrible, if I haven't heard the most ignorant things in my life...  And where does he get off deeming what religions are and aren't Christian?  How did he ever become a doctor, they should revoke his degrees.</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="829">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Dude, the last guy that posted is bitter! Did Todd Lake steal your girl or what? </p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="752">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:If I could post voluminous amounts of vomit and diahrrea for Lake's rating, I would.  He is a ravenous wolf walking about in sheep's clothing.  Be careful.  He may enable you to see through the veil of self-righteousness that surrounds Christianity, force you to see the blatant hypocrisy of "Christians" such as he, and cause you to forsake your religion in favor of Buddhism.  You'll desire nothing more than to be as unlike him as possible.  I could go on, but I have a voodoo doll with Lake's name on it.  </p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="744">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:BWAH-HA-HA!! Flanders!</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="711">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:It may be true that coming to Baylor you should expect to take chapel, but that's no excuse for having to sit and listen to freaking John Stossel oh, I mean Todd Lake, while he just tells you  a million times that he went to Harvard. SOme guests were interesting, but seriously utilize your 7 absences!  They could preserve your sanity and also Baylor's retention rate.  </p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="681">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:he is flanders. period</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="671">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Make sure you all skip April 2, 2003. Flanders is speaking that day. Do not go... you have been warned. </p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="655">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Todd Lake should not be considered a Dr.  His status as head of, whatever he does in chapel, is preposterous.  Worship is the only redeeming factor of chapel and Lake finds some way to screw up the positive feeling after praise.  He must have some other calling in life...(like flipping burgers)  </p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="619">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Lake is a pompous man who just loves the sound of his own voice and his own name.  His lecture for the anniversary of 9/11 in September completely contradicted itself.  I recommend chapel for a great nap time in between classes.  Other than that, its of no valid importance as I can see.  Hooray its only required for 2 semesters!</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="617">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:THIS IS CHAPEL! of course we are going to hear about God and the dreaded subject of JESUS! we are at a Christian school. dont be suprised if you hear about Todd's opinion instead of what you want to hear. he is a nice guy and talks alot of trash from closed minded morons.</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="611">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:BE FORWARNED:  Todd Lake has a tendancy to bore you senseless.  If you ahve any meangful classes, scdule them at least 2 hours after chapel.  If not, you might have a tendancy to lose your mind.</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="603">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:It's a requirement, and at least one speaker will appeal to you. That said, I am a Christian and yet at times fought back inappropriately timed laughter/tears of boredom. I advise you to take one of the later offerings, so that you can ask the people coming out if it is bad enough to waste an abscense on. I adivse that you use every abscense you have. Keep careful track of them...unless you want another semester of chapel.</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="552">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:It's really irretating to see all the immaturity at our school.  If you don't want to be exposed to Christianity, then choose a different school.  Otherwise, suck it up, and get on with it.  You're here to learn, and learning about Christianity is a school requirement that was told to every student BEFORE they chose to attend.  You people need to grow up.  Todd Lake is a great guy, and he DOES CARE-for the person who wrote that.  </p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="498">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Todd Lake is a great guy.  He goes out of his way to help the students at Baylor because he CARES!!!  Part of attending Baylor is being exposed to the Christian atmosphere.  If you don't want that, then you chose to come to the wrong school.  If you are a mature human being, you can go to chapel, pay attention to the things you want to, and if it doesn't seem like something you're interested in, you can either wait it out(it's only 45 minutes) or you can skip(you have 7 days to skip a semester).  All in all, its not bad, and Todd Lake hardly speaks at all anyway-if that's your reason for not wanting to go.</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="497">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:actually, i mean to give him no stars.  It was really tough to try to stay awake during those speakers.  I hate to say it, but they totaly sucked, except that comedy dude.</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="473">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:I saw him at Barnes and Noble and I almost cried because I hoped never to see him again when I got done with Chapel this semester...</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="472">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:I came to Baylor for the Christian atmosphere, and I like chapel.  Lake and I may not see eye to eye on every Christian doctrine, but we are still Christians!</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="456">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:if he is speaking skip that day</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="444">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:You can miss 7 chapels and still pass.  I sugest that you use them all because Chapel sucks.  what I did was go to every chapel at first then miss the last two months.  Oh and that Flanders AKA(Lake)comment is SO true</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="437">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:it took a lot of effort for me to sit thru chapel. i'm not a fan of crowded spaces. also, quite happy with my beliefs. if you want to attend church then this is the place for you. if you don't; well tough its required for graduation. even tho it doesn't count towards GPA or credit hours</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="411">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:chapel - worse "class" ever. make sure to sit in the back so you can sleep and get out quickly</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="375">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:I think Todd Lake is great! He truly cares for us students. I like the chapel services. It is one of the reasons I came to Baylor for the christian atmosphere.</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="349">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Thank you to whoever put the Flanders comment, you hit the nail on the head. I just love how they give the initial impression that chapel is "open" to everyone and doesn't try to push religion on students, yet Lake speaks as if he's conducting a church service: reading from the bible, prayers, and generally praising Christianity. Often I remember hearing a speaker comment on hoping that those who had not found God or Jesus needed to be "helped" or "guided" in some way. I myself do not need any religious counseling, I have my beliefs and I respect yours as long as you leave mine alone. Speaking on behalf of all the atheists out there, I am deeply angered that this course is a university requirement.</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="321">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Im sick and tired of listing to Flanders speak.  Thank God chaple is almost over!</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="186">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Todd Lake is perfect in every way, what more can I say.  I'm honored to bask in his glow every M/W @ 11:00</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="153">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+	</table>
+	</form>
+	</td></tr>
+
+<script type="text/javascript">
+function submit_form(frm) 
+{
+  frm.submit();
+}
+
+function getElmById(aID)
+{ 
+  return (document.getElementById) ? document.getElementById(aID)
+                                  : document.all[aID];
+} 
+
+function validate_search()
+{
+  var myDropDown = getElmById("dept");
+  var errors = 0;
+
+  if(errors>0) 
+  {
+    return false;
+  }
+}
+
+function onChangeHandler(e)
+{
+  var myevent = (e) ? e : window.event;
+
+  submit_form(getElmById("search"));
+}
+
+function onChangeHandler_dept(e)
+{
+  var myevent = (e) ? e : window.event;
+  var prof = getElmById("profid");
+
+  prof.selectedIndex = 0;
+
+  submit_form(getElmById("search"));
+}
+
+var myDropDown = getElmById("profid");
+
+if(typeof(myDropDown) == "object")
+{
+  myDropDown.onchange = onChangeHandler;
+}
+
+var myDropDown_dept = getElmById("dept");
+
+if(typeof(myDropDown_dept) == "object")
+{
+  myDropDown_dept.onchange = onChangeHandler_dept;
+}
+
+var mySearchForm = getElmById("search");
+
+mySearchForm.onsubmit = validate_search;
+</script>
+
+
+<!----- Include footer -------->
+<!--- Footer --->
+
+
+  <tr>
+
+ 	<td align="center" colspan="5" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#B2B6C8', EndColorStr='#476A8E');"><font size="4">
+
+      
+		<a href="login.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+		<b>LOGIN</b></font></a> &nbsp; &nbsp;
+	
+
+		<a href="home.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>HOME</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="about.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>ABOUT US</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="faq.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>FAQ</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="privacy.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>PRIVACY</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="terms.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>TERMS OF USE</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="advertising.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>ADVERTISING</b></font></a> &nbsp; &nbsp; 
+
+	
+
+		<a href="contact.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>CONTACT US</b></font></a> &nbsp; &nbsp; 
+
+		 
+	</td>
+
+  
+
+</table>
+
+<br>
+
+<div align="center"><font size="-1">&copy;2003-2017 Bubooks.com - All rights reserved</font></div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-98854-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+Couldn't connect to the MySQL server.

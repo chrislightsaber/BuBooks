@@ -1,0 +1,2257 @@
+<body bgcolor="#ffffff" vlink="#0066ff" leftmargin="0" rightmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+
+<table border="1" rules = "all" cellpadding = "3" cellspacing = "0" bordercolor="#476A8E" bgcolor = "#476A8E" width="100%" align="center">
+
+
+
+  <tr>
+
+    <td width="100%" height="85" bgcolor="#476A8E" colspan = "5">
+
+		<table border ="0" cellpadding = "0" cellspacing = "0" bgcolor = "#476A8E" width = "100%" >
+		<tr><td align = "left" rowspan="2" width="70%">
+			<a href="index.php"><img src="logo.gif" width="261" height="64" border="0"></a>
+		</td>
+		<td align = "right">
+			<table align="right" border ="0" cellpadding="0" cellspacing="0">
+			<tr><td>
+						<a href = "clicksLog1.php?redirect=http://www.brothersmanagement.com&adID=5" target='_new'>
+							<img src = "ads/brothers_468.gif" border="0">
+						<tr><td align="center"><font face ="verdana" size="1" color ="#ffffff">Advertisement - Click for coupon or website</font></td></tr>
+		</tr></td></table>
+		</td>
+		</tr>
+		
+		
+		
+		</table>
+    
+    </td>  
+
+  </tr>
+
+
+<!--- NavBar ---->
+	<tr>
+
+  
+    
+    
+    	<td align ="center" width="20%" bgcolor="#FFFFff" height="23" 
+	
+		style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+	
+			<a href="login.php" style='text-decoration:none;'>
+		
+			<font face="Arial, Verdana" size="3" color="#000000">
+		
+			<b>Login</b> </font></a>
+			
+		</td>
+	
+		
+	
+
+		<td align ="center" width="20%" bgcolor="#FFFFff" height="23" 
+	
+		style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+	
+			<a href="books.php" style='text-decoration:none;'>
+		
+			<font face="Arial, Verdana" size="3" color="#000000">
+		
+			<b>Textbooks</b></font></a>
+			
+		</td>
+	
+			
+	
+		<td align="center" width="20%" bgcolor="#FFFFff" height="23"
+	
+		style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+	
+			<a href="profrate.php" style='text-decoration:none;'>
+		
+			<font face="Arial, Verdana" size="3" color="#000000">
+		
+			<b>Professor Ratings</b></font></a>
+	
+		</td> 
+	
+	
+	
+		<td align="center" width="20%" bgcolor="#FFFFff" height="23"
+	
+		style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');"> 
+	
+			<a href="classified.php" style='text-decoration:none;'>
+	
+		<font face="Arial, Verdana" size="3" color="#000000">
+	
+		<b>Classified Ads</b></font></a></td>
+	
+	
+	
+	
+	
+		<td align="center" width="20%" bgcolor="#FFFFff" height="23"
+	
+		style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');"> 
+	
+			<a href="http://www.bearcribs.com" style='text-decoration:none;' target='new'>
+		
+			<font face="Arial, Verdana" size="3" color="#000000">
+		
+			<b>Apartment Guide</b></font></a>
+		</td>
+	
+	
+
+  </tr>
+  
+  <tr>
+ <td colspan = "5" background = "bckground.gif" bgcolor = "#FFFFFF">
+	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+	<html><head><title>Rating for Becky Jones
+	</title>
+
+	<script language="javascript" type="text/javascript">
+	//Change the image without refreshing the page...
+	function setTempImage(f, name, c) 
+	{
+		var color = c;
+		var hit = document.getElementById("color_" + name).value;
+
+		//if star is already red and they clicked on a star
+		//we need to change that star to yellow
+		if(c != 2) 
+		{
+			if(hit == "hit")
+			{
+				c = 2;
+				//if user did not click on a star, keep star same color
+			}
+			else 
+			{
+				c = 1;
+			}
+		}
+
+		eval("document.getElementById('" + name + "').src='stars_" + c + "_" + f + ".gif';");
+
+		//sets the hidden field the value of the rating to keep for future reference
+		eval("document.getElementById('input_" + name + "').value=" + f);
+	}
+	
+	function rateF(f, num, id, name, c) 
+	{
+	   	var nn4 = (document.layers) ? true : false
+	   	var ie = (document.all) ? true : false
+	   	var dom = (document.getElementById && !document.all) ? true : false
+
+		if(nn4)
+		{
+	  		path = document.layers["userName" + num].value;
+	  	}
+	  	else if(ie)
+	  	{
+	  		path = document.all["userName" + num].value;
+	  	} 
+	  	else 
+	  	{
+	  		path = document.getElementById("userName" + num).value;
+	  	}
+	  	
+		window.open("rate.php?rateid=" + num + "&user=" + path + "&rate=" + f + "&profid=" + id, "newwindow", config="height=1, width=1, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, directories=no, status=no");
+		window.focus();
+
+		//Change the image without refreshing the page...
+		document.getElementById("color_" + name).value = "hit";
+
+		setTempImage(f, name, c);
+	}
+	</script>
+
+<STYLE TYPE="text/css">
+<!--
+	h2
+	{
+		text-align: center;
+		color: #476A8E;
+		font-family: Verdana;
+	} 
+ 	p
+	{
+		color: #111111;
+		font-family: Verdana;
+		font-size: 10pt;
+	} 
+	.a
+	{
+		font-family: "Times New Roman", Times, serif;
+		font-size:17px;
+		color: #000000;
+	}
+	form
+	{
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+	.text
+	{
+		font-family: Verdana;
+		font-size: 10pt;
+		color: #263B4E;
+	}
+	.search
+	{
+		font-family: Verdana;
+		font-size: 12pt;
+		font-weight: bold;
+		color: #263B4E;
+	}
+	.title 
+	{
+		font-family: Verdana;
+		font-variant: small-caps;
+		text-transform: lowercase;
+		font-weight: bold;
+		color: #FFFFFF;
+		font-size: 16pt;
+		padding-left: 10pt;
+	}
+	.title2
+	{
+		font-family: Verdana;
+		font-variant: small-caps;
+		text-transform: lowercase;
+		font-weight: bold;
+		color: #FFFF00;
+		font-size: 16pt;	
+	}
+-->
+</STYLE>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">
+_uacct = "UA-98854-1";
+urchinTracker();
+</script>
+
+<script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+	
+</head>
+
+<!--Professor Overview  -->
+	<tr><td bgcolor="#476A8E" align="left" colspan="5">
+		<span class="title" >Professor Overview - </span><span class="title2">
+		Becky Jones</span></td>	
+	</td></tr>
+
+	<tr><td bgcolor="#FFFFFF" colspan="5" background = "images/bckground.gif">
+		<table width = "100%" cellspacing = "0" cellpadding = "2" border = "1" bordercolor="#476A8E" rules ="none">
+		<tr bgcolor="#CCCCCC"  align="center">
+		<td><H4><u>Overall Score</u></h4></td>
+		<td><H4><u>Ratings</u></h4></td>
+		<td><H4><u>Teaching Ability</u></h4></td>
+		<td><H4><u>Availability</u></h4></td>
+		<td><H4><u>Helpfulness</u></h4></td>
+		<td><H4><u>Workload</u><font color="#FF0000">*</font></h4></td>
+		</tr>
+
+		<tr bgcolor="#FFFFFF" align="center">
+		<td><font size="4" color="#FF0000">
+		
+		<font size="5" color="orange"><b>
+60		</font></td>
+		<td><font size="4" color="#FF0000">84</font></td>
+		<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+		<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+		<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+		<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+		</tr>
+
+		<tr bgcolor="#FFFFFF"><td colspan="6"><p align="center"><font color="#FF0000">*A 5 star workload is an easy workload; a 3 star is average; whereas a 1 star workload is extremely hard.</font></p>
+		</td></tr>
+		</table>
+	</td></tr>
+
+
+	<!--Option / Search  -->
+	<tr><td bgcolor="#476A8E" align="left" colspan="5">
+		<span class="title" >Search / Options</span>
+	</td></tr>
+
+	<tr><td bgcolor="#FFFFFF" colspan="5" background = "images/bckground.gif">
+  	<form id="search" method="get" action="profdisplay.php">
+		<table width = "100%" cellspacing = "0" cellpadding = "2" border = "1" bordercolor="#476A8E" rules ="none">
+		<tr><td align="center" colspan="5"> <span class="search"><BR> Showing professor &nbsp;&nbsp;
+			<select id="profid" name="profid"> 
+      		<option value="">-- SELECT --</option>
+<option style="font:courier" value="326">Abbe, Suzanne (75) </option><option style="font:courier" value="888">Baldwin, Jane (78) </option><option style="font:courier" value="2427">Beard, Haylee (90) </option><option style="font:courier" value="2297">Brown, Jeffrey (88) </option><option style="font:courier" value="651">Bryant, Scott (76) </option><option style="font:courier" value="1605">Burney, Laurie (62) </option><option style="font:courier" value="2102">Cari, Edison (90) </option><option style="font:courier" value="2675">Carpenter, Don (93) </option><option style="font:courier" value="1333">Chevis, Gia (84) </option><option style="font:courier" value="2135">Edison, Cari (92) </option><option style="font:courier" value="1174">Ford, Carie (80) </option><option style="font:courier" value="1623">Herrera, Anthony (92) </option><option style="font:courier" value="1031">Hurtt, Dave (79) </option><option style="font:courier" value="749">Hurtt, Kathy (61) </option><option style="font:courier" value="315" SELECTED>Jones, Becky (60) </option><option style="font:courier" value="2364">Lail, Bradley (88) </option><option style="font:courier" value="1490">Macgregor,  (70) </option><option style="font:courier" value="2586">Mason, Paul (87) </option><option style="font:courier" value="2676">Millar, Melanie (64) </option><option style="font:courier" value="618">Robinson, Michael (57) </option><option style="font:courier" value="2564">Shallcross, Daniel (90) </option><option style="font:courier" value="1011">Stuebs, Marty (51) </option><option style="font:courier" value="2766">Thomas, Bill (53) </option><option style="font:courier" value="2568">Thomass, Bill (75) </option><option style="font:courier" value="1390">Thomasson, Tim (96) </option><option style="font:courier" value="2607">Tumlinson, Cade (41) </option><option style="font:courier" value="2465">Whiteaker-Poe, Jane (50) </option><option style="font:courier" value="1275">Willis, Blake (89) </option><option style="font:courier" value="566">Willis, Betsy (57) </option><option style="background-color: LightGrey;" value="oldprofs">-- OLD PROFESSOR RATINGS --</option><option style="background-color: LightGrey;" value="746">Budd, Charlene S. (52) </option><option style="background-color: LightGrey;" value="77">Cassel,  (45) </option><option style="background-color: LightGrey;" value="179">Collins, Lane (76) </option><option style="background-color: LightGrey;" value="317">Davis, Charles (70) </option><option style="background-color: LightGrey;" value="800">Davis, Elizabeth (20) </option><option style="background-color: LightGrey;" value="982">Erickson, Paul (67) </option><option style="background-color: LightGrey;" value="435">Harrison, Tom (58) </option><option style="background-color: LightGrey;" value="779">Hermann,  (90) </option><option style="background-color: LightGrey;" value="1053">Kobelsky, Kevin (59) </option><option style="background-color: LightGrey;" value="416">Miller, Helen (71) </option><option style="background-color: LightGrey;" value="356">Stanley, Charles (72) </option><option style="background-color: LightGrey;" value="1173">Wilkinson, Brett (83) </option>		</select>                 
+
+        &nbsp;&nbsp;in the &nbsp;&nbsp;
+        
+        <select id="dept" name="dept" style="cursor:pointer; font-size : 10pt">    
+            <option value="select">--SELECT--</option>
+            <option value="Show All">Show All</option>
+ 
+<option value="Accounting" SELECTED>Accounting</option><option value="Aerospace Studies">Aerospace studies</option><option value="African Studies">African studies</option><option value="Air Pilot">Air pilot</option><option value="Anthropology">Anthropology</option><option value="Arabic">Arabic</option><option value="Art">Art</option><option value="Asian Studies">Asian studies</option><option value="Aviation Sciences">Aviation sciences</option><option value="Baylor Interdisciplinary Core">Baylor interdisciplinary core</option><option value="Biology">Biology</option><option value="Business">Business</option><option value="Business Law">Business law</option><option value="Chapel">Chapel</option><option value="Chemistry">Chemistry</option><option value="Chinese">Chinese</option><option value="Christian Religious Education">Christian religious education</option><option value="Church-state studies">Church-state studies</option><option value="Civic Education & Community Service">Civic education & community service</option><option value="Classics">Classics</option><option value="Communication Sciences & Disorders">Communication sciences & disorders</option><option value="Communication Studies">Communication studies</option><option value="Computer Science">Computer science</option><option value="Curriculum and Instruction">Curriculum and instruction</option><option value="Economics">Economics</option><option value="Education">Education</option><option value="Educational Psychology">Educational psychology</option><option value="Engineering">Engineering</option><option value="English">English</option><option value="Entrepreneurship">Entrepreneurship</option><option value="Environmental Studies">Environmental studies</option><option value="Family and Consumer Sciences">Family and consumer sciences</option><option value="Film and Digital Media">Film and digital media</option><option value="Finance">Finance</option><option value="First Year Seminars">First year seminars</option><option value="Forensic Science">Forensic science</option><option value="French">French</option><option value="Geography">Geography</option><option value="Geology">Geology</option><option value="German">German</option><option value="Gerontology">Gerontology</option><option value="Great Texts">Great texts</option><option value="Greek">Greek</option><option value="Health Education">Health education</option><option value="History">History</option><option value="Honors">Honors</option><option value="Human Performance">Human performance</option><option value="Information Systems">Information systems</option><option value="International">International</option><option value="Italian">Italian</option><option value="Japanese">Japanese</option><option value="Journalism">Journalism</option><option value="Korean">Korean</option><option value="Latin">Latin</option><option value="Law">Law</option><option value="Leadership Development">Leadership development</option><option value="Management">Management</option><option value="Marketing">Marketing</option><option value="Mathematics">Mathematics</option><option value="Medical Humanities">Medical humanities</option><option value="Modern Foreign Languages">Modern foreign languages</option><option value="Music">Music</option><option value="Neuroscience">Neuroscience</option><option value="Nursing">Nursing</option><option value="OTHER">Other</option><option value="Philosophy">Philosophy</option><option value="Physics">Physics</option><option value="Political Science">Political science</option><option value="Portuguese">Portuguese</option><option value="Pre-Health Professions">Pre-health professions</option><option value="Psychology">Psychology</option><option value="Quantitative Business Analysis">Quantitative business analysis</option><option value="Real Estate">Real estate</option><option value="Recreation & Leisure Services">Recreation & leisure services</option><option value="Religion">Religion</option><option value="Risk Management and Insurance">Risk management and insurance</option><option value="Russian">Russian</option><option value="Slavic Eastern European Studies">Slavic eastern european studies</option><option value="Social Work">Social work</option><option value="Sociology">Sociology</option><option value="Spanish">Spanish</option><option value="Statistics">Statistics</option><option value="Swahili">Swahili</option><option value="Teacher Education">Teacher education</option><option value="Telecommunications">Telecommunications</option><option value="Theater Arts">Theater arts</option>		
+		</select>
+
+		&nbsp;&nbsp;
+		department  
+		</span>
+
+		</td></tr>
+
+		<tr><td align="center" colspan="6"><hr width="75%" color="#476A8E"></td></tr>
+			<tr><td align="center" valign="center">			
+				<a href="addrating.php?profid=315 " onMouseOver="document.addrating.src='images/addmouseover.jpg'" onMouseOut="document.addrating.src='images/adddefault.jpg'">			
+				<img src="images/adddefault.jpg" NAME="addrating"></a>&nbsp;&nbsp;&nbsp;			
+			</td>
+	</form>
+	
+	<!-- Advertisment  -->
+	<tr align="center"><td bgcolor="#FFFFFF" colspan="5" background="images/bckground.gif">
+    <br>
+	<a href = "clicksLog.php?redirect=http://www.brothersmanagement.com&adID=9" target='_new'>
+		<img src = "ads/brothers.gif" border="0">
+		</a>
+	</td></tr>
+   	</table>
+   	<!-- End of Advertisement -->
+   	
+   	<!--Individual User ratings  -->
+		<tr><td bgcolor="#476A8E" align="left" colspan="5">
+		<span class="title" >Individual User Ratings</span>
+		</td></tr>
+
+		<tr><td bgcolor="#FFFFFF" colspan="5" >
+		<table align="left" cellspacing="0" cellpadding="3" width="100%" border = "1" bordercolor="#476A8E" rules ="none" bgcolor="#FFFFCC">
+		<tr align="center">
+		<td width="25%"><H4><u><div class="text">Teaching Ability</font></u></h4></td></div>
+		<td width="25%"><H4><u><div class="text">Availability</font></u></h4></td></div>
+		<td width="25%"><H4><u><div class="text">Helpfulness</font></u></h4></td></div>
+		<td width="25%"><H4><u><div class="text">Workload*</font></u></h4></td></div>
+		</tr>
+				<a name="26053"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:2304 - I don't understand why everyone avoids her. She is intimidating, but an excellent teacher. She assigns a lot of homework, but that is the only way to learn. I learned more from her than any other teacher. Don't be afraid, she is very nice and helpful.<B>&nbsp; - Grade In Class:</b>B+</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2017-11-08</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="26053">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="25739"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:ACC 2303/2304 - So I took Jones for both 2303 and 2304; I didn't really want to but it just worked out that way. These classes are hard, there's no way getting around that, however, they're super doable if you actually put in some effort. There are HW assignments and online reading quizzes due every day which kinda stinks but you just have to do them. They get you ready for the tests and come in clutch at the end of the year if you actually tried on them. Her tests are pretty straight forward, just do her reviews she posts online and go to SI if you have time. Overall, if you handle this like a college-level class, go to class, and do what she asks of you, you will be fine.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2017-05-10</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="25739">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="25608"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:2303 - THE hardest class I have taken at Baylor, and I was originally a computer science major. I have never struggled to pass a class before, so this was pretty new to me. The exams are made to crap on the futures of students.<B>&nbsp; - Grade In Class:</b>C</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2017-05-04</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="25608">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="25317"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:ACC 2303 - She's not a great teacher, You learn a lot yourself. But she explains things decently in class. Tests are not hard at all (Im a lazy student that doesn't like to study and they were still easy). She is a little condescending when you ask a question, but don't be afraid to take her.<B>&nbsp; - Grade In Class:</b>B+</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2017-04-10</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="25317">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="24452"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:ACC 2303 - Mrs. Jones teaches in a reverse class format, meaning you learn everything yourself. If you are willing to put in a lot of work, then feel free to take this class. My entire week was dominated with accounting work, she makes you do class preps, online assignments, and written assignments for just one day. If you are willing to work really hard through the semester though, you will get a good understanding of accounting. Would not recommend.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2016-11-17</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="24452">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="24420"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:ACC 2303 - Jones was nice during the first few weeks, but after getting down to business she was rude. Any time someone asked a question in my class they were stared down and made to feel incompetent. You have several handouts due at the beginning of class as well as online assignments. She curves the tests but everyone does poorly anyway and the average is generally around a 70 with curve. She does not teach, instead she has you read an incomprehensible textbook and then goes over homework. If you dont have the right answer when she calls on you during homework review you are docked points. I ended up dropping on the last day to drop. If at all possible DO NOT TAKE JONES.<B>&nbsp; - Grade In Class:</b>DROP</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2016-11-16</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="24420">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="24388"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:ACC 2303 - I want to start this review acknowledging that I am not good at accounting. However, I tried my hardest: did all the homework (class preps, written homework, online homework), spent 3 hours every MWF studying for the class, and went to office hours and SI sessions, yet my grade never improved. What sucked most about taking Jones is you don't feel like you can ask her questions. I wouldn't go to office hours unless I had an entire assignment completed because she doesn't want to help you but wants you to figure it out. That was hard for me since my mind didn't click with accounting concepts. If you have to take her because Thomasson's waitlist is 40 people long, I recommend reading the chapter while you do class preps, redoing the homework until you know you can do it perfectly, and making sure you get 100s on the online quizzes. Good luck for any that take this class!<B>&nbsp; - Grade In Class:</b>C+</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2016-11-14</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="24388">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+			   	<tr bgcolor="#476A8E" align="center">
+			    <td colspan="4">
+                <a href = "clicksLog.php?redirect=https://www.americancampus.com/student-apartments/tx/waco/u-pointe-on-speight&adID=0" target='_new'>
+                    <img src = "ads/711 May to May Ad 728x90 10.20.17.jpg" border="0">
+                 </td>
+			    </tr>
+				<a name="23977"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:2301 - DONT DO IT. You will regret it and your GPA will fall.<B>&nbsp; - Grade In Class:</b>D</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2016-05-10</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="23977">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="23775"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:ACC2304 - Run. Run far far away. Never come back. Take another teacher.<B>&nbsp; - Grade In Class:</b>C+</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2016-04-25</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="23775">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="23774"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:ACC 2304 - If you want at least 2-3 hours of homework EVERY night (3-5 individual assignments each night), then take her!! You will spend all of your time learning the material outside of class on your own, and she will then spend every class period going over what you have already completed. You might as well just sit at home and read the text book. Shes a nice woman, just has a terrible and very demanding teaching method.<B>&nbsp; - Grade In Class:</b>B</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2016-04-25</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="23774">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="23740"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:2304 - If you take this class get ready to teach yourself. She gives homework over material you haven't learned and then spends the entire class reviewing the homework problems. Almost never covers any new material in class.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2016-04-18</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="23740">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="23515"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Managerial Accounting - Professor Jones is very demeaning if you don't give a correct answer. We are given three different assignments before each class. There are no solid test reviews. She doesn't post grades. The way the class is taught is very bland and does not explicitly cover what will be on the tests. The only positive thing I can say is that the class preps are well organized and simple.<B>&nbsp; - Grade In Class:</b>B</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2016-02-04</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="23515">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="23432"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Financial 2303 - Ok, so I was pretty nervous signing up for Mrs Jones because of all the bad reviews she had on here. I went into the class with 0 knowledge of accounting and came out knowing it like the back of my hand. She is a teacher that will only put forth the amount of effort you personally put forth. Her only downside (not even a downside because it helps you prep for tests) is the daily homework. However it only takes at most 20 mins to complete. Her class preps are far more organized than any other teacher at Baylor and help you study with ease. (My friends even wanted copies of our notes because they helped a lot) I really do hope you consider her as a teacher because you will never regret it. By far my favorite teacher at Baylor. Taking her again this upcoming semester as well!  PS- her daily participation grade isn't graded on accuracy so all you have to do is really make up something and if youre wrong she will correct you but you still get 100% (Don't be that guy that has no answer prepared)<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2016-01-07</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="23432">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="23209"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:2302 - Ms. Jones is literally the sweetest human ever & she does everything she can to help you get the grade that you want/ need! She really does have her students best interest at heart & doesn't deserve all the negative comments!<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2015-12-14</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="23209">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="21747"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:2303 - do not take her, if you have, drop the class and wait till next semester for other sections to open.<B>&nbsp; - Grade In Class:</b>C+</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2014-12-13</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="21747">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+			   	<tr bgcolor="#476A8E" align="center">
+			    <td colspan="4">
+                <a href = "clicksLog.php?redirect=http://www.brothersmanagement.com&adID=1" target='_new'>
+                    <img src = "ads/brothers.gif" border="0">
+                 </td>
+			    </tr>
+				<a name="21226"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:ACC 2303/2304 - If you have any chance of being in her class, you should take the chance! If you follow professor jones's directions during/after class periods, you should have no problem making an A.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2014-05-29</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="21226">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="21225"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:ACC 2304 - Professor Jones is a great teacher! She made me have confidence in myself and decided to choose Accounting Major!<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2014-05-29</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="21225">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="21224"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:ACC2304 - Professor Jones is literally the best professor to take! She has really organised class preparations for us to look at and work on it before each classes~ those preparations are very helpful! I alway found a lot of questions that I don't get, so I go to her office hour very often for help. She is very helpful! I almost stay there more than half an hour every time, but she is always patient to answer every of my questions! Take professor jones if you could! you won't regret it! Accounting is the fundamental course for business majors, I believe you would make a good choice between an easy teacher and a responsible professional teacher.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2014-05-29</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="21224">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="21091"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:2304 - As long as you do the class preps and turn in most of your homework you'll be fine. Most of your grade comes from the tests, but if you study they aren't bad but you do have to have a good understanding of the concepts to do well on the tests. She is not as good one on one but overall is a nice lady.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2014-05-11</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="21091">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="21064"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:2303 - There is a lot of work in this class. The work prepares you and teaches you but you're basically learning out of the book for it. She is very strict and condescending and if you don't know something she makes you feel dumb...Tests are also a little tricky but overall to do better than me, just study a lot. Like a lot.<B>&nbsp; - Grade In Class:</b>D</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2014-05-10</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="21064">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="20852"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:2304 - Tests are designed to trick you rather than actually make sure you know the material. Mrs. Jones is rude and condescending one on one. Take someone else or be prepared to teach yourself the entire class.<B>&nbsp; - Grade In Class:</b>C</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2014-03-06</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="20852">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="20791"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:2304 - The class is a difficult class to begin with, but she does not make the class any easier. In fact, she makes the class more difficult than it needs to be. Do all of the assignments, go to every class, and do all of the pre class exercises! It is a must or else it can hurt you in the end like it did for me! The one good thing about her that I found, was that she was kind and if you put the effort to go to her, she would try to help you understand the material.<B>&nbsp; - Grade In Class:</b>C</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2014-02-04</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="20791">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="20465"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Financial Accounting - Mrs. Jones is awesome. She's one of the best professors at Baylor.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2013-12-12</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="20465">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="20464"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Financial Accounting - Ok, first of all. I want to tell yall that don't listen to those rumors about Mrs. Jones being horrible and strict. Well, even it is a little bit true, but that's how a real good professional professor should be like! let me tell you the truth. I am a freshman this year, and as a Chinese girl, this is my first year come to US to study. Everything is new to me, and especially Accounting. I remember at the first day of accounting class, Mrs. Jones asked us to fill out a goal page, list out our weakness, strongness, and the grade we are willing to make in this course. I confidently wirte down: I want to make an A in this class. And during our meetings, Mrs. Jones tells me Accounting is a special language. And for a Chinese student, this is like a third language for me, it's gonna be hard. I told Mrs. Jones and myself that, I will work hard to get this A. And just like her said, accounting is hard. And as a freshmen, a lot of Chinese student said to me:"xxx, how can you choose accounting? you are only a freshman! do you want to die? plus, even you choose it, the best you can make is a B! just give up. " I was very angry inside. how can they mock me? just because I want to achieve better in my life? And also, another chinese girl notice I added accounting class, she also added in, and she got a relative "easy" teacher, with easy tests, homework...blah blah.... I felt this strong peer pressure around me. And also, in the beginning of the accounting class, I had no clue in the class. I made 74 in that class. T.T I was so depressed so I went to Mrs. Jones for help. after I shared my study plans and strategy with her, she told me that there are something wrong with my ways of study. I should learn the material first then listen to her lecture, and always do the online problems first, because we can always learn many useful things from online account lab. Then if I don't get some part, I can always go back to listen to her recorded lectures on BB. I took her advice and started to go to tutor session everyday from 5 pm to 8 pm to get help. I became one of the most famous people in the tutor session. And wake up at 5 am in the morning to read accounting book in the morning everyday. During the weekends, I always review and preview, do the practice problem over and over again. and in the second test, I made 90!!! I got an A! and Mrs. Jones sent me an e-mail to encourage me! And after that, I got so much courage in accounting! and I kept this way until the end the of semester, and also! go ask questions! I always went to Mrs. Jones office for questions! She is really nice and helpful. no matter what kind of stupid questions I asked, she all answered with clear and easy concept for me to understand. And 1 hour in her office= 5 hours' self study. I then made 87 and 85 for the third and fourth tests. Even though those are not bad, but in order to make an A, I need to get above 90 in the finals.....so during the weenend before accounting test, I studied really hard. And during the night before final, I laid on my bed, realize, no matter I make for accounting, I will take it, because for all of the work I have done, all the love I've got, it's all worth it! I thank God for Mrs. Jones! the amount I've grown because of her is priceless.....T.T so, everybody, Accounting is not easy from any point, and it's truly a language, it's a language of business, it's a language of happiness, it's a language of hard work, and a language of love! Mrs. Jones is awesome, she makes me realize hard work will pay back, I become a better person because of her. I love her so much! I believe no matter who you are, as along as you plan to take accounting, you are probably a business major, right? Then I know you, you are a person want to success in life, you wish to make a difference, therefore you choose to study business. however, just as it says, success comes from 99% hard work and 1% talent. I am definitely not a smart girl. other people study for 1 day, I need to study 5 days....but if I, a chinese girl, is willing to put my pride down, wake up at 5 am in the morning, go to tutor session,  go ask Mrs. Jones for help, so can you! Because there is really no "easy" teacher, there is only "lazy" teacher. Mrs. Jones is strict for a reason, she wants us to take as much as we can from her class, she wants us to succeed at Baylor, in business, and in life! Take her class, she will help me, and hold your hands to success! Remember, A is for Accounting, and you can make it! If a Chinese freshman can make it, so can you! don't be afraid, enjoy Mrs. Jones's class. I wish to sit in her class once again, but I can't......I wish to see her cute outfit everyday, but I can't..... but I will remember the time spend with her. :) I will cherish her encouragement for me, and create a wonderful life with my own hands in Accounting world! :D   Thank you Mrs. Jones~~ I love you! I love how you teach! I love how you encourage me! I love how you told me: you can do it! ^.^~~~~~!!!<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2013-12-12</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="20464">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="20102"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:2304 - I think Mrs. Jones is misunderstood. Yes, she was pretty cold and doesn't have a amiable personality, but she cracked some jokes here and there. DO THE HOMEWORK AND CLASS PREPS. Seriously though. That's the only way I actually learned in class since she went fast and didn't give blatant answers sometimes. If you're good at accounting, go ahead and take her. She does prepare you really well for the final though.<B>&nbsp; - Grade In Class:</b>B</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2013-06-11</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="20102">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="19960"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:2304 - This was the second semester I took Mrs. Jones. For financial I found she was much easier to understand and explained the material much better. Still the exact same course layout as financial. Manageable workload as long as you stay on top of everything. DO THE CLASS PREPS AND THE HOMEWORK because they are what can make/break your grade. She is helpful in her office hours. Make sure you study for exams though because they can be difficult. I will say though that Mrs. Jones is probably the fastest grader at Baylor. Tests are usually graded and posted the same day.<B>&nbsp; - Grade In Class:</b>B</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2013-05-15</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="19960">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="19895"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:2304 - Mrs. Jones is highly misunderstood. I know for a fact that she\'s a very dedicated teacher. She know what she\'s doing. She may seem cold sometimes but I don\'t think she means to be. I really liked her teaching style. It was well-organized and she always followed through with grades ASAP. She is a hard teacher though, but if you want to learn, you should take Jones. I\'ve learned a lot of materials that I know I\'ll use during my career in accounting.<B>&nbsp; - Grade In Class:</b>B+</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2013-05-12</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="19895">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="19330"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:ACC 2303 - Everyone said she was really difficult and told me to switch. I'm not sure why. As long as you DO the work (homework and class preps) which honestly doesn't take that long, you will do just fine. She emailed us all at the beginning of the semester and said something along the lines of "If you will do your part I will do mine" which definitely was the case throughout the semester. Put in the work and you'll do just fine. Class is very straightforward: you do class preps before class, she goes over them with you in class and that is how you get participation points. Homework is a mixed of online/book work and she drops several assignments. Tests can be difficult but just study and it'll be fine. Not nearly as bad as everyone said! I'd recommend Mrs. Jones.<B>&nbsp; - Grade In Class:</b>B</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2012-12-23</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="19330">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="18619"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:2304 - I honestly enjoyed Mrs. Jones' class. before i took it, everyone told me to switch, but honestly, she is one of my favorite professor's i've had in the business school. Yes, there is a LOT of homework, but if you do everything, it makes you prepared for the tests. I do not understand how people do not like her so much. i've thoroughly enjoyed having her. Be sure you do all the class preps before class. your grade will drop significantly if you dont, plus it helps you understand the material better<B>&nbsp; - Grade In Class:</b>B+</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2012-06-27</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="18619">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="18262"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:ACC 2304 - I think she treats this class like she is teaching it to accounting majors only. It is very tough & probably worth it if you want to become a CPA, but that is just not what I want to do. I tried my absolute hardest in this class because I read the reviews before I got in. I was very intense about this class & still managed to make an 80 on a test. Her tests are really tricky. You have to know the material backwards and forwards to make an A. I think she can be a nice lady, though, if you prepare for going to her office hours. She ended up liking me by the end of the semester even though I asked her some stupid questions at the beginning of the semester. Don't expect her to hold your hand through the semester, though. Overall, her class is a little unfair, but, if you truly apply yourself, you can make it through.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2012-05-01</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="18262">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="17346"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:2302 - She's very organized but like with any Financial Accounting Class there is a ton of homework.  She's not super available for additional help though, she simply refereed me to the SI who wasn't much help either.<B>&nbsp; - Grade In Class:</b>B+</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2011-12-07</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="17346">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="16996"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:financial acc - honestly i studied my butt off for this class , and the challenge was worth it. she is very organized. VERY! she made a video for us to watch for the snow day!... nothing will upset her schedule so never count on her slacking. also it was very helpful to watch her videos (which a lot of the time stopped working for some reason) but were a good way to study for her tests. doing the problems in the book and in her notes will most def help as well. my best advice is if you are planning on being an accounting major TAKE BECKY JONES! shes hard, but you learn.<B>&nbsp; - Grade In Class:</b>C+</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2011-08-12</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="16996">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="16728"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:2303 - I learned from Becky Jones, but to be blunt, learning isn't everything. Getting an A in this course, though possible, is a complete pain in the a$$. Pros: Her outlines are helpful, and she knows what she is talking about. Cons: There are many. Primarily, 14% of your grade is based on clickers made by Satan himself. She curves the grade at the end of the course, but consistently getting wrong clicker answers is demoralizing. HW is only 6% of the grade, and there is plenty of it. Jones's tests are VERY tricky, and if you aren't completely on your game, you'll likely perform poorly. Jones has a somewhat toxic personality in class, and she (unintentionally) makes people feel stupid if they try to ask a question in class. She will bump your grade if you are hovering on the border and you good HW and attendance. You can either survive Jones by the skin of your teeth or take another professor. If I could do it all again, I'd probably choose the latter.<B>&nbsp; - Grade In Class:</b>B+</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2011-05-14</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="16728">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="16315"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:2303 - If you can, I would suggest taking someone else.  The class is difficult and she doesn't make it any easier on you.  Her outlines are really helpful because she works straight through them but her tests are tricky.  She also puts less than 20 mc and 1-2 workout problems so if you miss a few mc, your grade automatically drops.  I went in for office hours to look at my test and she didn't help a whole lot.  If you do end up taking her, do EVERYTHING she assigns.  There's homework everyday so that helps the hw grade but it's also time consuming.  She uses the clickers for extra credit but you also get a grade for the class preps so it's important to do those before class.  Plus, she calls on random people to answer class preps and if you don't have it you don't get a point and she looks at you with that "I'm disappointed" look.  So basically...tough class, do the work, try to get on her good side if you can.<B>&nbsp; - Grade In Class:</b>C+</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2011-04-10</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="16315">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="16205"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Accounting - One of the harder professor but VERY SMART. I suck at accounting though. I like her because even when I was failing, she let me (and a bunch of other students) drop her class. I would recommend her IF you like accounting and are good at it.<B>&nbsp; - Grade In Class:</b>DROP</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2011-02-24</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="16205">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="14634"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:2304 - Mrs. Jones is a great teacher. I do not know what I did to earn A "D" in this class. I bet you if you asked me a question about accounting I could answer it. She is really helpful just don't ask a dumb question. I know they say "no question is a dumb question" but just use common sense. I will always remember this song she used to sing, mostly in finical, "Love and marriage Love and marriage. Go together like a horse and carriage!" I forgot what she referred that to but it always made my day. Just make sure you do your homework and DO THE CLASS PREPS!!!!! I do agree her tests are very tricky! She knows how students will mess up.The only material on the tests come from the outlines.<B>&nbsp; - Grade In Class:</b>D</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2010-05-07</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="14634">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="14520"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:2303 - I took Jones for financial and Bryant for managerial. Most people prefer Bryant to Jones. I preferred Jones to Bryant. I can see how some people think she's not helpful, but I think she's trying to get you to think through the process so that it "clicks" instead of just spoon feeding you the answer. Which, for a class like accounting, is probably the better route. Plenty of online and paper homework, but it really helped. I wish she didn't make you buy the book, I only used it a few times during the semester. She mostly just uses her notes. I thought she explained stuff clearly, and she never wasted class time, which I really appreciated. I also thought she was a nice lady. If you want a teacher who will thoroughly teach you what you need to know, I recommend Jones. I made a low A, high C, and mid B's on the four tests in her class, and made a 94 on the departmental final, which goes to show that she is thoroughly preparing you for what you need to know. <B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2010-04-28</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="14520">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="14503"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:2304 - Jones seems really nice at first, but as the year goes on you start to realize her major flaws as a teacher. If you don't understand what is going on in the class, you might as well make good friends with another teacher who can help you or a friend who is really good at accounting. Granted, accounting is not my hotspot; however, when I don't understand something I do not hesitate to ask questions. Well, with Jones if you don't understand what is going on, she treats you like an idiot and simply says "Well what did I just do?" or "Well what did I say?"  and walks away. So if you're confused, don't even bother asking her for help. DO NOT take her especially if you aren't to great at accounting. The online homework is pretty easy, so when it comes to the test you think you have it the bag, but guess again! Her tests are rediculous. Find another teacher who is concerned with her students and their ability to pass because she is not. <B>&nbsp; - Grade In Class:</b>D</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2010-04-27</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="14503">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="13709"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:2303 - take another teacher if you want a decent grade... or if you want your life to be consumed by never ending homework and bad grades and you want to lower your gpa then go ahead and sign up this class! <B>&nbsp; - Grade In Class:</b>C</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2009-12-12</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="13709">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="13674"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:2303 - Ms. Jones isn't the best teacher, but i can't blame her entirely...financial accounting is a hard class overall and requires alot of work...She gives the class an outline over what we are covering in class and we fill it in as we move along in class...if you do take her make sure you do the class preps...because thats a possible 3 points on your final grade...dont ever assume you wont get called upon any particular day....theres a lot of homework and it only accounts for 6 or 7 percent of your grade...make sure you know how to do the long problems in the back...time is definitely an issue for her tests..so make sure you can do that stuff with your eyes closed...you want to have enough time to go over the mulitple choice...i honestly wouldnt mind taking her agian, just because i know what to expect...but to someone who hasnt had her...DONT TAKE HER<B>&nbsp; - Grade In Class:</b>B</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2009-12-10</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="13674">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="13553"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:ACC 2302 - She is a super nice lady.  Definitely a bit serious, but overall a great person.  The workload is big.  Students have to put in a ton of work outside the class.  If you want to learn accounting, Jones is your teacher.  If don't really care and just want to get a good grade, you will fail.<B>&nbsp; - Grade In Class:</b>B</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2009-11-20</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="13553">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="13537"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:2303 - Even though Mrs. Jones has been through a lot, she is still a very kind hearted woman. Do not listen to everyone when they say she gives "too much homework". I believe that her homeworks are average, it is just people procrastinate too much. The only "hard" part about her tests were the free response questions. For the free response questions, if you just know how to do the material you will do great! The multiple choice questions come from either the notes or the book. I have gone to her office for help, and she is more than happy to help me. Make sure you do the class preps because you can not trust your class mates to do theirs. I know she frowns upon this because I think this waste her time. Mrs. Jones and I would always have great conversations before class. She inspires me to do well in school. I really appreciate everything she has taught me. Also!, do not just get up and leave her class. Before class, let her know that you have some previous function to attend. Last thing, the SI I had did not help at all. She was really useless. I wish Mrs. Jones did the SI session herself. I will always remember her saying "Love and marriage.  Love and Marriage.  Goes together like a horse and carriage". Overall great teacher!<B>&nbsp; - Grade In Class:</b>B+</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2009-11-19</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="13537">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="13445"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:ACC 2302 - I really would avoid this professor at all costs.  She assigns lots of tedious, difficult homework.  Her tests are very long and detailed, with some multiple choice and some problems that you work out.  She also is not helpful when you ask her questions in class, and is actually somewhat rude on occasion.  So, it is hard to ask her things and most people don't do it.  I'm pretty smart, went to every class, and did all the homework and I still barely got a B.<B>&nbsp; - Grade In Class:</b>B</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2009-11-03</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="13445">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="13422"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:2302 - Becky Jones is a great accounting teacher.  I'm not sure why so many people dont like her.  She is by far my favorite teacher I have had so far at Baylor.  She really knows what she is talking about and is great at explaining and teaching the class.  She sticks to her outlines in class.  There is homework after every class and always a class prep that you have to do before the next class.  Her tests are really easy if you know what your talking about.  They are just like her review and practice problems she gives you.  I would definitly recommend taking Becky Jones, especially if you are an accounting major and want a good background before the upper level classes.  <B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2009-10-27</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="13422">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="13053"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:2303 - Becky does not teach anything, her tests are near impossible. She posts a "practice multiple choice" test on BB, and the test is completely unrelated to the practice. DO NOT TAKE BECKY JONES.<B>&nbsp; - Grade In Class:</b>C</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2009-05-14</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="13053">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="12723"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:2303 - I absolutely hate Becky Jones, her tests are ridiculous, she provides a set of practice MC problems at the beginning of the semester, and you'll be like alright this is gonna be a breeze acct class...BUT ITS NOT....her tests are nothing like the practice. The SI was absolutely worthless as well. DO NOT TAKE BECKY JONES FOR ANYTHING. <B>&nbsp; - Grade In Class:</b>C</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2009-04-29</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="12723">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="11602"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Financial - I took an accounting class in high school, I went to class everyday, and I was relatively diligent in her class, but it was not enough to pull off a B. Becky Jones is a really nice person, but when it comes to tests she is really tough. Here is a warning before you take her class: If you study hard, and know the basics, then you probably won't make a B on her tests. Also, do all of the homework, prepare for the quizes, do the class preps, and you may be able to save your test average.<B>&nbsp; - Grade In Class:</b>C</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2008-12-10</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="11602">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="11567"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:2303 - Her tests are all worth 20% of your total grade (including the final), so if you bomb even one, its nearly impossible to bring your grade back up, but if you stay consistent then you'll be fine.  There is also a ton of homework to do, both online and written work, and the only extra credit she gives is 3 possible points based on attendance.  On the day before the test, there is always homework due and a quiz.  The homework is 6% of your grade and the quizzes are 14% so all the homework assignments you have to do, done end up helping you very much, but they can hurt you if youre borderline.  If you're fairly good at picking things up like this, then you'd probably be fine in her class, but if you don't think like an accountant, then I wouldn't recommend her.<B>&nbsp; - Grade In Class:</b>D</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2008-12-08</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="11567">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="11366"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Financial - Ok, so I've been reading people's reviews and a person either loves or hates her. It probably isn't helpful that I'm an accounting major, but sitll. She has a lot of homework. It is evenly distributed between online, book work, and class preps. The online homework just boosts your homework average because you can rework it until you make an A, the book work is easy because you can check it against the same assignment online so you get an A. The class preps aren't hard because as long as you keep track of where she is in the class, then you know when you need to do them for your turn. I guess people are just oblivious to this. Her quizzes are easy, eventhough people complain about them. They are the exact same as homework problems (she even puts what homework she pulled it from on the quiz question), so as long as you do your homework you will be fine. Her tests are hard, but if you do your work and pay attention in class and do the end of chapter mini reviews its not bad at all. I haven't tried the SI's so I don't know if they are helpful. People just don't appreciate a good teacher. <B>&nbsp; - Grade In Class:</b>B+</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2008-11-17</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="11366">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="11290"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:ACC 2303 - She is WONDERFUL! Take her! Trust me, I took Accounting 3 times before I passed it with her. She is great. Strongly suggest!<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2008-11-11</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="11290">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="10834"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:2304 - I took Ms. Jones for ACC 2304.  Managerial Accounting was the hardest class I took this semester, but it was the class I learned the most from.  Do the class prep; you get extra credit points added to your average at the end of the semester which helps your grade A LOT.  To study for the tests, work out the mini-reviews after each chapter.  Test questions are very similar to the mini-reviews.  I felt very prepared for the departmental final after taking her class.  Visit Ms. Jones during her office hours, she will tell you to study more but at least she can see that you're trying.<B>&nbsp; - Grade In Class:</b>C</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2008-05-13</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="10834">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="10817"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:2304 - Mrs. Jones is one of the best professors that I have ever had at Baylor.  She comes off as rude sometimes, but she really does care about her students.  If you want to learn the material I would suggest taking her.  She is super orgganized, and she does give lots of hw assignments, but they really help.  The final is departmental, and it was super easy after having her.  Do the reviews that she posts on Blackboard before the tests as many question come from there.  Do the Class Preps because they really help your grade at the end.  Take her if you want to learn something.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2008-05-12</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="10817">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="10658"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:ACC 2304 - I'm going to lay out the facts and let you draw your own conclusion. I have a 3.9 cumulative, and I excel at accounting, its my job, as in what I do at work. I never even knew what we were doing in this class. You will get a packet of notes to kind of fill in, in class throughout the semester. The issue is that the notes are things like 1+1=2. The quizzes and tests are things like 1+.055054^10=sqrt(4.5632). An exaggeration, but a fair one. I might get a B+ or even an A, I'm not sure but I'm being conservative. 4 tests, 20% each (hard), homework 6% (relatively easy), quizzes 14% (unbelievably impossible). I don't actually see the whole "great teacher" thing. I did PV, NPV, FV, etc in Dr Hulme's QBA and made a 94. On her quiz I made a 25. I would not reccomend her under any circumstance. I would delay taking 2304 if she was my only option but thats just me.<B>&nbsp; - Grade In Class:</b>B</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2008-04-23</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="10658">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="10234"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:2303 - If you are currently asking yourself "How can i come face to face with the devil and live to tell about it" then take this class. If you enjoy having time to do things besides financial accounting don't take her class. when i told her how much i hated her class she told me i should probably transfer to UT. She will let you check answers to homework assignments before class but HW grades are only 6% of the total grade and there are 60 homework assignments throughout the semester. Study hard for test and quizzes in order to do good. If she tells you a problem is going to be on the test then study it over and over again and you will make a B on the test.<B>&nbsp; - Grade In Class:</b>B</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2008-01-09</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="10234">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="9872"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:2303 - Good accountant, horrible teacher. There are 58 homework assignments that total to be worth 6% of the grade. She says the quizzes are based on homework but don't be fooled, they are hardly similar. Test are equally as hard. Passing the class is a reason to celebrate. She doesn't explain anything so you have to teach yourself everything. goodluck if you decide to take her<B>&nbsp; - Grade In Class:</b>B</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2007-10-19</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="9872">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="9601"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:2303 - She is a horrible teacher! She is very unhelpful. I went into her office hours when i was concerned with my grade, and she actually told me just to drop her class because i would prob. never get it. I was so insulted! That was rediculous, it was the first test...and still i managed to get a B. Also she gives a ton of homework. I studied so much for each test. I never missed a class and still did not get what she was saying. She is a horrible teacher!<B>&nbsp; - Grade In Class:</b>B</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2007-05-31</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="9601">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="8859"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:2302 - Despite being tough, she knows her stuff.  She's been teaching Financial & Managerial Accounting for close to 10 years at Baylor. She gives outlines which you fill out during class, with the exception of Class Preps which you complete before hand. These class preps contribute to the 3 additional points to your final average.  Quizzes are timed and hard as well.  Don't just do the homework, learn it.  The quiz questions come directly from homework. Exams are multiple choice & case problems. The great thing about Becky Jones is that she encourages you to stop by and she'll check your homework before you turn it in. I was hesitant to do this at first, but after realizing that you really need to learn the homework before quizzes and exams, I took advantage of it.  She'll explain it and its easier to get when you're one-on-one. Don't be scared to take her, unless your looking to breeze through accounting--which will be the end of you next semester. <B>&nbsp; - Grade In Class:</b>B+</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2007-01-23</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="8859">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="8481"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Financial - I had perfect attendance and perfect homework, and perfect class prep, which is almost impossible. I had a hard time on the tests and I still got a D when I figured these things would at least help me pass, it's not like I was asking for an A or a B here. Just shows that hard work in this class DOES NOT pay off. I would say take another teacher. <B>&nbsp; - Grade In Class:</b>D</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2006-12-14</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="8481">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="8040"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:2303 - I have never been so disgusted by a teacher in my life. By far, this professor has been the most UNHELPFUL, RUDE, INCOMPASSIONATE, and JUST RIDICULOUS teacher I have ever had. I'm currently in her class right now, and I am struggling to maintain my C+. I do ALL of the HW, attend ALL of the S.I. sessions, ask questions in class, and I try to get help during her office hours but she's ETREMELY UNHELPFUL! She's not a good teacher at all, because she NEVER explains anything thoroughly. Some ppl say she's nice, I personally don't think so. I think she's very rude and AGAIN unhelpful and basically useless. SERIOUSLY, do yourself a favor and DO NOT TAKE JONES!!!!!<B>&nbsp; - Grade In Class:</b>C+</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2006-11-26</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="8040">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="7913"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:acc 2303 - Tough class but it doesn't have to be with the right teacher. Jones can be conquered but I had a busy schedule and she wasn't very helpful. Good luck if you take her.<B>&nbsp; - Grade In Class:</b>DROP</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2006-11-12</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="7913">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="7822"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:2303 - DO NOT TAKE BECKY JONES. She thinks hers is the only class you have to study for, and if you are one of those people that don't enjoy doing 3 hours of accounting homework daily, or study for tests like a week in advance, or have a life, her class is not for you. If you ask a question in class she makes you feel stupid, and her quizes are ridiculous. 7 minute, 4 questions and if you dwell on one question for too long, you're screwed. Her tests aren't too bad, but you have to know the material forwards and backwards times 3. She's very nice during her office hours, but in class she's a B. <B>&nbsp; - Grade In Class:</b>C</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2006-11-03</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="7822">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="7765"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:2303 - I wanted to rate her before people started to register for classes for next semester.  Do not take her! Her homework is very easy compared to the quizzes or tests.  The quizzes are timed (7 minutes and nothing like the homework. Studying for tests is almost next to impossible... if you do get her, be sure to study things other than what she puts in her chapter mini quizzes. She is rude, and you can tell that she hates when people ask questions or don't understand what she is teaching.<B>&nbsp; - Grade In Class:</b>B</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2006-10-11</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="7765">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="7733"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:2304 - Even if you bomb the first test, you can still make an A.  She gives frequent one question quizzes, the tests are pseudo-MC (accounting problems you have to work out then choose the right answer), but she gives practice tests on Blackboard.  She's was always very receptive to students coming in her office and is free just to shoot the breeze if you like.  Take her if you want a rigorous accounting course.<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2006-09-21</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="7733">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="7485"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Acc(Managerial) - I'll be one to say, that this class wasn't very easy; however, i am good with numbers, so i somehow received an A.  Mrs. Jones is kind of scary, and I was more afraid to ask her questions during her office hours, than any other teacher i've had.  Her class was extremely boring, and she can be nice, but sometimes I think she thinks people should just understand material that they just don't.    <B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2006-05-26</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="7485">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="7240"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:2304 - This could be the most disrespectful teacher here at Baylor.  She shows disgust with her body language and is very negative to talk to.  I made a C in her class only because of her tests which are nothing like her reviews.  Also, for those of you that think that its only the people that get bad grades that didnt like her, I have numerous friends in the my class that received A's and B's yet still disapproved of her actions. DO NOT TAKE<B>&nbsp; - Grade In Class:</b>C</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2006-05-06</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="7240">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="7184"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:ACC2304 - They've said it all...if you do the homework, class prep and exercises and study what she teaches, you would have no problem with her class...if you don't then you would be one of those people dropping pointless and stupid comments about Ms. Jones is Captainofthedarkworld<B>&nbsp; - Grade In Class:</b>B</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2006-04-29</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="7184">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="6323"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:2304 - Honestly- look at everyone's grades that hate Mrs. Jones....clearly they aren't going to like her if they aren't doing the work.  Go to class, do the homework, and test prep.  She is extremely helpful if you go to office hours.  She isn't someone who will give you an edge if you don't go to class, but if you are trying then she really takes that into consideration.  I really enjoyed her.  Don't take it if you're looking for an easy A though- you must do the work.<B>&nbsp; - Grade In Class:</b>B+</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2005-12-14</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="6323">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="5141"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:2304 - Ok guys.  Yes she makes you feel like a dumb ass when you ask her qustions in her office and that really scared me away.  Perfect attendance is rewarded especially if you are within 1 point of the next letter grade. If you miss class good luck getting her to bump it up.  Before the final I went and talked to her because I was really struggling and she was actually very nice and really took me by suprise.  She is willing to work with you if you are willing to put some effort in too.  I can't stress enough how important the test reviews on blackboard are.  She gives a sample of questions in her packet at the end of every chapter but if you really want to do well on her exams do the whole test review on blackboard.  The 3 times I did them it showed, 1 test I didn't do the review and it took me from a B average to just barely a D.  It is possible to pass her class but she is definitely not for those who are looking for an easy 'A'<B>&nbsp; - Grade In Class:</b>C</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2005-05-06</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="5141">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="5011"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:2304 - Shes a very nice person, makes the course interesting.  Speaks slowly and ensures that concepts sink in.  DO ALL THE CLASS PREP AND HOMEWORK.  Its alot of work, but it helps a ton on the test.  DO NOT MISS THIS CLASS!  She takes learning serious, and expects the same from you.<B>&nbsp; - Grade In Class:</b>B</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2005-04-19</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="5011">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="4634"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:2303 - Ok...so i read all of these and went into the class thinking that it was going to be hell on earth, and it was, but that's my own fault.  True, the tests are hard, but seriously.  Keep up with the work and GO TO THE SIs!!!  JUST GO!  I almost failed the first test and started going to the SIs and pulled off an A on the next one.  True, the class material is not all that interesting if you aren't going to be an accounting major, but face it, you have to take it.  Also, going to class pays a huge part in your final grade.  If you are boarderline and have missed more than 2 classes, forget about getting the next highest grade.<B>&nbsp; - Grade In Class:</b>B</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2005-01-12</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="4634">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="4424"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:2303 - Mrs. Jones is a terrible human beign. At first she comes off as some nice ol accountiung lady but then she reveals her true identity as Mrs. CaptainoftheDarkWorld. She truly has an intense enjoyment of watching her sudents down in the engulfing waters of financial accounting. She likes very few people unless they are some kind of accounting guru. It is very clear that she thrives upon making students that do not understand the material feel even more lost, helpless and abandoned. Do your mind, heart and soul a favor and stay away from Becky Jones at all costs. Take heed to my advice and remember our fallen brothers and sisters who are still prisoners to the ungodly realms of the one we do not speak of.<B>&nbsp; - Grade In Class:</b>D</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2004-12-23</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="4424">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="4363"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:2303 - i hate mrs. jones with everything inside of me...her reviews for the tests go over nothing that ends up on the test...she has one opp. to do extra credit (only 3 points added to one test) and her 3 test and final are worth a total of 88% of your final grade which leaves little room for error...whatever you do, do not take mrs. jones <B>&nbsp; - Grade In Class:</b>D</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2004-12-17</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="4363">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="4281"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:ACC2302 - If you're an accounting major or you had accounting in high school, you'll like Becky Jones.  She runs through the material and assumes you either understand it or will figure it out.  No check figures are given for homework but tests are run of the mill multiple choice accounting.
+
+However, if you're not an accounting major or hate it (or are repeating it like myself) she fully lives up to her nickname, "Damn you Becky Jones."  Although she's a pleasant enough lady, if you have a question about something, she'll treat you like you have just asked "what is 1+1?"
+
+I studied my butt off (again, I'm not an accounting person so your mileage may vary) and I got an 80.1% and I'm damn proud of it.  If you have her and don't like accounting, just stick with the homework and use the online tutor -- that helped a lot.  She's more than willing to work with you outside of class (hence the 5 star helpfulness) just don't think she'll help at all in class.  If you can get someone else, for example Lane Collins (who is the best acc prof), do it.  But if you're stuck, you'll just need to work more.
+
+Good luck my son, and remember, choose C if you don't know the answer.  Also, don't laugh at her clothes, she doesn't like that.<B>&nbsp; - Grade In Class:</b>B</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2004-12-15</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="4281">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="4004"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:ACC 2303 - Terrible, awful awful awful awful class.  Not only is she a terrible teacher but her tests cover the hardest parts of the course.  Every class has plenty of hw, but the crap she makes you do is pointless.  I'd change my major before I took her class<B>&nbsp; - Grade In Class:</b>C</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2004-11-21</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="4004">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="3935"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:ACC 2303 - There's a lot of homework (daily, and sometimes 3 significant accounting problems), but it's necessary.  It makes you learn the concepts, just as long as you do it (that's where I dropped the ball).  My dad's a CPA and he's probably going to kill me.  She works through her study guide in class and doesn't put things on the test that aren't in it.  Her tests are rough, but not necessarily unfair.  The test format is 30 questions MC  She's a tough professor, so try to find someone who grades easier.<B>&nbsp; - Grade In Class:</b>C</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2004-11-17</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="3935">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="3797"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:2303 - THIS WOMAN IS TERRIBLE. NOUGH SAID!!! if you take her, GOD BE WITH YOU!! personally i dont know y anyone would do that to themselves she is just that bad. AND SHE IS NOT ONLY BAD BUT SHE'S MEAN TOO!! so that puts an extra fart on everything, dont take her if you value your sanity  . . . <B>&nbsp; - Grade In Class:</b>DROP</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2004-11-09</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="3797">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="3554"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:2304 - Test are extremely hard!  Would not recommend. <B>&nbsp; - Grade In Class:</b>C+</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2004-07-19</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="3554">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="3428"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Accounting 2303 & 2304 - I had Mrs. Jones for Accounting 2303 & 2304 and I honestly think that she is one of the best teachers at Baylor. She makes you work hard to get a good grade on her tests but you will also learn a great deal. She is very friendly and is always willing to help you out as long as you try to learn. I would recommend Mrs. Jones to anyone just be prepared to study hard.<B>&nbsp; - Grade In Class:</b>B</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2004-06-05</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="3428">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="2831"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:2303 - Don't take Jones if you have a choice! She is very difficult. The homework is simple enough, but the exams are multiple choice and nothing like what has been covered. If you ask a question in class, she makes you look like an idiot, or says something rude as if everyone should know the answer.<B>&nbsp; - Grade In Class:</b>C</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2004-04-19</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="2831">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="2698"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:ACC 2303 & 4 - Her notes are good.  You buy a packet at the bookstore and just fill them in with her in class.  You can check your h/w (due at beg. of every class period) in her office to be guaranteed 100%.  That helped a lot in the final grade.  But go prepared if you want to ask questions because she's not there to work the problem for you.  The exam reviews on Blackboard help A LOT.  30 MC exams, but with tricky wording and still pretty difficult.  I worked my ass off and got a B in 03 and B+ in 04.<B>&nbsp; - Grade In Class:</b>B</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2004-03-06</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="2698">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="1838"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:acc 2303 - mrs jones is a good teacher she doesnt like questions of any kind and when you ask her during class she acts like, what a dumb ass question you should know the answer i should not have to tell you, if you go to her office shes no more help there eather. the test are purposely worded to confuse you but there only 30 questions multiple choice. the lab instuctor sucks and she is just a mean as mrs jones  <B>&nbsp; - Grade In Class:</b>C</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2003-11-12</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="1838">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<a name="1747"></a>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3" align="left">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td width="25%"><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:2303 - Mrs. Jones is a very nice person outside of class.  I don't think she's the greatest teacher.  She makes you feel pretty stupid when you ask her questions.  I decided to not care and keep asking so that I would understand.  That helped and she didn't mind helping me.  Just be nice to her and she'll like you!<B>&nbsp; - Grade In Class:</b>A</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td align="left">
+				<font size="1" face="verdana"><B>Date:</b> 2003-11-07</font></td>
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="1747">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:She is the only ACC 2302 teacher that has this crazy end of year project - which is incredibly time consuming and quite frankly pain in the ass busy work. She's very fond of boys, so girls, if you have a question - go to the tutor - because she wont give you the time of day.</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="1055">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+				<tr><td colspan="5">
+				<table border="1" bordercolor="#111111" width="100%" rules="none" cellspacing="0" cellpadding="3">
+				<tr bgcolor="#FFFFFF" align="center">
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif></td>
+				<td><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star1.gif><img src=images/star2.gif></td>
+				<td><img src=images/star1.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif><img src=images/star2.gif></td></tr>
+				<tr bgcolor="#FFFFFF" align="left">
+				<td colspan="4"><p><b>Comments</b>:Mrs. Jones is a hardass, but she's the best teacher I've had at Baylor.  If you want to learn the material, take her.  She provides notes that you fill in with her in class.  She basically tells you, during notetaking, what will be on the test, but her tests are very hard.  She provides practice problems for the tests.  You must understand the material well to do well on the tests.  She has clear expectations.  I cannot stress enough how important attendance is to her.  I had her for both financial and managerial, and she deducts one point from your final average for each absence in excess of three.  Also, when you go in to talk to her, you must be respectful at all times and demonstrate that you have tried to figure out the problem on your own, extensively, but are still unable to figure out the answer.  She does not tolerate stupid questions about things you could look up in your notes or in the book.  But she is very nice if you approach her correctly, with the attitude: "I've looked this problem up in the book and tried it a thousand different ways, but I still can't figure it out.  [Key words:]  What am I doing wrong?"  Not "You did this wrong."  All in all, I would encourage anybody to take her.  I learned more in her classes than I have in any other class during my Baylor career, but she is very challenging, so don't take her if you want an easy A.  She makes you work your ass off.</p></td>
+				</tr>
+				<form  method = "POST" action = "filecomplaint.php">
+				<tr height="1" bgcolor="#C1CFDD">
+				<td colspan="4" align = "right">
+				<input type="hidden" name="rate_id" value="841">
+				<input type="submit" value="File Complaint">
+				</td></tr>
+				</td></tr></table>
+				</form>
+	</table>
+	</form>
+	</td></tr>
+
+<script type="text/javascript">
+function submit_form(frm) 
+{
+  frm.submit();
+}
+
+function getElmById(aID)
+{ 
+  return (document.getElementById) ? document.getElementById(aID)
+                                  : document.all[aID];
+} 
+
+function validate_search()
+{
+  var myDropDown = getElmById("dept");
+  var errors = 0;
+
+  if(errors>0) 
+  {
+    return false;
+  }
+}
+
+function onChangeHandler(e)
+{
+  var myevent = (e) ? e : window.event;
+
+  submit_form(getElmById("search"));
+}
+
+function onChangeHandler_dept(e)
+{
+  var myevent = (e) ? e : window.event;
+  var prof = getElmById("profid");
+
+  prof.selectedIndex = 0;
+
+  submit_form(getElmById("search"));
+}
+
+var myDropDown = getElmById("profid");
+
+if(typeof(myDropDown) == "object")
+{
+  myDropDown.onchange = onChangeHandler;
+}
+
+var myDropDown_dept = getElmById("dept");
+
+if(typeof(myDropDown_dept) == "object")
+{
+  myDropDown_dept.onchange = onChangeHandler_dept;
+}
+
+var mySearchForm = getElmById("search");
+
+mySearchForm.onsubmit = validate_search;
+</script>
+
+
+<!----- Include footer -------->
+<!--- Footer --->
+
+
+  <tr>
+
+ 	<td align="center" colspan="5" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#B2B6C8', EndColorStr='#476A8E');"><font size="4">
+
+      
+		<a href="login.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+		<b>LOGIN</b></font></a> &nbsp; &nbsp;
+	
+
+		<a href="home.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>HOME</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="about.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>ABOUT US</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="faq.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>FAQ</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="privacy.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>PRIVACY</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="terms.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>TERMS OF USE</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="advertising.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>ADVERTISING</b></font></a> &nbsp; &nbsp; 
+
+	
+
+		<a href="contact.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>CONTACT US</b></font></a> &nbsp; &nbsp; 
+
+		 
+	</td>
+
+  
+
+</table>
+
+<br>
+
+<div align="center"><font size="-1">&copy;2003-2017 Bubooks.com - All rights reserved</font></div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-98854-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+
+</html>

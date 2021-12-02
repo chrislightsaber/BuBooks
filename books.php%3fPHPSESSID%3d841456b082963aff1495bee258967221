@@ -1,0 +1,204 @@
+<html><head><title>Bubooks.com - Textbooks</title><STYLE TYPE="text/css">			<!--							H3			{			text-align: center;						}     			  			*#center 			{			color: #ffffff;			font-size: 14pt; 			text-align: center						}			p.text			{			text-align: center;			color: #111111;			font-family: Verdana;			font-size: 12pt;			font-weight: bold			} 						div.side			{			text-align: center;			color: #263B4E;			font-family: Verdana;			font-size: 10pt						} 			 		-->	</STYLE></head><body bgcolor="#ffffff" vlink="#0066ff" leftmargin="0" rightmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+
+<table border="1" rules = "all" cellpadding = "3" cellspacing = "0" bordercolor="#476A8E" bgcolor = "#476A8E" width="100%" align="center">
+
+
+
+  <tr>
+
+    <td width="100%" height="85" bgcolor="#476A8E" colspan = "5">
+
+		<table border ="0" cellpadding = "0" cellspacing = "0" bgcolor = "#476A8E" width = "100%" >
+		<tr><td align = "left" rowspan="2">
+			<img src="logo.gif" width="261" height="64">
+		</td>
+		<td align = "right">
+			<table align="right" border ="0" cellpadding="0" cellspacing="0">
+			<tr><td>
+						<a href = "clicksLog.php?redirect=tshirt.php&adID=1&PHPSESSID=10e637da6b946a6c53c2a7d87fcf5134" target='_new'>
+								
+					<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+					codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"
+					WIDTH="468" HEIGHT="60" id="1">
+					<PARAM NAME=movie VALUE="ads/tshirt.swf"> 
+					<PARAM NAME=quality VALUE=high>
+					<PARAM NAME=bgcolor VALUE=#FFFFFF>
+					
+					<EMBED src="ads/tshirt.swf" quality=high bgcolor=#FFFFFF WIDTH="468" HEIGHT="60" 
+					NAME="myMovieName" ALIGN="" TYPE="application/x-shockwave-flash" 
+					PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer">
+					</EMBED>
+					
+					</OBJECT></a>
+				
+						<tr><td align="center"><font face ="verdana" size="1" color ="#ffffff">Advertisement - Click for coupon or website</font></td></tr>
+		</tr></td></table>
+		</td>
+		</tr>
+		
+		
+		
+		</table>
+    
+    </td>  
+
+  </tr>
+
+
+<!--- NavBar ---->
+	<tr>
+
+  
+    
+    
+    	<td align ="center" width="20%" bgcolor="#FFFFff" height="23" 
+	
+		style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+	
+			<a href="login.php?PHPSESSID=10e637da6b946a6c53c2a7d87fcf5134" style='text-decoration:none;'>
+		
+			<font face="Arial, Verdana" size="3" color="#000000">
+		
+			<b>Login</b> </font></a>
+			
+		</td>
+	
+		
+	
+
+		<td align ="center" width="20%" bgcolor="#FFFFff" height="23" 
+	
+		style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+	
+			<a href="books.php?PHPSESSID=10e637da6b946a6c53c2a7d87fcf5134" style='text-decoration:none;'>
+		
+			<font face="Arial, Verdana" size="3" color="#000000">
+		
+			<b>Textbooks</b></font></a>
+			
+		</td>
+	
+			
+	
+		<td align="center" width="20%" bgcolor="#FFFFff" height="23"
+	
+		style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+	
+			<a href="profrate.php?PHPSESSID=10e637da6b946a6c53c2a7d87fcf5134" style='text-decoration:none;'>
+		
+			<font face="Arial, Verdana" size="3" color="#000000">
+		
+			<b>Professor Ratings</b></font></a>
+	
+		</td> 
+	
+	
+	
+		<td align="center" width="20%" bgcolor="#FFFFff" height="23"
+	
+		style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');"> 
+	
+			<a href="classified.php?PHPSESSID=10e637da6b946a6c53c2a7d87fcf5134" style='text-decoration:none;'>
+	
+		<font face="Arial, Verdana" size="3" color="#000000">
+	
+		<b>Classified Ads</b></font></a></td>
+	
+	
+	
+	
+	
+		<td align="center" width="20%" bgcolor="#FFFFff" height="23"
+	
+		style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');"> 
+	
+			<a href="http://www.bearcribs.com" style='text-decoration:none;' target='new'>
+		
+			<font face="Arial, Verdana" size="3" color="#000000">
+		
+			<b>Apartment Guide</b></font></a>
+		</td>
+	
+	
+
+  </tr>
+  
+  <tr>
+ <td colspan = "5" background = "bckground.gif" bgcolor = "#FFFFFF"><BR><form method="get" action="search.php"><input type="hidden" name="PHPSESSID" value="10e637da6b946a6c53c2a7d87fcf5134" /><table rules="none" border="0" width="100%" align="center"><tr><td width="30%" valign="top" align="left">	<H3>Textbook FAQ:</H3>	<div class="side">	<b>How do I add a book to the database?</b><br><br>	<a href= "login.php?redirect=books.php&PHPSESSID=10e637da6b946a6c53c2a7d87fcf5134">Login</a> or <a href="signup.php?PHPSESSID=10e637da6b946a6c53c2a7d87fcf5134"> Signup</a><br><br>	After loging in, look for the link <BR>	that states "Add a book" and click it.</div>		<td width="40%" align="center"><div class="side"><b>1509</b> Textbooks in database</div>			<table align="center"  cellspacing="0" cellpadding="3" bordercolor= "#476A8E" border="1" rules ="none" bgcolor="#ffffff" width="100%">		<tr bgcolor="#476A8E"><td bgcolor="#476A8E" align="center" colspan="2"><font size="4" color="#FFFFFF" face="arial">Textbook Search</font></td></tr>				<tr><td align="center" colspan="2"><a href="search.php?field=title&pattern=%25%25&PHPSESSID=10e637da6b946a6c53c2a7d87fcf5134"><font size="2">Click here to browse entire database.</a></td></tr></font>				<tr>				<td align="center"><select name="field">		<option value="title" selected>Title:</option>		<option value="isbn">ISBN:</option>		<option value="author">Author:</option>		<option value="course">Course:</option>		</select>		<input type="text" name="pattern" size="30" maxlength="50">				<input type="submit" name="search" value="Search"></td></tr>								<tr><td align="center" colspan="2">		<p><BR><font face="verdana" color="#476A8E" size="4">---OR---<BR><BR></td></tr></p></font>				<tr>		<td colspan = "2" align = "center">		<font face="verdana" color="#476A8E" size="3"><b>Department: </b></font><select name="dept">			<option value="">--NONE--<option value="ACCOUNTING">ACCOUNTING<option value="AEROSPACE STUDIES">AEROSPACE STUDIES<option value="AFRICAN STUDIES">AFRICAN STUDIES<option value="AIR PILOT">AIR PILOT @ TSTC<option value="AKKADIAN">AKKADIAN<option value="AMERICAN STUDIES">AMERICAN STUDIES<option value="ANTHROPOLOGY">ANTHROPOLOGY<option value="ARABIC">ARABIC<option value="ARAMAIC">ARAMAIC<option value="ARCHAEOLOGY">ARCHAEOLOGY<option value="ART">ART<option value="ASIAN STUDIES">ASIAN STUDIES<option value="AVIATION SCIENCES">AVIATION SCIENCES<option value="BAYLOR INTERDISCIPLINARY CORE">BAYLOR INTERDISCIPLINARY CORE<option value="BIOLOGY">BIOLOGY<option value="BIOMEDICAL STUDIES">BIOMEDICAL STUDIES<option value="BUSINESS">BUSINESS<option value="BUSINESS LAW">BUSINESS LAW<option value="CHAPEL">CHAPEL<option value="CHEMISTRY">CHEMISTRY<option value="CHINESE">CHINESE<option value="CHRISTIAN RELIGIOUS EDUCATION">CHRISTIAN RELIGIOUS EDUCATION<option value="CHURCH-STATE STUDIES">CHURCH-STATE STUDIES<option value="CHURCH-STATE STUDIES">CIVIC EDUCATION & COMM SERVICE<option value="CLASSICS">CLASSICS<option value="COMM. SCIENCES AND DISORDERS">COMM. SCIENCES AND DISORDERS<option value="COMMUNICATION STUDIES">COMMUNICATION STUDIES<option value="COMPUTER SCIENCE">COMPUTER SCIENCE<option value="COVENANT GROUPS">COVENANT GROUPS<option value="CURRICULUM & INSTRUCTION">CURRICULUM & INSTRUCTION<option value="DOCTOR OF MINISTRY">DOCTOR OF MINISTRY<option value="ECONOMICS">ECONOMICS<option value="EDUCATION">EDUCATION<option value="EDUCATIONAL ADMINISTRATION">EDUCATIONAL ADMINISTRATION<option value="EDUCATIONAL PSYCHOLOGY">EDUCATIONAL PSYCHOLOGY<option value="ENGINEERING">ENGINEERING<option value="ENGLISH">ENGLISH<option value="ENTREPRENEURSHIP">ENTREPRENEURSHIP<option value="ENVIRONMENTAL STUDIES">ENVIRONMENTAL STUDIES<option value="FAMILY AND CONSUMER SCIENCES">FAMILY AND CONSUMER SCIENCES<option value="FINANCE">FINANCE<option value="FINANCIAL SERVICES & PLANNING">FINANCIAL SERVICES & PLANNING<option value="FIRST YEAR SEMINAR">FIRST YEAR SEMINAR<option value="FRENCH">FRENCH<option value="GEOGRAPHY">GEOGRAPHY<option value="GEOLOGY">GEOLOGY<option value="GERMANY">GERMAN<option value="GERONTOLOGY">GERONTOLOGY<option value="GRADUATE">GRADUATE<option value="GREAT TEXTS">GREAT TEXTS<option value="GREEK">GREEK<option value="HEALTH EDUCATION">HEALTH EDUCATION<option value="HEBREW">HEBREW<option value="HISTORY">HISTORY<option value="HONORS">HONORS<option value="HUMAN PERFORMANCE">HUMAN PERFORMANCE<option value="INDONESIAN">INDONESIAN<option value="INFORMATION SYSTEMS">INFORMATION SYSTEMS<option value="INTERNATIONAL BUSINESS">INTERNATIONAL BUSINESS<option value="INTERNATIONAL STUDIES">INTERNATIONAL STUDIES<option value="ITALIAN">ITALIAN<option value="JAPANESE">JAPANESE<option value="JOURNALISM">JOURNALISM<option value="KOREAN">KOREAN<option value="LATIN">LATIN<option value="LATIN AMERICAN STUDIES">LATIN AMERICAN STUDIES<option value="LAW">LAW<option value="LEADERSHIP DEVELOPMENT">LEADERSHIP DEVELOPMENT<option value="LEADERSHIP/ADMINISTRATION">LEADERSHIP/ADMINISTRATION<option value="LIBRARY SCIENCE">LIBRARY SCIENCE<option value="MANAGEMENT">MANAGEMENT<option value="MARKETING">MARKETING<option value="MATHEMATICS">MATHEMATICS<option value="MEDICAL HUMANITIES">MEDICAL HUMANITIES<option value="MENTORING">MENTORING<option value="MIDDLE EAST STUDIES">MIDDLE EAST STUDIES<option value="MISSIONS">MISSIONS<option value="MODERN FOREIGN LANGUAGES">MODERN FOREIGN LANGUAGES<option value="MUSEUM STUDIES">MUSEUM STUDIES<option value="MUSIC">MUSIC<option value="NEUROSCIENCE">NEUROSCIENCE<option value="NURSING">NURSING<option value="PASTORAL MINISTRY">PASTORAL MINISTRY<option value="PHILOSOPHY">PHILOSOPHY<option value="PHYSICS">PHYSICS<option value="POLITICAL SCIENCE">POLITICAL SCIENCE<option value="PORTUGUESE">PORTUGUESE<option value="PRE-HEALTH PROFESSIONS">PRE-HEALTH PROFESSIONS<option value="PREACHING/WORSHIP">PREACHING/WORSHIP<option value="PROFESSIONAL FIELD EXPERIENCE">PROFESSIONAL FIELD EXPERIENCE<option value="PROFESSIONAL DEVELOPMENT">PROFESSIONAL DEVELOPMENT<option value="PSYCHOLOGY">PSYCHOLOGY<option value="QUANTITATIVE BUSINESS ANALYSIS">QUANTITATIVE BUSINESS ANALYSIS<option value="READING">READING<option value="REAL ESTATE">REAL ESTATE<option value="RECREATION & LEISURE SERVICES">RECREATION & LEISURE SERVICES<option value="RELIGION">RELIGION<option value="RISK MANAGEMENT AND INSURANCE">RISK MANAGEMENT AND INSURANCE<option value="RUSSIAN">RUSSIAN<option value="SLAVIC & EAST EUROPEAN STUDIES">SLAVIC & EAST EUROPEAN STUDIES<option value="SOCIAL WORK">SOCIAL WORK<option value="SOCIOLOGY">SOCIOLOGY<option value="SPANISH">SPANISH<option value="SPEECH COMMUNICATION">SPEECH COMMUNICATION<option value="STATISTICS">STATISTICS<option value="SWAHILI">SWAHILI<option value="TEACHER EDUCATION (TED)">TEACHER EDUCATION (TED)<option value="TELECOMMUNICATIONS">TELECOMMUNICATIONS<option value="THAI">THAI<option value="THEATER ARTS">THEATER ARTS<option value="THEOLOGY">THEOLOGY<option value="UGARITIC">UGARITIC<option value="UNIVERSITY STUDIES">UNIVERSITY STUDIES <option value="OTHER">OTHER			</select></font>		<input type="submit" name="search" value="Search"></td></tr>		<tr><td colspan="2" align="center"><a href="http://www.bkstr.com/webapp/wcs/stores/servlet/CategoryDisplay?langId=-1&catalogId=10001&storeId=10068&categoryId=9604&demoKey=d" target="new">				<font size="2">Click here to find what books you need for your courses!</a></td></tr></font>							</table>				<td valign="top" width="30%" align="right">					<table align="center" valign="top">										<td valign="top" rules="none" border="0" ><H3>Matching Accuracy:</H3>					<div align="left"><font face="Verdana" size="2" color="#263B4E">					<ul><li><B>ISBN</B> - Most Accurate</li>					<li><B>Title</B> - Very Accurate</li>					<li><B>Department</B> - General</li>					<li><B>Author/Course</B> - Least Accurate</li></ul></div>					</td></tr></font>					</table>			</td></tr></table><BR><BR><!--- Footer --->
+
+
+  <tr>
+
+ 	<td align="center" colspan="5" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#B2B6C8', EndColorStr='#476A8E');"><font size="4">
+
+
+
+		<a href="login.php?PHPSESSID=10e637da6b946a6c53c2a7d87fcf5134" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>LOGIN</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="home.php?PHPSESSID=10e637da6b946a6c53c2a7d87fcf5134" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>HOME</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="about.php?PHPSESSID=10e637da6b946a6c53c2a7d87fcf5134" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>ABOUT US</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="faq.php?PHPSESSID=10e637da6b946a6c53c2a7d87fcf5134" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>FAQ</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="privacy.php?PHPSESSID=10e637da6b946a6c53c2a7d87fcf5134" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>PRIVACY</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="terms.php?PHPSESSID=10e637da6b946a6c53c2a7d87fcf5134" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>TERMS OF USE</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="advertising.php?PHPSESSID=10e637da6b946a6c53c2a7d87fcf5134" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>ADVERTISING</b></font></a> &nbsp; &nbsp; 
+
+	
+
+		<a href="contact.php?PHPSESSID=10e637da6b946a6c53c2a7d87fcf5134" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>CONTACT US</b></font></a> &nbsp; &nbsp; 
+
+	
+
+		<a href="logout.php?PHPSESSID=10e637da6b946a6c53c2a7d87fcf5134" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>LOGOUT</b></font></a>
+
+	</td>
+
+  
+
+</table>
+
+<br>
+
+<div align="center"><font size="-1">&copy;2003-2005 BUBooks.com - All rights reserved</font></div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,379 @@
+<body bgcolor="#ffffff" vlink="#0066ff" leftmargin="0" rightmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+
+<table border="1" rules = "all" cellpadding = "3" cellspacing = "0" bordercolor="#476A8E" bgcolor = "#476A8E" width="100%" align="center">
+
+
+
+  <tr>
+
+    <td width="100%" height="85" bgcolor="#476A8E" colspan = "5">
+
+		<table border ="0" cellpadding = "0" cellspacing = "0" bgcolor = "#476A8E" width = "100%" >
+		<tr><td align = "left" rowspan="2">
+			<img src="logo.gif" width="261" height="64">
+		</td>
+		<td align = "right">
+			<table align="right" border ="0" cellpadding="0" cellspacing="0">
+			<tr><td>
+						<a href = "clicksLog.php?redirect=tshirt.php&adID=8&PHPSESSID=0c2966e1d2779cce300491af4de7df97" target='_new'>
+								
+					<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+					codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"
+					WIDTH="468" HEIGHT="60" id="8">
+					<PARAM NAME=movie VALUE="ads/tshirt.swf"> 
+					<PARAM NAME=quality VALUE=high>
+					<PARAM NAME=bgcolor VALUE=#FFFFFF>
+					
+					<EMBED src="ads/tshirt.swf" quality=high bgcolor=#FFFFFF WIDTH="468" HEIGHT="60" 
+					NAME="myMovieName" ALIGN="" TYPE="application/x-shockwave-flash" 
+					PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer">
+					</EMBED>
+					
+					</OBJECT></a>
+				
+						<tr><td align="center"><font face ="verdana" size="1" color ="#ffffff">Advertisement - Click for coupon or website</font></td></tr>
+		</tr></td></table>
+		</td>
+		</tr>
+		
+		
+		
+		</table>
+    
+    </td>  
+
+  </tr>
+
+
+<!--- NavBar ---->
+	<tr>
+
+  
+    
+    
+    	<td align ="center" width="20%" bgcolor="#FFFFff" height="23" 
+	
+		style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+	
+			<a href="login.php?PHPSESSID=0c2966e1d2779cce300491af4de7df97" style='text-decoration:none;'>
+		
+			<font face="Arial, Verdana" size="3" color="#000000">
+		
+			<b>Login</b> </font></a>
+			
+		</td>
+	
+		
+	
+
+		<td align ="center" width="20%" bgcolor="#FFFFff" height="23" 
+	
+		style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+	
+			<a href="books.php?PHPSESSID=0c2966e1d2779cce300491af4de7df97" style='text-decoration:none;'>
+		
+			<font face="Arial, Verdana" size="3" color="#000000">
+		
+			<b>Textbooks</b></font></a>
+			
+		</td>
+	
+			
+	
+		<td align="center" width="20%" bgcolor="#FFFFff" height="23"
+	
+		style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+	
+			<a href="profrate.php?PHPSESSID=0c2966e1d2779cce300491af4de7df97" style='text-decoration:none;'>
+		
+			<font face="Arial, Verdana" size="3" color="#000000">
+		
+			<b>Professor Ratings</b></font></a>
+	
+		</td> 
+	
+	
+	
+		<td align="center" width="20%" bgcolor="#FFFFff" height="23"
+	
+		style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');"> 
+	
+			<a href="classified.php?PHPSESSID=0c2966e1d2779cce300491af4de7df97" style='text-decoration:none;'>
+	
+		<font face="Arial, Verdana" size="3" color="#000000">
+	
+		<b>Classified Ads</b></font></a></td>
+	
+	
+	
+	
+	
+		<td align="center" width="20%" bgcolor="#FFFFff" height="23"
+	
+		style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');"> 
+	
+			<a href="http://www.bearcribs.com" style='text-decoration:none;' target='new'>
+		
+			<font face="Arial, Verdana" size="3" color="#000000">
+		
+			<b>Apartment Guide</b></font></a>
+		</td>
+	
+	
+
+  </tr>
+  
+  <tr>
+ <td colspan = "5" background = "bckground.gif" bgcolor = "#FFFFFF">	
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN"><html><head><title>Bubooks.com - Professor Ratings
+	</title>
+	
+	<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-98854-1";
+urchinTracker();
+</script>
+	
+	</head>
+
+
+	
+
+<a href="terms.php?PHPSESSID=0c2966e1d2779cce300491af4de7df97"><h3 align="center">See Terms of Use before using ProfRate!!</h3></a>
+
+
+<table width="100%">
+ 	<tr><td width="25%">
+		<table align="left" width="100%">
+			<td align="center">
+			<font face="impact, verdana" color="#476A8E" size="9"> 895 </font><BR>
+			<font face="verdana" color="#476A8E" size="6">Prof's Listed</font><BR>
+			<font face="verdana" color="#476A8E" size="1"><a href="profcreate.php?PHPSESSID=0c2966e1d2779cce300491af4de7df97">Add an unlisted Professor</a></td>
+				<td width="50%">
+					<table align="center" width="100%" cellspacing="0" cellpadding="3" bordercolor= "#476A8E" border="1" rules ="ALL">
+					<tr width="100%"><td bgcolor="#476A8E" align="center">
+					<font size="4" color="#FFFFFF" face="arial">Select a Professor</font>
+					</td></tr>
+					<tr>
+					<td bgcolor="#FFFFFF">
+						<table align="center">
+					
+						<tr><td align="right"><p>Select from all professors:</p></td>
+						<td align="left"><form method="get" action="profdisplay.php"><input type="hidden" name="PHPSESSID" value="0c2966e1d2779cce300491af4de7df97" />
+						<select name="profid">
+						<option value=270> Majors & Truglio<option value=816>Aars, Mathew<option value=326>Abbe, Suzanne<option value=868>Abercrombie, Eric<option value=556>Abercrombie, Rita<option value=1>Achor<option value=4>Adair<option value=345>Adams<option value=152>Agee<option value=366>Airaudi, Jesse<option value=497>ALEXANDER, KAREN<option value=482>Alexander, Sara<option value=413>Allen, Pete<option value=352>Allison<option value=45>Allman, Dwight<option value=201>Allman, Wendy<option value=857>Ames, Jeffery<option value=38>Anderson<option value=802>Anderson, Kelly<option value=636>Andre, Daniel<option value=899>Anthony, Crystal<option value=965>Antoninka, Amy<option value=997>Antoninka, Amy<option value=732>Antosh, Deeanna<option value=961>Aoyama, Ikuko<option value=443>Ariyasinghe, Wickramasinghe<option value=258>Armistead<option value=376>Armond<option value=10>Arnold<option value=1010>Arredondo<option value=296>Arterbury<option value=865>Atchley, Stacey<option value=717>Attas<option value=639>Augoustakis<option value=250>Autrey<option value=350>Avant<option value=321>Bader<option value=642>Bagby, Ray<option value=739>Baier, Margaret<option value=502>Bailey, Donald<option value=741>Baird, Robert<option value=864>Baker<option value=838>Baker, B<option value=849>Baker, Clark<option value=70>Baldridge<option value=888>Baldwin<option value=830>Balsam, Josh<option value=546>Barber, Robbie<option value=6>Barcus<option value=403>Bardwell, Tiffany<option value=375>Barr, B<option value=503>Barrerra<option value=85>Barrett<option value=966>Barrett, Elden R.<option value=93>Basden<option value=694>Bass, Jeff<option value=160>Battles<option value=127>Beal<option value=33>Beaty<option value=94>Beck<option value=405>Beckenhauer, Charlie<option value=848>Belden, Jason<option value=560>Bellert<option value=655>Benedict<option value=163>Benesh<option value=808>Best, Robert<option value=744>Bishop, Michael<option value=51>Blackwell<option value=804>Blackwell, John<option value=1039>Blalock, Glenn B.<option value=608>Bohan, Chara<option value=879>Bolen<option value=67>Bonem<option value=142>Booth<option value=570>Bowery<option value=614>Bowman, Judy<option value=200>Boyd<option value=580>Bracken, Sharon<option value=96>Brackney, William<option value=867>Bradfield, Rick<option value=508>Bradley, Brenda<option value=239>Bradley, Walter<option value=807>Bratcher, Tom<option value=901>Bratton, Susan<option value=41>Brian<option value=285>Brisco<option value=1005>Britt, Katy<option value=382>Brooks<option value=510>Brown, Joseph<option value=260>Browning, Blair<option value=199>Browning, Larry<option value=895>Bruce<option value=187>Bryan<option value=651>Bryant, Scott<option value=1017>Bryant, Scott E.<option value=886>Buckner<option value=746>Budd, Charlene S.<option value=392>Buddo, Chris<option value=516>Buechsel, Mark P.<option value=712>Buras, J. Todd<option value=222>Burchenal<option value=924>Burgraff, Jennifer<option value=783>Burkhart Joy<option value=478>Burleson, Blake<option value=768>Burleson, Debra<option value=182>Burnett<option value=887>Burris, Simon<option value=775>Busch, Kenneth Walter<option value=575>Busch, Marianna<option value=526>Callan, Jerrie<option value=713>Calloway<option value=606>Candler, Peter<option value=71>canipe<option value=607>Cannon<option value=827>Carlin<option value=226>Carlson<option value=696>Carly-Miles, Claire<option value=173>Carpenter<option value=298>Carter<option value=914>Carver, Jason<option value=77>Cassel<option value=272>Cates<option value=523>Cecil, Leslie<option value=562>Chambliss, Kevin<option value=635>Charlton, Tom<option value=306>Chinn<option value=16>chonko<option value=261>Choucair<option value=613>Claybrook, James<option value=477>Cleaver, Gerald<option value=573>Cline, Erin<option value=153>Coldwell<option value=158>Collins, Jess<option value=179>Collins, Lane<option value=473>Colon, Susan<option value=1030>Coloton, Diane<option value=711>Condict, Ellen<option value=506>Conley, Kelly<option value=667>Connally, Dale<option value=761>Conry, Sharron<option value=408>Cook, Bill<option value=229>Cook, Garrett<option value=705>Coons<option value=693>Cooper, Lydia R.<option value=290>Corey (Female)<option value=231>Corey, David<option value=911>Cornelius, Alexander<option value=266>Corrie<option value=322>Cosart<option value=758>couey, richard<option value=1028>Courtney, Max<option value=599>Covington, Julie<option value=334>Cox, Joe<option value=584>Craig, Layne<option value=627>Cronin, Vincent<option value=883>Crouch, Brad<option value=660>Crouse, Jamie<option value=512>CROW, C<option value=624>Cummings, Ann<option value=400>Cunningham, John<option value=13>Curry<option value=166>DaCunha<option value=74>Darden<option value=569>Davis<option value=1000>Davis, Billy<option value=411>Davis, Carol<option value=317>Davis, Charles<option value=800>Davis, Elizabeth<option value=324>Davis, John<option value=1026>Davis, Meg<option value=856>Davis, Roger<option value=534>DAVIS, WADE<option value=210>Davis, William<option value=574>Day, Chris<option value=677>Day, Stephen<option value=111>deGraffenried, Julie<option value=337>Delaney<option value=146>Dell, E.<option value=204>Detcheva<option value=710>Devoe<option value=132>Deweese<option value=828>Dewey, Brett<option value=92>Diaz<option value=689>Diaz-Granados, Jim<option value=791>Divita<option value=552>Dodson, Derek<option value=676>Doke, Teliatha<option value=528>Donahoo, Jeff<option value=318>Donnelly<option value=590>Dooley<option value=819>Dorrell, Jimmy<option value=555>Dorsett, Dovalee<option value=650>Doty<option value=866>Dougherty, Kevin<option value=95>Dowd<option value=913>Doyle, Eva<option value=1004>Doyle, Robert<option value=165>Driskill<option value=511>Dudley, Terry<option value=150>Dugas<option value=108>Duhrkopf<option value=872>Duke, Jacquelyn<option value=537>Dunbar, John<option value=257>Duncan<option value=1006>Dunkerley, Susan<option value=832>Dunn, Mark<option value=707>Dunsmore, Sarah<option value=224>Duran<option value=422>Dworkin<option value=465>Dyer, Preston<option value=842>Dykehouse, Jason<option value=688>Dyson, Ludwig, M<option value=300>Eady<option value=383>Early<option value=553>Easley, Richard<option value=1022>Edwards<option value=812>Edwards, Katie<option value=754>Edwards, Richard<option value=727>Ehlke, Kay<option value=714>Ehrke,John<option value=143>Eichelberger<option value=648>Eisenbarth, S<option value=862>Elder, Breeanne<option value=925>Eldred, Alicia<option value=39>Eldridge<option value=863>Elliot, Brian<option value=457>Ellis, A<option value=549>Ellis, Marc<option value=59>Elsalloukh<option value=293>Elz<option value=30>Emerson<option value=248>Engel<option value=56>English<option value=471>Erickson<option value=831>Erskine-Hill, Patricia<option value=52>Escobar<option value=724>Etheredge, Susan<option value=360>Evans<option value=968>Evans, Richard V.<option value=545>Evans,Jan<option value=875>Fahmy, Lisa<option value=963>Falco, Bill<option value=810>Faries, Mark<option value=647>Farison, Jim<option value=757>Farmer<option value=625>Farris, Don<option value=640>Felice, Lawrence<option value=1025>Feng, Chunyao<option value=357>Fifield<option value=769>Findley, Cassie<option value=706>Firmin, Sally<option value=184>Fish<option value=781>Fletcher, Ernest(FIN)<option value=790>Fletcher, Ernest(FSP)<option value=778>Flood,<option value=823>Flood, William Christian<option value=884>FM Griggs<option value=633>Fogt, Donovan<option value=910>Foley, Micheal<option value=40>Ford<option value=75>Foster, J.<option value=155>Fox<option value=734>Francis, Keith<option value=262>Frisch<option value=349>Froberg<option value=798>Froberg, Brent<option value=550>Froese, Paul<option value=29>Fry<option value=851>Fuentes, Jesus Cuellar<option value=101>Fuertes<option value=431>Fulton, Joe<option value=330>Gage<option value=548>Garcia-Corales<option value=409>Gardner, Kevin<option value=1035>Gardner, Steve<option value=331>Garner, Charles<option value=89>Garner, Scott<option value=294>Garrett<option value=687>Garven, Jim<option value=429>Garza, Baudelio<option value=295>Gately<option value=809>Gautier, David<option value=458>Gawrych George<option value=653>Gentry, Glenn<option value=984>Gerber, Matthew<option value=1007>Getz, Bethany<option value=589>Getz, Evan<option value=1016>Ghandi, Nicole<option value=439>Gibson<option value=102>Gilbreath<option value=721>Gilmore, Chris<option value=189>Girju<option value=14>Gitlin<option value=390>Glazener<option value=518>Glover, Amy<option value=18>goforth<option value=764>Good, Jennifer<option value=53>Goodman<option value=998>Grabow, Paul<option value=281>Graham<option value=621>Gravatt, Patricia<option value=454>Gray, Michael<option value=308>Greco<option value=274>Green D<option value=770>Green, Gina<option value=110>Greene, Don<option value=885>Griggs, F M<option value=686>Guess, Lawrence<option value=661>Gutzwiller, Kevin<option value=387>Gwin, Anne<option value=99>Gwin, Carol<option value=504>Hagelstein, Paul<option value=692>Hamerly, Greg<option value=891>Hamerly, Ivy<option value=9>Hamilton<option value=859>Hamilton, Brent<option value=174>Hamric<option value=821>Hanby, Michael<option value=665>Hankins, Barry<option value=140>Hanks, Tom<option value=440>HANKS, TOM (BIC)<option value=23>Hardcastle<option value=213>Hardin, Alyson<option value=695>Hardrick, Jaffus<option value=572>Harper<option value=435>Harrison, Tom<option value=58>Hartberg<option value=1015>Hartman, Diane<option value=876>Hartsock<option value=48>Harvey<option value=72>Harvey, Ben<option value=338>Harvey, Frau<option value=892>Harvey, Travis<option value=772>Haschke, Bernadette<option value=792>Hassel, Patricia<option value=214>Hassell<option value=755>Hawthorne<option value=860>Heckenlively<option value=897>Henderson, James<option value=703>Henderson, Johnny<option value=139>Hendon<option value=198>Hendrix<option value=725>Henry<option value=855>Herbelin, Patricia<option value=779>hermann<option value=169>Heyns<option value=702>Hibbs, Stacey<option value=521>Higginbotham, Donna<option value=425>Hill, J.<option value=310>Hillis<option value=104>Hillson<option value=496>Hinojosa<option value=437>Hitchcock, J.<option value=421>Hoffman<option value=620>Hogue, Tiffany<option value=789>HOLDEN, MARTIN<option value=631>Holleyman, Eric<option value=683>Hollon, Bryan<option value=288>Holman<option value=141>Holmes<option value=540>Hood, Melvin<option value=644>Hornik, Heidi<option value=54>Houser<option value=678>Howard, Grear<option value=799>Howell, John<option value=491>Hubbell<option value=729>Hudkins, Jay<option value=220>Hughes, Jennifer<option value=254>hull<option value=309>Hulme, Fred<option value=593>Humphrey, Karalyn<option value=256>Hunt<option value=723>Hunziker<option value=1031>Hurtt, Dave<option value=749>Hurtt, Kathy<option value=230>Hutchison<option value=738>Inouye, Daniel<option value=418>Irby-Massie<option value=135>Irom<option value=634>Irons, Loeen<option value=763>Jackson, Billy<option value=571>Jackson, Claudet<option value=302>James, K<option value=649>Jean<option value=80>Jensen<option value=656>Jeyaraj<option value=130>Jimenez, Julio<option value=145>johns<option value=499>Johnson, Aaron P.<option value=999>Johnson, Byron<option value=745>Johnson, Jerry<option value=488>Johnson, Karen<option value=1003>Johnson, Kevin<option value=311>Johnson, Melissa<option value=668>Johnson, Phillip<option value=329>Johnson, Sharon<option value=564>Johnston, Dennis<option value=393>Johnston, Marshall<option value=520>Johnston, Neil<option value=81>Jolly<option value=315>Jones, Becky<option value=242>Jones, Bob<option value=395>Jones, Jesse<option value=967>Jones, Laurie<option value=716>Jones, Sarah B.<option value=731>Jonklaas, Devan<option value=208>Jordan-Lake<option value=874>Jorgenson, Cameron<option value=1036>Kahmann, Julia<option value=469>Kamperman, Carrolle<option value=489>Kane<option value=69>Kay, Cheryl<option value=551>Kayworth, Timothy<option value=172>Kearney<option value=423>Kearney, Chris<option value=66>Keathley<option value=316>Keating, Maureen<option value=233>Keele<option value=522>Keeney, Charlotte<option value=341>Kellison<option value=592>Kelly, Elizabeth<option value=923>Kelly, Tom<option value=995>Kendrick, James<option value=307>Kennedy<option value=197>Kerksick<option value=598>Kerr, Teresa<option value=579>Key, Cassy<option value=215>Kidd<option value=159>Kincheloe<option value=583>King, Carol<option value=453>Kinslow, Linda<option value=35>Kirk<option value=561>Kirsten, Klaus<option value=666>Kisacky, Julia<option value=120>Klaras<option value=632>Klausmeyer, Kevin<option value=662>Klausmeyer, Rizalia<option value=17>Klingman<option value=680>Klingman, Berry<option value=1023>Klopp, Julie<option value=750>Knue<option value=704>Koch, Hope<option value=7>Korpi<option value=284>Kozar-Carew<option value=374>Kramer, Deanne<option value=554>Kramer, Denny<option value=894>Krasienko, Lori<option value=840>Krey, Kathy<option value=37>Kruschwitz<option value=3>Kuhler<option value=908>Kunkle, Curtis<option value=149>Lahaie<option value=402>Lai, Eric<option value=106>Lake<option value=780>Lamb, Ray<option value=893>Lane, Nathan<option value=1019>Lang, Keanna<option value=691>Langford, Ginger<option value=27>Larson<option value=241>LeCrone<option value=612>Lee, Myeongwoo<option value=785>Leeper, Karla<option value=898>Lehnus, Darryl<option value=86>Lehr<option value=611>Leidner<option value=167>LeMaster<option value=396>Lemire, Andrea<option value=659>Lenore, Wright<option value=380>Level<option value=833>Lewis, Jordan<option value=397>Lind, Owen<option value=367>Loa<option value=557>Lockhart, William<option value=531>Long, David<option value=118>Long, Mark<option value=47>Long, Michael<option value=896>Longfellow<option value=359>Longfellow, David<option value=912>Lopez, Seir<option value=774>Losak, Brian<option value=325>Losey, Jay<option value=205>Lott<option value=917>Love, Stan<option value=343>Luft<option value=464>Lusk, Judith<option value=495>Macaully<option value=654>madden, stan<option value=25>Maddox<option value=1014>Makowsky, Reid<option value=87>Manis<option value=218>Mansfield<option value=587>Manzaneres, Carlos<option value=207>Marcum, Heidi<option value=470>Marcum, James<option value=544>Marcum, Sarah<option value=670>Markham, Pat<option value=878>Marks, Brian<option value=916>Maroun, Mariette<option value=455>Marsh, Caleb<option value=829>Marsh, Chris<option value=235>Martin, Cori<option value=507>Martin, Dean<option value=125>Martin, Janya<option value=335>Martinez<option value=354>Martynova<option value=674>Mary<option value=113>Massengale<option value=268>Massirer<option value=115>Mathis<option value=401>Matias-Cruz<option value=292>Matthews<option value=880>Maxwell, Kathy<option value=890>Maxwell, Nathan<option value=733>McBride, April<option value=837>McBride, John<option value=191>McClanahan, John<option value=771>McCormick<option value=623>McCullagh, Janice<option value=452>McDaniel<option value=46>McDonald<option value=720>McGee<option value=759>McGee, Daniel<option value=358>McGlashan<option value=922>McKinney, Joe<option value=877>McKinney, Timothy<option value=675>McKnowNuttin, Steve<option value=247>McLean<option value=164>McManess<option value=743>McMullen, Jeff<option value=881>McNaughton, Steve<option value=673>McNiel, Bill<option value=822>McNulty, Kieran<option value=1032>Medhurst, Laurel<option value=333>Meeks<option value=105>Melton<option value=462>Mencken, Carson<option value=223>Mencken, Kim<option value=420>Meredith, Cody<option value=371>Merrill<option value=906>Meyer<option value=119>Michalski, Renee<option value=287>Millar, Jana<option value=514>Millar, Lanie<option value=245>Miller, G.<option value=416>Miller, Helen<option value=610>Milligan, Pati<option value=985>Mills, Jennifer<option value=600>Milson, Andrew<option value=251>Miner, Robert<option value=389>Mitchell, Jeff<option value=918>Moenke Marcie<option value=15>Monroe<option value=386>Moody - Hall<option value=582>Moore<option value=753>Moore, Adam D.<option value=615>Moore, Henry<option value=404>Moore, Kris<option value=114>Moore, Rachel<option value=232>Morgan<option value=385>Morrison<option value=795>Moshinskie, James<option value=264>Mueller<option value=219>Mungello<option value=530>munoz, jojo<option value=524>Munro, Rebecca<option value=853>Murphy, Lane<option value=468>Murray, Sarah- Jane<option value=348>Myers<option value=1012>Myers, Dennis<option value=195>Myers, Thomas<option value=188>Natanegara<option value=825>Nelson, Lori<option value=773>Newhart, Angel<option value=460>Newton, Jennifer<option value=766>Nicely, Dywayne<option value=788>Nichols<option value=726>Nobles, Heidi<option value=107>Norden (man)<option value=765>norden, janet<option value=183>Nordling<option value=601>Nordling, John<option value=88>Nordt<option value=748>Norris, Bradley<option value=303>North<option value=1009>Norwood, Lynn<option value=565>Null<option value=852>Null, Wesley<option value=747>Nunley, Patricia<option value=776>Nutt, Tami<option value=109>O'Brien<option value=170>Odegaard<option value=236>Ofitt, Tom<option value=305>Olar<option value=538>Olsen, Rosalie<option value=441>Olson, John Albert<option value=168>Olson, Tiffany<option value=225>Ortuño (woman)<option value=576>Ortuno, (man)<option value=399>Owens, Brad<option value=265>Oxford<option value=915>Palich, Les<option value=12>Pappacena<option value=737>Park, Jerry<option value=476>Park, Kenneth<option value=547>Parker, Don<option value=282>Parnell<option value=342>Parrish<option value=643>Parrish, Michael<option value=846>Parsons, Mike<option value=448>Patrick, Jason<option value=493>Patterson, Bob<option value=76>Patton<option value=921>Patton, Jim<option value=982>Paul Erickson<option value=351>Payne<option value=905>Payne, Daniel<option value=22>pendleton<option value=84>Pennington<option value=34>Percer<option value=558>Perry, Carol<option value=136>Peterson<option value=784>Petrenko Evelina<option value=909>Petty, J.W.<option value=751>Pfaff, Lori<option value=273>Pfanner, Nancy<option value=436>Pickett, D.<option value=559>Pickle, Drew<option value=112>Pierce, Ben<option value=227>Pierce, Patricia<option value=424>Pinney, Kevin<option value=663>Pippin, Rusty<option value=79>Pisciotta<option value=715>Pisors, Charlotte<option value=515>Pittman, C.M.<option value=605>Pittman, Scott<option value=97>Pitts<option value=20>Piziak<option value=889>Pocock, Stephanie<option value=83>Polk<option value=363>Polk<option value=701>Pomilio, Mark. V.<option value=90>Pope<option value=989>Potter, Steven<option value=581>Potts, Franklin<option value=871>Poucher, Bill<option value=442>Powers, Dardin<option value=492>Pratt, Jonathan (Kris)<option value=805>preddy, randy<option value=578>Primrose<option value=1027>Pullig, Chris<option value=513>Purdy<option value=259>Quarles (woman)<option value=1038>Rabbe, Dennis<option value=602>Rahn, Jennifer<option value=103>Raines<option value=211>Rajaratnam<option value=709>Ramos, Alice<option value=740>Rasmussen, Chris<option value=532>Rasnic, Scott<option value=597>Read, Raymond<option value=869>Records<option value=588>Reese, Kay<option value=361>Reeser<option value=854>Reichenstein, Bill<option value=806>Reimers, Paula<option value=919>Reiter Geoffrey<option value=646>Reyes, Pedro<option value=128>Reynolds, Meredith<option value=481>Reynolds, Rebecca<option value=904>Rich, Steven<option value=388>Riggs<option value=186>Riley, Hugh<option value=8>Riley, Richard<option value=365>Ritter<option value=320>Rivers<option value=902>Roaten, David<option value=796>Roberts, James<option value=618>Robinson, Michael<option value=527>Rodabough, Tillman<option value=277>Rodman<option value=786>Rodriguez, Sammy<option value=641>Rose, JT<option value=286>Rosenbaum<option value=835>Rosenbaum, Julie<option value=1008>Rosenbaum, Stuart<option value=767>Ross, Deanne<option value=671>Ross, Ryan<option value=861>Rouland, Roger<option value=498>Rowatt, Tamara<option value=519>Rowatt, Wade<option value=263>Rudd<option value=882>Ruiz, David<option value=629>Rushing, Ann E.<option value=180>Russell, Dwight<option value=586>Russell, Kelly<option value=381>Russell, Richard R<option value=49>Rust, Eric<option value=850>Ryan, John Francis<option value=237>Ryden<option value=98>Sadler<option value=346>Sanchez<option value=252>Sands, Paul<option value=1034>Sanford, Keith<option value=1013>Scales, Laine<option value=845>Schaefer<option value=63>Schaub<option value=814>Schlappe<option value=811>Schmitz, William<option value=794>Schoen, John<option value=858>Schoen, John<option value=467>Schreiber, Don<option value=539>Schuler, Stephen<option value=824>Scott, Kim<option value=485>Scott, Martha Lou<option value=100>Scott, Rachel<option value=314>Seaman, Sam<option value=760>Segrest, Scott<option value=962>Senda, Megumi<option value=217>Sepanski<option value=681>Seward, J. Allen<option value=839>Shaeffer<option value=638>Sharp, Pat<option value=291>Sharpless<option value=82>Shauck<option value=870>Sheng, Qin<option value=1037>Sheppard, Ryan<option value=826>Shim<option value=630>Shipley, Don<option value=278>Shoaf<option value=685>Simpson, Mary<option value=1033>Singletary<option value=148>Skinner<option value=847>Skurla, Carolyn<option value=920>Slater, Michael<option value=449>Smith, Alden<option value=813>Smith, Bette<option value=177>Smith, D.<option value=209>Sobey<option value=276>Soliah<option value=313>SoRelle<option value=426>Speegle,Greg<option value=328>Spillman<option value=144>Spooner<option value=563>Stanford, Matthew<option value=926>Stanford, Tsang, Rudd, Rowatt<option value=427>Stanke, RJ<option value=356>Stanley, Charles<option value=577>Stephens, James(Jed)<option value=472>Stephenson, Bret<option value=585>Stewart, Dustin<option value=483>Stewart, Janice<option value=803>Strathman, Christopher A.<option value=419>Strickler, Rick<option value=238>Strickline<option value=484>Strippling, Paul<option value=1011>Stuebs, Marty<option value=368>Sturgill, David<option value=271>Suffern, Monty<option value=394>Sun, Meihong<option value=594>Supplee, Joan<option value=461>Sutter-Tkel<option value=596>Sweaney, Tito<option value=347>Sweet<option value=903>Swenson, Jon<option value=178>Talbert<option value=121>Talbert, Charles<option value=742>Tandy, James<option value=1020>Tankersley, Kevin<option value=645>Tanner, Jeff<option value=735>Tapken, Natalie<option value=117>Tate<option value=151>Tatum, Lynn<option value=133>Taylor, Mark<option value=193>Taylor, Rebecca<option value=619>Taylor, Rebecca<option value=817>Taylor, Scott<option value=362>Thibodeau<option value=438>Thomas, Brian<option value=466>Thomas, Lance<option value=410>Thomas, M<option value=475>Thomas, Michael D<option value=373>Thomas, Ron<option value=568>Thompson, Michael<option value=161>Thompson, T<option value=836>Thomson, Margaret<option value=181>Thorburn<option value=289>Thorburn, John<option value=11>Tidmore<option value=996>Tietjen, Mark<option value=490>Tillman, Kacy<option value=591>Tippit, Phyllis<option value=1002>Tipton<option value=129>Tolbert, C.<option value=1018>Torpy, Art<option value=834>Toten Beard, DeAnna<option value=479>Trouteaud, Alex<option value=818>Trower, Jonathan<option value=1029>Trower,Jonathan<option value=719>Trull, Joe<option value=541>Trumble, Allison<option value=91>Tsang<option value=669>Turano, Lucas<option value=700>Tyler, Aaron<option value=57>Tyrell<option value=841>U. B. Cram<option value=196>Uber, David<option value=332>Uber, Kim<option value=664>Umble, Liz<option value=336>Umble, Mike<option value=900>Unger, Paula<option value=240>Upton<option value=391>Urbanczyk<option value=622>Vail, Amy<option value=486>Valahu, Dan<option value=432>Van Brummelen, Glen<option value=787>van Gorder, Christian<option value=344>van Walsum<option value=244>VanAuken<option value=684>Vanderpool, Sinda<option value=525>VanHoose, David<option value=216>Vargas<option value=626>Vasut, John<option value=185>Vaught<option value=672>Viera, Edgard<option value=369>Vitanza<option value=62>Vodopich<option value=190>Von Wyrick<option value=283>Waddle<option value=212>Wakefield, Kirk<option value=255>Wakefield, Robin<option value=73>Walbessar, H<option value=414>Walker-Kennedy<option value=202>Wallace, Barbara<option value=459>Wallace, Patricia<option value=275>Wallace, Robert<option value=517>Wallace, Robin<option value=682>Wallace, Susan<option value=446>Waller, Randy<option value=131>Walters<option value=652>Waltman, Jerold<option value=756>Wang, Anzhong<option value=793>Wang, Xin<option value=873>Weathersby<option value=234>Weaver, Charles<option value=463>Weaver, Doug<option value=697>Weeks, Bill<option value=1024>Weems, Suzy<option value=844>Welch, Brenda<option value=480>Werner, Karen<option value=31>Whitaker<option value=246>White<option value=752>White, Davis<option value=708>Whitlark, Jason<option value=728>Whitten, Dwyane<option value=718>Wiggins, Lacey<option value=843>Wilcox, Walter<option value=690>Wilde, Scott<option value=983>Willey, Richard<option value=312>Williams, Daniel<option value=32>Williams, Jane<option value=203>Willingham<option value=566>Willis, Betsy<option value=154>Willis, G.W.<option value=269>Willis, Sharla<option value=722>Wilson, Bethany<option value=637>Wilson, Brent<option value=176>Wivagg<option value=777>Woo, Patty<option value=36>Wood, John<option value=327>Wood, Larry<option value=609>Wood, Ralph<option value=122>Wooddy<option value=434>Woods, Paula<option value=699>Woods, Stephen<option value=60>Worley<option value=603>Wray, Kevin<option value=730>Wright, Henry<option value=533>Wright, Lenore<option value=815>Wrzesinski<option value=679>Wu<option value=782>Xin Wang<option value=194>Yang<option value=595>Yelderman, Joe<option value=450>Yost, Scott<option value=304>Young , M<option value=55>Young, David<option value=604>Young, Dean<option value=353>Young, Joana<option value=494>Young, Joy<option value=762>Yuko, Prefume<option value=820>Zachary, Yost<option value=628>Zeeman, Terence<option value=340>Zeiss<option value=456>Zembo-Carnes, Debbie<option value=412>Zygo, Lisa						</select>
+						<input type="submit" value="Go">
+						</form>
+						</td></tr>
+						<tr><td colspan="2" align="center"><p>-OR-<BR><BR></p></td></tr>
+						<tr><form method="get" action="profrate.php"><input type="hidden" name="PHPSESSID" value="0c2966e1d2779cce300491af4de7df97" />
+						<td align="right"><p>Narrow list by Department:</p></td>
+						<td align="left"><select name="pattern">
+						<option value="">--NONE--
+<option value="ACCOUNTING">Accounting</option>
+<option value="AEROSPACE STUDIES">Aerospace Studies</option>
+<option value="AFRICAN STUDIES">African Studies</option>
+<option value="AIR PILOT">Air Pilot Training @ TSTC</option>
+<option value="AKKADIAN">Akkadian</option>
+<option value="AMERICAN STUDIES">American Studies</option>
+<option value="ANTHROPOLOGY">Anthropology</option>
+<option value="ARABIC">Arabic</option>
+<option value="ARAMAIC">Aramaic </option>
+<option value="ARCHAEOLOGY">Archaeology</option>
+<option value="ART">Art</option>
+<option value="ASIAN STUDIES">Asian Studies </option>
+<option value="AVIATION SCIENCES">Aviation Sciences </option>
+<option value="BAYLOR INTERDISCIPLINARY CORE">Baylor Interdisciplinary Core </option>
+<option value="BIOLOGY">Biology </option>
+<option value="BIOMEDICAL STUDIES">Biomedical Studies </option>
+<option value="BUSINESS">Business </option>
+<option value="BUSINESS LAW">Business Law </option>
+<option value="CHAPEL">Chapel </option>
+<option value="CHEMISTRY">Chemistry </option>
+<option value="CHINESE">Chinese </option>
+<option value="CHRISTIAN RELIGIOUS EDUCATION">Christian Religious Education </option>
+<option value="CHURCH-STATE STUDIES">Church-State Studies </option>
+<option value="CLASSICS">Classics</option>
+<option value="COMM. SCIENCES AND DISORDERS">Comm. Sciences And Disorders </option>
+<option value="COMMUNICATION STUDIES">Communication Studies</option>
+<option value="COMPUTER SCIENCE">Computer Science </option>
+<option value="CURRICULUM & INSTRUCTION">Curriculum And Instruction</option>
+<option value="Danish">Danish </option>
+<option value="ECONOMICS">Economics </option>
+<option value="EDUCATION">Education </option>
+<option value="EDUCATIONAL ADMINISTRATION">Educational Administration </option>
+<option value="EDUCATIONAL PSYCHOLOGY">Educational Psychology</option>
+<option value="ENGINEERING">Engineering</option>
+<option value="ENGLISH">English </option>
+<option value="ENTREPRENEURSHIP">Entrepreneurship </option>
+<option value="ENVIRONMENTAL STUDIES">Environmental Studies </option>
+<option value="Exercise, Nutrition, Prev Hlth">Exercise, Nutrition, Prev Hlth</option>
+<option value="FAMILY AND CONSUMER SCIENCES">Family And Consumer Sciences </option>
+<option value="FINANCE">Finance </option>
+<option value="FINANCIAL SERVICES & PLANNING">Financial Services And Planning </option>
+<option value="FIRST YEAR SEMINAR">First Year Seminars </option>
+<option value="Forensic Science">Forensic Science </option>
+<option value="FRENCH">French </option>
+<option value="GEOGRAPHY">Geography </option>
+<option value="GEOLOGY">Geology </option>
+<option value="GERMANY">German </option>
+<option value="GERONTOLOGY">Gerontology </option>
+<option value="GREAT TEXTS">Great Texts </option>
+<option value="GREEK">Greek</option>
+<option value="HEALTH EDUCATION">Health Education </option>
+<option value="HEBREW">Hebrew </option>
+<option value="HISTORY">History </option>
+<option value="HONORS">Honors </option>
+<option value="HUMAN PERFORMANCE">Human Performance </option>
+<option value="INFORMATION SYSTEMS">Information Systems</option>
+<option value="INTERNATIONAL BUSINESS">International Business </option>
+<option value="ITALIAN">Italian </option>
+<option value="JAPANESE">Japanese </option>
+<option value="JOURNALISM">Journalism </option>
+<option value="KOREAN">Korean </option>
+<option value="LATIN">Latin </option>
+<option value="LATIN AMERICAN STUDIES">Latin American Studies </option>
+<option value="LAW">Law </option>
+<option value="LEADERSHIP DEVELOPMENT">Leadership Development </option>
+<option value="LEADERSHIP/ADMINISTRATION">Leadership/Administration </option>
+<option value="MANAGEMENT">Management </option>
+<option value="MARKETING">Marketing </option>
+<option value="MATHEMATICS">Mathematics </option>
+<option value="MEDICAL HUMANITIES">Medical Humanities </option>
+<option value="MIDDLE EAST STUDIES">Middle East Studies </option>
+<option value="MODERN FOREIGN LANGUAGES">Modern Foreign Languages </option>
+<option value="MUSEUM STUDIES">Museum Studies </option>
+<option value="MUSIC">Music </option>
+<option value="NEUROSCIENCE">Neuroscience </option>
+<option value="NURSING">Nursing </option>
+<option value="PHILOSOPHY">Philosophy </option>
+<option value="Physical Therapy">Physical Therapy</option>
+<option value="PHYSICS">Physics </option>
+<option value="POLITICAL SCIENCE">Political Science </option>
+<option value="PORTUGUESE">Portuguese </option>
+<option value="PRE-HEALTH PROFESSIONS">Pre-Health Professions </option>
+<option value="PROFESSIONAL FIELD EXPERIENCE">Professional Field Experience </option>
+<option value="PROFESSIONAL DEVELOPMENT">Professional Development </option>
+<option value="PSYCHOLOGY">Psychology </option>
+<option value="QUANTITATIVE BUSINESS ANALYSIS">Quanitative Business Analysis </option>
+<option value="READING">Reading </option>
+<option value="REAL ESTATE">Real Estate </option>
+<option value="RECREATION & LEISURE SERVICES">Recreation and Leisure Services </option>
+<option value="RELIGION">Religion </option>
+<option value="RISK MANAGEMENT AND INSURANCE">Risk Management and Insurance </option>
+<option value="RUSSIAN">Russian </option>
+<option value="SOCIAL WORK">Social Work </option>
+<option value="SOCIOLOGY">Sociology </option>
+<option value="SPANISH">Spanish </option>
+<option value="SPEECH COMMUNICATION">Speech Communication </option>
+<option value="Statistical Sciences">Statistical Sciences </option>
+<option value="SWAHILI">Swahali </option>
+<option value="Syriac">Syriac </option>
+<option value="TEACHER EDUCATION (TED)">Teacher Education </option>
+<option value="Telecommunications">Telecommunications</option>
+<option value="THAI">Thai</option>
+<option value="THEATER ARTS">Theater Arts</option>
+<option value="THEOLOGY">Theology </option>
+<option value="Ugaritic">Ugaritic </option>
+<option value="University Scholars">University Scholars </option>
+<option value="UNIVERSITY STUDIES">University Studies </option>
+<option value="OTHER">OTHER</option>						</select></td></tr>
+						<tr><td colspan="2" align="right"><input type="submit" value="Narrow"></td></tr>
+						<tr><td colspan="2" align="center"><font size="4"><font color="#ff0000">*</font><a href="profcreate.php?PHPSESSID=0c2966e1d2779cce300491af4de7df97">Add an unlisted Professor</a><font color="#ff0000">*</font></font></td></tr>
+						</table>
+					</td>
+					</tr>
+					</table>
+		
+			<td align="center" width="25%">
+			<font face="impact, verdana" color="#476A8E" size="9">7139</font><BR>
+			<font face="verdana" color="#476A8E" size="6">Total Ratings</font><BR>
+			<font face="verdana" color="#476A8E" size="1"><a href="howaddrating.php?PHPSESSID=0c2966e1d2779cce300491af4de7df97">How to Add a rating to a listed Prof</a></td>
+				
+			
+	</table>
+</td></tr>
+</table>	
+		<div align="center"><p><b><font color="#ff0000">*</font><font face="verdana" size="2">Only Add a new Professor if the professor is not already listed. <br> To add a rating to
+		a professor, go to that professor's rating page and select "Add Rating"</font><font color="#ff0000">*</font></b></div><br>
+
+
+		<!--- Footer --->
+
+
+  <tr>
+
+ 	<td align="center" colspan="5" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#B2B6C8', EndColorStr='#476A8E');"><font size="4">
+
+
+
+		<a href="login.php?PHPSESSID=0c2966e1d2779cce300491af4de7df97" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>LOGIN</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="home.php?PHPSESSID=0c2966e1d2779cce300491af4de7df97" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>HOME</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="about.php?PHPSESSID=0c2966e1d2779cce300491af4de7df97" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>ABOUT US</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="faq.php?PHPSESSID=0c2966e1d2779cce300491af4de7df97" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>FAQ</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="privacy.php?PHPSESSID=0c2966e1d2779cce300491af4de7df97" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>PRIVACY</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="terms.php?PHPSESSID=0c2966e1d2779cce300491af4de7df97" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>TERMS OF USE</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="advertising.php?PHPSESSID=0c2966e1d2779cce300491af4de7df97" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>ADVERTISING</b></font></a> &nbsp; &nbsp; 
+
+	
+
+		<a href="contact.php?PHPSESSID=0c2966e1d2779cce300491af4de7df97" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>CONTACT US</b></font></a> &nbsp; &nbsp; 
+
+	
+
+		<a href="logout.php?PHPSESSID=0c2966e1d2779cce300491af4de7df97" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>LOGOUT</b></font></a>
+
+	</td>
+
+  
+
+</table>
+
+<br>
+
+<div align="center"><font size="-1">&copy;2003-2006 BUBooks.com - All rights reserved</font></div>
+
+
+
+</body>
+
+</html>

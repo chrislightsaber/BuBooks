@@ -1,0 +1,553 @@
+
+<html>
+
+
+
+<head>
+
+<title>Bubooks.com - Textbooks</title>
+
+<STYLE TYPE="text/css">
+	<!--	
+
+	
+H2
+	{
+	text-align: center;
+	
+	color: "#336699";
+	
+	font-family: Verdana;
+	
+	}   		
+
+div.small
+
+	{
+
+	font-family: Verdana;
+
+	font-size: 8pt;
+
+	color: "#263B4E";
+
+	}
+
+
+div.text
+
+	{
+
+	font-family: Arial, Verdana;
+
+	font-size: 11pt;
+	
+	text-align: center;
+	
+	color: "#476A8E";
+
+	}  
+	
+.input-box
+	{
+		
+	border: "#263B4E" solid 1px; 
+
+	
+	}
+
+
+	   -->
+		
+	 		-->
+	</STYLE>
+	
+<script language="JavaScript">
+
+		<!--
+
+		function checkform()
+		{
+			var result;
+			result = validate_isbn(document.post.isbn.value);
+			if (!result) 
+			{
+				alert("ISBN " + document.post.isbn.value + " is not a valid textbook. \n Please suggest a different ISBN or manually enter textbook information.\n\n"+" For your information, correct ISBN are 10 characters long and consist of digits 0 through 9 \n with the exception where the tenth character is sometimes the letter 'X' instead of a digit. \n\n For example: \n 0155061399 is correct \n 04714447 is incorrect because it has too few characters \n X748372948 is incorrect because of the letter X in the 1st position \n 189114555X is correct ");
+			}
+			
+			return  result;
+		}
+		
+		
+		function validate_isbn(strIsbn)
+		{
+			var i = 0;
+			var test = 0;
+			var c;
+			strIsbn = new String(strIsbn);
+
+			for (var pos = 0; pos < strIsbn.length; pos++)
+			{
+				c = strIsbn.substr(pos, 1);
+				if (!isNaN(parseInt(c)))
+					c -= '0';
+				else if (i == 9 && ('X' == c || 'x' == c))
+					c = 10;
+				else continue;
+				test += c * ++i;
+				
+			}
+			return (i == 10 && test % 11 == 0);
+		}
+		
+
+
+		//-->
+
+		
+
+	</script>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-98854-1";
+urchinTracker();
+</script>
+	
+</head>
+
+<body bgcolor="#ffffff" vlink="#0066ff" leftmargin="0" rightmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+
+<table border="1" rules = "all" cellpadding = "3" cellspacing = "0" bordercolor="#476A8E" bgcolor = "#476A8E" width="100%" align="center">
+
+
+
+  <tr>
+
+    <td width="100%" height="85" bgcolor="#476A8E" colspan = "5">
+
+		<table border ="0" cellpadding = "0" cellspacing = "0" bgcolor = "#476A8E" width = "100%" >
+		<tr><td align = "left" rowspan="2">
+			<img src="logo.gif" width="261" height="64">
+		</td>
+		<td align = "right">
+			<table align="right" border ="0" cellpadding="0" cellspacing="0">
+			<tr><td>
+						<a href = "clicksLog.php?redirect=http://www.grandecom.com/Residential/bundle_byob.jsp&adID=7" target='_new'>
+							<img src = "ads/grande.gif" border="0">
+						<tr><td align="center"><font face ="verdana" size="1" color ="#ffffff">Advertisement - Click for coupon or website</font></td></tr>
+		</tr></td></table>
+		</td>
+		</tr>
+		
+		
+		
+		</table>
+    
+    </td>  
+
+  </tr>
+
+
+<!--- NavBar ---->
+	<tr>
+
+  
+    
+    
+    	<td align ="center" width="20%" bgcolor="#FFFFff" height="23" 
+	
+		style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+	
+			<a href="login.php?PHPSESSID=f6bcf308e6cb93cadc6f710213d8ec68" style='text-decoration:none;'>
+		
+			<font face="Arial, Verdana" size="3" color="#000000">
+		
+			<b>Login</b> </font></a>
+			
+		</td>
+	
+		
+	
+
+		<td align ="center" width="20%" bgcolor="#FFFFff" height="23" 
+	
+		style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+	
+			<a href="books.php?PHPSESSID=f6bcf308e6cb93cadc6f710213d8ec68" style='text-decoration:none;'>
+		
+			<font face="Arial, Verdana" size="3" color="#000000">
+		
+			<b>Textbooks</b></font></a>
+			
+		</td>
+	
+			
+	
+		<td align="center" width="20%" bgcolor="#FFFFff" height="23"
+	
+		style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+	
+			<a href="profrate.php?PHPSESSID=f6bcf308e6cb93cadc6f710213d8ec68" style='text-decoration:none;'>
+		
+			<font face="Arial, Verdana" size="3" color="#000000">
+		
+			<b>Professor Ratings</b></font></a>
+	
+		</td> 
+	
+	
+	
+		<td align="center" width="20%" bgcolor="#FFFFff" height="23"
+	
+		style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');"> 
+	
+			<a href="classified.php?PHPSESSID=f6bcf308e6cb93cadc6f710213d8ec68" style='text-decoration:none;'>
+	
+		<font face="Arial, Verdana" size="3" color="#000000">
+	
+		<b>Classified Ads</b></font></a></td>
+	
+	
+	
+	
+	
+		<td align="center" width="20%" bgcolor="#FFFFff" height="23"
+	
+		style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');"> 
+	
+			<a href="http://www.bearcribs.com" style='text-decoration:none;' target='new'>
+		
+			<font face="Arial, Verdana" size="3" color="#000000">
+		
+			<b>Apartment Guide</b></font></a>
+		</td>
+	
+	
+
+  </tr>
+  
+  <tr>
+ <td colspan = "5" background = "bckground.gif" bgcolor = "#FFFFFF">
+<BR>
+
+<form id="search" method="get" action="search.php"><input type="hidden" name="PHPSESSID" value="f6bcf308e6cb93cadc6f710213d8ec68" />
+
+
+<table align="center" width ="100%">
+
+	<tr><td width="43%" align="center"">
+
+		<table align="center" width="70%" bgcolor="white" bordercolor= "#476A8E" border="2" rules="none" cellspacing="0" cellpadding="2">
+		
+			<tr><td bgcolor="#BCD2E9"><img src="buy_box_text.gif"></td>
+			
+			<td bgcolor="#BCD2E9" align="right" colspan="2"><div class="small">Searching <b>3103</b> Textbooks  </td></tr>
+			
+			<tr><td colspan="3" ><div class="small">Search by Title, ISBN, or Author </td></tr></div>
+			
+			<tr><td colspan="3">
+	
+			<input id="pattern" type="text" name="pattern" size="30" maxlength="50">
+			
+			<input type="submit" name="search" value="GO">
+			</td></tr>
+			
+			<tr><td colspan="3" ><div class="small">Search by Department: </td></tr></div>
+			<tr><td colspan = "3">
+			</font><select id="dept" name="dept">
+				<option value="">--NONE--
+<option value="ACCOUNTING">Accounting</option>
+<option value="AEROSPACE STUDIES">Aerospace Studies</option>
+<option value="AFRICAN STUDIES">African Studies</option>
+<option value="AIR PILOT">Air Pilot Training @ TSTC</option>
+<option value="AKKADIAN">Akkadian</option>
+<option value="AMERICAN STUDIES">American Studies</option>
+<option value="ANTHROPOLOGY">Anthropology</option>
+<option value="ARABIC">Arabic</option>
+<option value="ARAMAIC">Aramaic </option>
+<option value="ARCHAEOLOGY">Archaeology</option>
+<option value="ART">Art</option>
+<option value="ASIAN STUDIES">Asian Studies </option>
+<option value="AVIATION SCIENCES">Aviation Sciences </option>
+<option value="BAYLOR INTERDISCIPLINARY CORE">Baylor Interdisciplinary Core </option>
+<option value="BIOLOGY">Biology </option>
+<option value="BIOMEDICAL STUDIES">Biomedical Studies </option>
+<option value="BUSINESS">Business </option>
+<option value="BUSINESS LAW">Business Law </option>
+<option value="CHAPEL">Chapel </option>
+<option value="CHEMISTRY">Chemistry </option>
+<option value="CHINESE">Chinese </option>
+<option value="CHRISTIAN RELIGIOUS EDUCATION">Christian Religious Education </option>
+<option value="CHURCH-STATE STUDIES">Church-State Studies </option>
+<option value="CLASSICS">Classics</option>
+<option value="COMM. SCIENCES AND DISORDERS">Comm. Sciences And Disorders </option>
+<option value="COMMUNICATION STUDIES">Communication Studies</option>
+<option value="COMPUTER SCIENCE">Computer Science </option>
+<option value="CURRICULUM & INSTRUCTION">Curriculum And Instruction</option>
+<option value="Danish">Danish </option>
+<option value="ECONOMICS">Economics </option>
+<option value="EDUCATION">Education </option>
+<option value="EDUCATIONAL ADMINISTRATION">Educational Administration </option>
+<option value="EDUCATIONAL PSYCHOLOGY">Educational Psychology</option>
+<option value="ENGINEERING">Engineering</option>
+<option value="ENGLISH">English </option>
+<option value="ENTREPRENEURSHIP">Entrepreneurship </option>
+<option value="ENVIRONMENTAL STUDIES">Environmental Studies </option>
+<option value="Exercise, Nutrition, Prev Hlth">Exercise, Nutrition, Prev Hlth</option>
+<option value="FAMILY AND CONSUMER SCIENCES">Family And Consumer Sciences </option>
+<option value="FINANCE">Finance </option>
+<option value="FINANCIAL SERVICES & PLANNING">Financial Services And Planning </option>
+<option value="FIRST YEAR SEMINAR">First Year Seminars </option>
+<option value="Forensic Science">Forensic Science </option>
+<option value="FRENCH">French </option>
+<option value="GEOGRAPHY">Geography </option>
+<option value="GEOLOGY">Geology </option>
+<option value="GERMANY">German </option>
+<option value="GERONTOLOGY">Gerontology </option>
+<option value="GREAT TEXTS">Great Texts </option>
+<option value="GREEK">Greek</option>
+<option value="HEALTH EDUCATION">Health Education </option>
+<option value="HEBREW">Hebrew </option>
+<option value="HISTORY">History </option>
+<option value="HONORS">Honors </option>
+<option value="HUMAN PERFORMANCE">Human Performance </option>
+<option value="INFORMATION SYSTEMS">Information Systems</option>
+<option value="INTERNATIONAL BUSINESS">International Business </option>
+<option value="ITALIAN">Italian </option>
+<option value="JAPANESE">Japanese </option>
+<option value="JOURNALISM">Journalism </option>
+<option value="KOREAN">Korean </option>
+<option value="LATIN">Latin </option>
+<option value="LATIN AMERICAN STUDIES">Latin American Studies </option>
+<option value="LAW">Law </option>
+<option value="LEADERSHIP DEVELOPMENT">Leadership Development </option>
+<option value="LEADERSHIP/ADMINISTRATION">Leadership/Administration </option>
+<option value="MANAGEMENT">Management </option>
+<option value="MARKETING">Marketing </option>
+<option value="MATHEMATICS">Mathematics </option>
+<option value="MEDICAL HUMANITIES">Medical Humanities </option>
+<option value="MIDDLE EAST STUDIES">Middle East Studies </option>
+<option value="MODERN FOREIGN LANGUAGES">Modern Foreign Languages </option>
+<option value="MUSEUM STUDIES">Museum Studies </option>
+<option value="MUSIC">Music </option>
+<option value="NEUROSCIENCE">Neuroscience </option>
+<option value="NURSING">Nursing </option>
+<option value="PHILOSOPHY">Philosophy </option>
+<option value="Physical Therapy">Physical Therapy</option>
+<option value="PHYSICS">Physics </option>
+<option value="POLITICAL SCIENCE">Political Science </option>
+<option value="PORTUGUESE">Portuguese </option>
+<option value="PRE-HEALTH PROFESSIONS">Pre-Health Professions </option>
+<option value="PROFESSIONAL FIELD EXPERIENCE">Professional Field Experience </option>
+<option value="PROFESSIONAL DEVELOPMENT">Professional Development </option>
+<option value="PSYCHOLOGY">Psychology </option>
+<option value="QUANTITATIVE BUSINESS ANALYSIS">Quanitative Business Analysis </option>
+<option value="READING">Reading </option>
+<option value="REAL ESTATE">Real Estate </option>
+<option value="RECREATION & LEISURE SERVICES">Recreation and Leisure Services </option>
+<option value="RELIGION">Religion </option>
+<option value="RISK MANAGEMENT AND INSURANCE">Risk Management and Insurance </option>
+<option value="RUSSIAN">Russian </option>
+<option value="SOCIAL WORK">Social Work </option>
+<option value="SOCIOLOGY">Sociology </option>
+<option value="SPANISH">Spanish </option>
+<option value="SPEECH COMMUNICATION">Speech Communication </option>
+<option value="Statistical Sciences">Statistical Sciences </option>
+<option value="SWAHILI">Swahali </option>
+<option value="Syriac">Syriac </option>
+<option value="TEACHER EDUCATION (TED)">Teacher Education </option>
+<option value="Telecommunications">Telecommunications</option>
+<option value="THAI">Thai</option>
+<option value="THEATER ARTS">Theater Arts</option>
+<option value="THEOLOGY">Theology </option>
+<option value="Ugaritic">Ugaritic </option>
+<option value="University Scholars">University Scholars </option>
+<option value="UNIVERSITY STUDIES">University Studies </option>
+<option value="OTHER">OTHER</option>				</select></font>
+			
+			</td></tr>
+			
+			<tr><td align="center" colspan="3">
+			<font face="Times New Roman, Times, serif" size="1"><a href="search.php?field=title&pattern=%25%25&PHPSESSID=f6bcf308e6cb93cadc6f710213d8ec68" style="text-decoration:none">BROWSE ALL ADS </a></font> &nbsp; &nbsp;
+			<font face="Times New Roman, Times, serif" size="1"><a href="http://www.bkstr.com/webapp/wcs/stores/servlet/CategoryDisplay?langId=-1&catalogId=10001&storeId=10068&categoryId=9604&demoKey=d" target="new" style="text-decoration:none">FIND WHAT BOOKS YOU NEED! </a></font>
+			</td></tr>
+		</table>
+	
+		</td>
+		
+		</form>
+		
+		<td width="14%" align="center">
+		
+		<img src="booksOR.gif">
+		
+		</td>
+		
+		<td width="43%" align="center">
+		
+			<table align="center" width="70%" bgcolor="white"  bordercolor= "#476A8E" border="1" rules="none" cellspacing="0" cellpadding="2">
+			
+			<tr><td colspan="4" bgcolor="#BCD2E9"><img src="sell_box_text.gif"></td></tr>
+			
+				<tr><td valign="top" align="center" rowspan="4"><img src="money2.gif"></td>
+		
+		<tr><td align="center" colspan="3"><div class="text"><b><a href="login.php?redirect=books.php&PHPSESSID=f6bcf308e6cb93cadc6f710213d8ec68">Login</a> to sell books</b></div></td></tr> 
+		<tr><td colspan="3"><div align="center"><img src="GreyOr.gif"></div></td></tr>
+		<tr><td align="center" colspan="3"><div class="text"><a href="signup.php?PHPSESSID=f6bcf308e6cb93cadc6f710213d8ec68"><b>Sign Up</a> for an account</b></tr></td></div>
+					
+					
+		
+				
+			</table>
+		</td></tr>
+		
+	</table>
+	
+	<BR>
+	<script type="text/javascript">
+function submit_form(frm) {
+  
+  frm.submit();
+  
+}
+
+function getElmById(aID){ 
+  return (document.getElementById) ? document.getElementById(aID)
+                                  : document.all[aID];
+} 
+
+
+function validate_search() {
+  var myDropDown = getElmById("dept");
+  var myTextfld = getElmById("pattern");
+  var errors = 0;
+  
+  if(myTextfld.value.length < 4) {
+    errors++;
+    myTextfld.style.background = "red";
+    alert("Please enter search terms at least 4 letters long\n or select a department.");
+    
+    myTextfld.focus();
+    myTextfld.style.background = "white";
+  }
+  
+  if(errors>0) {
+    return false;
+  }
+}
+
+function onChangeHandler(e) {
+  var myevent = (e) ? e : window.event;
+  var pattern = getElmById("pattern");
+  pattern.value = "";
+  
+  submit_form(getElmById("search"));
+}
+
+function onChangeHandler2(e) {
+  var myevent = (e) ? e : window.event;
+  var dept = getElmById("dept");
+  dept.selectedIndex = 0;
+  
+  
+  submit_form(getElmById("search"));
+}
+
+var myDropDown = getElmById("dept");
+if(typeof(myDropDown) == "object") {
+  myDropDown.onchange = onChangeHandler;
+}
+
+var myTextfld = getElmById("pattern");
+if(typeof(myTextfld) == "object") {
+  myTextfld.onchange = onChangeHandler2;
+}
+
+var mySearchForm = getElmById("search");
+mySearchForm.onsubmit = validate_search;
+
+</script>
+	<!--- Footer --->
+
+
+  <tr>
+
+ 	<td align="center" colspan="5" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#B2B6C8', EndColorStr='#476A8E');"><font size="4">
+
+
+
+		<a href="login.php?PHPSESSID=f6bcf308e6cb93cadc6f710213d8ec68" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>LOGIN</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="home.php?PHPSESSID=f6bcf308e6cb93cadc6f710213d8ec68" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>HOME</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="about.php?PHPSESSID=f6bcf308e6cb93cadc6f710213d8ec68" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>ABOUT US</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="faq.php?PHPSESSID=f6bcf308e6cb93cadc6f710213d8ec68" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>FAQ</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="privacy.php?PHPSESSID=f6bcf308e6cb93cadc6f710213d8ec68" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>PRIVACY</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="terms.php?PHPSESSID=f6bcf308e6cb93cadc6f710213d8ec68" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>TERMS OF USE</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="advertising.php?PHPSESSID=f6bcf308e6cb93cadc6f710213d8ec68" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>ADVERTISING</b></font></a> &nbsp; &nbsp; 
+
+	
+
+		<a href="contact.php?PHPSESSID=f6bcf308e6cb93cadc6f710213d8ec68" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>CONTACT US</b></font></a> &nbsp; &nbsp; 
+
+	
+
+		<a href="logout.php?PHPSESSID=f6bcf308e6cb93cadc6f710213d8ec68" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>LOGOUT</b></font></a>
+
+	</td>
+
+  
+
+</table>
+
+<br>
+
+<div align="center"><font size="-1">&copy;2003-2006 BUBooks.com - All rights reserved</font></div>
+
+
+
+</body>
+
+</html>			
+			
+		
+		
+ 

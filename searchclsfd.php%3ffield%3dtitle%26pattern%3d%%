@@ -1,0 +1,1091 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN"><html><head><title>Bubooks.com</title></head>
+<!------Include Header-------->
+<body bgcolor="#ffffff" vlink="#0066ff" leftmargin="0" rightmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+
+<table border="1" rules = "all" cellpadding = "3" cellspacing = "0" bordercolor="#476A8E" bgcolor = "#476A8E" width="100%" align="center">
+
+
+
+  <tr>
+
+    <td width="100%" height="85" bgcolor="#476A8E" colspan = "5">
+
+		<table border ="0" cellpadding = "0" cellspacing = "0" bgcolor = "#476A8E" width = "100%" >
+		<tr><td align = "left" rowspan="2">
+			<img src="logo.gif" width="261" height="64">
+		</td>
+		<td align = "right">
+			<table align="right" border ="0" cellpadding="0" cellspacing="0">
+			<tr><td>
+						<a href = "clicksLog.php?redirect=http://www.bubooks.com/advertising.php&adID=8" target='_new'>
+							<img src = "ads/bubooks.gif" border="0">
+						<tr><td align="center"><font face ="verdana" size="1" color ="#ffffff">Advertisement - Click for coupon or website</font></td></tr>
+		</tr></td></table>
+		</td>
+		</tr>
+		
+		
+		
+		</table>
+    
+    </td>  
+
+  </tr>
+
+
+<!--- NavBar ---->
+	<tr>
+
+  
+    
+    
+    	<td align ="center" width="20%" bgcolor="#FFFFff" height="23" 
+	
+		style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+	
+			<a href="login.php" style='text-decoration:none;'>
+		
+			<font face="Arial, Verdana" size="3" color="#000000">
+		
+			<b>Login</b> </font></a>
+			
+		</td>
+	
+		
+	
+
+		<td align ="center" width="20%" bgcolor="#FFFFff" height="23" 
+	
+		style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+	
+			<a href="books.php" style='text-decoration:none;'>
+		
+			<font face="Arial, Verdana" size="3" color="#000000">
+		
+			<b>Textbooks</b></font></a>
+			
+		</td>
+	
+			
+	
+		<td align="center" width="20%" bgcolor="#FFFFff" height="23"
+	
+		style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');">
+	
+			<a href="profrate.php" style='text-decoration:none;'>
+		
+			<font face="Arial, Verdana" size="3" color="#000000">
+		
+			<b>Professor Ratings</b></font></a>
+	
+		</td> 
+	
+	
+	
+		<td align="center" width="20%" bgcolor="#FFFFff" height="23"
+	
+		style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');"> 
+	
+			<a href="classified.php" style='text-decoration:none;'>
+	
+		<font face="Arial, Verdana" size="3" color="#000000">
+	
+		<b>Classified Ads</b></font></a></td>
+	
+	
+	
+	
+	
+		<td align="center" width="20%" bgcolor="#FFFFff" height="23"
+	
+		style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#B2B6C8');"> 
+	
+			<a href="http://www.bearcribs.com" style='text-decoration:none;' target='new'>
+		
+			<font face="Arial, Verdana" size="3" color="#000000">
+		
+			<b>Apartment Guide</b></font></a>
+		</td>
+	
+	
+
+  </tr>
+  
+  <tr>
+ <td colspan = "5" background = "bckground.gif" bgcolor = "#FFFFFF">	
+	<table rules="none" border="0" width="100%">
+	<tr>
+		<td width="20%" valign="top">
+			<form method="get" action="narrowclass.php">
+			<table align="center"  cellspacing="0" cellpadding="3" bordercolor= "#476A8E" bgcolor="#FFFFFF" border="1" rules ="none">
+				<tr bgcolor="#476A8E">
+					<td align="center" colspan="2">
+						<font size="4" color="#FFFFFF" face="arial">Narrow By Category</font>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div align="center">
+						<select name="category">
+						<OPTION VALUE = "ALL">All
+						<OPTION VALUE = "autos">Auto
+							<OPTION VALUE = "computers">Computers
+							<OPTION VALUE = "clothing">Clothing
+							<OPTION VALUE = "electronics">Electronics
+							<OPTION VALUE = "employment">Employment
+							<OPTION VALUE = "household">Household Items
+							<OPTION VALUE = "general">General Items
+							<OPTION VALUE = "realestate">Real Estate
+						</select></td></tr>
+						<tr><td colspan="2" align="right"><input type="submit" value="Narrow"></td></tr>
+						</div>
+					</td>
+				</tr>
+			 </form>
+			</table>
+			
+		<UL>
+		<LI><a href = "addclsfd.php"><font face="Verdana" size="2" color="#FF0000"><B>Place an ad</b></font></a>
+		<LI><a href = "classfaq.php"><font face="Verdana" size="2" color="#263B4E">Classified FAQ</font></a>
+		<LI><a href = "signup.php"><font face="Verdana" size="2" color="#263B4E">Become a member</font></a>
+		</UL>
+		
+		</td>
+	
+		<td bgcolor="#FFFFFF" background="bckground.gif" rowspan = "2">
+			
+	
+				<table width="100%" cellpadding="5" cellspacing="0" frame="0" border="1" bgcolor="#ffffff" bordercolor="#274A6E" rules="ALL">
+			<thead>
+			<tr bgcolor="#ffffff"><td><H3><font color="#476A8E">You search for '%%' returned 139 results in 0.000 seconds. </font></H3></td></tr>
+			</thead>
+			<tbody>
+			<tr><td><table width="100%" rules="all" bordercolor="#FFFFFF">
+			<tr align="center" bgcolor="#476A8E">
+			<td><h3><u><font color="#ffffff">Title</font></u></h3></td>
+			<td><h3><u><font color="#ffffff">Date</font></u></h3></td>
+			<td><h3><u><font color="#ffffff">Category</font></u></h3></td>
+			<td><h3><u><font color="#ffffff">Price</font></u></h3></td>
+			</tr>
+							<tr align="center" bgcolor="#CCCCFF">
+				<td><a href="displayclsfd.php?ad_id=981">
+				<font face="verdana" size="2"><b>mice</a></b></font></td>
+				<td><font face="verdana" size="2">08-27-2008</font></td>
+				<td><font face="verdana" size="2">computers</font></td>
+				<td><font face="verdana" size="2">$25</td></font></tr>
+							<tr align="center" bgcolor="#99FFCC">
+				<td><a href="displayclsfd.php?ad_id=980">
+				<font face="verdana" size="2"><b>Tutor wanted, Philosophy, Great Text</a></b></font></td>
+				<td><font face="verdana" size="2">08-27-2008</font></td>
+				<td><font face="verdana" size="2">services</font></td>
+				<td><font face="verdana" size="2">$15</td></font></tr>
+							<tr align="center" bgcolor="#99FFCC">
+				<td><a href="displayclsfd.php?ad_id=979">
+				<font face="verdana" size="2"><b>NEED A SPANISH TUTOR??</a></b></font></td>
+				<td><font face="verdana" size="2">08-26-2008</font></td>
+				<td><font face="verdana" size="2">services</font></td>
+				<td><font face="verdana" size="2">$15</td></font></tr>
+							<tr align="center" bgcolor="#CCFF99">
+				<td><a href="displayclsfd.php?ad_id=978">
+				<font face="verdana" size="2"><b>4 Piece Bedroom Set</a></b></font></td>
+				<td><font face="verdana" size="2">08-26-2008</font></td>
+				<td><font face="verdana" size="2">household</font></td>
+				<td><font face="verdana" size="2">$150</td></font></tr>
+							<tr align="center" bgcolor="#99FFCC">
+				<td><a href="displayclsfd.php?ad_id=977">
+				<font face="verdana" size="2"><b>Tutor wanted! ECO 3306</a></b></font></td>
+				<td><font face="verdana" size="2">08-25-2008</font></td>
+				<td><font face="verdana" size="2">services</font></td>
+				<td><font face="verdana" size="2">$20</td></font></tr>
+							<tr align="center" bgcolor="#FFCC99">
+				<td><a href="displayclsfd.php?ad_id=976">
+				<font face="verdana" size="2"><b>Female Roommate needed Spring 2009</a></b></font></td>
+				<td><font face="verdana" size="2">08-25-2008</font></td>
+				<td><font face="verdana" size="2">realestate</font></td>
+				<td><font face="verdana" size="2">$325</td></font></tr>
+							<tr align="center" bgcolor="#FFCC99">
+				<td><a href="displayclsfd.php?ad_id=975">
+				<font face="verdana" size="2"><b>Need Roomate for Spring 2009</a></b></font></td>
+				<td><font face="verdana" size="2">08-25-2008</font></td>
+				<td><font face="verdana" size="2">realestate</font></td>
+				<td><font face="verdana" size="2">$430</td></font></tr>
+							<tr align="center" bgcolor="#99CCFF">
+				<td><a href="displayclsfd.php?ad_id=974">
+				<font face="verdana" size="2"><b>Brand New TI-89</a></b></font></td>
+				<td><font face="verdana" size="2">08-24-2008</font></td>
+				<td><font face="verdana" size="2">electronics</font></td>
+				<td><font face="verdana" size="2">$100</td></font></tr>
+							<tr align="center" bgcolor="#CCFF99">
+				<td><a href="displayclsfd.php?ad_id=973">
+				<font face="verdana" size="2"><b>GREAT 6 Piece Dining Set</a></b></font></td>
+				<td><font face="verdana" size="2">08-20-2008</font></td>
+				<td><font face="verdana" size="2">household</font></td>
+				<td><font face="verdana" size="2">$150</td></font></tr>
+							<tr align="center" bgcolor="#FFFFCC">
+				<td><a href="displayclsfd.php?ad_id=972">
+				<font face="verdana" size="2"><b>Cap & Gown for graduation</a></b></font></td>
+				<td><font face="verdana" size="2">08-18-2008</font></td>
+				<td><font face="verdana" size="2">clothing</font></td>
+				<td><font face="verdana" size="2">$10</td></font></tr>
+							<tr align="center" bgcolor="#FFCC99">
+				<td><a href="displayclsfd.php?ad_id=970">
+				<font face="verdana" size="2"><b>looking for female roommate fall 2008</a></b></font></td>
+				<td><font face="verdana" size="2">08-11-2008</font></td>
+				<td><font face="verdana" size="2">realestate</font></td>
+				<td><font face="verdana" size="2">$395</td></font></tr>
+							<tr align="center" bgcolor="#CCFF99">
+				<td><a href="displayclsfd.php?ad_id=968">
+				<font face="verdana" size="2"><b>Desk Chair</a></b></font></td>
+				<td><font face="verdana" size="2">08-05-2008</font></td>
+				<td><font face="verdana" size="2">household</font></td>
+				<td><font face="verdana" size="2">$19</td></font></tr>
+							<tr align="center" bgcolor="#99CCFF">
+				<td><a href="displayclsfd.php?ad_id=967">
+				<font face="verdana" size="2"><b>Anyone selling an ipod?</a></b></font></td>
+				<td><font face="verdana" size="2">07-30-2008</font></td>
+				<td><font face="verdana" size="2">electronics</font></td>
+				<td><font face="verdana" size="2">$0</td></font></tr>
+							<tr align="center" bgcolor="#CCFF99">
+				<td><a href="displayclsfd.php?ad_id=964">
+				<font face="verdana" size="2"><b>Twin mattress set</a></b></font></td>
+				<td><font face="verdana" size="2">07-13-2008</font></td>
+				<td><font face="verdana" size="2">household</font></td>
+				<td><font face="verdana" size="2">$100</td></font></tr>
+							<tr align="center" bgcolor="#CCFF99">
+				<td><a href="displayclsfd.php?ad_id=961">
+				<font face="verdana" size="2"><b>Full Size Platform Bed- $75 or better offer</a></b></font></td>
+				<td><font face="verdana" size="2">07-11-2008</font></td>
+				<td><font face="verdana" size="2">household</font></td>
+				<td><font face="verdana" size="2">$75</td></font></tr>
+							<tr align="center" bgcolor="#FFCC99">
+				<td><a href="displayclsfd.php?ad_id=960">
+				<font face="verdana" size="2"><b>Room in House for Rent</a></b></font></td>
+				<td><font face="verdana" size="2">06-19-2008</font></td>
+				<td><font face="verdana" size="2">realestate</font></td>
+				<td><font face="verdana" size="2">$350</td></font></tr>
+							<tr align="center" bgcolor="#FFCC99">
+				<td><a href="displayclsfd.php?ad_id=959">
+				<font face="verdana" size="2"><b>female roommate needed for Spring 09 </a></b></font></td>
+				<td><font face="verdana" size="2">06-17-2008</font></td>
+				<td><font face="verdana" size="2">realestate</font></td>
+				<td><font face="verdana" size="2">$375</td></font></tr>
+							<tr align="center" bgcolor="#99CCFF">
+				<td><a href="displayclsfd.php?ad_id=958">
+				<font face="verdana" size="2"><b>Pink Chi Straightener</a></b></font></td>
+				<td><font face="verdana" size="2">06-14-2008</font></td>
+				<td><font face="verdana" size="2">electronics</font></td>
+				<td><font face="verdana" size="2">$50</td></font></tr>
+							<tr align="center" bgcolor="#CCFF99">
+				<td><a href="displayclsfd.php?ad_id=955">
+				<font face="verdana" size="2"><b>Dining table</a></b></font></td>
+				<td><font face="verdana" size="2">06-07-2008</font></td>
+				<td><font face="verdana" size="2">household</font></td>
+				<td><font face="verdana" size="2">$40</td></font></tr>
+							<tr align="center" bgcolor="#CCFF99">
+				<td><a href="displayclsfd.php?ad_id=954">
+				<font face="verdana" size="2"><b>Futon Frame-- $75 or Best Offer</a></b></font></td>
+				<td><font face="verdana" size="2">06-05-2008</font></td>
+				<td><font face="verdana" size="2">household</font></td>
+				<td><font face="verdana" size="2">$75</td></font></tr>
+							<tr align="center" bgcolor="#FFCC99">
+				<td><a href="displayclsfd.php?ad_id=952">
+				<font face="verdana" size="2"><b>house for rent</a></b></font></td>
+				<td><font face="verdana" size="2">06-02-2008</font></td>
+				<td><font face="verdana" size="2">realestate</font></td>
+				<td><font face="verdana" size="2">$1500</td></font></tr>
+							<tr align="center" bgcolor="#FFCC99">
+				<td><a href="displayclsfd.php?ad_id=951">
+				<font face="verdana" size="2"><b>Need an Apartment for Jan-May?? Look no further!!</a></b></font></td>
+				<td><font face="verdana" size="2">06-02-2008</font></td>
+				<td><font face="verdana" size="2">realestate</font></td>
+				<td><font face="verdana" size="2">$450</td></font></tr>
+							<tr align="center" bgcolor="#CCFF99">
+				<td><a href="displayclsfd.php?ad_id=950">
+				<font face="verdana" size="2"><b>Desk by Elfa</a></b></font></td>
+				<td><font face="verdana" size="2">05-23-2008</font></td>
+				<td><font face="verdana" size="2">household</font></td>
+				<td><font face="verdana" size="2">$50</td></font></tr>
+							<tr align="center" bgcolor="#99CCFF">
+				<td><a href="displayclsfd.php?ad_id=946">
+				<font face="verdana" size="2"><b>Little Miss Sunshine</a></b></font></td>
+				<td><font face="verdana" size="2">05-23-2008</font></td>
+				<td><font face="verdana" size="2">electronics</font></td>
+				<td><font face="verdana" size="2">$10</td></font></tr>
+							<tr align="center" bgcolor="#CCFFBB">
+				<td><a href="displayclsfd.php?ad_id=943">
+				<font face="verdana" size="2"><b>MCAT Review Books</a></b></font></td>
+				<td><font face="verdana" size="2">05-14-2008</font></td>
+				<td><font face="verdana" size="2">general</font></td>
+				<td><font face="verdana" size="2">$200</td></font></tr>
+							<tr align="center" bgcolor="#CCFF99">
+				<td><a href="displayclsfd.php?ad_id=942">
+				<font face="verdana" size="2"><b>Table/Desk</a></b></font></td>
+				<td><font face="verdana" size="2">05-10-2008</font></td>
+				<td><font face="verdana" size="2">household</font></td>
+				<td><font face="verdana" size="2">$75</td></font></tr>
+							<tr align="center" bgcolor="#CCFF99">
+				<td><a href="displayclsfd.php?ad_id=941">
+				<font face="verdana" size="2"><b>BUNK/DESK</a></b></font></td>
+				<td><font face="verdana" size="2">05-10-2008</font></td>
+				<td><font face="verdana" size="2">household</font></td>
+				<td><font face="verdana" size="2">$150</td></font></tr>
+							<tr align="center" bgcolor="#99FFCC">
+				<td><a href="displayclsfd.php?ad_id=938">
+				<font face="verdana" size="2"><b>Financial and Managerial Accounting Tutor</a></b></font></td>
+				<td><font face="verdana" size="2">05-09-2008</font></td>
+				<td><font face="verdana" size="2">services</font></td>
+				<td><font face="verdana" size="2">$15</td></font></tr>
+							<tr align="center" bgcolor="#99FFCC">
+				<td><a href="displayclsfd.php?ad_id=937">
+				<font face="verdana" size="2"><b>MATH TUTOR</a></b></font></td>
+				<td><font face="verdana" size="2">05-08-2008</font></td>
+				<td><font face="verdana" size="2">services</font></td>
+				<td><font face="verdana" size="2">$25</td></font></tr>
+							<tr align="center" bgcolor="#CCFF99">
+				<td><a href="displayclsfd.php?ad_id=936">
+				<font face="verdana" size="2"><b>Desk Chair</a></b></font></td>
+				<td><font face="verdana" size="2">05-07-2008</font></td>
+				<td><font face="verdana" size="2">household</font></td>
+				<td><font face="verdana" size="2">$10</td></font></tr>
+							<tr align="center" bgcolor="#CCFF99">
+				<td><a href="displayclsfd.php?ad_id=935">
+				<font face="verdana" size="2"><b>Microwave Chefmate</a></b></font></td>
+				<td><font face="verdana" size="2">05-06-2008</font></td>
+				<td><font face="verdana" size="2">household</font></td>
+				<td><font face="verdana" size="2">$35</td></font></tr>
+							<tr align="center" bgcolor="#CCCCFF">
+				<td><a href="displayclsfd.php?ad_id=933">
+				<font face="verdana" size="2"><b>*laptop for sale!*</a></b></font></td>
+				<td><font face="verdana" size="2">05-03-2008</font></td>
+				<td><font face="verdana" size="2">computers</font></td>
+				<td><font face="verdana" size="2">$50</td></font></tr>
+							<tr align="center" bgcolor="#CCFF99">
+				<td><a href="displayclsfd.php?ad_id=928">
+				<font face="verdana" size="2"><b>Couch and Armchair</a></b></font></td>
+				<td><font face="verdana" size="2">04-29-2008</font></td>
+				<td><font face="verdana" size="2">household</font></td>
+				<td><font face="verdana" size="2">$150</td></font></tr>
+							<tr align="center" bgcolor="#CCFF99">
+				<td><a href="displayclsfd.php?ad_id=927">
+				<font face="verdana" size="2"><b>Kitchen Table and Chairs</a></b></font></td>
+				<td><font face="verdana" size="2">04-29-2008</font></td>
+				<td><font face="verdana" size="2">household</font></td>
+				<td><font face="verdana" size="2">$55</td></font></tr>
+							<tr align="center" bgcolor="#CCFF99">
+				<td><a href="displayclsfd.php?ad_id=926">
+				<font face="verdana" size="2"><b>Nice Twin Bed for Sale</a></b></font></td>
+				<td><font face="verdana" size="2">04-27-2008</font></td>
+				<td><font face="verdana" size="2">household</font></td>
+				<td><font face="verdana" size="2">$50</td></font></tr>
+							<tr align="center" bgcolor="#CCFF99">
+				<td><a href="displayclsfd.php?ad_id=924">
+				<font face="verdana" size="2"><b>Nightstand</a></b></font></td>
+				<td><font face="verdana" size="2">04-24-2008</font></td>
+				<td><font face="verdana" size="2">household</font></td>
+				<td><font face="verdana" size="2">$12</td></font></tr>
+							<tr align="center" bgcolor="#CCFF99">
+				<td><a href="displayclsfd.php?ad_id=922">
+				<font face="verdana" size="2"><b>End Table</a></b></font></td>
+				<td><font face="verdana" size="2">04-24-2008</font></td>
+				<td><font face="verdana" size="2">household</font></td>
+				<td><font face="verdana" size="2">$15</td></font></tr>
+							<tr align="center" bgcolor="#CCFF99">
+				<td><a href="displayclsfd.php?ad_id=921">
+				<font face="verdana" size="2"><b>TV Stand</a></b></font></td>
+				<td><font face="verdana" size="2">04-24-2008</font></td>
+				<td><font face="verdana" size="2">household</font></td>
+				<td><font face="verdana" size="2">$10</td></font></tr>
+							<tr align="center" bgcolor="#CCCCFF">
+				<td><a href="displayclsfd.php?ad_id=920">
+				<font face="verdana" size="2"><b>Black Computer Desk</a></b></font></td>
+				<td><font face="verdana" size="2">04-24-2008</font></td>
+				<td><font face="verdana" size="2">computers</font></td>
+				<td><font face="verdana" size="2">$10</td></font></tr>
+							<tr align="center" bgcolor="#FFCC99">
+				<td><a href="displayclsfd.php?ad_id=919">
+				<font face="verdana" size="2"><b>Country Place House for rent</a></b></font></td>
+				<td><font face="verdana" size="2">04-23-2008</font></td>
+				<td><font face="verdana" size="2">realestate</font></td>
+				<td><font face="verdana" size="2">$462.5</td></font></tr>
+							<tr align="center" bgcolor="#CCFF99">
+				<td><a href="displayclsfd.php?ad_id=917">
+				<font face="verdana" size="2"><b>refigerator</a></b></font></td>
+				<td><font face="verdana" size="2">04-14-2008</font></td>
+				<td><font face="verdana" size="2">household</font></td>
+				<td><font face="verdana" size="2">$150</td></font></tr>
+							<tr align="center" bgcolor="#CCFF99">
+				<td><a href="displayclsfd.php?ad_id=916">
+				<font face="verdana" size="2"><b>Queen Ann living room set</a></b></font></td>
+				<td><font face="verdana" size="2">04-14-2008</font></td>
+				<td><font face="verdana" size="2">household</font></td>
+				<td><font face="verdana" size="2">$900</td></font></tr>
+							<tr align="center" bgcolor="#CCFF99">
+				<td><a href="displayclsfd.php?ad_id=915">
+				<font face="verdana" size="2"><b>teak dining set</a></b></font></td>
+				<td><font face="verdana" size="2">04-14-2008</font></td>
+				<td><font face="verdana" size="2">household</font></td>
+				<td><font face="verdana" size="2">$700</td></font></tr>
+							<tr align="center" bgcolor="#CCFFBB">
+				<td><a href="displayclsfd.php?ad_id=914">
+				<font face="verdana" size="2"><b>MOVING SALE</a></b></font></td>
+				<td><font face="verdana" size="2">04-09-2008</font></td>
+				<td><font face="verdana" size="2">general</font></td>
+				<td><font face="verdana" size="2">$550</td></font></tr>
+							<tr align="center" bgcolor="#FFCFCF">
+				<td><a href="displayclsfd.php?ad_id=913">
+				<font face="verdana" size="2"><b>MOVING SALE</a></b></font></td>
+				<td><font face="verdana" size="2">04-09-2008</font></td>
+				<td><font face="verdana" size="2">autos</font></td>
+				<td><font face="verdana" size="2">$550</td></font></tr>
+							<tr align="center" bgcolor="#CCFF99">
+				<td><a href="displayclsfd.php?ad_id=912">
+				<font face="verdana" size="2"><b>SECTIONAL SOFA, REFRIGERATOR, BED W/MATTRESS, </a></b></font></td>
+				<td><font face="verdana" size="2">04-09-2008</font></td>
+				<td><font face="verdana" size="2">household</font></td>
+				<td><font face="verdana" size="2">$550</td></font></tr>
+							<tr align="center" bgcolor="#CCCCFF">
+				<td><a href="displayclsfd.php?ad_id=911">
+				<font face="verdana" size="2"><b>CUSTOM BUILT GAMING MACHINE</a></b></font></td>
+				<td><font face="verdana" size="2">04-09-2008</font></td>
+				<td><font face="verdana" size="2">computers</font></td>
+				<td><font face="verdana" size="2">$1200</td></font></tr>
+							<tr align="center" bgcolor="#CCCCFF">
+				<td><a href="displayclsfd.php?ad_id=910">
+				<font face="verdana" size="2"><b>IBM r40 LAPTOP</a></b></font></td>
+				<td><font face="verdana" size="2">04-09-2008</font></td>
+				<td><font face="verdana" size="2">computers</font></td>
+				<td><font face="verdana" size="2">$400</td></font></tr>
+							<tr align="center" bgcolor="#FFCFCF">
+				<td><a href="displayclsfd.php?ad_id=909">
+				<font face="verdana" size="2"><b>XENON HEADLAMP RETROFITS</a></b></font></td>
+				<td><font face="verdana" size="2">04-09-2008</font></td>
+				<td><font face="verdana" size="2">autos</font></td>
+				<td><font face="verdana" size="2">$0</td></font></tr>
+							<tr align="center" bgcolor="#99FFCC">
+				<td><a href="displayclsfd.php?ad_id=908">
+				<font face="verdana" size="2"><b>Pyschology 1305 & 3341 tutor</a></b></font></td>
+				<td><font face="verdana" size="2">04-08-2008</font></td>
+				<td><font face="verdana" size="2">services</font></td>
+				<td><font face="verdana" size="2">$15</td></font></tr>
+							<tr align="center" bgcolor="#CCFF99">
+				<td><a href="displayclsfd.php?ad_id=904">
+				<font face="verdana" size="2"><b>*****Female roommate needed for '08-'09 School YR.</a></b></font></td>
+				<td><font face="verdana" size="2">04-04-2008</font></td>
+				<td><font face="verdana" size="2">household</font></td>
+				<td><font face="verdana" size="2">$400</td></font></tr>
+							<tr align="center" bgcolor="#CCFFBB">
+				<td><a href="displayclsfd.php?ad_id=903">
+				<font face="verdana" size="2"><b>*****Female roommate needed for '08-'09 School YR.</a></b></font></td>
+				<td><font face="verdana" size="2">04-04-2008</font></td>
+				<td><font face="verdana" size="2">general</font></td>
+				<td><font face="verdana" size="2">$400</td></font></tr>
+							<tr align="center" bgcolor="#FFCC99">
+				<td><a href="displayclsfd.php?ad_id=902">
+				<font face="verdana" size="2"><b>*****Female roommate needed for '08-'09 School YR.</a></b></font></td>
+				<td><font face="verdana" size="2">04-04-2008</font></td>
+				<td><font face="verdana" size="2">realestate</font></td>
+				<td><font face="verdana" size="2">$400</td></font></tr>
+							<tr align="center" bgcolor="#CCCCFF">
+				<td><a href="displayclsfd.php?ad_id=901">
+				<font face="verdana" size="2"><b>Dell XPS M140 + Printer</a></b></font></td>
+				<td><font face="verdana" size="2">04-01-2008</font></td>
+				<td><font face="verdana" size="2">computers</font></td>
+				<td><font face="verdana" size="2">$500</td></font></tr>
+							<tr align="center" bgcolor="#FFCC99">
+				<td><a href="displayclsfd.php?ad_id=900">
+				<font face="verdana" size="2"><b>Abbey Glenn Aug 08-Jul 09</a></b></font></td>
+				<td><font face="verdana" size="2">04-01-2008</font></td>
+				<td><font face="verdana" size="2">realestate</font></td>
+				<td><font face="verdana" size="2">$400</td></font></tr>
+							<tr align="center" bgcolor="#99CCFF">
+				<td><a href="displayclsfd.php?ad_id=894">
+				<font face="verdana" size="2"><b>T.I. 83 Plus</a></b></font></td>
+				<td><font face="verdana" size="2">02-16-2008</font></td>
+				<td><font face="verdana" size="2">electronics</font></td>
+				<td><font face="verdana" size="2">$40</td></font></tr>
+							<tr align="center" bgcolor="#FFCC99">
+				<td><a href="displayclsfd.php?ad_id=892">
+				<font face="verdana" size="2"><b>4bedroom 3bath Duplex </a></b></font></td>
+				<td><font face="verdana" size="2">02-10-2008</font></td>
+				<td><font face="verdana" size="2">realestate</font></td>
+				<td><font face="verdana" size="2">$445</td></font></tr>
+							<tr align="center" bgcolor="#99CCFF">
+				<td><a href="displayclsfd.php?ad_id=891">
+				<font face="verdana" size="2"><b>TI-89 Calculator GREAT CONDITION</a></b></font></td>
+				<td><font face="verdana" size="2">02-07-2008</font></td>
+				<td><font face="verdana" size="2">electronics</font></td>
+				<td><font face="verdana" size="2">$100</td></font></tr>
+							<tr align="center" bgcolor="#FFFFCC">
+				<td><a href="displayclsfd.php?ad_id=890">
+				<font face="verdana" size="2"><b>AIR FORCE ONES FOR SALE!!!!!</a></b></font></td>
+				<td><font face="verdana" size="2">02-03-2008</font></td>
+				<td><font face="verdana" size="2">clothing</font></td>
+				<td><font face="verdana" size="2">$80</td></font></tr>
+							<tr align="center" bgcolor="#FFCC99">
+				<td><a href="displayclsfd.php?ad_id=889">
+				<font face="verdana" size="2"><b>The Outpost 4 Br/4 Ba</a></b></font></td>
+				<td><font face="verdana" size="2">01-31-2008</font></td>
+				<td><font face="verdana" size="2">realestate</font></td>
+				<td><font face="verdana" size="2">$430</td></font></tr>
+							<tr align="center" bgcolor="#99CCFF">
+				<td><a href="displayclsfd.php?ad_id=887">
+				<font face="verdana" size="2"><b>Visor Neo 8MB PDA</a></b></font></td>
+				<td><font face="verdana" size="2">01-31-2008</font></td>
+				<td><font face="verdana" size="2">electronics</font></td>
+				<td><font face="verdana" size="2">$25</td></font></tr>
+							<tr align="center" bgcolor="#FFCC99">
+				<td><a href="displayclsfd.php?ad_id=886">
+				<font face="verdana" size="2"><b>Great Deal on Apartment for Sublease!</a></b></font></td>
+				<td><font face="verdana" size="2">01-28-2008</font></td>
+				<td><font face="verdana" size="2">realestate</font></td>
+				<td><font face="verdana" size="2">$455</td></font></tr>
+							<tr align="center" bgcolor="#CCFF99">
+				<td><a href="displayclsfd.php?ad_id=885">
+				<font face="verdana" size="2"><b>Full Size MATTRESS, box springs and frame</a></b></font></td>
+				<td><font face="verdana" size="2">01-27-2008</font></td>
+				<td><font face="verdana" size="2">household</font></td>
+				<td><font face="verdana" size="2">$250</td></font></tr>
+							<tr align="center" bgcolor="#CCFFBB">
+				<td><a href="displayclsfd.php?ad_id=884">
+				<font face="verdana" size="2"><b>Girls Road Bike- Bianchi</a></b></font></td>
+				<td><font face="verdana" size="2">01-24-2008</font></td>
+				<td><font face="verdana" size="2">general</font></td>
+				<td><font face="verdana" size="2">$500</td></font></tr>
+							<tr align="center" bgcolor="#CCFFBB">
+				<td><a href="displayclsfd.php?ad_id=883">
+				<font face="verdana" size="2"><b>WANT: ANKLE WEIGHTS</a></b></font></td>
+				<td><font face="verdana" size="2">01-23-2008</font></td>
+				<td><font face="verdana" size="2">general</font></td>
+				<td><font face="verdana" size="2">$5</td></font></tr>
+							<tr align="center" bgcolor="#CCFFBB">
+				<td><a href="displayclsfd.php?ad_id=882">
+				<font face="verdana" size="2"><b>Puppy!</a></b></font></td>
+				<td><font face="verdana" size="2">01-23-2008</font></td>
+				<td><font face="verdana" size="2">general</font></td>
+				<td><font face="verdana" size="2">$75</td></font></tr>
+							<tr align="center" bgcolor="#FFFFCC">
+				<td><a href="displayclsfd.php?ad_id=881">
+				<font face="verdana" size="2"><b>Express Men's Dress Shirts</a></b></font></td>
+				<td><font face="verdana" size="2">01-20-2008</font></td>
+				<td><font face="verdana" size="2">clothing</font></td>
+				<td><font face="verdana" size="2">$45</td></font></tr>
+							<tr align="center" bgcolor="#99FFCC">
+				<td><a href="displayclsfd.php?ad_id=880">
+				<font face="verdana" size="2"><b>Chinese tutoring</a></b></font></td>
+				<td><font face="verdana" size="2">01-20-2008</font></td>
+				<td><font face="verdana" size="2">services</font></td>
+				<td><font face="verdana" size="2">$15</td></font></tr>
+							<tr align="center" bgcolor="#99FFCC">
+				<td><a href="displayclsfd.php?ad_id=879">
+				<font face="verdana" size="2"><b>Physics tutoring</a></b></font></td>
+				<td><font face="verdana" size="2">01-20-2008</font></td>
+				<td><font face="verdana" size="2">services</font></td>
+				<td><font face="verdana" size="2">$15</td></font></tr>
+							<tr align="center" bgcolor="#FFCC99">
+				<td><a href="displayclsfd.php?ad_id=878">
+				<font face="verdana" size="2"><b>Sublease Summer 08! $300/mo</a></b></font></td>
+				<td><font face="verdana" size="2">01-19-2008</font></td>
+				<td><font face="verdana" size="2">realestate</font></td>
+				<td><font face="verdana" size="2">$300</td></font></tr>
+							<tr align="center" bgcolor="#99FFCC">
+				<td><a href="displayclsfd.php?ad_id=877">
+				<font face="verdana" size="2"><b>need a handyman? moving? painting? look no further</a></b></font></td>
+				<td><font face="verdana" size="2">01-19-2008</font></td>
+				<td><font face="verdana" size="2">services</font></td>
+				<td><font face="verdana" size="2">$1</td></font></tr>
+							<tr align="center" bgcolor="#CCCCFF">
+				<td><a href="displayclsfd.php?ad_id=876">
+				<font face="verdana" size="2"><b>Brand New Canon PIXMA MP210 All-in-one Printer</a></b></font></td>
+				<td><font face="verdana" size="2">01-17-2008</font></td>
+				<td><font face="verdana" size="2">computers</font></td>
+				<td><font face="verdana" size="2">$70</td></font></tr>
+							<tr align="center" bgcolor="#CCFFBB">
+				<td><a href="displayclsfd.php?ad_id=875">
+				<font face="verdana" size="2"><b>Acoustic Guitar</a></b></font></td>
+				<td><font face="verdana" size="2">01-17-2008</font></td>
+				<td><font face="verdana" size="2">general</font></td>
+				<td><font face="verdana" size="2">$135</td></font></tr>
+							<tr align="center" bgcolor="#FFFFCC">
+				<td><a href="displayclsfd.php?ad_id=873">
+				<font face="verdana" size="2"><b>NEW BEBE JEANS</a></b></font></td>
+				<td><font face="verdana" size="2">01-16-2008</font></td>
+				<td><font face="verdana" size="2">clothing</font></td>
+				<td><font face="verdana" size="2">$50</td></font></tr>
+							<tr align="center" bgcolor="#99FFCC">
+				<td><a href="displayclsfd.php?ad_id=870">
+				<font face="verdana" size="2"><b>Tax Service </a></b></font></td>
+				<td><font face="verdana" size="2">01-16-2008</font></td>
+				<td><font face="verdana" size="2">services</font></td>
+				<td><font face="verdana" size="2">$50</td></font></tr>
+							<tr align="center" bgcolor="#CCFFBB">
+				<td><a href="displayclsfd.php?ad_id=867">
+				<font face="verdana" size="2"><b>Christian Theological Tradition</a></b></font></td>
+				<td><font face="verdana" size="2">01-14-2008</font></td>
+				<td><font face="verdana" size="2">general</font></td>
+				<td><font face="verdana" size="2">$58</td></font></tr>
+							<tr align="center" bgcolor="#CCCCFF">
+				<td><a href="displayclsfd.php?ad_id=866">
+				<font face="verdana" size="2"><b>15" Powerbook G4 Titanium (TiBook) 1GB RAM 40GB</a></b></font></td>
+				<td><font face="verdana" size="2">01-14-2008</font></td>
+				<td><font face="verdana" size="2">computers</font></td>
+				<td><font face="verdana" size="2">$420</td></font></tr>
+							<tr align="center" bgcolor="#99CCFF">
+				<td><a href="displayclsfd.php?ad_id=865">
+				<font face="verdana" size="2"><b>MP3 Player</a></b></font></td>
+				<td><font face="verdana" size="2">01-13-2008</font></td>
+				<td><font face="verdana" size="2">electronics</font></td>
+				<td><font face="verdana" size="2">$20</td></font></tr>
+							<tr align="center" bgcolor="#CCCCFF">
+				<td><a href="displayclsfd.php?ad_id=863">
+				<font face="verdana" size="2"><b>Toshiba Satellite Laptop</a></b></font></td>
+				<td><font face="verdana" size="2">01-13-2008</font></td>
+				<td><font face="verdana" size="2">computers</font></td>
+				<td><font face="verdana" size="2">$100</td></font></tr>
+							<tr align="center" bgcolor="#99CCFF">
+				<td><a href="displayclsfd.php?ad_id=862">
+				<font face="verdana" size="2"><b>Panasonic Stereo System</a></b></font></td>
+				<td><font face="verdana" size="2">01-13-2008</font></td>
+				<td><font face="verdana" size="2">electronics</font></td>
+				<td><font face="verdana" size="2">$40</td></font></tr>
+							<tr align="center" bgcolor="#FFFFCC">
+				<td><a href="displayclsfd.php?ad_id=861">
+				<font face="verdana" size="2"><b>MARC JACOBS classy black flats.</a></b></font></td>
+				<td><font face="verdana" size="2">01-13-2008</font></td>
+				<td><font face="verdana" size="2">clothing</font></td>
+				<td><font face="verdana" size="2">$100</td></font></tr>
+							<tr align="center" bgcolor="#CCFFBB">
+				<td><a href="displayclsfd.php?ad_id=860">
+				<font face="verdana" size="2"><b>Much Ado About Nothing</a></b></font></td>
+				<td><font face="verdana" size="2">01-13-2008</font></td>
+				<td><font face="verdana" size="2">general</font></td>
+				<td><font face="verdana" size="2">$4</td></font></tr>
+							<tr align="center" bgcolor="#CCFFBB">
+				<td><a href="displayclsfd.php?ad_id=859">
+				<font face="verdana" size="2"><b>Senales de identidad</a></b></font></td>
+				<td><font face="verdana" size="2">01-13-2008</font></td>
+				<td><font face="verdana" size="2">general</font></td>
+				<td><font face="verdana" size="2">$20</td></font></tr>
+							<tr align="center" bgcolor="#CCFFBB">
+				<td><a href="displayclsfd.php?ad_id=858">
+				<font face="verdana" size="2"><b>The New Oxford Annotated Bible</a></b></font></td>
+				<td><font face="verdana" size="2">01-13-2008</font></td>
+				<td><font face="verdana" size="2">general</font></td>
+				<td><font face="verdana" size="2">$25</td></font></tr>
+							<tr align="center" bgcolor="#CCFFBB">
+				<td><a href="displayclsfd.php?ad_id=856">
+				<font face="verdana" size="2"><b>MCAT (Barron's, 9th ed.)</a></b></font></td>
+				<td><font face="verdana" size="2">01-13-2008</font></td>
+				<td><font face="verdana" size="2">general</font></td>
+				<td><font face="verdana" size="2">$15</td></font></tr>
+							<tr align="center" bgcolor="#CCFFBB">
+				<td><a href="displayclsfd.php?ad_id=855">
+				<font face="verdana" size="2"><b>Epistemic Luck</a></b></font></td>
+				<td><font face="verdana" size="2">01-13-2008</font></td>
+				<td><font face="verdana" size="2">general</font></td>
+				<td><font face="verdana" size="2">$20</td></font></tr>
+							<tr align="center" bgcolor="#CCFFBB">
+				<td><a href="displayclsfd.php?ad_id=854">
+				<font face="verdana" size="2"><b>Metaphysics - Contemporary Readings</a></b></font></td>
+				<td><font face="verdana" size="2">01-13-2008</font></td>
+				<td><font face="verdana" size="2">general</font></td>
+				<td><font face="verdana" size="2">$20</td></font></tr>
+							<tr align="center" bgcolor="#99CCFF">
+				<td><a href="displayclsfd.php?ad_id=853">
+				<font face="verdana" size="2"><b>TI-89</a></b></font></td>
+				<td><font face="verdana" size="2">01-13-2008</font></td>
+				<td><font face="verdana" size="2">electronics</font></td>
+				<td><font face="verdana" size="2">$0</td></font></tr>
+							<tr align="center" bgcolor="#99FFCC">
+				<td><a href="displayclsfd.php?ad_id=852">
+				<font face="verdana" size="2"><b>Experienced Math Tutor</a></b></font></td>
+				<td><font face="verdana" size="2">01-12-2008</font></td>
+				<td><font face="verdana" size="2">services</font></td>
+				<td><font face="verdana" size="2">$20</td></font></tr>
+							<tr align="center" bgcolor="#99CCFF">
+				<td><a href="displayclsfd.php?ad_id=851">
+				<font face="verdana" size="2"><b>Xbox</a></b></font></td>
+				<td><font face="verdana" size="2">01-12-2008</font></td>
+				<td><font face="verdana" size="2">electronics</font></td>
+				<td><font face="verdana" size="2">$150</td></font></tr>
+							<tr align="center" bgcolor="#99CCFF">
+				<td><a href="displayclsfd.php?ad_id=850">
+				<font face="verdana" size="2"><b>42" Plasma TV</a></b></font></td>
+				<td><font face="verdana" size="2">01-08-2008</font></td>
+				<td><font face="verdana" size="2">electronics</font></td>
+				<td><font face="verdana" size="2">$1500</td></font></tr>
+							<tr align="center" bgcolor="#99CCFF">
+				<td><a href="displayclsfd.php?ad_id=849">
+				<font face="verdana" size="2"><b>X Box</a></b></font></td>
+				<td><font face="verdana" size="2">01-07-2008</font></td>
+				<td><font face="verdana" size="2">electronics</font></td>
+				<td><font face="verdana" size="2">$100</td></font></tr>
+							<tr align="center" bgcolor="#99CCFF">
+				<td><a href="displayclsfd.php?ad_id=848">
+				<font face="verdana" size="2"><b>TI-83 plus calculator</a></b></font></td>
+				<td><font face="verdana" size="2">01-04-2008</font></td>
+				<td><font face="verdana" size="2">electronics</font></td>
+				<td><font face="verdana" size="2">$50</td></font></tr>
+							<tr align="center" bgcolor="#CCFF99">
+				<td><a href="displayclsfd.php?ad_id=847">
+				<font face="verdana" size="2"><b>Solid Wood Bed</a></b></font></td>
+				<td><font face="verdana" size="2">01-03-2008</font></td>
+				<td><font face="verdana" size="2">household</font></td>
+				<td><font face="verdana" size="2">$120</td></font></tr>
+							<tr align="center" bgcolor="#CCFFBB">
+				<td><a href="displayclsfd.php?ad_id=846">
+				<font face="verdana" size="2"><b>wheeled ice chest</a></b></font></td>
+				<td><font face="verdana" size="2">01-03-2008</font></td>
+				<td><font face="verdana" size="2">general</font></td>
+				<td><font face="verdana" size="2">$20</td></font></tr>
+							<tr align="center" bgcolor="#CCFFBB">
+				<td><a href="displayclsfd.php?ad_id=845">
+				<font face="verdana" size="2"><b>Fan</a></b></font></td>
+				<td><font face="verdana" size="2">01-03-2008</font></td>
+				<td><font face="verdana" size="2">general</font></td>
+				<td><font face="verdana" size="2">$12</td></font></tr>
+							<tr align="center" bgcolor="#CCFFBB">
+				<td><a href="displayclsfd.php?ad_id=844">
+				<font face="verdana" size="2"><b>Fan</a></b></font></td>
+				<td><font face="verdana" size="2">01-03-2008</font></td>
+				<td><font face="verdana" size="2">general</font></td>
+				<td><font face="verdana" size="2">$12</td></font></tr>
+							<tr align="center" bgcolor="#CCFF99">
+				<td><a href="displayclsfd.php?ad_id=843">
+				<font face="verdana" size="2"><b>3 chairs</a></b></font></td>
+				<td><font face="verdana" size="2">01-03-2008</font></td>
+				<td><font face="verdana" size="2">household</font></td>
+				<td><font face="verdana" size="2">$25</td></font></tr>
+							<tr align="center" bgcolor="#CCFFBB">
+				<td><a href="displayclsfd.php?ad_id=842">
+				<font face="verdana" size="2"><b>2 mirrors</a></b></font></td>
+				<td><font face="verdana" size="2">01-03-2008</font></td>
+				<td><font face="verdana" size="2">general</font></td>
+				<td><font face="verdana" size="2">$10</td></font></tr>
+							<tr align="center" bgcolor="#99CCFF">
+				<td><a href="displayclsfd.php?ad_id=841">
+				<font face="verdana" size="2"><b>19" TV</a></b></font></td>
+				<td><font face="verdana" size="2">01-03-2008</font></td>
+				<td><font face="verdana" size="2">electronics</font></td>
+				<td><font face="verdana" size="2">$20</td></font></tr>
+							<tr align="center" bgcolor="#CCFFBB">
+				<td><a href="displayclsfd.php?ad_id=840">
+				<font face="verdana" size="2"><b>Small TV Stand</a></b></font></td>
+				<td><font face="verdana" size="2">01-03-2008</font></td>
+				<td><font face="verdana" size="2">general</font></td>
+				<td><font face="verdana" size="2">$15</td></font></tr>
+							<tr align="center" bgcolor="#CCFFBB">
+				<td><a href="displayclsfd.php?ad_id=839">
+				<font face="verdana" size="2"><b>Shelf curio</a></b></font></td>
+				<td><font face="verdana" size="2">01-03-2008</font></td>
+				<td><font face="verdana" size="2">general</font></td>
+				<td><font face="verdana" size="2">$10</td></font></tr>
+							<tr align="center" bgcolor="#CCFFBB">
+				<td><a href="displayclsfd.php?ad_id=838">
+				<font face="verdana" size="2"><b>Small Brown side table with drawers</a></b></font></td>
+				<td><font face="verdana" size="2">01-03-2008</font></td>
+				<td><font face="verdana" size="2">general</font></td>
+				<td><font face="verdana" size="2">$20</td></font></tr>
+							<tr align="center" bgcolor="#CCFFBB">
+				<td><a href="displayclsfd.php?ad_id=837">
+				<font face="verdana" size="2"><b>large desk</a></b></font></td>
+				<td><font face="verdana" size="2">01-03-2008</font></td>
+				<td><font face="verdana" size="2">general</font></td>
+				<td><font face="verdana" size="2">$35</td></font></tr>
+							<tr align="center" bgcolor="#CCFFBB">
+				<td><a href="displayclsfd.php?ad_id=836">
+				<font face="verdana" size="2"><b>Small Computer Desk</a></b></font></td>
+				<td><font face="verdana" size="2">01-03-2008</font></td>
+				<td><font face="verdana" size="2">general</font></td>
+				<td><font face="verdana" size="2">$25</td></font></tr>
+							<tr align="center" bgcolor="#CCFFBB">
+				<td><a href="displayclsfd.php?ad_id=835">
+				<font face="verdana" size="2"><b>CD Rack</a></b></font></td>
+				<td><font face="verdana" size="2">01-03-2008</font></td>
+				<td><font face="verdana" size="2">general</font></td>
+				<td><font face="verdana" size="2">$5</td></font></tr>
+							<tr align="center" bgcolor="#CCFFBB">
+				<td><a href="displayclsfd.php?ad_id=834">
+				<font face="verdana" size="2"><b>1000 Drinking Games</a></b></font></td>
+				<td><font face="verdana" size="2">01-03-2008</font></td>
+				<td><font face="verdana" size="2">general</font></td>
+				<td><font face="verdana" size="2">$10</td></font></tr>
+							<tr align="center" bgcolor="#99CCFF">
+				<td><a href="displayclsfd.php?ad_id=833">
+				<font face="verdana" size="2"><b>DVD Player</a></b></font></td>
+				<td><font face="verdana" size="2">01-03-2008</font></td>
+				<td><font face="verdana" size="2">electronics</font></td>
+				<td><font face="verdana" size="2">$25</td></font></tr>
+							<tr align="center" bgcolor="#99CCFF">
+				<td><a href="displayclsfd.php?ad_id=832">
+				<font face="verdana" size="2"><b>Sony Boombox</a></b></font></td>
+				<td><font face="verdana" size="2">01-03-2008</font></td>
+				<td><font face="verdana" size="2">electronics</font></td>
+				<td><font face="verdana" size="2">$60</td></font></tr>
+							<tr align="center" bgcolor="#99CCFF">
+				<td><a href="displayclsfd.php?ad_id=831">
+				<font face="verdana" size="2"><b>Sony Boombox</a></b></font></td>
+				<td><font face="verdana" size="2">01-03-2008</font></td>
+				<td><font face="verdana" size="2">electronics</font></td>
+				<td><font face="verdana" size="2">$60</td></font></tr>
+							<tr align="center" bgcolor="#FFCC99">
+				<td><a href="displayclsfd.php?ad_id=829">
+				<font face="verdana" size="2"><b>SUMMER 2008 SUBLEASE @ The Outpose: BIG DISCOUNT!!</a></b></font></td>
+				<td><font face="verdana" size="2">12-30-2007</font></td>
+				<td><font face="verdana" size="2">realestate</font></td>
+				<td><font face="verdana" size="2">$300</td></font></tr>
+							<tr align="center" bgcolor="#99CCFF">
+				<td><a href="displayclsfd.php?ad_id=827">
+				<font face="verdana" size="2"><b>Bass Guitar</a></b></font></td>
+				<td><font face="verdana" size="2">12-26-2007</font></td>
+				<td><font face="verdana" size="2">electronics</font></td>
+				<td><font face="verdana" size="2">$100</td></font></tr>
+							<tr align="center" bgcolor="#FFCC99">
+				<td><a href="displayclsfd.php?ad_id=822">
+				<font face="verdana" size="2"><b>Subleaser needed for Spring 2008 - The Oaks</a></b></font></td>
+				<td><font face="verdana" size="2">10-17-2007</font></td>
+				<td><font face="verdana" size="2">realestate</font></td>
+				<td><font face="verdana" size="2">$320</td></font></tr>
+							<tr align="center" bgcolor="#FFCC99">
+				<td><a href="displayclsfd.php?ad_id=821">
+				<font face="verdana" size="2"><b>Apt. just 1 block from BSB!!!</a></b></font></td>
+				<td><font face="verdana" size="2">09-23-2007</font></td>
+				<td><font face="verdana" size="2">realestate</font></td>
+				<td><font face="verdana" size="2">$350</td></font></tr>
+							<tr align="center" bgcolor="#FFCC99">
+				<td><a href="displayclsfd.php?ad_id=820">
+				<font face="verdana" size="2"><b>2 Bedroom Apartment at the Oaks for Spring 2008.</a></b></font></td>
+				<td><font face="verdana" size="2">09-20-2007</font></td>
+				<td><font face="verdana" size="2">realestate</font></td>
+				<td><font face="verdana" size="2">$615</td></font></tr>
+							<tr align="center" bgcolor="#FFCC99">
+				<td><a href="displayclsfd.php?ad_id=819">
+				<font face="verdana" size="2"><b>SUBLEASOR NEEDED -WILLING TO NEGOTIATE</a></b></font></td>
+				<td><font face="verdana" size="2">09-18-2007</font></td>
+				<td><font face="verdana" size="2">realestate</font></td>
+				<td><font face="verdana" size="2">$400</td></font></tr>
+							<tr align="center" bgcolor="#FFCC99">
+				<td><a href="displayclsfd.php?ad_id=817">
+				<font face="verdana" size="2"><b>Apartment</a></b></font></td>
+				<td><font face="verdana" size="2">09-16-2007</font></td>
+				<td><font face="verdana" size="2">realestate</font></td>
+				<td><font face="verdana" size="2">$400</td></font></tr>
+							<tr align="center" bgcolor="#99CCFF">
+				<td><a href="displayclsfd.php?ad_id=807">
+				<font face="verdana" size="2"><b>FINANCE calculator (TI & HP)</a></b></font></td>
+				<td><font face="verdana" size="2">08-22-2007</font></td>
+				<td><font face="verdana" size="2">electronics</font></td>
+				<td><font face="verdana" size="2">$30</td></font></tr>
+							<tr align="center" bgcolor="#FFCC99">
+				<td><a href="displayclsfd.php?ad_id=800">
+				<font face="verdana" size="2"><b>Need Roommate</a></b></font></td>
+				<td><font face="verdana" size="2">08-19-2007</font></td>
+				<td><font face="verdana" size="2">realestate</font></td>
+				<td><font face="verdana" size="2">$350</td></font></tr>
+							<tr align="center" bgcolor="#FFCC99">
+				<td><a href="displayclsfd.php?ad_id=799">
+				<font face="verdana" size="2"><b>Need Roommate For The Cottonwoods</a></b></font></td>
+				<td><font face="verdana" size="2">08-17-2007</font></td>
+				<td><font face="verdana" size="2">realestate</font></td>
+				<td><font face="verdana" size="2">$332.5</td></font></tr>
+							<tr align="center" bgcolor="#99FFCC">
+				<td><a href="displayclsfd.php?ad_id=792">
+				<font face="verdana" size="2"><b>Russian Tutoring</a></b></font></td>
+				<td><font face="verdana" size="2">08-12-2007</font></td>
+				<td><font face="verdana" size="2">services</font></td>
+				<td><font face="verdana" size="2">$12</td></font></tr>
+							<tr align="center" bgcolor="#FFFFCC">
+				<td><a href="displayclsfd.php?ad_id=790">
+				<font face="verdana" size="2"><b>Phat Farm Shoes</a></b></font></td>
+				<td><font face="verdana" size="2">08-09-2007</font></td>
+				<td><font face="verdana" size="2">clothing</font></td>
+				<td><font face="verdana" size="2">$30</td></font></tr>
+							<tr align="center" bgcolor="#99FFCC">
+				<td><a href="displayclsfd.php?ad_id=787">
+				<font face="verdana" size="2"><b>Latin Tutoring</a></b></font></td>
+				<td><font face="verdana" size="2">08-08-2007</font></td>
+				<td><font face="verdana" size="2">services</font></td>
+				<td><font face="verdana" size="2">$10</td></font></tr>
+							<tr align="center" bgcolor="#99FFCC">
+				<td><a href="displayclsfd.php?ad_id=786">
+				<font face="verdana" size="2"><b>Greek Tutor</a></b></font></td>
+				<td><font face="verdana" size="2">08-08-2007</font></td>
+				<td><font face="verdana" size="2">services</font></td>
+				<td><font face="verdana" size="2">$15</td></font></tr>
+							<tr align="center" bgcolor="#99FFCC">
+				<td><a href="displayclsfd.php?ad_id=756">
+				<font face="verdana" size="2"><b>6 Kaplan LSAT Review Books</a></b></font></td>
+				<td><font face="verdana" size="2">06-05-2007</font></td>
+				<td><font face="verdana" size="2">services</font></td>
+				<td><font face="verdana" size="2">$200</td></font></tr>
+							<tr align="center" bgcolor="#99CCFF">
+				<td><a href="displayclsfd.php?ad_id=730">
+				<font face="verdana" size="2"><b>Wireless Headphones</a></b></font></td>
+				<td><font face="verdana" size="2">05-02-2007</font></td>
+				<td><font face="verdana" size="2">electronics</font></td>
+				<td><font face="verdana" size="2">$35</td></font></tr>
+							<tr align="center" bgcolor="#CCFFBB">
+				<td><a href="displayclsfd.php?ad_id=729">
+				<font face="verdana" size="2"><b>Dawn of the Dead</a></b></font></td>
+				<td><font face="verdana" size="2">05-02-2007</font></td>
+				<td><font face="verdana" size="2">general</font></td>
+				<td><font face="verdana" size="2">$10</td></font></tr>
+							<tr align="center" bgcolor="#CCFFBB">
+				<td><a href="displayclsfd.php?ad_id=712">
+				<font face="verdana" size="2"><b>The Movies - PC game</a></b></font></td>
+				<td><font face="verdana" size="2">04-24-2007</font></td>
+				<td><font face="verdana" size="2">general</font></td>
+				<td><font face="verdana" size="2">$10</td></font></tr>
+							<tr align="center" bgcolor="#CCFFBB">
+				<td><a href="displayclsfd.php?ad_id=671">
+				<font face="verdana" size="2"><b>logic cd</a></b></font></td>
+				<td><font face="verdana" size="2">02-05-2007</font></td>
+				<td><font face="verdana" size="2">general</font></td>
+				<td><font face="verdana" size="2">$2</td></font></tr>
+							<tr align="center" bgcolor="#99FFCC">
+				<td><a href="displayclsfd.php?ad_id=663">
+				<font face="verdana" size="2"><b>Physics Tutor for Any Level</a></b></font></td>
+				<td><font face="verdana" size="2">01-31-2007</font></td>
+				<td><font face="verdana" size="2">services</font></td>
+				<td><font face="verdana" size="2">$100</td></font></tr>
+							<tr align="center" bgcolor="#99CCFF">
+				<td><a href="displayclsfd.php?ad_id=650">
+				<font face="verdana" size="2"><b>ti-86 LIKE NEW!</a></b></font></td>
+				<td><font face="verdana" size="2">01-13-2007</font></td>
+				<td><font face="verdana" size="2">electronics</font></td>
+				<td><font face="verdana" size="2">$59.95</td></font></tr>
+							<tr align="center" bgcolor="#FFFFCC">
+				<td><a href="displayclsfd.php?ad_id=648">
+				<font face="verdana" size="2"><b>Men's Salvatore Ferragamo  Flip-Flops</a></b></font></td>
+				<td><font face="verdana" size="2">01-10-2007</font></td>
+				<td><font face="verdana" size="2">clothing</font></td>
+				<td><font face="verdana" size="2">$60</td></font></tr>
+							<tr align="center" bgcolor="#99FFCC">
+				<td><a href="displayclsfd.php?ad_id=636">
+				<font face="verdana" size="2"><b>Chem  1301, 1302, or 3331</a></b></font></td>
+				<td><font face="verdana" size="2">12-28-2006</font></td>
+				<td><font face="verdana" size="2">services</font></td>
+				<td><font face="verdana" size="2">$10</td></font></tr>
+							<tr align="center" bgcolor="#99FFCC">
+				<td><a href="displayclsfd.php?ad_id=634">
+				<font face="verdana" size="2"><b>CSI 1430  (Aars)</a></b></font></td>
+				<td><font face="verdana" size="2">12-15-2006</font></td>
+				<td><font face="verdana" size="2">services</font></td>
+				<td><font face="verdana" size="2">$100</td></font></tr>
+							<tr align="center" bgcolor="#CCFFBB">
+				<td><a href="displayclsfd.php?ad_id=612">
+				<font face="verdana" size="2"><b>The College Prowlers Guide to Baylor University</a></b></font></td>
+				<td><font face="verdana" size="2">10-17-2006</font></td>
+				<td><font face="verdana" size="2">general</font></td>
+				<td><font face="verdana" size="2">$8</td></font></tr>
+							<tr align="center" bgcolor="#CCCCFF">
+				<td><a href="displayclsfd.php?ad_id=547">
+				<font face="verdana" size="2"><b>Small desk</a></b></font></td>
+				<td><font face="verdana" size="2">07-26-2006</font></td>
+				<td><font face="verdana" size="2">computers</font></td>
+				<td><font face="verdana" size="2">$20</td></font></tr>
+							<tr align="center" bgcolor="#CCFFBB">
+				<td><a href="displayclsfd.php?ad_id=539">
+				<font face="verdana" size="2"><b>Tennis Racket</a></b></font></td>
+				<td><font face="verdana" size="2">07-13-2006</font></td>
+				<td><font face="verdana" size="2">general</font></td>
+				<td><font face="verdana" size="2">$95</td></font></tr>
+							<tr align="center" bgcolor="#CCFF99">
+				<td><a href="displayclsfd.php?ad_id=538">
+				<font face="verdana" size="2"><b>Tennis Racket</a></b></font></td>
+				<td><font face="verdana" size="2">07-13-2006</font></td>
+				<td><font face="verdana" size="2">household</font></td>
+				<td><font face="verdana" size="2">$95</td></font></tr>
+							<tr align="center" bgcolor="#CCFFBB">
+				<td><a href="displayclsfd.php?ad_id=348">
+				<font face="verdana" size="2"><b>Abnormal Psychology 9th Edition {Abridged}</a></b></font></td>
+				<td><font face="verdana" size="2">12-13-2005</font></td>
+				<td><font face="verdana" size="2">general</font></td>
+				<td><font face="verdana" size="2">$40</td></font></tr>
+						</table>
+			</td></tr>
+			</tbody>
+			</table>
+				</td>
+	</tr>
+	
+	</table>
+</td>
+</tr>
+	<!--- Footer --->
+
+
+  <tr>
+
+ 	<td align="center" colspan="5" style="filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#B2B6C8', EndColorStr='#476A8E');"><font size="4">
+
+
+
+		<a href="login.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>LOGIN</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="home.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>HOME</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="about.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>ABOUT US</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="faq.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>FAQ</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="privacy.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>PRIVACY</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="terms.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>TERMS OF USE</b></font></a> &nbsp; &nbsp;
+
+	
+
+		<a href="advertising.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>ADVERTISING</b></font></a> &nbsp; &nbsp; 
+
+	
+
+		<a href="contact.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>CONTACT US</b></font></a> &nbsp; &nbsp; 
+
+	
+
+		<a href="logout.php" style="text-decoration:none"><font face="Times New Roman, Times, serif" size="2" color="#FFFFFF">
+		
+			<b>LOGOUT</b></font></a>
+
+	</td>
+
+  
+
+</table>
+
+<br>
+
+<div align="center"><font size="-1">&copy;2003-2008 BUBooks.com - All rights reserved</font></div>
+
+
+
+</body>
+
+</html>
