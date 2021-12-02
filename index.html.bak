@@ -88,7 +88,7 @@
         Buy your books here and get up to 75% off retail prices!</b></font></p>
       </td>
       <td valign="top" width="150" height="310" bgcolor="#C1CFDD">
-        <p align="center"><a href="profrate.html"><img src="pic3.gif" width="150" height="120" border="0"></a></p>
+        <p align="center"><a href="profrate.php"><img src="pic3.gif" width="150" height="120" border="0"></a></p>
         <p align="center" valign="top"><font face="Verdana" size="2" color="#263B4E"><b>Our member's professors don't suck...and neither should yours.<br>
         <a href="signup.php"><br>
         Sign up</a> now and you can finally give your professors a grade.</b></font></p>
